@@ -1,0 +1,36 @@
+# Publica la carpeta web/ en GitHub Pages.
+# Requisitos (los activas tú una vez, ver README):
+#   - Repo público (o cuenta GitHub Pro) — Pages gratis necesita repo público.
+#   - Settings → Pages → Source: "GitHub Actions".
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]          # se publica al fusionar a main
+  workflow_dispatch:          # ...o a mano desde la pestaña Actions
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Solo un despliegue a la vez.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Subir la carpeta web/ como sitio
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web            # index.html y data.geojson quedan en la raíz del sitio
+      - id: deployment
+        uses: actions/deploy-pages@v4

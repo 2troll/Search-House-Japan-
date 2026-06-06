@@ -138,6 +138,32 @@ opción resaltada. Así decides si merece la pena cada zona con sus condiciones.
 
 ---
 
+---
+
+## 🌐 Publicar la página online (GitHub Pages)
+
+La web es estática, así que puede publicarse gratis en **GitHub Pages**. Ya está
+incluido el workflow `.github/workflows/pages.yml` que publica la carpeta `web/`.
+
+Pasos que haces tú **una sola vez** en GitHub:
+
+1. **Repo público** — Pages gratis necesita repo público. En `Settings → General
+   → Danger Zone → Change repository visibility → Public`. *(Con cuenta GitHub
+   Pro puedes usar Pages en repo privado y saltarte este paso.)*
+2. **Activar Pages** — en `Settings → Pages → Build and deployment → Source:
+   GitHub Actions`.
+3. **Fusiona a `main`** (o lanza el workflow a mano en la pestaña *Actions*). El
+   workflow se ejecuta y publica.
+
+La URL será: **`https://<tu-usuario>.github.io/<nombre-repo>/`**
+
+> ⚠️ Ojo: publicar la página hace **públicos los datos extraídos**. Si quieres
+> mantenerlo privado, usa la opción local (`python3 -m http.server`) y compártelo
+> solo por un túnel temporal (p. ej. `cloudflared`/`ngrok`), o usa Pages con
+> repo privado (GitHub Pro). Recuerda: herramienta de uso personal.
+
+---
+
 ## ✏️ Editar las zonas de búsqueda (`TARGET_AREAS`)
 
 Abre **`config.py`** y edita la lista `TARGET_AREAS`. Cada municipio es un bloque:
