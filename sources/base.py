@@ -307,6 +307,6 @@ def assign_area(listing):
     area = config.match_area(text)
     if area:
         listing.area_key = area["key"]
-        listing.city = listing.city or area["ja"]
-        listing.prefecture = listing.prefecture or area["pref"]
+        listing.city = listing.city or area.get("ja", "")
+        listing.prefecture = listing.prefecture or area.get("pref", "")
     return area

@@ -10,10 +10,12 @@ Cada valor es un módulo con una función  fetch(client) -> list[Listing].
   o agregadores comerciales). Muévelas a ENABLED_SOURCES cuando quieras usarlas.
 """
 
-from sources import suminiko, sumonavi, csv_import, awaji_city, homes_akiyabank, wakayama_portal
+from sources import (suminiko, sumonavi, csv_import, awaji_city,
+                     homes_akiyabank, wakayama_portal, athome_akiya)
 
 # Fuentes que se extraen por defecto.
 ENABLED_SOURCES = {
+    athome_akiya.SLUG:    athome_akiya,    # agregador nacional: Nara, Kyoto, Osaka, Fukui, Hyogo, Wakayama
     suminiko.SLUG:        suminiko,        # 南あわじ市 (público) — Fase 1, verificado
     sumonavi.SLUG:        sumonavi,        # 洲本市 (público) — Fase 2
     wakayama_portal.SLUG: wakayama_portal, # toda Wakayama (白浜/串本/那智勝浦/田辺/和歌山市)

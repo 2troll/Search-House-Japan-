@@ -3,243 +3,181 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-<title>Buscador de casas Japón — coste real de estancia</title>
+<title>Casas Japón — buscador con coste real y fichas en español</title>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-
 <style>
 :root{
-  --bg:#0f172a; --bg2:#1e293b; --panel:#ffffff; --soft:#f1f5f9; --soft2:#f8fafc;
-  --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --line2:#cbd5e1;
-  --accent:#4f46e5; --accent2:#6366f1; --ok:#059669; --warn:#d97706; --bad:#dc2626;
-  --rent:#0ea5e9; --sale:#f43f5e; --gold:#f59e0b;
-  --shadow:0 1px 3px rgba(15,23,42,.08),0 1px 2px rgba(15,23,42,.06);
-  --shadow-lg:0 10px 25px -5px rgba(15,23,42,.2);
+  --bg:#0f172a;--panel:#fff;--soft:#f1f5f9;--soft2:#f8fafc;--ink:#0f172a;--muted:#64748b;
+  --line:#e2e8f0;--line2:#cbd5e1;--accent:#4f46e5;--ok:#059669;--gold:#f59e0b;--bad:#dc2626;
+  --shadow:0 1px 3px rgba(15,23,42,.08);--shadow-lg:0 12px 30px -8px rgba(15,23,42,.28);
 }
 *{box-sizing:border-box}
 html,body{margin:0;height:100%;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;color:var(--ink);background:var(--soft)}
 button{font-family:inherit}
 #app{display:flex;flex-direction:column;height:100%;overflow:hidden}
 
-/* ====== Barra superior ====== */
-#topbar{background:linear-gradient(135deg,#1e293b,#0f172a);color:#fff;padding:10px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;z-index:1200;box-shadow:var(--shadow)}
-#topbar .brand{font-weight:700;font-size:16px;display:flex;align-items:center;gap:8px;white-space:nowrap}
-#topbar .brand small{font-weight:400;color:#94a3b8;font-size:11px}
-.tb-group{display:flex;align-items:center;gap:7px;font-size:12px;color:#cbd5e1}
-.tb-group label{color:#94a3b8;font-size:11px;text-transform:uppercase;letter-spacing:.03em}
+#topbar{background:linear-gradient(135deg,#1e293b,#0f172a);color:#fff;padding:8px 14px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;z-index:1200}
+.brand{font-weight:700;font-size:15px;white-space:nowrap}
+.brand small{font-weight:400;color:#94a3b8;font-size:11px;display:block}
+.tb{display:flex;align-items:center;gap:6px;font-size:12px;color:#cbd5e1}
+.tb label{color:#94a3b8;font-size:10px;text-transform:uppercase;letter-spacing:.04em}
 .seg{display:inline-flex;background:#334155;border-radius:8px;padding:2px}
-.seg button{background:none;border:none;color:#cbd5e1;padding:5px 10px;font-size:12px;border-radius:6px;cursor:pointer}
+.seg button{background:none;border:none;color:#cbd5e1;padding:5px 9px;font-size:12px;border-radius:6px;cursor:pointer}
 .seg button.on{background:var(--accent);color:#fff}
-#topbar input[type=number]{width:56px;background:#334155;border:1px solid #475569;color:#fff;border-radius:7px;padding:5px 7px;font-size:13px;font-weight:600}
-#topbar select{background:#334155;border:1px solid #475569;color:#fff;border-radius:7px;padding:6px 8px;font-size:12px}
-.tb-btn{background:#334155;border:1px solid #475569;color:#e2e8f0;border-radius:8px;padding:6px 12px;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+#topbar input[type=number]{width:50px;background:#334155;border:1px solid #475569;color:#fff;border-radius:7px;padding:5px;font-size:13px;font-weight:600}
+#topbar select{background:#334155;border:1px solid #475569;color:#fff;border-radius:7px;padding:6px;font-size:12px}
+.spacer{flex:1}
+.tb-btn{background:#334155;border:1px solid #475569;color:#e2e8f0;border-radius:8px;padding:6px 11px;font-size:12px;cursor:pointer}
 .tb-btn:hover{background:#475569}
-.tb-btn.primary{background:var(--accent);border-color:var(--accent2)}
-.tb-btn .badge-n{background:var(--gold);color:#1e293b;border-radius:10px;padding:0 6px;font-weight:700;font-size:11px}
-#topbar .spacer{flex:1}
+.tb-btn .n{background:var(--gold);color:#1e293b;border-radius:9px;padding:0 6px;font-weight:700}
 
-/* ====== Cuerpo de 3 columnas ====== */
-#body{display:flex;flex:1;overflow:hidden}
-#filters{width:280px;background:var(--panel);border-right:1px solid var(--line);overflow:auto;padding:14px;flex-shrink:0}
-#listcol{width:380px;background:var(--soft2);border-right:1px solid var(--line);display:flex;flex-direction:column;flex-shrink:0}
-#listhead{padding:10px 14px;border-bottom:1px solid var(--line);background:var(--panel);font-size:12px;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+#body{display:flex;flex:1;overflow:hidden;position:relative}
+#filters{width:264px;background:var(--panel);border-right:1px solid var(--line);overflow:auto;padding:14px;flex-shrink:0}
+#listcol{width:360px;background:var(--soft2);border-right:1px solid var(--line);display:flex;flex-direction:column;flex-shrink:0}
+#listhead{padding:9px 14px;border-bottom:1px solid var(--line);background:var(--panel);font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
 #list{overflow:auto;flex:1;padding:10px}
 #map{flex:1}
 
-/* ====== Filtros ====== */
-.fgroup{margin-bottom:16px;padding-bottom:14px;border-bottom:1px solid var(--line)}
-.fgroup:last-child{border-bottom:none}
-.fgroup h4{margin:0 0 8px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
-.fgroup .val{color:var(--accent);font-weight:700;font-size:12px}
+.fg{margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.fg:last-child{border:none}
+.fg h4{margin:0 0 7px;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.fg .v{color:var(--accent);font-weight:700}
 .row{display:flex;gap:6px;flex-wrap:wrap}
-.chip{border:1px solid var(--line2);border-radius:16px;padding:4px 11px;font-size:12px;cursor:pointer;background:#fff;user-select:none;transition:all .12s}
-.chip:hover{border-color:var(--accent)}
+.chip{border:1px solid var(--line2);border-radius:15px;padding:4px 10px;font-size:12px;cursor:pointer;background:#fff;user-select:none}
 .chip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 input[type=range]{width:100%;accent-color:var(--accent)}
 input[type=text]{width:100%;padding:8px 10px;border:1px solid var(--line2);border-radius:8px;font-size:13px}
 .toggle{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer;margin-top:6px}
 .toggle input{accent-color:var(--accent);width:16px;height:16px}
 
-/* ====== Tarjetas de resultado ====== */
-.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px;cursor:pointer;transition:all .12s;position:relative}
-.card:hover,.card.hl{border-color:var(--accent);box-shadow:var(--shadow-lg);transform:translateY(-1px)}
-.card .toptag{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
-.card .ttype{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 7px;border-radius:6px}
-.ttype.rent{background:#e0f2fe;color:#0369a1}
-.ttype.sale{background:#ffe4e6;color:#be123c}
-.card .fav{position:absolute;top:10px;right:10px;font-size:18px;color:var(--line2);cursor:pointer;line-height:1;background:none;border:none;padding:2px}
-.card .fav.on{color:var(--gold)}
-.card .price{font-weight:800;font-size:18px;margin:6px 0 2px;letter-spacing:-.02em}
-.card .costline{font-size:12px;color:#fff;background:var(--accent);display:inline-block;padding:2px 8px;border-radius:6px;font-weight:600;margin:3px 0}
-.card .costline.perm{background:var(--ok)}
-.card .title{font-size:13px;font-weight:600;line-height:1.3;margin:4px 0 2px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;cursor:pointer;overflow:hidden;transition:.12s;position:relative}
+.card:hover,.card.hl{border-color:var(--accent);box-shadow:var(--shadow-lg)}
+.card .thumb{width:100%;height:120px;object-fit:cover;background:#e2e8f0;display:block}
+.card .cc{padding:10px 12px}
+.card .ttype{font-size:10px;font-weight:700;text-transform:uppercase;padding:2px 7px;border-radius:6px}
+.ttype.rent{background:#e0f2fe;color:#0369a1}.ttype.sale{background:#ffe4e6;color:#be123c}
+.fav{position:absolute;top:8px;right:8px;font-size:20px;color:#fff;cursor:pointer;background:rgba(0,0,0,.35);border:none;border-radius:50%;width:32px;height:32px;line-height:1}
+.fav.on{color:var(--gold)}
+.card .price{font-weight:800;font-size:17px;margin:5px 0 2px}
+.card .cost{font-size:11px;color:#fff;background:var(--accent);display:inline-block;padding:2px 7px;border-radius:6px;font-weight:600;margin:2px 4px 2px 0}
+.card .cost.pm{background:var(--ok)}
+.card .title{font-size:13px;font-weight:600;margin:4px 0 2px;line-height:1.3}
 .card .meta{font-size:12px;color:var(--muted)}
 .card .badges{margin-top:6px;display:flex;gap:4px;flex-wrap:wrap}
 .badge{font-size:10px;padding:2px 7px;border-radius:7px;background:var(--soft);color:#475569;font-weight:600}
-.badge.new{background:var(--gold);color:#fff}
-.badge.park{background:#dcfce7;color:#166534}
-.badge.reno{background:#ede9fe;color:#6d28d9}
-.badge.fr{background:#cffafe;color:#0e7490}
-.badge.approx{background:#fef3c7;color:#92400e}
+.badge.park{background:#dcfce7;color:#166534}.badge.reno{background:#ede9fe;color:#6d28d9}
+.badge.new{background:var(--gold);color:#fff}.badge.fr{background:#cffafe;color:#0e7490}
 
-/* ====== Marcadores ====== */
 .price-pin{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;padding:3px 7px;white-space:nowrap;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35)}
-.pin-sale{border-radius:13px}
-.pin-rent{border-radius:4px}
-.pin.fav{outline:3px solid var(--gold)}
+.pin-sale{border-radius:13px}.pin-rent{border-radius:4px}.pin.fav{outline:3px solid var(--gold)}
 
-/* ====== Popup / drawer ====== */
-.leaflet-popup-content{margin:0;width:300px!important}
-.pop{font-size:13px}
-.pop .ph{width:100%;height:150px;object-fit:cover;background:#e2e8f0;display:block}
-.pop .pbody{padding:12px}
-.pop h3{margin:0 0 6px;font-size:15px;line-height:1.3}
-.pop .pprice{font-size:20px;font-weight:800;letter-spacing:-.02em}
-.pop .cost-box{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:9px;margin:8px 0;font-size:12px}
-.pop .cost-box .big{font-size:17px;font-weight:800;color:var(--accent)}
-.pop .cost-box table{width:100%;border-collapse:collapse;margin-top:5px}
-.pop .cost-box td{padding:1px 0;color:var(--muted)}
-.pop .cost-box td:last-child{text-align:right;color:var(--ink);font-weight:600}
-.pop table.specs{width:100%;border-collapse:collapse;font-size:12px;margin-top:4px}
-.pop table.specs td{padding:2px 4px;vertical-align:top;border-top:1px solid var(--line)}
-.pop table.specs td:first-child{color:var(--muted);white-space:nowrap}
-.pop .btnrow{display:flex;gap:6px;margin-top:8px}
-.pop a.btn,.pop button.btn{flex:1;text-align:center;background:var(--accent);color:#fff;text-decoration:none;padding:8px;border-radius:8px;font-size:12px;border:none;cursor:pointer;font-weight:600}
-.pop button.btn.ghost{background:#fff;color:var(--accent);border:1px solid var(--accent)}
-.approxnote{color:var(--warn);font-size:11px;margin-top:4px}
+/* ====== Ficha lateral (drawer) ====== */
+#drawer{position:absolute;top:0;right:0;height:100%;width:430px;max-width:100%;background:#fff;box-shadow:var(--shadow-lg);transform:translateX(105%);transition:transform .25s;z-index:1500;display:flex;flex-direction:column}
+#drawer.open{transform:translateX(0)}
+#drawer .dh{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line)}
+#drawer .dh h2{font-size:15px;margin:0;line-height:1.3}
+#drawer .x{background:none;border:none;font-size:24px;cursor:pointer;color:var(--muted);line-height:1}
+#drawer .db{overflow:auto;flex:1}
+.gallery{position:relative;background:#0f172a}
+.gallery img{width:100%;height:260px;object-fit:contain;background:#0f172a;display:block}
+.gallery .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.5);color:#fff;border:none;width:38px;height:38px;border-radius:50%;font-size:20px;cursor:pointer}
+.gallery .prev{left:8px}.gallery .next{right:8px}
+.gallery .counter{position:absolute;bottom:8px;right:10px;background:rgba(0,0,0,.6);color:#fff;font-size:11px;padding:2px 8px;border-radius:10px}
+.dsec{padding:14px}
+.dprice{font-size:26px;font-weight:800;letter-spacing:-.02em}
+.dprice small{font-size:13px;color:var(--muted);font-weight:500}
+.costcard{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:12px}
+.costcard .big{font-size:22px;font-weight:800;color:var(--accent)}
+.costcard .pm{color:var(--ok);font-weight:700}
+.costcard table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12px}
+.costcard td{padding:2px 0;color:var(--muted)}.costcard td:last-child{text-align:right;color:var(--ink);font-weight:600}
+.specs{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
+.specs td{padding:6px 4px;border-top:1px solid var(--line);vertical-align:top}
+.specs td:first-child{color:var(--muted);white-space:nowrap;width:38%}
+.desc{margin-top:10px;font-size:13px;line-height:1.5;color:#334155;white-space:pre-wrap}
+.dlink{display:block;text-align:center;margin:14px;padding:9px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;border-radius:9px;font-size:12px}
+.approxnote{color:var(--gold);font-size:11px;margin-top:6px}
 
-/* ====== Modales ====== */
 .modal-bg{position:fixed;inset:0;background:rgba(15,23,42,.5);z-index:2000;display:none;align-items:center;justify-content:center;padding:16px}
 .modal-bg.show{display:flex}
 .modal{background:#fff;border-radius:16px;max-width:920px;width:100%;max-height:88vh;overflow:auto;box-shadow:var(--shadow-lg)}
-.modal header{padding:16px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;background:#fff;z-index:1}
-.modal header h2{margin:0;font-size:17px}
-.modal .x{background:none;border:none;font-size:22px;cursor:pointer;color:var(--muted);line-height:1}
-.modal .mbody{padding:18px 20px}
-.assume-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.afield label{display:block;font-size:12px;font-weight:600;margin-bottom:4px}
-.afield small{display:block;color:var(--muted);font-size:11px;margin-bottom:5px;font-weight:400}
-.afield input,.afield select{width:100%;padding:7px 9px;border:1px solid var(--line2);border-radius:8px;font-size:13px}
-.assume-note{background:var(--soft);border-radius:8px;padding:10px;font-size:12px;color:var(--muted);margin-top:14px}
-
-/* ====== Tabla comparativa ====== */
+.modal header{padding:14px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;position:sticky;top:0;background:#fff}
+.modal header h2{margin:0;font-size:16px}.modal .x{background:none;border:none;font-size:22px;cursor:pointer;color:var(--muted)}
+.modal .mb{padding:16px 18px}
+.agrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.af label{display:block;font-size:12px;font-weight:600;margin-bottom:3px}
+.af small{display:block;color:var(--muted);font-size:11px;margin-bottom:4px}
+.af input,.af select{width:100%;padding:7px;border:1px solid var(--line2);border-radius:8px}
+.note{background:var(--soft);border-radius:8px;padding:10px;font-size:12px;color:var(--muted);margin-top:12px}
 table.cmp{width:100%;border-collapse:collapse;font-size:13px}
-table.cmp th,table.cmp td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
-table.cmp th{font-size:11px;text-transform:uppercase;color:var(--muted);letter-spacing:.03em}
-table.cmp td.num{text-align:right;font-variant-numeric:tabular-nums}
-table.cmp .winner{background:#ecfdf5}
-table.cmp .total{font-weight:800;color:var(--accent)}
-table.cmp input.mo{width:54px;padding:4px;border:1px solid var(--line2);border-radius:6px;text-align:center}
-table.cmp .rm{background:none;border:none;color:var(--bad);cursor:pointer;font-size:16px}
-.cmp-empty{color:var(--muted);text-align:center;padding:30px}
+table.cmp th,table.cmp td{padding:7px 9px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+table.cmp th{font-size:11px;text-transform:uppercase;color:var(--muted)}
+table.cmp td.num{text-align:right}.cmp .winner{background:#ecfdf5}.cmp .total{font-weight:800;color:var(--accent)}
+table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-radius:6px;text-align:center}
+.cmp .rm{background:none;border:none;color:var(--bad);cursor:pointer}
+.cmp-empty{color:var(--muted);text-align:center;padding:28px}
 
-/* ====== Móvil ====== */
 .mobtabs{display:none}
 @media (max-width:920px){
-  #filters{position:absolute;left:0;top:0;height:100%;z-index:1100;box-shadow:var(--shadow-lg);transform:translateX(-100%);transition:transform .25s}
+  #filters{position:absolute;left:0;top:0;height:100%;z-index:1100;box-shadow:var(--shadow-lg);transform:translateX(-100%);transition:.25s}
   #filters.open{transform:translateX(0)}
-  #listcol{width:100%;display:none}
-  #listcol.show{display:flex}
-  #map{display:none}
-  #map.show{display:block}
+  #listcol{width:100%;display:none}#listcol.show{display:flex}
+  #map{display:none}#map.show{display:block}
+  #drawer{width:100%}
   .mobtabs{display:flex;background:#fff;border-top:1px solid var(--line)}
   .mobtabs button{flex:1;padding:11px;background:none;border:none;font-size:13px;font-weight:600;color:var(--muted)}
   .mobtabs button.on{color:var(--accent);box-shadow:inset 0 -2px 0 var(--accent)}
-  .assume-grid{grid-template-columns:1fr}
-  .leaflet-popup-content{width:74vw!important}
+  .agrid{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
 <div id="app">
-  <!-- ===== BARRA SUPERIOR ===== -->
   <div id="topbar">
-    <div class="brand">🏡 Casas Japón <small>coste real de estancia</small></div>
-    <div class="tb-group">
-      <label>Estancia</label>
-      <input type="number" id="months" min="1" max="36" value="4"> <span style="color:#94a3b8">meses</span>
-    </div>
-    <div class="tb-group">
-      <label>Operación</label>
-      <div class="seg" id="opSeg">
-        <button data-op="rent" class="on">Alquiler</button>
-        <button data-op="sale">Venta</button>
-        <button data-op="both">Ambos</button>
-      </div>
-    </div>
-    <div class="tb-group">
-      <label>Ordenar</label>
-      <select id="sortBy">
-        <option value="cost">Coste total estancia ↑</option>
-        <option value="permonth">Coste efectivo/mes ↑</option>
-        <option value="price">Precio ↑</option>
-        <option value="age">Más nuevas</option>
-        <option value="area">Más grandes</option>
-      </select>
-    </div>
+    <div class="brand">🏡 Casas Japón<small>coste real · fichas en español</small></div>
+    <div class="tb"><label>Estancia</label><input type="number" id="months" min="1" max="36" value="4"><span style="color:#94a3b8">m</span></div>
+    <div class="tb"><label>Tipo</label><div class="seg" id="opSeg"><button data-op="rent" class="on">Alquiler</button><button data-op="sale">Venta</button><button data-op="both">Ambos</button></div></div>
+    <div class="tb"><label>Moneda</label><div class="seg" id="curSeg"><button data-c="EUR" class="on">€</button><button data-c="USD">$</button><button data-c="ILS">₪</button><button data-c="JPY">¥</button></div></div>
+    <div class="tb"><label>Orden</label><select id="sortBy"><option value="cost">Coste estancia ↑</option><option value="permonth">Coste/mes ↑</option><option value="price">Precio ↑</option><option value="age">Más nuevas</option><option value="area">Más grandes</option></select></div>
     <div class="spacer"></div>
     <button class="tb-btn" id="openAssume">⚙️ Gastos</button>
-    <button class="tb-btn primary" id="openCompare">⭐ Comparar <span class="badge-n" id="favN">0</span></button>
+    <button class="tb-btn" id="openCompare">⭐ Comparar <span class="n" id="favN">0</span></button>
   </div>
 
-  <!-- ===== CUERPO ===== -->
   <div id="body">
-    <!-- Filtros -->
     <aside id="filters">
-      <div class="fgroup">
-        <h4>Alquiler máximo: <span class="val" id="rentVal">¥40.000</span>/mes</h4>
-        <input type="range" id="maxRent" min="0" max="100000" step="5000" value="40000">
-      </div>
-      <div class="fgroup">
-        <h4>Solo con parking (駐車場)</h4>
-        <label class="toggle"><input type="checkbox" id="parkingOnly"> Exigir parking</label>
-        <label class="toggle"><input type="checkbox" id="parkingNearby" checked> Aceptar parking cercano</label>
-      </div>
-      <div class="fgroup">
-        <h4>Extranjero (外国人)</h4>
-        <div class="row" id="frRow">
-          <span class="chip on" data-fr="include">Incluir desconocidos</span>
-          <span class="chip" data-fr="only">Solo 相談可</span>
-        </div>
-      </div>
-      <div class="fgroup">
-        <h4>Distribución (間取り)</h4>
-        <div class="row" id="layoutRow"></div>
-      </div>
-      <div class="fgroup">
-        <h4>Antigüedad máx.: <span class="val" id="ageVal">Cualquiera</span></h4>
-        <input type="range" id="maxAge" min="0" max="80" step="5" value="80">
-      </div>
-      <div class="fgroup">
-        <h4>Otros</h4>
+      <div class="fg"><h4>Alquiler máx: <span class="v" id="rentVal"></span>/mes</h4><input type="range" id="maxRent" min="0" max="100000" step="5000" value="40000"></div>
+      <div class="fg"><h4>Parking 駐車場</h4>
+        <label class="toggle"><input type="checkbox" id="parkingOnly"> Solo con parking</label>
+        <label class="toggle"><input type="checkbox" id="parkingNearby" checked> Aceptar cercano</label></div>
+      <div class="fg"><h4>Distribución 間取り</h4><div class="row" id="layoutRow"></div></div>
+      <div class="fg"><h4>Antigüedad máx: <span class="v" id="ageVal">Cualquiera</span></h4><input type="range" id="maxAge" min="0" max="80" step="5" value="80"></div>
+      <div class="fg"><h4>Otros</h4>
         <label class="toggle"><input type="checkbox" id="renovatedOnly"> Solo reformadas</label>
-        <label class="toggle"><input type="checkbox" id="newOnly"> Solo novedades (14 días)</label>
-      </div>
-      <div class="fgroup">
-        <h4>Zona</h4>
-        <div class="row" id="zoneRow"></div>
-      </div>
-      <div class="fgroup">
-        <h4>Buscar</h4>
-        <input type="text" id="search" placeholder="福良, 沼島, 海, 平屋...">
-      </div>
+        <label class="toggle"><input type="checkbox" id="newOnly"> Solo novedades</label></div>
+      <div class="fg"><h4>Zona</h4><div class="row" id="zoneRow"></div></div>
+      <div class="fg"><h4>Buscar</h4><input type="text" id="search" placeholder="海, 平屋, 福良, 沼島..."></div>
     </aside>
 
-    <!-- Lista -->
     <section id="listcol" class="show">
-      <div id="listhead"><span id="count">—</span><span id="hint" style="font-size:11px">Pulsa ⭐ para comparar</span></div>
+      <div id="listhead"><span id="count">—</span><span style="font-size:11px">Pulsa una casa para ver la ficha</span></div>
       <div id="list"></div>
     </section>
 
-    <!-- Mapa -->
     <div id="map"></div>
+
+    <!-- Ficha lateral -->
+    <aside id="drawer">
+      <div class="dh"><h2 id="dTitle"></h2><button class="x" id="dClose">×</button></div>
+      <div class="db" id="dBody"></div>
+    </aside>
   </div>
 
-  <!-- Pestañas móvil -->
   <div class="mobtabs">
     <button id="tabFilters">Filtros</button>
     <button id="tabList" class="on">Lista</button>
@@ -247,157 +185,132 @@ table.cmp .rm{background:none;border:none;color:var(--bad);cursor:pointer;font-s
   </div>
 </div>
 
-<!-- ===== MODAL: SUPUESTOS DE GASTOS ===== -->
-<div class="modal-bg" id="assumeModal">
-  <div class="modal">
-    <header><h2>⚙️ Gastos de alquiler (Japón)</h2><button class="x" data-close>×</button></header>
-    <div class="mbody">
-      <p style="font-size:13px;color:var(--muted);margin-top:0">Los bancos de casas vacías casi nunca publican estos gastos, así que la calculadora usa estos supuestos (editables y guardados en tu navegador). Si un anuncio trae el dato real (敷金/礼金/管理費), se usa el real.</p>
-      <div class="assume-grid">
-        <div class="afield"><label>礼金 — Key money (no se devuelve)</label><small>Meses de alquiler. Típico 0–2.</small><input type="number" id="a_key" step="0.5" value="1"></div>
-        <div class="afield"><label>仲介手数料 — Comisión agencia</label><small>Meses de alquiler. Típico 1.</small><input type="number" id="a_agency" step="0.5" value="1"></div>
-        <div class="afield"><label>保証会社 — Aval/garantía</label><small>% de un mes de alquiler. Típico 50.</small><input type="number" id="a_guarantor" step="5" value="50"></div>
-        <div class="afield"><label>敷金 — Fianza</label><small>Meses de alquiler. Típico 1.</small><input type="number" id="a_deposit" step="0.5" value="1"></div>
-        <div class="afield"><label>Limpieza al salir (ハウスクリーニング)</label><small>Importe fijo en ¥. Típico 20.000–40.000.</small><input type="number" id="a_cleaning" step="5000" value="30000"></div>
-        <div class="afield"><label>Penalización por salir antes</label><small>Meses de alquiler si te vas antes de acabar el contrato.</small><input type="number" id="a_penalty" step="0.5" value="1"></div>
-        <div class="afield"><label>Duración del contrato</label><small>Meses. Si tu estancia es menor, se aplica la penalización.</small><input type="number" id="a_contract" step="1" value="24"></div>
-        <div class="afield"><label>IVA sobre comisiones (消費税)</label><small>%. Japón: 10.</small><input type="number" id="a_tax" step="1" value="10"></div>
-        <div class="afield"><label>¿La fianza se devuelve?</label><small>Si sí, no se cuenta como gasto (solo la limpieza).</small>
-          <select id="a_deprefund"><option value="1" selected>Sí, se devuelve (no contar)</option><option value="0">No / 敷引 (contar como gasto)</option></select>
-        </div>
-      </div>
-      <div class="assume-note">💡 <b>Coste total de estancia</b> = key money + comisión + aval + (alquiler + gastos comunes) × meses + limpieza + penalización (si te vas antes). La fianza se incluye solo si marcas que no se devuelve. <b>Coste efectivo/mes</b> = coste total ÷ meses: úsalo para comparar estancias de distinta duración entre zonas.</div>
+<!-- Modal gastos -->
+<div class="modal-bg" id="assumeModal"><div class="modal">
+  <header><h2>⚙️ Gastos de alquiler (Japón)</h2><button class="x" data-close>×</button></header>
+  <div class="mb">
+    <p style="font-size:13px;color:var(--muted);margin-top:0">Los bancos de casas casi nunca publican estos gastos; se usan estos supuestos (editables, guardados en tu navegador). Si el anuncio trae el dato real, se usa el real.</p>
+    <div class="agrid">
+      <div class="af"><label>礼金 Key money (no se devuelve)</label><small>Meses de alquiler</small><input type="number" id="a_key" step="0.5" value="1"></div>
+      <div class="af"><label>仲介手数料 Comisión agencia</label><small>Meses de alquiler</small><input type="number" id="a_agency" step="0.5" value="1"></div>
+      <div class="af"><label>保証会社 Aval</label><small>% de un mes</small><input type="number" id="a_guarantor" step="5" value="50"></div>
+      <div class="af"><label>敷金 Fianza</label><small>Meses de alquiler</small><input type="number" id="a_deposit" step="0.5" value="1"></div>
+      <div class="af"><label>Limpieza al salir</label><small>Importe fijo (¥)</small><input type="number" id="a_cleaning" step="5000" value="30000"></div>
+      <div class="af"><label>Penalización salida anticipada</label><small>Meses (si te vas antes)</small><input type="number" id="a_penalty" step="0.5" value="1"></div>
+      <div class="af"><label>Duración contrato</label><small>Meses</small><input type="number" id="a_contract" step="1" value="24"></div>
+      <div class="af"><label>IVA comisiones</label><small>%</small><input type="number" id="a_tax" step="1" value="10"></div>
+      <div class="af"><label>¿La fianza se devuelve?</label><small>Si sí, no cuenta como gasto</small><select id="a_deprefund"><option value="1" selected>Sí (no contar)</option><option value="0">No / 敷引</option></select></div>
     </div>
+    <div class="note">💡 <b>Coste total</b> = key money + comisión + aval + (alquiler+gastos)×meses + limpieza + penalización. <b>Coste/mes</b> = total ÷ meses (para comparar estancias de distinta duración).</div>
   </div>
-</div>
+</div></div>
 
-<!-- ===== MODAL: COMPARADOR ===== -->
-<div class="modal-bg" id="compareModal">
-  <div class="modal">
-    <header><h2>⭐ Comparar casas — ¿merece la pena cada zona?</h2><button class="x" data-close>×</button></header>
-    <div class="mbody" id="compareBody"></div>
-  </div>
-</div>
+<!-- Modal comparador -->
+<div class="modal-bg" id="compareModal"><div class="modal">
+  <header><h2>⭐ Comparar casas</h2><button class="x" data-close>×</button></header>
+  <div class="mb" id="compareBody"></div>
+</div></div>
 
 <script>
 // ====== Mapa ======
-const map=L.map('map',{zoomControl:true}).setView([34.0,135.2],9);
+const map=L.map('map',{zoomControl:true}).setView([34.6,135.6],8);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
 const cluster=L.markerClusterGroup({maxClusterRadius:45});map.addLayer(cluster);
 
-// ====== Etiquetas de zona (sincronizar con TARGET_AREAS de config.py) ======
-const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市"};
+// ====== Zonas (sincronizar con TARGET_AREAS) ======
+const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",nara:"Nara 奈良県",kyoto_north:"Kyoto norte 京都北部",osaka_rural:"Osaka rural 大阪",fukui_obama:"Obama/Wakasa 福井若狭"};
 
-// ====== Utilidades ======
+// ====== Traducción japonés → español (glosario) ======
+// Valores exactos de campos estructurados:
+const TR_STRUCT={"木造":"Madera","鉄骨造":"Acero","鉄骨":"Acero","軽量鉄骨":"Acero ligero","軽量鉄骨造":"Acero ligero","鉄筋コンクリート造":"Hormigón armado","鉄筋コンクリート":"Hormigón armado","鉄骨鉄筋コンクリート造":"Hormigón+acero","ブロック造":"Bloque","ＲＣ":"Hormigón armado","RC":"Hormigón armado"};
+const TR_KIND={"売戸建":"Casa (venta)","中古戸建":"Casa (2ª mano)","戸建て":"Casa unifamiliar","一戸建て":"Casa unifamiliar","賃貸":"Alquiler","マンション":"Apartamento","土地":"Terreno"};
+// Glosario general para texto libre (orden: claves largas primero):
+const GLOSS=[["鉄筋コンクリート造","hormigón armado"],["鉄筋コンクリート","hormigón armado"],["軽量鉄骨造","acero ligero"],["木造","madera"],["鉄骨造","acero"],["平屋建て","una planta"],["平屋","una planta"],["２階建て","2 plantas"],["2階建て","2 plantas"],["３階建て","3 plantas"],["３階建","3 plantas"],["２階建","2 plantas"],["階建て","plantas"],["リフォーム済","reformada"],["リノベーション済","renovada"],["リフォーム","reforma"],["リノベーション","renovación"],["駐車場","aparcamiento"],["駐車","aparcamiento"],["車庫","garaje"],["徒歩","a pie"],["分","min"],["駅","estación"],["バス停","parada bus"],["バス","bus"],["都市ガス","gas ciudad"],["プロパン","gas propano"],["ＬＰガス","gas propano"],["上水道","agua corriente"],["下水道","alcantarillado"],["浄化槽","fosa séptica"],["井戸","pozo"],["菜園","huerto"],["眺望","vistas"],["日当たり","soleado"],["南向き","orientación sur"],["角地","esquina"],["ペット可","mascotas OK"],["ペット相談","mascotas a consultar"],["ペット不可","sin mascotas"],["外国人歓迎","extranjeros bienvenidos"],["外国人相談可","extranjeros a consultar"],["相談","a consultar"],["あり","sí"],["なし","no"],["不詳","desconocido"],["不明","desconocido"],["空き家","casa vacía"],["商談中","en negociación"],["成約済","vendida/alquilada"],["居住中","habitada"],["現況","estado actual"],["即入居可","entrada inmediata"],["新築","obra nueva"],["中古","2ª mano"],["改装","reforma"],["和室","hab. japonesa (tatami)"],["洋室","hab. occidental"]];
+function trStruct(s){return s?(TR_STRUCT[s.trim()]||s):"";}
+function trKind(s){if(!s)return"";for(const k in TR_KIND){if(s.includes(k))return TR_KIND[k];}return s;}
+function tr(s){ // traduce términos reconocidos dentro de texto libre, deja el resto (nombres de lugar)
+  if(!s)return"";let out=s;
+  for(const [ja,es] of GLOSS){ if(ja && out.includes(ja)) out=out.split(ja).join(es); }
+  return out;
+}
+
+// ====== Moneda ======
+let CUR='EUR';
+const SYM={JPY:'¥',EUR:'€',USD:'$',ILS:'₪'};
+// tipos: unidades de divisa por 1 JPY (fallback aprox; se actualizan en vivo)
+let RATE={JPY:1,EUR:0.0060,USD:0.0064,ILS:0.024};
+fetch('https://open.er-api.com/v6/latest/JPY').then(r=>r.json()).then(d=>{
+  if(d&&d.rates){RATE.EUR=d.rates.EUR||RATE.EUR;RATE.USD=d.rates.USD||RATE.USD;RATE.ILS=d.rates.ILS||RATE.ILS;apply();if(CURRENT)openDetail(CURRENT);}
+}).catch(()=>{});
+function money(jpy){ if(jpy==null)return"—"; const v=Math.round(jpy*RATE[CUR]); return SYM[CUR]+v.toLocaleString('es-ES'); }
+function moneyShort(jpy){ if(jpy==null)return"?"; const v=jpy*RATE[CUR]; if(CUR==='JPY')return v>=10000?'¥'+Math.round(v/10000)+'万':'¥'+Math.round(v); return SYM[CUR]+Math.round(v).toLocaleString('es-ES'); }
+
 const $=id=>document.getElementById(id);
-const yen=n=>(n==null)?"—":"¥"+Math.round(n).toLocaleString('es-ES');
-const short=n=>n==null?"?":(n>=10000?"¥"+Math.round(n/10000)+"万":"¥"+Math.round(n).toLocaleString('es-ES'));
 function priceColor(f){let t;if(f.listing_type==='rent'){t=Math.min(1,(f.rent_yen||0)/80000);}else{t=Math.min(1,(f.sale_price_yen||0)/30000000);}return`hsl(${(1-t)*120},70%,42%)`;}
 
-// ====== Estado ======
 let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZONES=new Set();
-let OP='rent',SORT='cost';
-let FR='include';
+let OP='rent',SORT='cost',CURRENT=null;
 let FAVS=new Set(JSON.parse(localStorage.getItem('favs')||'[]'));
-const CMP_MONTHS={}; // id -> meses propios en el comparador
+const CMP_MONTHS={};
 
-// ====== Supuestos de gastos (persistentes) ======
+// ====== Supuestos de gastos ======
 const A_IDS=['a_key','a_agency','a_guarantor','a_deposit','a_cleaning','a_penalty','a_contract','a_tax','a_deprefund'];
 function loadAssume(){const s=JSON.parse(localStorage.getItem('assume')||'{}');A_IDS.forEach(id=>{if(s[id]!=null)$(id).value=s[id];});}
 function saveAssume(){const s={};A_IDS.forEach(id=>s[id]=$(id).value);localStorage.setItem('assume',JSON.stringify(s));}
 function A(){return{key:+$('a_key').value,agency:+$('a_agency').value,guarantor:+$('a_guarantor').value,deposit:+$('a_deposit').value,cleaning:+$('a_cleaning').value,penalty:+$('a_penalty').value,contract:+$('a_contract').value,tax:+$('a_tax').value,depRefund:$('a_deprefund').value==='1'};}
-
-// Convierte un campo japonés (敷金/礼金) a yenes; si vacío usa meses por defecto.
-function moneyField(field,fallbackMonths,rent){
-  if(field){const t=(''+field).replace(/,/g,'');
-    let m=t.match(/([\d.]+)\s*[ヶか]?月/);if(m)return parseFloat(m[1])*rent;
-    m=t.match(/([\d.]+)\s*万/);if(m)return parseFloat(m[1])*10000;
-    m=t.match(/([\d.]+)\s*円/);if(m)return parseFloat(m[1]);
-    if(/なし|無し|無|^0$|不要/.test(t))return 0;
-  }
-  return fallbackMonths*rent;
-}
-
-// ====== Motor de coste de estancia ======
+function moneyField(field,fb,rent){if(field){const t=(''+field).replace(/,/g,'');let m=t.match(/([\d.]+)\s*[ヶか]?月/);if(m)return parseFloat(m[1])*rent;m=t.match(/([\d.]+)\s*万/);if(m)return parseFloat(m[1])*10000;m=t.match(/([\d.]+)\s*円/);if(m)return parseFloat(m[1]);if(/なし|無|^0$|不要/.test(t))return 0;}return fb*rent;}
 function stayCost(f,months){
   if(f.listing_type!=='rent'||!f.rent_yen)return null;
   const a=A(),rent=f.rent_yen,mgmt=f.management_fee_yen||0;
-  const key=moneyField(f.key_money,a.key,rent);
-  const agency=a.agency*rent*(1+a.tax/100);
-  const guarantor=(a.guarantor/100)*rent;
-  const deposit=moneyField(f.deposit,a.deposit,rent);
-  const monthly=(rent+mgmt)*months;
-  const cleaning=a.cleaning;
+  const key=moneyField(f.key_money,a.key,rent),agency=a.agency*rent*(1+a.tax/100),guarantor=a.guarantor/100*rent;
+  const deposit=moneyField(f.deposit,a.deposit,rent),monthly=(rent+mgmt)*months,cleaning=a.cleaning;
   const penalty=(months<a.contract)?a.penalty*rent:0;
-  let total=key+agency+guarantor+monthly+cleaning+penalty;
-  if(!a.depRefund)total+=deposit;
+  let total=key+agency+guarantor+monthly+cleaning+penalty; if(!a.depRefund)total+=deposit;
   return{total,perMonth:total/months,rent,mgmt,key,agency,guarantor,deposit,monthly,cleaning,penalty,depCounted:!a.depRefund};
 }
 
-// ====== Carga de datos ======
+// ====== Carga ======
 fetch('data.geojson').then(r=>r.json()).then(geo=>{
   FEATURES=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
-  buildLayouts();buildZones();loadAssume();apply();
-}).catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data.geojson. Ejecuta <code>python3 refresh.py</code> y abre con un servidor local.</div>';});
+  buildLayouts();buildZones();loadAssume();updateRentLabel();apply();
+}).catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data.geojson. Ejecuta refresh.py y abre con un servidor.</div>';});
 
 function buildLayouts(){
-  const fams=["1R","1K","1DK","1LDK","2K","2DK","2LDK","3K","3DK","3LDK","4K","4DK","4LDK","5DK","5LDK"];
-  const present=new Set();
+  const fams=["1R","1K","1DK","1LDK","2K","2DK","2LDK","3K","3DK","3LDK","4K","4DK","4LDK","5DK","5LDK"];const present=new Set();
   FEATURES.forEach(f=>{const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];if(m)present.add(m.toUpperCase());});
   const row=$('layoutRow');row.innerHTML='';
-  fams.filter(x=>present.has(x)).concat([...present].filter(x=>!fams.includes(x))).forEach(l=>{
-    const c=document.createElement('span');c.className='chip';c.textContent=l;
-    c.onclick=()=>{c.classList.toggle('on');LAYOUTS.has(l)?LAYOUTS.delete(l):LAYOUTS.add(l);apply();};
-    row.appendChild(c);
-  });
+  fams.filter(x=>present.has(x)).forEach(l=>{const c=document.createElement('span');c.className='chip';c.textContent=l;c.onclick=()=>{c.classList.toggle('on');LAYOUTS.has(l)?LAYOUTS.delete(l):LAYOUTS.add(l);apply();};row.appendChild(c);});
 }
 function buildZones(){
-  const present=[...new Set(FEATURES.map(f=>f.area_key).filter(Boolean))];
-  const row=$('zoneRow');row.innerHTML='';
-  present.forEach(z=>{ZONES.add(z);
-    const c=document.createElement('span');c.className='chip on';c.textContent=AREA_LABELS[z]||z;
-    c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);apply();};
-    row.appendChild(c);
-  });
+  const present=[...new Set(FEATURES.map(f=>f.area_key).filter(Boolean))];const row=$('zoneRow');row.innerHTML='';
+  present.forEach(z=>{ZONES.add(z);const c=document.createElement('span');c.className='chip on';c.textContent=AREA_LABELS[z]||z;c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);apply();};row.appendChild(c);});
 }
+function updateRentLabel(){const v=+$('maxRent').value;$('rentVal').textContent=(v>=100000?'Sin límite':money(v));}
 
-// ====== Controles ======
-$('months').oninput=()=>{apply();renderCompare();};
+// Controles
+$('months').oninput=()=>{apply();renderCompare();if(CURRENT)openDetail(CURRENT);};
 $('sortBy').onchange=e=>{SORT=e.target.value;apply();};
-$('maxRent').oninput=e=>{$('rentVal').textContent=yen(+e.target.value);apply();};
+$('maxRent').oninput=()=>{updateRentLabel();apply();};
 $('maxAge').oninput=e=>{const v=+e.target.value;$('ageVal').textContent=v>=80?'Cualquiera':v+' años';apply();};
 ['parkingOnly','parkingNearby','renovatedOnly','newOnly'].forEach(id=>$(id).onchange=apply);
 $('search').oninput=apply;
 document.querySelectorAll('#opSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#opSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');OP=b.dataset.op;apply();});
-document.querySelectorAll('#frRow .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#frRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');FR=c.dataset.fr;apply();});
-
-// Modales
-function openModal(id){$(id).classList.add('show');}
-function closeModal(id){$(id).classList.remove('show');}
-$('openAssume').onclick=()=>openModal('assumeModal');
-$('openCompare').onclick=()=>{renderCompare();openModal('compareModal');};
+document.querySelectorAll('#curSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#curSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');CUR=b.dataset.c;updateRentLabel();apply();renderCompare();if(CURRENT)openDetail(CURRENT);});
+$('openAssume').onclick=()=>$('assumeModal').classList.add('show');
+$('openCompare').onclick=()=>{renderCompare();$('compareModal').classList.add('show');};
 document.querySelectorAll('[data-close]').forEach(b=>b.onclick=e=>e.target.closest('.modal-bg').classList.remove('show'));
 document.querySelectorAll('.modal-bg').forEach(m=>m.onclick=e=>{if(e.target===m)m.classList.remove('show');});
-A_IDS.forEach(id=>$(id).oninput=()=>{saveAssume();apply();renderCompare();});
-
-// Pestañas móvil
+A_IDS.forEach(id=>$(id).oninput=()=>{saveAssume();apply();renderCompare();if(CURRENT)openDetail(CURRENT);});
+$('dClose').onclick=()=>{$('drawer').classList.remove('open');CURRENT=null;};
 $('tabFilters').onclick=()=>$('filters').classList.toggle('open');
-$('tabList').onclick=()=>{setMob('list');};
+$('tabList').onclick=()=>setMob('list');
 $('tabMap').onclick=()=>{setMob('map');setTimeout(()=>map.invalidateSize(),50);};
-function setMob(which){
-  $('listcol').classList.toggle('show',which==='list');
-  $('map').classList.toggle('show',which==='map');
-  $('tabList').classList.toggle('on',which==='list');
-  $('tabMap').classList.toggle('on',which==='map');
-  $('filters').classList.remove('open');
-}
+function setMob(w){$('listcol').classList.toggle('show',w==='list');$('map').classList.toggle('show',w==='map');$('tabList').classList.toggle('on',w==='list');$('tabMap').classList.toggle('on',w==='map');$('filters').classList.remove('open');}
 
-// ====== Filtrado ======
 function matches(f){
   if(OP!=='both'&&f.listing_type!==OP)return false;
   if(f.listing_type==='rent'){const mr=+$('maxRent').value;if(mr<100000&&(f.rent_yen||1e9)>mr)return false;}
   if($('parkingOnly').checked){const ok=f.parking==='yes'||(f.parking==='nearby'&&$('parkingNearby').checked);if(!ok)return false;}
-  if(FR==='only'&&!(f.foreigner_ok==='yes'||f.foreigner_ok==='negotiable'))return false;
   if(LAYOUTS.size){const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];if(!m||!LAYOUTS.has(m.toUpperCase()))return false;}
   const ma=+$('maxAge').value;if(ma<80&&f.age_years!=null&&f.age_years>ma)return false;
   if($('renovatedOnly').checked&&!f.renovated)return false;
@@ -408,165 +321,147 @@ function matches(f){
   return true;
 }
 
-// ====== Pintado ======
 function makeIcon(f){
   const cls=f.listing_type==='rent'?'pin-rent':'pin-sale';
-  const months=+$('months').value;const sc=stayCost(f,months);
-  let val;
-  if(f.listing_type==='rent') val=sc?short(sc.total):short(f.rent_yen);
-  else val=short(f.sale_price_yen);
-  const fav=FAVS.has(f.id)?'fav':'';
-  return L.divIcon({className:'',html:`<div class="price-pin ${cls} pin ${fav}" style="background:${priceColor(f)}">${val}</div>`,iconAnchor:[20,12]});
+  const months=+$('months').value,sc=stayCost(f,months);
+  let val=f.listing_type==='rent'?(sc?moneyShort(sc.total):(f.rent_yen?moneyShort(f.rent_yen):'?')):(f.sale_price_yen?moneyShort(f.sale_price_yen):'?');
+  return L.divIcon({className:'',html:`<div class="price-pin ${cls} pin ${FAVS.has(f.id)?'fav':''}" style="background:${priceColor(f)}">${val}</div>`,iconAnchor:[20,12]});
 }
 
-function popupHtml(f){
-  const months=+$('months').value;const sc=stayCost(f,months);
-  const photo=(f.photos&&f.photos[0])?`<img class="ph" src="${f.photos[0]}" loading="lazy" onerror="this.style.display='none'">`:'';
-  const price=f.listing_type==='rent'?`${yen(f.rent_yen)}/mes`:yen(f.sale_price_yen);
-  const fr={yes:'Sí ✅',negotiable:'Negociable 🟡',no:'No ❌',unknown:'Desconocido ❔'}[f.foreigner_ok]||'❔';
-  const pk={yes:'Sí',nearby:'Cercano',no:'No',unknown:'?'}[f.parking]||'?';
-  let costBox='';
-  if(sc){
-    costBox=`<div class="cost-box">
-      <div>Coste de <b>${months} meses</b>: <span class="big">${yen(sc.total)}</span></div>
-      <div style="color:var(--ok);font-weight:700">≈ ${yen(sc.perMonth)}/mes efectivo</div>
-      <table>
-        <tr><td>Alquiler × ${months}${sc.mgmt?` (+gastos)`:''}</td><td>${yen(sc.monthly)}</td></tr>
-        <tr><td>礼金 Key money</td><td>${yen(sc.key)}</td></tr>
-        <tr><td>Comisión + aval</td><td>${yen(sc.agency+sc.guarantor)}</td></tr>
-        <tr><td>Limpieza salida</td><td>${yen(sc.cleaning)}</td></tr>
-        ${sc.penalty?`<tr><td>⚠️ Penalización salida</td><td>${yen(sc.penalty)}</td></tr>`:''}
-        ${sc.depCounted?`<tr><td>敷金 (no reembolsable)</td><td>${yen(sc.deposit)}</td></tr>`:`<tr><td>敷金 (reembolsable)</td><td>${yen(sc.deposit)} ↩︎</td></tr>`}
-      </table>
-    </div>`;
-  }
-  const approx=f.geocode_exact?'':`<div class="approxnote">📍 Ubicación aproximada (centro del municipio)</div>`;
-  return `<div class="pop">${photo}<div class="pbody">
-    <h3>${f.title||''}</h3>
-    <div class="pprice" style="color:${priceColor(f)}">${price}</div>
-    ${approx}${costBox}
-    <table class="specs">
-      <tr><td>Tipo</td><td>${f.listing_type==='rent'?'Alquiler 賃貸':'Venta 売買'}</td></tr>
-      <tr><td>間取り</td><td>${f.layout||'—'}</td></tr>
-      <tr><td>Edificio / Terreno</td><td>${f.building_area_m2?f.building_area_m2+'㎡':'—'} / ${f.land_area_m2?f.land_area_m2+'㎡':'—'}</td></tr>
-      <tr><td>築年</td><td>${f.year_built||'—'}${f.age_years!=null?` (${f.age_years} a.)`:''}</td></tr>
-      <tr><td>Estructura</td><td>${f.structure||'—'}</td></tr>
-      <tr><td>Parking / Extranjero</td><td>${pk} / ${fr}</td></tr>
-      <tr><td>Zona</td><td>${AREA_LABELS[f.area_key]||f.city||'—'}</td></tr>
-    </table>
-    <div class="btnrow">
-      <a class="btn" href="${f.source_url}" target="_blank" rel="noopener">Ver anuncio ↗</a>
-      <button class="btn ghost" onclick="toggleFav(${f.id});">${FAVS.has(f.id)?'★ Quitar':'☆ Comparar'}</button>
-    </div>
-  </div></div>`;
-}
-
-function sortFn(months){
-  return (a,b)=>{
-    if(SORT==='age')return (a.age_years??999)-(b.age_years??999);
-    if(SORT==='area')return (b.building_area_m2||0)-(a.building_area_m2||0);
-    if(SORT==='price'){const pa=a.listing_type==='rent'?(a.rent_yen||1e9):(a.sale_price_yen||1e12);const pb=b.listing_type==='rent'?(b.rent_yen||1e9):(b.sale_price_yen||1e12);return pa-pb;}
-    // cost / permonth: usa coste de estancia para alquileres; ventas al final por precio
-    const sa=stayCost(a,months),sb=stayCost(b,months);
-    const va=sa?(SORT==='permonth'?sa.perMonth:sa.total):(a.sale_price_yen?1e13+a.sale_price_yen:1e15);
-    const vb=sb?(SORT==='permonth'?sb.perMonth:sb.total):(b.sale_price_yen?1e13+b.sale_price_yen:1e15);
-    return va-vb;
-  };
-}
+function sortFn(months){return(a,b)=>{
+  if(SORT==='age')return(a.age_years??999)-(b.age_years??999);
+  if(SORT==='area')return(b.building_area_m2||0)-(a.building_area_m2||0);
+  if(SORT==='price'){const pa=a.listing_type==='rent'?(a.rent_yen||1e9):(a.sale_price_yen||1e12);const pb=b.listing_type==='rent'?(b.rent_yen||1e9):(b.sale_price_yen||1e12);return pa-pb;}
+  const sa=stayCost(a,months),sb=stayCost(b,months);
+  const va=sa?(SORT==='permonth'?sa.perMonth:sa.total):(a.sale_price_yen?1e13+a.sale_price_yen:1e15);
+  const vb=sb?(SORT==='permonth'?sb.perMonth:sb.total):(b.sale_price_yen?1e13+b.sale_price_yen:1e15);
+  return va-vb;};}
 
 function apply(){
-  const months=+$('months').value;
-  const shown=FEATURES.filter(matches);
-  // mapa
+  const months=+$('months').value,shown=FEATURES.filter(matches);
   cluster.clearLayers();MARKERS.clear();const bounds=[];
-  shown.forEach(f=>{
-    const m=L.marker([f.lat,f.lng],{icon:makeIcon(f)});
-    m.bindPopup(popupHtml(f),{maxWidth:320});
-    m.on('mouseover',()=>highlight(f.id,true));m.on('mouseout',()=>highlight(f.id,false));
-    cluster.addLayer(m);MARKERS.set(f.id,m);bounds.push([f.lat,f.lng]);
-  });
-  if(bounds.length)map.fitBounds(bounds,{padding:[40,40],maxZoom:13});
+  shown.forEach(f=>{const m=L.marker([f.lat,f.lng],{icon:makeIcon(f)});m.on('click',()=>openDetail(f));m.on('mouseover',()=>hl(f.id,true));m.on('mouseout',()=>hl(f.id,false));cluster.addLayer(m);MARKERS.set(f.id,m);bounds.push([f.lat,f.lng]);});
+  if(bounds.length)map.fitBounds(bounds,{padding:[40,40],maxZoom:12});
   renderList(shown.slice().sort(sortFn(months)),months);
-  $('count').textContent=shown.length+' casas';
-  $('favN').textContent=FAVS.size;
+  $('count').textContent=shown.length+' casas';$('favN').textContent=FAVS.size;
 }
 
 function renderList(shown,months){
   const list=$('list');list.innerHTML='';
-  shown.forEach(f=>{
+  shown.slice(0,600).forEach(f=>{
     const sc=stayCost(f,months);
-    const price=f.listing_type==='rent'?`${yen(f.rent_yen)}/mes`:yen(f.sale_price_yen);
+    const price=f.listing_type==='rent'?(f.rent_yen?money(f.rent_yen)+'/mes':'A consultar'):(f.sale_price_yen?money(f.sale_price_yen):'A consultar');
+    const photo=(f.photos&&f.photos[0])?`<img class="thumb" src="${f.photos[0]}" loading="lazy" onerror="this.style.display='none'">`:'';
     const div=document.createElement('div');div.className='card';div.dataset.id=f.id;
-    div.innerHTML=`
-      <div class="toptag"><span class="ttype ${f.listing_type}">${f.listing_type==='rent'?'賃貸 Alquiler':'売買 Venta'}</span></div>
-      <button class="fav ${FAVS.has(f.id)?'on':''}" title="Comparar" onclick="event.stopPropagation();toggleFav(${f.id});">★</button>
-      <div class="price" style="color:${priceColor(f)}">${price}</div>
-      ${sc?`<span class="costline">${months}m: ${yen(sc.total)}</span> <span class="costline perm">${yen(sc.perMonth)}/mes</span>`:''}
-      <div class="title">${f.title||''}</div>
-      <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${f.layout||'—'} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+f.year_built:''}</div>
-      <div class="badges">
-        ${f.is_new?'<span class="badge new">Novedad</span>':''}
-        ${f.parking==='yes'?'<span class="badge park">🚗 駐車場</span>':(f.parking==='nearby'?'<span class="badge park">🚗 cerca</span>':'')}
-        ${f.renovated?'<span class="badge reno">✨ reformada</span>':''}
-        ${(f.foreigner_ok==='yes'||f.foreigner_ok==='negotiable')?'<span class="badge fr">🌐 外国人</span>':''}
-        ${!f.geocode_exact?'<span class="badge approx">📍 aprox.</span>':''}
+    div.innerHTML=`${photo}
+      <button class="fav ${FAVS.has(f.id)?'on':''}" onclick="event.stopPropagation();toggleFav(${f.id});">★</button>
+      <div class="cc">
+        <span class="ttype ${f.listing_type}">${f.listing_type==='rent'?'賃貸 Alquiler':'売買 Venta'}</span>
+        <div class="price" style="color:${priceColor(f)}">${price}</div>
+        ${sc?`<span class="cost">${months}m: ${money(sc.total)}</span><span class="cost pm">${money(sc.perMonth)}/mes</span>`:''}
+        <div class="title">${f.title||''}</div>
+        <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${f.layout||'—'} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+tr(f.year_built):''}</div>
+        <div class="badges">
+          ${f.is_new?'<span class="badge new">Novedad</span>':''}
+          ${f.parking==='yes'?'<span class="badge park">🚗 parking</span>':(f.parking==='nearby'?'<span class="badge park">🚗 cerca</span>':'')}
+          ${f.renovated?'<span class="badge reno">✨ reformada</span>':''}
+          ${(f.foreigner_ok==='yes'||f.foreigner_ok==='negotiable')?'<span class="badge fr">🌐 extranjeros</span>':''}
+        </div>
       </div>`;
-    div.onmouseover=()=>highlight(f.id,true);
-    div.onmouseout=()=>highlight(f.id,false);
-    div.onclick=()=>{const m=MARKERS.get(f.id);if(m){setMob('map');setTimeout(()=>map.invalidateSize(),60);map.setView([f.lat,f.lng],15);cluster.zoomToShowLayer(m,()=>m.openPopup());}};
+    div.onmouseover=()=>hl(f.id,true);div.onmouseout=()=>hl(f.id,false);
+    div.onclick=()=>openDetail(f);
     list.appendChild(div);
   });
 }
+function hl(id,on){document.querySelectorAll('.card').forEach(c=>{if(+c.dataset.id===id)c.classList.toggle('hl',on);});}
 
-function highlight(id,on){document.querySelectorAll('.card').forEach(c=>{if(+c.dataset.id===id)c.classList.toggle('hl',on);});}
+// ====== Ficha lateral con galería ======
+let GAL=[],GI=0;
+function openDetail(f){
+  CURRENT=f;
+  const months=+$('months').value,sc=stayCost(f,months);
+  const m=MARKERS.get(f.id); if(m){map.panTo([f.lat,f.lng]);}
+  $('dTitle').textContent=f.title||'';
+  GAL=(f.photos&&f.photos.length)?f.photos:[];GI=0;
+  const price=f.listing_type==='rent'?(f.rent_yen?money(f.rent_yen)+'<small>/mes</small>':'A consultar'):(f.sale_price_yen?money(f.sale_price_yen):'A consultar');
+  const fr={yes:'Sí ✅',negotiable:'A consultar 🟡',no:'No ❌',unknown:'Desconocido ❔'}[f.foreigner_ok]||'❔';
+  const pk={yes:'Sí',nearby:'Cercano',no:'No',unknown:'?'}[f.parking]||'?';
+  const pet={yes:'Sí',no:'No',unknown:'?'}[f.pet_ok]||'?';
+  let cost='';
+  if(sc){cost=`<div class="costcard"><div>Coste de <b>${months} meses</b>: <span class="big">${money(sc.total)}</span></div>
+    <div class="pm">≈ ${money(sc.perMonth)}/mes efectivo</div>
+    <table>
+      <tr><td>Alquiler × ${months}${sc.mgmt?' (+gastos)':''}</td><td>${money(sc.monthly)}</td></tr>
+      <tr><td>礼金 Key money</td><td>${money(sc.key)}</td></tr>
+      <tr><td>Comisión + aval</td><td>${money(sc.agency+sc.guarantor)}</td></tr>
+      <tr><td>Limpieza salida</td><td>${money(sc.cleaning)}</td></tr>
+      ${sc.penalty?`<tr><td>⚠️ Penalización</td><td>${money(sc.penalty)}</td></tr>`:''}
+      <tr><td>敷金 Fianza ${sc.depCounted?'(no reemb.)':'(reembolsable ↩︎)'}</td><td>${money(sc.deposit)}</td></tr>
+    </table></div>`;}
+  const kind=f.features&&f.features['物件区分']?f.features['物件区分']:(f.features&&f.features['物件種目']?f.features['物件種目']:'');
+  const access=f.features&&f.features['交通']?f.features['交通']:'';
+  const approx=f.geocode_exact?'':'<div class="approxnote">📍 Ubicación aproximada (centro del municipio)</div>';
+  $('dBody').innerHTML=`
+    <div class="gallery" id="gal"></div>
+    <div class="dsec">
+      <div class="dprice" style="color:${priceColor(f)}">${price}</div>${approx}
+      ${cost}
+      <table class="specs">
+        <tr><td>Operación</td><td>${f.listing_type==='rent'?'Alquiler 賃貸':'Venta 売買'}</td></tr>
+        ${kind?`<tr><td>Tipo</td><td>${trKind(kind)} <span style="color:#94a3b8">${kind}</span></td></tr>`:''}
+        <tr><td>Distribución 間取り</td><td>${f.layout||'—'} ${f.features&&f.features['間取り詳細']?'· '+tr(f.features['間取り詳細']):''}</td></tr>
+        <tr><td>Sup. edificio</td><td>${f.building_area_m2?f.building_area_m2+' ㎡':'—'}</td></tr>
+        <tr><td>Sup. terreno</td><td>${f.land_area_m2?f.land_area_m2+' ㎡':'—'}</td></tr>
+        <tr><td>Construcción 築年</td><td>${tr(f.year_built)||'—'}${f.age_years!=null?` (${f.age_years} años)`:''}</td></tr>
+        <tr><td>Estructura</td><td>${trStruct(f.structure)||'—'} ${f.structure&&trStruct(f.structure)!==f.structure?'<span style="color:#94a3b8">'+f.structure+'</span>':''} ${f.floors?'· '+tr(f.floors):''}</td></tr>
+        <tr><td>Parking 駐車場</td><td>${pk}${f.parking_detail?' · '+tr(f.parking_detail):''}</td></tr>
+        <tr><td>Extranjeros 外国人</td><td>${fr}</td></tr>
+        <tr><td>Mascotas</td><td>${pet}</td></tr>
+        <tr><td>Reformada</td><td>${f.renovated?'Sí ✨':'—'}</td></tr>
+        <tr><td>Zona</td><td>${AREA_LABELS[f.area_key]||f.city||'—'}</td></tr>
+        <tr><td>Dirección</td><td>${f.address_raw||'—'}</td></tr>
+        ${access?`<tr><td>Acceso 交通</td><td>${tr(access)}</td></tr>`:''}
+        ${f.status_note?`<tr><td>Estado</td><td>${tr(f.status_note)} <span style="color:#94a3b8">${f.status_note}</span></td></tr>`:''}
+      </table>
+      ${f.description_raw?`<div class="desc"><b>Descripción:</b><br>${tr(f.description_raw)}</div>`:''}
+      <button class="fav ${FAVS.has(f.id)?'on':''}" style="position:static;background:var(--soft);color:${FAVS.has(f.id)?'var(--gold)':'var(--muted)'};width:auto;border-radius:8px;padding:8px 12px;margin-top:12px;font-size:13px" onclick="toggleFav(${f.id});openDetail(CURRENT);">★ ${FAVS.has(f.id)?'Quitar de comparar':'Añadir a comparar'}</button>
+    </div>
+    <a class="dlink" href="${f.source_url}" target="_blank" rel="noopener">Ver anuncio original (${f.source_name||f.source}) ↗</a>`;
+  renderGallery();
+  $('drawer').classList.add('open');
+  if(window.innerWidth<=920){setMob('map');setTimeout(()=>map.invalidateSize(),60);}
+}
+function renderGallery(){
+  const g=$('gal');if(!g)return;
+  if(!GAL.length){g.innerHTML='<div style="height:120px;display:flex;align-items:center;justify-content:center;color:#64748b;background:#0f172a">Sin fotos disponibles</div>';return;}
+  g.innerHTML=`<img src="${GAL[GI]}" onerror="this.style.opacity=.3">
+    ${GAL.length>1?`<button class="nav prev" onclick="galMove(-1)">‹</button><button class="nav next" onclick="galMove(1)">›</button><div class="counter">${GI+1} / ${GAL.length}</div>`:''}`;
+}
+window.galMove=function(d){GI=(GI+d+GAL.length)%GAL.length;renderGallery();};
 
 // ====== Favoritos / comparador ======
-window.toggleFav=function(id){
-  FAVS.has(id)?FAVS.delete(id):FAVS.add(id);
-  localStorage.setItem('favs',JSON.stringify([...FAVS]));
-  apply();renderCompare();
-};
-
+window.toggleFav=function(id){FAVS.has(id)?FAVS.delete(id):FAVS.add(id);localStorage.setItem('favs',JSON.stringify([...FAVS]));apply();renderCompare();};
 function renderCompare(){
-  const body=$('compareBody');
-  const months=+$('months').value;
-  const favs=FEATURES.filter(f=>FAVS.has(f.id));
-  if(!favs.length){body.innerHTML='<div class="cmp-empty">Aún no has marcado casas. Pulsa la ⭐ en una tarjeta o en su ficha para compararlas aquí.<br><br>Podrás poner <b>meses distintos por casa</b> (4 aquí, 5 allá…) y ver cuánto te sale en cada zona.</div>';return;}
-  // calcular coste con meses propios de cada casa
+  const body=$('compareBody'),months=+$('months').value,favs=FEATURES.filter(f=>FAVS.has(f.id));
+  if(!favs.length){body.innerHTML='<div class="cmp-empty">Marca casas con la ⭐ para compararlas. Podrás poner <b>meses distintos por casa</b> y ver cuánto te sale en cada zona.</div>';return;}
   const rows=favs.map(f=>{const mo=CMP_MONTHS[f.id]||months;return{f,mo,sc:stayCost(f,mo)};});
-  const rentRows=rows.filter(r=>r.sc);
-  const best=rentRows.length?Math.min(...rentRows.map(r=>r.sc.perMonth)):null;
-  let html=`<table class="cmp"><thead><tr>
-    <th>Casa</th><th>Zona</th><th>間取り</th><th>m²</th><th>築年</th><th>Parking</th>
-    <th>Meses</th><th>Alquiler/mes</th><th>Coste total</th><th>€/mes efectivo</th><th></th></tr></thead><tbody>`;
+  const rentRows=rows.filter(r=>r.sc);const best=rentRows.length?Math.min(...rentRows.map(r=>r.sc.perMonth)):null;
+  let html=`<table class="cmp"><thead><tr><th>Casa</th><th>Zona</th><th>間取</th><th>m²</th><th>築年</th><th>Park</th><th>Meses</th><th>Alq/mes</th><th>Total</th><th>/mes</th><th></th></tr></thead><tbody>`;
   rows.forEach(({f,mo,sc})=>{
     const win=(sc&&best!=null&&Math.abs(sc.perMonth-best)<1)?'winner':'';
-    html+=`<tr class="${win}">
-      <td><a href="${f.source_url}" target="_blank" rel="noopener">${(f.title||'').slice(0,22)}</a></td>
-      <td>${(AREA_LABELS[f.area_key]||f.city||'').replace(/ .*/,'')}</td>
-      <td>${f.layout||'—'}</td>
-      <td class="num">${f.building_area_m2||'—'}</td>
-      <td class="num">${f.age_years!=null?f.age_years+'a':'—'}</td>
-      <td>${({yes:'Sí',nearby:'Cerca',no:'No',unknown:'?'})[f.parking]||'?'}</td>
+    html+=`<tr class="${win}"><td><a href="#" onclick="event.preventDefault();document.getElementById('compareModal').classList.remove('show');openDetail(FEATURES.find(x=>x.id===${f.id}))">${(f.title||'').slice(0,20)}</a></td>
+      <td>${(AREA_LABELS[f.area_key]||f.city||'').replace(/ .*/,'')}</td><td>${f.layout||'—'}</td><td class="num">${f.building_area_m2||'—'}</td>
+      <td class="num">${f.age_years!=null?f.age_years+'a':'—'}</td><td>${({yes:'Sí',nearby:'Cerca',no:'No',unknown:'?'})[f.parking]||'?'}</td>
       <td><input class="mo" type="number" min="1" max="36" value="${mo}" onchange="setCmpMonths(${f.id},this.value)"></td>
-      <td class="num">${f.rent_yen?yen(f.rent_yen):'—'}</td>
-      <td class="num total">${sc?yen(sc.total):'(venta '+yen(f.sale_price_yen)+')'}</td>
-      <td class="num">${sc?yen(sc.perMonth):'—'}</td>
-      <td><button class="rm" title="Quitar" onclick="toggleFav(${f.id})">✕</button></td>
-    </tr>`;
+      <td class="num">${f.rent_yen?money(f.rent_yen):'—'}</td><td class="num total">${sc?money(sc.total):'venta '+money(f.sale_price_yen)}</td>
+      <td class="num">${sc?money(sc.perMonth):'—'}</td><td><button class="rm" onclick="toggleFav(${f.id})">✕</button></td></tr>`;
   });
   html+='</tbody></table>';
-  if(rentRows.length>1){
-    const ordered=rentRows.slice().sort((a,b)=>a.sc.perMonth-b.sc.perMonth);
-    const w=ordered[0],l=ordered[ordered.length-1];
-    const diff=l.sc.perMonth-w.sc.perMonth;
-    html+=`<div class="assume-note">🏆 Mejor coste efectivo: <b>${(AREA_LABELS[w.f.area_key]||'').replace(/ .*/,'')}</b> a ${yen(w.sc.perMonth)}/mes (${w.mo} meses). Es <b>${yen(diff)}/mes</b> más barata que la más cara de tu lista. La fila verde marca la mejor relación coste/mes.</div>`;
-  }
+  if(rentRows.length>1){const o=rentRows.slice().sort((a,b)=>a.sc.perMonth-b.sc.perMonth);const w=o[0],l=o[o.length-1];
+    html+=`<div class="note">🏆 Mejor coste/mes: <b>${(AREA_LABELS[w.f.area_key]||'').replace(/ .*/,'')}</b> a ${money(w.sc.perMonth)}/mes (${w.mo} meses), ${money(l.sc.perMonth-w.sc.perMonth)}/mes más barata que la más cara de tu lista.</div>`;}
   body.innerHTML=html;
 }
 window.setCmpMonths=function(id,v){CMP_MONTHS[id]=Math.max(1,+v||1);renderCompare();};
-
-// Ajuste inicial de móvil
 if(window.innerWidth<=920)setMob('list');
 window.addEventListener('resize',()=>map.invalidateSize());
 </script>
