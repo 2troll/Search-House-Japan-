@@ -33,7 +33,8 @@ requirements.txt
   base.py            # HttpClient educado + dataclass Listing + parseo japonés
   registry.py        # 📋 lista de fuentes activas  ← AÑADE FUENTES AQUÍ
   suminiko.py        # 南あわじ市 空き家バンク (público) — verificado
-  sumonavi.py        # 洲本市 空き家バンク (público)
+  sumonavi.py        # 洲本市 空き家バンク (público) — verificado
+  wakayama_portal.py # わかやま住まいポータル: toda Wakayama (público) — verificado
   awaji_city.py      # 淡路市 (opcional, desactivado)
   homes_akiyabank.py # agregador LIFULL HOME'S (opcional, desactivado)
   csv_import.py      # importación manual por CSV (SUUMO/at-home/HOME'S 賃貸...)
@@ -99,9 +100,67 @@ móvil el panel se pliega tocando el botón **“Filtros ▾”**.
 - **Zona** — un chip por municipio de `TARGET_AREAS`.
 - **Búsqueda de texto libre.**
 
-Los marcadores muestran el **precio**, se colorean de **verde (barato) a rojo
-(caro)** y usan forma distinta para alquiler (cuadrado) y venta (redondeado). Al
-pulsar uno se abre la ficha con foto, datos y **“Ver anuncio original”**.
+Los marcadores muestran el **precio** (o el **coste total de la estancia** en
+alquiler), se colorean de **verde (barato) a rojo (caro)** y usan forma distinta
+para alquiler (cuadrado) y venta (redondeado). Al pulsar uno se abre la ficha con
+foto, el desglose de coste, datos y **“Ver anuncio original”**.
+
+---
+
+## 💰 Calculadora de coste real de estancia (la función clave)
+
+En Japón el alquiler trae muchos gastos ocultos: 礼金 (key money, no se
+devuelve), 仲介手数料 (comisión de agencia), 保証会社 (aval), 敷金 (fianza),
+**limpieza al salir** y **penalización si te vas antes de acabar el contrato**.
+Para estancias cortas esos gastos disparan el coste real por mes.
+
+En la barra superior pones **cuántos meses** quieres quedarte y la app calcula,
+para cada alquiler:
+
+- **Coste total de la estancia** (todos los gastos incluidos).
+- **Coste efectivo por mes** = coste total ÷ meses (ideal para comparar
+  estancias de distinta duración).
+
+Los **supuestos de gastos** (botón **⚙️ Gastos**) son editables y se guardan en
+tu navegador, con valores típicos de Japón. Si un anuncio trae el dato real
+(敷金/礼金/管理費), se usa el real en vez del supuesto.
+
+> Ejemplo: una casa de ¥30.000/mes sale a **¥76.000/mes efectivos** si te quedas
+> 3 meses, pero a **¥41.500/mes** si te quedas 12 — porque los gastos de entrada
+> y la penalización se reparten entre menos meses.
+
+### ⭐ Comparador de zonas
+
+Marca casas con la **⭐** (en la tarjeta o en la ficha) y pulsa **“Comparar”**.
+Se abre una tabla donde puedes poner **meses distintos por casa** (4 aquí, 5
+allá, 3 acá…) y ver el coste total y el coste/mes de cada una, con la mejor
+opción resaltada. Así decides si merece la pena cada zona con sus condiciones.
+
+---
+
+---
+
+## 🌐 Publicar la página online (GitHub Pages)
+
+La web es estática, así que puede publicarse gratis en **GitHub Pages**. Ya está
+incluido el workflow `.github/workflows/pages.yml` que publica la carpeta `web/`.
+
+Pasos que haces tú **una sola vez** en GitHub:
+
+1. **Repo público** — Pages gratis necesita repo público. En `Settings → General
+   → Danger Zone → Change repository visibility → Public`. *(Con cuenta GitHub
+   Pro puedes usar Pages en repo privado y saltarte este paso.)*
+2. **Activar Pages** — en `Settings → Pages → Build and deployment → Source:
+   GitHub Actions`.
+3. **Fusiona a `main`** (o lanza el workflow a mano en la pestaña *Actions*). El
+   workflow se ejecuta y publica.
+
+La URL será: **`https://<tu-usuario>.github.io/<nombre-repo>/`**
+
+> ⚠️ Ojo: publicar la página hace **públicos los datos extraídos**. Si quieres
+> mantenerlo privado, usa la opción local (`python3 -m http.server`) y compártelo
+> solo por un túnel temporal (p. ej. `cloudflared`/`ngrok`), o usa Pages con
+> repo privado (GitHub Pro). Recuerda: herramienta de uso personal.
 
 ---
 
@@ -185,16 +244,24 @@ Puedes tener varios `imports/*.csv`; se leen todos.
 
 ## 🧭 Fuentes incluidas
 
-| Slug                | Fuente                                   | Estado |
-|---------------------|------------------------------------------|--------|
-| `suminiko`          | 住みニコ — 南あわじ市 空き家バンク (público)   | ✅ activa (incluye 福良 y 沼島) |
-| `sumonavi`          | 洲本移住ナビ — 洲本市 空き家バンク (público)   | ✅ activa |
-| `csv`               | Importación manual (CSV)                 | ✅ activa |
-| `awaji_city`        | 淡路市 空き家バンク (web municipal)          | ⚪ opcional (revisa estructura) |
-| `homes_akiyabank`   | LIFULL HOME'S 空き家バンク (agregador)       | ⚪ opcional (usar con criterio) |
+| Slug                | Fuente                                          | Estado |
+|---------------------|-------------------------------------------------|--------|
+| `suminiko`          | 住みニコ — 南あわじ市 空き家バンク (público)         | ✅ activa (incluye 福良 y 沼島) |
+| `sumonavi`          | 洲本移住ナビ — 洲本市 空き家バンク (público)         | ✅ activa |
+| `wakayama_portal`   | わかやま住まいポータル — **toda Wakayama** (público) | ✅ activa (白浜/串本/那智勝浦/田辺/和歌山市) |
+| `csv`               | Importación manual (CSV)                        | ✅ activa |
+| `awaji_city`        | 淡路市 (web municipal)                            | ⚪ opcional (sin listado limpio; usa CSV) |
+| `homes_akiyabank`   | LIFULL HOME'S 空き家バンク (agregador)              | ⚪ opcional (bloquea bots: solo enlaces/CSV) |
+
+`wakayama_portal` cubre **todos los municipios de Wakayama** de `TARGET_AREAS`
+con una sola fuente: pagina el listado de la prefectura, se queda solo con tus
+zonas objetivo y solo entonces descarga la ficha completa (戸建て, descarta
+マンション/アパート).
 
 Las opcionales se activan moviéndolas de `OPTIONAL_SOURCES` a `ENABLED_SOURCES`
-en `sources/registry.py`, o ejecutando `python3 refresh.py --all`.
+en `sources/registry.py`, o ejecutando `python3 refresh.py --all`. Nota: HOME'S
+responde 403/202 a las peticiones automáticas, así que la dejamos desactivada
+para respetar sus términos (usa enlaces o el importador CSV para esa fuente).
 
 ---
 
