@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>Buscador de casas — 空き家 / 賃貸</title>
+
+<!-- Leaflet + MarkerCluster (OpenStreetMap, sin API key) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+<style>
+  :root{
+    --bg:#f5f6f8; --panel:#fff; --ink:#1f2933; --muted:#6b7280;
+    --accent:#2563eb; --line:#e5e7eb; --new:#f59e0b;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;color:var(--ink);background:var(--bg)}
+  #app{display:flex;height:100%;overflow:hidden}
+
+  /* ---- Panel de filtros + lista (izquierda) ---- */
+  #sidebar{width:360px;max-width:90vw;background:var(--panel);border-right:1px solid var(--line);display:flex;flex-direction:column;z-index:1001}
+  #sidebar header{padding:12px 14px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:8px}
+  #sidebar header h1{font-size:16px;margin:0}
+  #count{font-size:12px;color:var(--muted)}
+  #filters{padding:10px 14px;overflow:auto;flex:0 0 auto;max-height:48vh;border-bottom:1px solid var(--line)}
+  .f{margin-bottom:12px}
+  .f label.t{display:block;font-size:12px;font-weight:600;margin-bottom:4px}
+  .f .v{font-size:12px;color:var(--accent);font-weight:600}
+  .row{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{border:1px solid var(--line);border-radius:14px;padding:4px 10px;font-size:12px;cursor:pointer;background:#fff;user-select:none}
+  .chip.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  input[type=range]{width:100%}
+  input[type=text]{width:100%;padding:7px 9px;border:1px solid var(--line);border-radius:8px;font-size:13px}
+  .toggle{display:flex;align-items:center;gap:8px;font-size:13px;cursor:pointer}
+  select{width:100%;padding:6px;border:1px solid var(--line);border-radius:8px}
+  #list{overflow:auto;flex:1 1 auto}
+  .card{padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+  .card:hover,.card.hl{background:#eef4ff}
+  .card .price{font-weight:700;font-size:15px}
+  .card .meta{font-size:12px;color:var(--muted);margin-top:2px}
+  .card .badges{margin-top:4px;display:flex;gap:4px;flex-wrap:wrap}
+  .badge{font-size:11px;padding:1px 6px;border-radius:8px;background:#eef2f7;color:#374151}
+  .badge.new{background:var(--new);color:#fff}
+  .badge.rent{background:#dcfce7;color:#166534}
+  .badge.sale{background:#fee2e2;color:#991b1b}
+
+  /* ---- Mapa (derecha) ---- */
+  #map{flex:1 1 auto;height:100%}
+  .price-pin{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;border-radius:12px;padding:2px 6px;white-space:nowrap;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+  .pin-sale{border-radius:12px}
+  .pin-rent{border-radius:3px}
+
+  .popup h3{margin:0 0 4px;font-size:14px}
+  .popup img{width:100%;height:130px;object-fit:cover;border-radius:6px;margin-bottom:6px;background:#eee}
+  .popup table{font-size:12px;border-collapse:collapse;width:100%}
+  .popup td{padding:1px 4px;vertical-align:top}
+  .popup td:first-child{color:var(--muted);white-space:nowrap}
+  .popup a.btn{display:inline-block;margin-top:6px;background:var(--accent);color:#fff;text-decoration:none;padding:6px 10px;border-radius:8px;font-size:12px}
+  .approx{color:#b45309;font-size:11px}
+
+  /* ---- Botón flotante para plegar filtros en móvil ---- */
+  #toggleFilters{display:none}
+  @media (max-width:780px){
+    #app{flex-direction:column}
+    #sidebar{width:100%;max-width:100%;height:100%;position:absolute;top:0;left:0;transform:translateY(0);transition:transform .25s}
+    #sidebar.collapsed{transform:translateY(calc(100% - 52px))}
+    #map{height:100%}
+    #toggleFilters{display:inline-block;font-size:12px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;cursor:pointer}
+    #filters{max-height:50vh}
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <!-- ===================== PANEL IZQUIERDO ===================== -->
+  <aside id="sidebar">
+    <header>
+      <h1>🏠 Casas en Japón</h1>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span id="count">—</span>
+        <button id="toggleFilters">Filtros ▾</button>
+      </div>
+    </header>
+
+    <div id="filters">
+      <!-- Precio máximo de alquiler -->
+      <div class="f">
+        <label class="t">Alquiler máximo: <span class="v" id="rentVal">¥40.000</span>/mes</label>
+        <input type="range" id="maxRent" min="0" max="60000" step="1000" value="40000">
+      </div>
+
+      <!-- Operación -->
+      <div class="f">
+        <label class="t">Operación</label>
+        <div class="row" id="opRow">
+          <span class="chip" data-op="both">Ambos</span>
+          <span class="chip" data-op="rent">Alquiler</span>
+          <span class="chip" data-op="sale">Venta</span>
+        </div>
+      </div>
+
+      <!-- Parking -->
+      <div class="f">
+        <label class="toggle"><input type="checkbox" id="parkingOnly"> Solo con parking (駐車場)</label>
+        <label class="toggle" style="margin-top:4px"><input type="checkbox" id="parkingNearby" checked> Incluir parking cercano</label>
+      </div>
+
+      <!-- Extranjero -->
+      <div class="f">
+        <label class="t">Extranjero (外国人)</label>
+        <div class="row" id="foreignerRow">
+          <span class="chip" data-fr="include">Incluir desconocidos</span>
+          <span class="chip" data-fr="only">Solo 外国人相談可</span>
+        </div>
+      </div>
+
+      <!-- Distribución -->
+      <div class="f">
+        <label class="t">Distribución (間取り)</label>
+        <div class="row" id="layoutRow"></div>
+      </div>
+
+      <!-- Año / antigüedad -->
+      <div class="f">
+        <label class="t">Antigüedad máxima: <span class="v" id="ageVal">Cualquiera</span></label>
+        <input type="range" id="maxAge" min="0" max="80" step="5" value="80">
+      </div>
+
+      <!-- Reformadas -->
+      <div class="f">
+        <label class="toggle"><input type="checkbox" id="renovatedOnly"> Solo reformadas (リフォーム/リノベ済)</label>
+      </div>
+
+      <!-- Novedades -->
+      <div class="f">
+        <label class="toggle"><input type="checkbox" id="newOnly"> Solo novedades (últimos 14 días)</label>
+      </div>
+
+      <!-- Zona -->
+      <div class="f">
+        <label class="t">Zona (municipio)</label>
+        <div class="row" id="zoneRow"></div>
+      </div>
+
+      <!-- Texto libre -->
+      <div class="f">
+        <label class="t">Buscar texto</label>
+        <input type="text" id="search" placeholder="ej: 福良, 沼島, 平屋, 海...">
+      </div>
+    </div>
+
+    <div id="list"></div>
+  </aside>
+
+  <!-- ===================== MAPA ===================== -->
+  <div id="map"></div>
+</div>
+
+<script>
+// ===== Mapa base (OpenStreetMap) =====
+const map = L.map('map', {zoomControl:true}).setView([34.0, 135.0], 9);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19, attribution: '© OpenStreetMap'
+}).addTo(map);
+const cluster = L.markerClusterGroup({maxClusterRadius: 45, spiderfyOnMaxZoom: true});
+map.addLayer(cluster);
+
+// ===== Etiquetas de zona en español =====
+// (Mantener en sintonía con TARGET_AREAS de config.py)
+const AREA_LABELS = {
+  shirahama:"Shirahama (白浜町)", kushimoto:"Kushimoto (串本町)",
+  nachikatsuura:"Nachikatsuura (那智勝浦町)", tanabe:"Tanabe (田辺市)",
+  wakayama_shi:"Wakayama (和歌山市)", minamiawaji:"Minami-Awaji (南あわじ市)",
+  sumoto:"Sumoto (洲本市)", awaji_shi:"Awaji (淡路市)"
+};
+
+// ===== Utilidades =====
+const yen = n => (n==null) ? "—" : "¥" + Number(n).toLocaleString('es-ES');
+function priceShort(n){
+  if(n==null) return "?";
+  if(n>=10000) return "¥"+Math.round(n/10000)+"万";
+  return "¥"+Number(n).toLocaleString('es-ES');
+}
+// Color por precio: verde (barato) -> rojo (caro). Escala distinta venta/alquiler.
+function priceColor(f){
+  let t; // 0..1
+  if(f.listing_type==='rent'){ t = Math.min(1,(f.rent_yen||0)/60000); }
+  else { t = Math.min(1,(f.sale_price_yen||0)/30000000); }
+  const hue = (1-t)*120; // 120=verde, 0=rojo
+  return `hsl(${hue},70%,42%)`;
+}
+
+let FEATURES = [];      // todas las casas
+let MARKERS = new Map();// id -> marker
+let SELECTED_LAYOUTS = new Set();
+let SELECTED_ZONES = new Set();
+let OP = 'both';
+let FOREIGNER = 'include';
+
+// ===== Carga de datos =====
+fetch('data.geojson').then(r=>r.json()).then(geo=>{
+  FEATURES = geo.features.map(f=>({...f.properties, lat:f.geometry.coordinates[1], lng:f.geometry.coordinates[0]}));
+  buildLayoutChips();
+  buildZoneChips();
+  apply();
+}).catch(e=>{
+  document.getElementById('list').innerHTML =
+    '<div style="padding:14px;color:#991b1b">No se pudo cargar data.geojson.<br>Ejecuta <code>python3 refresh.py</code> y abre la página con un servidor local.</div>';
+});
+
+// ===== Construcción de chips dinámicos =====
+function buildLayoutChips(){
+  // Familias comunes de 間取り
+  const fams = ["1R","1K","1DK","1LDK","2K","2DK","2LDK","3K","3DK","3LDK","4DK","4LDK","5DK","5LDK"];
+  const present = new Set();
+  FEATURES.forEach(f=>{ if(f.layout){ const m=(f.layout.match(/\d+[SLDKR]+/i)||[])[0]; if(m) present.add(m.toUpperCase()); }});
+  const all = fams.filter(x=>present.has(x)).concat([...present].filter(x=>!fams.includes(x)));
+  const row = document.getElementById('layoutRow');
+  row.innerHTML='';
+  all.forEach(l=>{
+    const c=document.createElement('span'); c.className='chip'; c.textContent=l; c.dataset.layout=l;
+    c.onclick=()=>{ c.classList.toggle('on'); if(SELECTED_LAYOUTS.has(l))SELECTED_LAYOUTS.delete(l); else SELECTED_LAYOUTS.add(l); apply(); };
+    row.appendChild(c);
+  });
+}
+function buildZoneChips(){
+  const present=[...new Set(FEATURES.map(f=>f.area_key).filter(Boolean))];
+  const row=document.getElementById('zoneRow'); row.innerHTML='';
+  present.forEach(z=>{
+    const c=document.createElement('span'); c.className='chip on'; SELECTED_ZONES.add(z);
+    c.textContent=AREA_LABELS[z]||z; c.dataset.zone=z;
+    c.onclick=()=>{ c.classList.toggle('on'); if(SELECTED_ZONES.has(z))SELECTED_ZONES.delete(z); else SELECTED_ZONES.add(z); apply(); };
+    row.appendChild(c);
+  });
+}
+
+// ===== Eventos de controles =====
+const $=id=>document.getElementById(id);
+$('maxRent').oninput=e=>{ $('rentVal').textContent = yen(+e.target.value); apply(); };
+$('maxAge').oninput=e=>{ const v=+e.target.value; $('ageVal').textContent = v>=80?'Cualquiera':(v+' años'); apply(); };
+['parkingOnly','parkingNearby','renovatedOnly','newOnly'].forEach(id=>$(id).onchange=apply);
+$('search').oninput=apply;
+document.querySelectorAll('#opRow .chip').forEach(c=>c.onclick=()=>{
+  document.querySelectorAll('#opRow .chip').forEach(x=>x.classList.remove('on'));
+  c.classList.add('on'); OP=c.dataset.op; apply();
+});
+document.querySelector('#opRow .chip[data-op=both]').classList.add('on');
+document.querySelectorAll('#foreignerRow .chip').forEach(c=>c.onclick=()=>{
+  document.querySelectorAll('#foreignerRow .chip').forEach(x=>x.classList.remove('on'));
+  c.classList.add('on'); FOREIGNER=c.dataset.fr; apply();
+});
+document.querySelector('#foreignerRow .chip[data-fr=include]').classList.add('on');
+
+// Plegado de filtros en móvil
+$('toggleFilters').onclick=()=>document.getElementById('sidebar').classList.toggle('collapsed');
+
+// ===== Filtrado =====
+function matches(f){
+  // operación
+  if(OP!=='both' && f.listing_type!==OP) return false;
+  // precio de alquiler
+  if(f.listing_type==='rent'){
+    const mr=+$('maxRent').value;
+    if(mr<60000 && (f.rent_yen||999999) > mr) return false;
+  }
+  // parking
+  if($('parkingOnly').checked){
+    const ok = f.parking==='yes' || (f.parking==='nearby' && $('parkingNearby').checked);
+    if(!ok) return false;
+  }
+  // extranjero
+  if(FOREIGNER==='only' && !(f.foreigner_ok==='yes'||f.foreigner_ok==='negotiable')) return false;
+  // distribución
+  if(SELECTED_LAYOUTS.size){
+    const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];
+    if(!m || !SELECTED_LAYOUTS.has(m.toUpperCase())) return false;
+  }
+  // antigüedad
+  const ma=+$('maxAge').value;
+  if(ma<80 && f.age_years!=null && f.age_years>ma) return false;
+  // reformadas
+  if($('renovatedOnly').checked && !f.renovated) return false;
+  // novedades
+  if($('newOnly').checked && !f.is_new) return false;
+  // zona
+  if(SELECTED_ZONES.size && f.area_key && !SELECTED_ZONES.has(f.area_key)) return false;
+  // texto libre
+  const q=$('search').value.trim();
+  if(q){
+    const hay=(f.title+' '+f.address_raw+' '+f.description_raw+' '+f.layout+' '+f.structure).toLowerCase();
+    if(!hay.includes(q.toLowerCase())) return false;
+  }
+  return true;
+}
+
+// ===== Pintado =====
+function makeIcon(f){
+  const cls = f.listing_type==='rent' ? 'pin-rent':'pin-sale';
+  const val = f.listing_type==='rent' ? priceShort(f.rent_yen) : priceShort(f.sale_price_yen);
+  return L.divIcon({
+    className:'',
+    html:`<div class="price-pin ${cls}" style="background:${priceColor(f)}">${val}</div>`,
+    iconSize:[null,null], iconAnchor:[20,12]
+  });
+}
+function popupHtml(f){
+  const photo = (f.photos&&f.photos[0]) ? `<img src="${f.photos[0]}" loading="lazy" onerror="this.style.display='none'">`:'';
+  const price = f.listing_type==='rent'
+    ? `${yen(f.rent_yen)}/mes` + (f.management_fee_yen?` (+${yen(f.management_fee_yen)} gastos)`:'')
+    : yen(f.sale_price_yen);
+  const fr = {yes:'Sí ✅',negotiable:'Negociable 🟡',no:'No ❌',unknown:'Desconocido ❔'}[f.foreigner_ok]||'❔';
+  const pk = {yes:'Sí',nearby:'Cercano',no:'No',unknown:'?'}[f.parking]||'?';
+  const approx = f.geocode_exact? '' : `<div class="approx">📍 Ubicación aproximada (centro del municipio)</div>`;
+  return `<div class="popup">
+    <h3>${f.title||''}</h3>
+    ${photo}
+    <div style="font-size:15px;font-weight:700;color:${priceColor(f)}">${price}</div>
+    ${approx}
+    <table>
+      <tr><td>Tipo</td><td>${f.listing_type==='rent'?'Alquiler 賃貸':'Venta 売買'}</td></tr>
+      <tr><td>間取り</td><td>${f.layout||'—'}</td></tr>
+      <tr><td>Edificio</td><td>${f.building_area_m2?f.building_area_m2+' ㎡':'—'}</td></tr>
+      <tr><td>Terreno</td><td>${f.land_area_m2?f.land_area_m2+' ㎡':'—'}</td></tr>
+      <tr><td>築年</td><td>${f.year_built||'—'}${f.age_years!=null?` (${f.age_years} años)`:''}</td></tr>
+      <tr><td>Estructura</td><td>${f.structure||'—'}</td></tr>
+      <tr><td>Parking</td><td>${pk}${f.parking_detail?` (${f.parking_detail})`:''}</td></tr>
+      <tr><td>Extranjero</td><td>${fr}</td></tr>
+      <tr><td>Reformada</td><td>${f.renovated?'Sí ✨':'—'}</td></tr>
+      <tr><td>Municipio</td><td>${AREA_LABELS[f.area_key]||f.city||'—'}</td></tr>
+      <tr><td>Estado</td><td>${f.status_note||'—'}</td></tr>
+    </table>
+    <a class="btn" href="${f.source_url}" target="_blank" rel="noopener">Ver anuncio original ↗</a>
+  </div>`;
+}
+
+function apply(){
+  const shown = FEATURES.filter(matches);
+  // mapa
+  cluster.clearLayers(); MARKERS.clear();
+  const bounds=[];
+  shown.forEach(f=>{
+    const m=L.marker([f.lat,f.lng],{icon:makeIcon(f)});
+    m.bindPopup(popupHtml(f),{maxWidth:280});
+    m.on('mouseover',()=>highlightCard(f.id,true));
+    m.on('mouseout',()=>highlightCard(f.id,false));
+    cluster.addLayer(m); MARKERS.set(f.id,m); bounds.push([f.lat,f.lng]);
+  });
+  if(bounds.length) map.fitBounds(bounds,{padding:[40,40],maxZoom:13});
+  // lista
+  renderList(shown);
+  $('count').textContent = shown.length + ' casas';
+}
+
+function renderList(shown){
+  const sortByPrice=(a,b)=>{
+    const pa=a.listing_type==='rent'?(a.rent_yen||1e9):(a.sale_price_yen||1e12);
+    const pb=b.listing_type==='rent'?(b.rent_yen||1e9):(b.sale_price_yen||1e12);
+    return pa-pb;
+  };
+  const list=$('list'); list.innerHTML='';
+  shown.slice().sort(sortByPrice).forEach(f=>{
+    const price=f.listing_type==='rent'?`${yen(f.rent_yen)}/mes`:yen(f.sale_price_yen);
+    const div=document.createElement('div'); div.className='card'; div.dataset.id=f.id;
+    div.innerHTML=`
+      <div class="price" style="color:${priceColor(f)}">${price}</div>
+      <div style="font-size:13px">${f.title||''}</div>
+      <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${f.layout||'—'} · ${f.building_area_m2?f.building_area_m2+'㎡':''} · ${f.year_built||''}</div>
+      <div class="badges">
+        <span class="badge ${f.listing_type}">${f.listing_type==='rent'?'賃貸':'売買'}</span>
+        ${f.is_new?'<span class="badge new">Novedad</span>':''}
+        ${f.parking==='yes'?'<span class="badge">🚗 駐車場</span>':(f.parking==='nearby'?'<span class="badge">🚗 cerca</span>':'')}
+        ${f.renovated?'<span class="badge">✨ reformada</span>':''}
+        ${(f.foreigner_ok==='yes'||f.foreigner_ok==='negotiable')?'<span class="badge">🌐 外国人</span>':''}
+        ${!f.geocode_exact?'<span class="badge">📍 aprox.</span>':''}
+      </div>`;
+    div.onmouseover=()=>{ const m=MARKERS.get(f.id); if(m){ highlightCard(f.id,true);} };
+    div.onmouseout=()=>highlightCard(f.id,false);
+    div.onclick=()=>{ const m=MARKERS.get(f.id); if(m){ map.setView([f.lat,f.lng],15); cluster.zoomToShowLayer(m,()=>m.openPopup()); } };
+    list.appendChild(div);
+  });
+}
+
+function highlightCard(id,on){
+  document.querySelectorAll('.card').forEach(c=>{
+    if(+c.dataset.id===id) c.classList.toggle('hl',on);
+  });
+}
+</script>
+</body>
+</html>

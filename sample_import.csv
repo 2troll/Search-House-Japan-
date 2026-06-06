@@ -1,0 +1,3 @@
+url,tipo,titulo,direccion,municipio,alquiler,precio_venta,distribucion,m2_edificio,m2_terreno,anio,estructura,parking,extranjero,reformada,fotos,descripcion
+https://example.com/suumo/ejemplo-1,alquiler,Casa cerca del puerto de Fukura,兵庫県南あわじ市福良甲123,南あわじ市,35000,,3DK,78.5,120,平成5年,木造,si,negociable,0,,Anuncio pegado a mano desde un portal comercial
+https://example.com/athome/ejemplo-2,venta,Casa con vistas al mar en Kushimoto,和歌山県東牟婁郡串本町大字串本456,串本町,,1500000,4DK,95,210,昭和55年,木造,nearby,desconocido,1,,Reformada parcialmente. Parking en parcela vecina
