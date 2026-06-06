@@ -1,7 +1,6 @@
 # Publica la carpeta web/ en GitHub Pages.
-# Requisitos (los activas tú una vez, ver README):
-#   - Repo público (o cuenta GitHub Pro) — Pages gratis necesita repo público.
-#   - Settings → Pages → Source: "GitHub Actions".
+# Requisito que activas tú una vez: repo PÚBLICO (o cuenta GitHub Pro).
+# Pages se activa solo gracias a "enablement: true" más abajo.
 name: Deploy to GitHub Pages
 
 on:
@@ -27,7 +26,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - name: Configurar Pages (lo activa si hace falta)
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true     # activa GitHub Pages automáticamente (repo público)
       - name: Subir la carpeta web/ como sitio
         uses: actions/upload-pages-artifact@v3
         with:
