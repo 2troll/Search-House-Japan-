@@ -1,19 +1,17 @@
 # Publica la carpeta web/ en GitHub Pages.
-# Requisito que activas tú una vez: repo PÚBLICO (o cuenta GitHub Pro).
-# Pages se activa solo gracias a "enablement: true" más abajo.
+# Requisitos (una vez): repo PÚBLICO + Settings → Pages → Source: "GitHub Actions".
 name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]          # se publica al fusionar a main
-  workflow_dispatch:          # ...o a mano desde la pestaña Actions
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Solo un despliegue a la vez.
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -26,13 +24,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Configurar Pages (lo activa si hace falta)
-        uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
-          enablement: true     # activa GitHub Pages automáticamente (repo público)
-      - name: Subir la carpeta web/ como sitio
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: web            # index.html y data.geojson quedan en la raíz del sitio
+          path: web
       - id: deployment
         uses: actions/deploy-pages@v4
