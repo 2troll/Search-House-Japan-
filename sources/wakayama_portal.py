@@ -92,7 +92,12 @@ def _parse_detail(client, url, shozai_hint):
     address = _detail_field(soup, "所在地") or shozai_hint
     price_txt = _detail_field(soup, "価格")
     bukken_kind = _detail_field(soup, "物件区分")  # 一戸建て / マンション ...
-    layout = _detail_field(soup, "間取り")
+    # 間取り puede traer detalle de habitaciones ("4K 1階：和室1..."): separamos el
+    # código de distribución (para los filtros) del detalle (para la ficha).
+    layout_full = _detail_field(soup, "間取り")
+    lm = re.match(r"[\d０-９]+\s*[SLDKR]+(?:以上)?", layout_full)
+    layout = lm.group().replace(" ", "") if lm else layout_full
+    layout_detail = layout_full[lm.end():].strip() if lm else ""
     year_txt = _detail_field(soup, "建築年")
     building = parse_area_m2(_detail_field(soup, "建物面積"))
     land = parse_area_m2(_detail_field(soup, "土地面積"))
@@ -129,7 +134,10 @@ def _parse_detail(client, url, shozai_hint):
         renovated=detect_renovated(full_text),
         photos=photos,
         description_raw=address,
-        features={"物件区分": bukken_kind} if bukken_kind else {},
+        features=dict(
+            {"物件区分": bukken_kind} if bukken_kind else {},
+            **({"間取り詳細": layout_detail} if layout_detail else {}),
+        ),
     )
     assign_area(lst)
     return lst, bukken_kind
