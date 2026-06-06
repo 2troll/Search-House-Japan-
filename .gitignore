@@ -1,0 +1,12 @@
+# Base de datos local y caché HTTP (se regeneran con refresh.py)
+db/listings.sqlite
+cache/
+__pycache__/
+*.pyc
+
+# Tus CSV personales (no se versionan; el ejemplo es sample_import.csv)
+imports/*.csv
+
+# Entornos virtuales
+.venv/
+venv/
