@@ -100,9 +100,41 @@ móvil el panel se pliega tocando el botón **“Filtros ▾”**.
 - **Zona** — un chip por municipio de `TARGET_AREAS`.
 - **Búsqueda de texto libre.**
 
-Los marcadores muestran el **precio**, se colorean de **verde (barato) a rojo
-(caro)** y usan forma distinta para alquiler (cuadrado) y venta (redondeado). Al
-pulsar uno se abre la ficha con foto, datos y **“Ver anuncio original”**.
+Los marcadores muestran el **precio** (o el **coste total de la estancia** en
+alquiler), se colorean de **verde (barato) a rojo (caro)** y usan forma distinta
+para alquiler (cuadrado) y venta (redondeado). Al pulsar uno se abre la ficha con
+foto, el desglose de coste, datos y **“Ver anuncio original”**.
+
+---
+
+## 💰 Calculadora de coste real de estancia (la función clave)
+
+En Japón el alquiler trae muchos gastos ocultos: 礼金 (key money, no se
+devuelve), 仲介手数料 (comisión de agencia), 保証会社 (aval), 敷金 (fianza),
+**limpieza al salir** y **penalización si te vas antes de acabar el contrato**.
+Para estancias cortas esos gastos disparan el coste real por mes.
+
+En la barra superior pones **cuántos meses** quieres quedarte y la app calcula,
+para cada alquiler:
+
+- **Coste total de la estancia** (todos los gastos incluidos).
+- **Coste efectivo por mes** = coste total ÷ meses (ideal para comparar
+  estancias de distinta duración).
+
+Los **supuestos de gastos** (botón **⚙️ Gastos**) son editables y se guardan en
+tu navegador, con valores típicos de Japón. Si un anuncio trae el dato real
+(敷金/礼金/管理費), se usa el real en vez del supuesto.
+
+> Ejemplo: una casa de ¥30.000/mes sale a **¥76.000/mes efectivos** si te quedas
+> 3 meses, pero a **¥41.500/mes** si te quedas 12 — porque los gastos de entrada
+> y la penalización se reparten entre menos meses.
+
+### ⭐ Comparador de zonas
+
+Marca casas con la **⭐** (en la tarjeta o en la ficha) y pulsa **“Comparar”**.
+Se abre una tabla donde puedes poner **meses distintos por casa** (4 aquí, 5
+allá, 3 acá…) y ver el coste total y el coste/mes de cada una, con la mejor
+opción resaltada. Así decides si merece la pena cada zona con sus condiciones.
 
 ---
 

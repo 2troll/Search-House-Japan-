@@ -90,7 +90,9 @@ def _parse_detail(client, url, shozai_hint):
 
     kubun = _detail_field(soup, "区分")          # 売買 / 賃貸
     address = _detail_field(soup, "所在地") or shozai_hint
-    price_txt = _detail_field(soup, "価格")
+    listing_type = "rent" if "賃" in kubun else "sale"
+    # En alquiler el precio está en 賃料; en venta en 価格.
+    price_txt = _detail_field(soup, "賃料") if listing_type == "rent" else _detail_field(soup, "価格")
     bukken_kind = _detail_field(soup, "物件区分")  # 一戸建て / マンション ...
     # 間取り puede traer detalle de habitaciones ("4K 1階：和室1..."): separamos el
     # código de distribución (para los filtros) del detalle (para la ficha).
@@ -104,10 +106,13 @@ def _parse_detail(client, url, shozai_hint):
     structure = _detail_field(soup, "建物構造")
     floors = _detail_field(soup, "建物階層")
     parking_txt = _detail_field(soup, "駐車場")
+    deposit = _detail_field(soup, "敷金")
+    key_money = _detail_field(soup, "礼金")
+    mgmt = _detail_field(soup, "管理費") or _detail_field(soup, "共益費")
 
-    listing_type = "rent" if "賃" in kubun else "sale"
     rent_yen = parse_price_yen(price_txt) if listing_type == "rent" else None
     sale_yen = parse_price_yen(price_txt) if listing_type == "sale" else None
+    mgmt_yen = parse_price_yen(mgmt) if mgmt else None
     year_raw, age = parse_year_built(year_txt)
     parking, pdetail = parse_parking(parking_txt)
 
@@ -126,6 +131,7 @@ def _parse_detail(client, url, shozai_hint):
         prefecture="和歌山県",
         address_raw=("和歌山県" + address) if not address.startswith("和歌山") else address,
         rent_yen=rent_yen, sale_price_yen=sale_yen,
+        management_fee_yen=mgmt_yen, deposit=deposit, key_money=key_money,
         layout=layout, building_area_m2=building, land_area_m2=land,
         year_built=year_raw, age_years=age,
         structure=structure, floors=floors,
