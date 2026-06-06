@@ -33,7 +33,8 @@ requirements.txt
   base.py            # HttpClient educado + dataclass Listing + parseo japonés
   registry.py        # 📋 lista de fuentes activas  ← AÑADE FUENTES AQUÍ
   suminiko.py        # 南あわじ市 空き家バンク (público) — verificado
-  sumonavi.py        # 洲本市 空き家バンク (público)
+  sumonavi.py        # 洲本市 空き家バンク (público) — verificado
+  wakayama_portal.py # わかやま住まいポータル: toda Wakayama (público) — verificado
   awaji_city.py      # 淡路市 (opcional, desactivado)
   homes_akiyabank.py # agregador LIFULL HOME'S (opcional, desactivado)
   csv_import.py      # importación manual por CSV (SUUMO/at-home/HOME'S 賃貸...)
@@ -185,16 +186,24 @@ Puedes tener varios `imports/*.csv`; se leen todos.
 
 ## 🧭 Fuentes incluidas
 
-| Slug                | Fuente                                   | Estado |
-|---------------------|------------------------------------------|--------|
-| `suminiko`          | 住みニコ — 南あわじ市 空き家バンク (público)   | ✅ activa (incluye 福良 y 沼島) |
-| `sumonavi`          | 洲本移住ナビ — 洲本市 空き家バンク (público)   | ✅ activa |
-| `csv`               | Importación manual (CSV)                 | ✅ activa |
-| `awaji_city`        | 淡路市 空き家バンク (web municipal)          | ⚪ opcional (revisa estructura) |
-| `homes_akiyabank`   | LIFULL HOME'S 空き家バンク (agregador)       | ⚪ opcional (usar con criterio) |
+| Slug                | Fuente                                          | Estado |
+|---------------------|-------------------------------------------------|--------|
+| `suminiko`          | 住みニコ — 南あわじ市 空き家バンク (público)         | ✅ activa (incluye 福良 y 沼島) |
+| `sumonavi`          | 洲本移住ナビ — 洲本市 空き家バンク (público)         | ✅ activa |
+| `wakayama_portal`   | わかやま住まいポータル — **toda Wakayama** (público) | ✅ activa (白浜/串本/那智勝浦/田辺/和歌山市) |
+| `csv`               | Importación manual (CSV)                        | ✅ activa |
+| `awaji_city`        | 淡路市 (web municipal)                            | ⚪ opcional (sin listado limpio; usa CSV) |
+| `homes_akiyabank`   | LIFULL HOME'S 空き家バンク (agregador)              | ⚪ opcional (bloquea bots: solo enlaces/CSV) |
+
+`wakayama_portal` cubre **todos los municipios de Wakayama** de `TARGET_AREAS`
+con una sola fuente: pagina el listado de la prefectura, se queda solo con tus
+zonas objetivo y solo entonces descarga la ficha completa (戸建て, descarta
+マンション/アパート).
 
 Las opcionales se activan moviéndolas de `OPTIONAL_SOURCES` a `ENABLED_SOURCES`
-en `sources/registry.py`, o ejecutando `python3 refresh.py --all`.
+en `sources/registry.py`, o ejecutando `python3 refresh.py --all`. Nota: HOME'S
+responde 403/202 a las peticiones automáticas, así que la dejamos desactivada
+para respetar sus términos (usa enlaces o el importador CSV para esa fuente).
 
 ---
 
