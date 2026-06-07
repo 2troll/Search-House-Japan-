@@ -39894,12 +39894,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46734.jpg"
+     "img/athome/46734_0.jpg",
+     "img/athome/46734_1.jpg",
+     "img/athome/46734_2.jpg",
+     "img/athome/46734_3.jpg",
+     "img/athome/46734_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス北原線 下吉井 停歩5分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "エコキュートは取り外し済のため入居者様にてご用意ください、その他現地にて要確認。玄関先には水質検査済の井戸水あり。車庫、物置小屋あり。アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス北原線 下吉井 停歩5分",
     "status_note": "",
@@ -39947,12 +39954,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46432.jpg"
+     "img/athome/46432_0.jpg",
+     "img/athome/46432_1.jpg",
+     "img/athome/46432_2.jpg",
+     "img/athome/46432_3.jpg",
+     "img/athome/46432_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス吉田大東線 上口 停歩3分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "修繕箇所：給湯器故障、浴室タイル割れ等現地にて要確認。 屋根付き土間及び車庫あり。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス吉田大東線 上口 停歩3分",
     "status_note": "",
@@ -40000,12 +40014,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45495.jpg"
+     "img/athome/45495_0.jpg",
+     "img/athome/45495_1.jpg",
+     "img/athome/45495_2.jpg",
+     "img/athome/45495_3.jpg",
+     "img/athome/45495_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲大東駅 / 徒歩4分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "床に数か所たわみあり、現地にて要確認。 自治会加入は要相談。 アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲大東駅 / 徒歩4分",
     "status_note": "",
@@ -40053,12 +40074,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45256.jpg"
+     "img/athome/45256_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 亀嵩駅 / 車4分",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 亀嵩駅 / 車4分",
     "status_note": "",
@@ -40106,12 +40129,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45282.jpg"
+     "img/athome/45282_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲三成駅 / 車14分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲三成駅 / 車14分",
     "status_note": "",
@@ -40159,12 +40184,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45283.jpg"
+     "img/athome/45283_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 亀嵩駅 / 車1分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 亀嵩駅 / 車1分",
     "status_note": "",
@@ -40212,12 +40239,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45281.jpg"
+     "img/athome/45281_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "木次線 出雲横田駅 / 徒歩5分",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲横田駅 / 徒歩5分",
     "status_note": "",
@@ -40265,12 +40294,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45277.jpg"
+     "img/athome/45277_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "自家用車",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "自家用車",
     "status_note": "",
@@ -40318,12 +40349,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45270.jpg"
+     "img/athome/45270_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲三成駅 / 車4分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲三成駅 / 車4分",
     "status_note": "",
@@ -40371,12 +40404,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45261.jpg"
+     "img/athome/45261_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 八川駅 / 車5分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 八川駅 / 車5分",
     "status_note": "",
@@ -40424,12 +40459,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44086.jpg"
+     "img/athome/44086_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲三成駅 / 車15分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲三成駅 / 車15分",
     "status_note": "",
@@ -40477,12 +40514,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45031.jpg"
+     "img/athome/45031_0.jpg",
+     "img/athome/45031_1.jpg",
+     "img/athome/45031_2.jpg",
+     "img/athome/45031_3.jpg",
+     "img/athome/45031_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス大東松江乃木線 半瀬橋 停歩2分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "高台の家で眼下には田園風景が広がっています。 農地や山林等あり。農地の売買には、農地法の制約があり、取得できない場合もあります。 アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス大東松江乃木線 半瀬橋 停歩2分",
     "status_note": "",
@@ -40530,12 +40574,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44856.jpg"
+     "img/athome/44856_0.jpg",
+     "img/athome/44856_1.jpg",
+     "img/athome/44856_2.jpg",
+     "img/athome/44856_3.jpg",
+     "img/athome/44856_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス塩田線 山根 停歩1分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "浴室のシャワーが故障、屋根・壁等一部破損箇所あり。ほかに農地・山林等あり。農地の取得には農地法の制約により、取得できない場合があります。アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス塩田線 山根 停歩1分",
     "status_note": "",
@@ -40583,12 +40634,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44788.jpg"
+     "img/athome/44788_0.jpg",
+     "img/athome/44788_1.jpg",
+     "img/athome/44788_2.jpg",
+     "img/athome/44788_3.jpg",
+     "img/athome/44788_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 松江駅 / 車28分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "・納屋と倉庫があります。 ・イエローゾーンに該当しています。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 松江駅 / 車28分",
     "status_note": "",
@@ -40636,12 +40695,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44350.jpg"
+     "img/athome/44350_0.jpg",
+     "img/athome/44350_1.jpg",
+     "img/athome/44350_2.jpg",
+     "img/athome/44350_3.jpg",
+     "img/athome/44350_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス北原線 湯村本郷 停歩2分",
-     "fotos_total": "4"
+     "fotos_total": "4",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "徒歩５分以内に湯村温泉（日帰り温泉）が有り利用可。 売却価格、農地、山林ほかの譲渡について相談可。 修繕箇所は現地にて要確認。 アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス北原線 湯村本郷 停歩2分",
     "status_note": "",
@@ -40689,12 +40755,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44454.jpg"
+     "img/athome/44454_0.jpg",
+     "img/athome/44454_1.jpg",
+     "img/athome/44454_2.jpg",
+     "img/athome/44454_3.jpg",
+     "img/athome/44454_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス阿用・久野線 阿用小学校 停歩8分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "修繕箇所は現地にて要確認。 農地の売買には農地法の制約があり、取得できない場合もあります。 アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス阿用・久野線 阿用小学校 停歩8分",
     "status_note": "",
@@ -40742,12 +40815,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44353.jpg"
+     "img/athome/44353_0.jpg",
+     "img/athome/44353_1.jpg",
+     "img/athome/44353_2.jpg",
+     "img/athome/44353_3.jpg",
+     "img/athome/44353_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス阿用・久野線 久野川大橋公園 停歩2分",
-     "fotos_total": "7"
+     "fotos_total": "7",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "母屋は傷み大、現地にて要確認。土地は宅地以外に山林、畑等があります。農地の売買には農地法上の制約があり、取得できない場合もあります。 アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス阿用・久野線 久野川大橋公園 停歩2分",
     "status_note": "",
@@ -40795,12 +40875,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44442.jpg"
+     "img/athome/44442_0.jpg",
+     "img/athome/44442_1.jpg",
+     "img/athome/44442_2.jpg",
+     "img/athome/44442_3.jpg",
+     "img/athome/44442_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 加茂中駅 / 車3分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "修繕箇所は現地にて要確認。 アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 加茂中駅 / 車3分",
     "status_note": "",
@@ -40848,12 +40935,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44421.jpg"
+     "img/athome/44421_0.jpg",
+     "img/athome/44421_1.jpg",
+     "img/athome/44421_2.jpg",
+     "img/athome/44421_3.jpg",
+     "img/athome/44421_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 加茂中駅 / 車1分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "宅地は、第三者と共有。 お問合せの際、アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 加茂中駅 / 車1分",
     "status_note": "",
@@ -40901,12 +40995,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44570.jpg"
+     "img/athome/44570_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "土砂災害警戒区域及び、土砂災害特別警戒区域に該当しています。 役場5.0km、診療所5.0km、保育所5.0km、小学校5.0km、中学校18.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -40954,12 +41051,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44568.jpg"
+     "img/athome/44568_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "築34年のコンパクトな住宅です、 道路に面した立地と採光十分な明るいお家です。 役場0.1km、診療所2.0km、保育所1.0km、小学校1.0km、中学校1.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.1km",
     "status_note": "",
@@ -41007,12 +41107,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44566.jpg"
+     "img/athome/44566_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.26km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "母屋：相続登記が必要です。 離れ：建物未登記です。現在賃貸中ですが、売却決定時には退去予定です。 敷地の一部が土砂災害警戒区域（土石流）に該当しています。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.26km",
     "status_note": "",
@@ -41060,12 +41163,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44558.jpg"
+     "img/athome/44558_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.5km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "土砂災害警戒区域（地すべり）に該当しています。 役場1.5km、診療所1.5km、保育所1.5km、小学校1.5km、中学校1.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.5km",
     "status_note": "",
@@ -41113,12 +41219,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44556.jpg"
+     "img/athome/44556_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "役場6.0km、診療所6.0km、保育所6.2km、小学校5.7km、中学校6.2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -41166,12 +41275,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44554.jpg"
+     "img/athome/44554_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から1.0km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "土砂災害警戒区域（地すべり）に該当しています。 役場2.0km、診療所2.0km、保育所2.5km、小学校2.0km、中学校2.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から1.0km",
     "status_note": "",
@@ -41219,12 +41331,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44553.jpg"
+     "img/athome/44553_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "役場5.0km、診療所5.0km、保育所5.5km、小学校5.5km、中学校5.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.1km",
     "status_note": "",
@@ -41272,12 +41387,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44552.jpg"
+     "img/athome/44552_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "現在入居中です。 内見、引き渡し時期についてはお問い合わせください。 役場5.0km、診療所5.0km、保育所5.5km、小学校5.5km、中学校5.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -41325,12 +41443,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44551.jpg"
+     "img/athome/44551_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "役場5.0km、診療所5.0km、保育所5.5km、小学校5.5km、中学校5.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -41378,12 +41499,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44548.jpg"
+     "img/athome/44548_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "役場4.6km、診療所4.6km、保育所4.6km、小学校5.0km、中学校5.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -41431,12 +41555,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44510.jpg"
+     "img/athome/44510_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.5km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "強風時、雨漏りする箇所あり。 給湯機器が故障しています。 役場5.0km、隠岐病院4.5km、保育所5.0km、小学校5.0km、中学校5.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.5km",
     "status_note": "",
@@ -41484,12 +41611,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44509.jpg"
+     "img/athome/44509_0.jpg"
     ],
     "features": {
      "物件種目": "売店舗",
      "交通": "最寄りのバス停から0.35km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "1階 2階以上 駐車場(近隣含む) 最上階 居抜き物件 即引渡可 エレベーター エアコン 男女別トイレ 給湯",
+     "備考": "金額については価格相談可とします。 建物は未登記です。 現在営業中の為、引き渡し時期は要相談とします。 役場1.8km、隠岐病院1.2km、保育所1.8km、小学校1.0km、中学校2.1km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.35km",
     "status_note": "",
@@ -41537,12 +41667,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44508.jpg"
+     "img/athome/44508_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "シロアリ被害が見受けられる箇所があります。 役場2.0km、隠岐病院1.0km、保育所2.0km、小学校1.0km、中学校2.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -41590,12 +41723,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44507.jpg"
+     "img/athome/44507_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "役場1.6km、隠岐病院1.0km、保育所1.6km、小学校1.0km、中学校2.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -41643,12 +41779,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44506.jpg"
+     "img/athome/44506_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "役場1.6km、隠岐病院1.0km、保育所1.6km、小学校1.0km、中学校2.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -41696,12 +41835,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44503.jpg"
+     "img/athome/44503_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "雨漏り、床などの損傷が多く見受けられます。 以前、民宿を経営していたため部屋数は多く、倉庫（未登記）もあります。 相続登記が必要な為、引き渡し時期は要相談とします。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.3km",
     "status_note": "",
@@ -41749,12 +41891,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44501.jpg"
+     "img/athome/44501_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.4km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "広い敷地なので多くの駐車も可能ですが、設置の倉庫はガレージとしても有効に使えます。 役場5.0km、隠岐病院6.0km、保育所5.0km、小学校3.2km、中学校6.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.4km",
     "status_note": "",
@@ -41802,12 +41947,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44498.jpg"
+     "img/athome/44498_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から2.0km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "シロアリ被害、雨漏りが見受けられます。 役場4.5km、隠岐病院5.0km、保育所4.2km、小学校4.0km、中学校5.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から2.0km",
     "status_note": "",
@@ -41855,12 +42003,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44496.jpg"
+     "img/athome/44496_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "役場5.0km、隠岐病院6.0km、保育所5.0km、小学校3.3km、中学校6.0km 建築時期：明治18年",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.1km",
     "status_note": "",
@@ -41908,12 +42059,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44494.jpg"
+     "img/athome/44494_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "倉庫部分は未登記です。 役場1.0km、隠岐病院1.3km、保育所0.2km、小学校1.2km、中学校1.8km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.1km",
     "status_note": "",
@@ -41961,12 +42115,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44491.jpg"
+     "img/athome/44491_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停なし",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "給湯器が壊れて、撤去されています。 役場4.5km、隠岐病院5.0km、保育所4.5km、小学校2.5km、中学校5.2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停なし",
     "status_note": "",
@@ -42014,12 +42171,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44490.jpg"
+     "img/athome/44490_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停なし",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "５４８番１６の宅地に隣接する５４８番１５の土地もこの売買に含みます。土地は畑として使用してました。 役場4.8km、隠岐病院5.2km、保育所4.3km、小学校2.9km、中学校5.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停なし",
     "status_note": "",
@@ -42067,12 +42227,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44489.jpg"
+     "img/athome/44489_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "2階で数か所雨漏りが発生しています。 告知事項有り。詳細はお問い合せください。 役場1.3km、隠岐病院1.5km、保育所0.1km、小学校1.5km、中学校2.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -42120,12 +42283,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44476.jpg"
+     "img/athome/44476_0.jpg"
     ],
     "features": {
      "物件種目": "売店舗付住宅",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "1階 2階以上 駐車場(近隣含む) 最上階 居抜き物件 即引渡可 エレベーター エアコン 男女別トイレ 給湯",
+     "備考": "現在入居中です。 内見、引き渡し時期についてはお問合せください。 役場3.5km、隠岐病院3.0km、保育所0.5km、小学校1.0km、中学校2.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -42173,12 +42339,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44475.jpg"
+     "img/athome/44475_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "土砂災害警戒区域（急傾斜）に該当しています。 役場1.5km、隠岐病院0.7km、保育所1.5km、小学校1.2km、中学校1.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.3km",
     "status_note": "",
@@ -42226,12 +42395,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44471.jpg"
+     "img/athome/44471_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "残置物については相談 公衆用道路4.98平方メートルあり 役場2.43km、隠岐病院2.29km、保育所0.69km、小学校0.6km、中学校1.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.3km",
     "status_note": "",
@@ -42279,12 +42451,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44464.jpg"
+     "img/athome/44464_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から1.5km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "役場2.7km、隠岐病院2.2km、保育所1.7km、小学校0.5km、中学校1.8km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から1.5km",
     "status_note": "",
@@ -42332,12 +42507,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44463.jpg"
+     "img/athome/44463_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -42385,12 +42562,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44451.jpg"
+     "img/athome/44451_0.jpg"
     ],
     "features": {
      "物件種目": "売旅館",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "1階 2階以上 駐車場(近隣含む) 最上階 居抜き物件 即引渡可 エレベーター エアコン 男女別トイレ 給湯",
+     "備考": "役場2.4km、隠岐病院1.6km、保育所2.7km、小学校0.45km、中学校1.2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -42438,12 +42618,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44449.jpg"
+     "img/athome/44449_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.7km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "土砂災害警戒区域（急傾斜） 役場2.3km、診療所1.1km、保育所1.2km、小学校1.0km、中学校1.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.7km",
     "status_note": "",
@@ -42491,12 +42674,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44441.jpg"
+     "img/athome/44441_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "前面道路が4ｍ未満のため、再築時等はセットバックが必要です。 役場3.5km、隠岐病院2.2km、保育所1.0km、小学校1.0km、中学校1.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.1km",
     "status_note": "",
@@ -42544,12 +42730,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44437.jpg"
+     "img/athome/44437_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "役場2.0km、隠岐病院1.2km、保育所2.0km、小学校1.0km、中学校1.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.1km",
     "status_note": "",
@@ -42597,12 +42786,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44439.jpg"
+     "img/athome/44439_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りのバス停から0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "土砂災害警戒区域（急傾斜）に該当しています。 役場2.3km、隠岐病院1.5km、保育所2.0km、小学校0.3km、中学校1.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.3km",
     "status_note": "",
@@ -42650,12 +42842,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44413.jpg"
+     "img/athome/44413_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停から0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場2.5km　隠岐病院2.0km　保育所2.0km　小学校1.0km　中学校0.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.2km",
     "status_note": "",
@@ -42703,12 +42898,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44410.jpg"
+     "img/athome/44410_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "地目は山林ですが、現況は果樹を植え畑として利用しています。 土砂災害特別警戒区域 町役場2.3km　隠岐病院1.5km　下西保育所1.8km　西郷小学校0.6km　西郷中学校0.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停0.2km",
     "status_note": "",
@@ -42756,12 +42954,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44417.jpg"
+     "img/athome/44417_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停から150ｍ",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場3.0km　隠岐病院2.5km　保育所0.8km　西郷小学校1.0km　西郷中学校2.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から150ｍ",
     "status_note": "",
@@ -42809,12 +43010,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44422.jpg"
+     "img/athome/44422_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停から0.4km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "役場4.0km、隠岐病院4.0km、保育所4.0km、小学校3.5km、中学校4.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.4km",
     "status_note": "",
@@ -42862,12 +43066,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44425.jpg"
+     "img/athome/44425_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停から0.4km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "農業委員会等における手続きが別途必要となる場合があります。 役場3.4km、隠岐病院4.0km、保育所3.0km、小学校2.5km、中学校3.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.4km",
     "status_note": "",
@@ -42915,12 +43122,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44427.jpg"
+     "img/athome/44427_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停から0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "農業振興地域に該当するため、諸手続きにより売却までに時間を要する場合があります。役場3.5km、隠岐病院4.0km、保育所3.0km、小学校3.0km、中学校4.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.3km",
     "status_note": "",
@@ -42968,12 +43178,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44428.jpg"
+     "img/athome/44428_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停から70ｍ",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "役場3.0km、隠岐病院3.6km、保育所3.0km、小学校2.6km、中学校3.0km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から70ｍ",
     "status_note": "",
@@ -43021,12 +43234,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44415.jpg"
+     "img/athome/44415_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停から0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場2.0km　隠岐病院1.5km　下西保育所1.0km　西郷小学校1.0km　西郷中学校1.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.3km",
     "status_note": "",
@@ -43074,12 +43290,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44430.jpg"
+     "img/athome/44430_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停から60ｍ",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場12.7km　診療所10.4km　保育所7.6km　小学校10.1km　西郷中学校9.1km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から60ｍ",
     "status_note": "",
@@ -43127,12 +43346,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44431.jpg"
+     "img/athome/44431_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りのバス停から0.4km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場0.42km　診療所0.42km　保育所0.47km　小学校0.53km　中学校0.72km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りのバス停から0.4km",
     "status_note": "",
@@ -43180,12 +43402,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44077.jpg"
+     "img/athome/44077_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲横田駅 / 車10分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲横田駅 / 車10分",
     "status_note": "",
@@ -43233,12 +43457,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44108.jpg"
+     "img/athome/44108_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲八代駅 / 徒歩15分",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲八代駅 / 徒歩15分",
     "status_note": "",
@@ -43286,12 +43512,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44102.jpg"
+     "img/athome/44102_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲横田駅 / 車5分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲横田駅 / 車5分",
     "status_note": "",
@@ -43339,12 +43567,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44093.jpg"
+     "img/athome/44093_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲三成駅 / 徒歩20分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲三成駅 / 徒歩20分",
     "status_note": "",
@@ -43392,12 +43622,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44092.jpg"
+     "img/athome/44092_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲横田駅 / 車20分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲横田駅 / 車20分",
     "status_note": "",
@@ -43445,12 +43677,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44089.jpg"
+     "img/athome/44089_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 八川駅 / 車15分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 八川駅 / 車15分",
     "status_note": "",
@@ -43498,12 +43732,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44082.jpg"
+     "img/athome/44082_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲横田駅 / 徒歩10分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲横田駅 / 徒歩10分",
     "status_note": "",
@@ -43551,12 +43787,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43692.jpg"
+     "img/athome/43692_0.jpg",
+     "img/athome/43692_1.jpg",
+     "img/athome/43692_2.jpg",
+     "img/athome/43692_3.jpg",
+     "img/athome/43692_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 木次駅 / 車3分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "渡り廊下天井に雨漏りあり。 お問合せの際、アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 木次駅 / 車3分",
     "status_note": "",
@@ -43604,12 +43847,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43281.jpg"
+     "img/athome/43281_0.jpg",
+     "img/athome/43281_1.jpg",
+     "img/athome/43281_2.jpg",
+     "img/athome/43281_3.jpg",
+     "img/athome/43281_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 木次駅 / 徒歩3分",
-     "fotos_total": "7"
+     "fotos_total": "7",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 木次駅 / 徒歩3分",
     "status_note": "",
@@ -43657,12 +43907,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43283.jpg"
+     "img/athome/43283_0.jpg",
+     "img/athome/43283_1.jpg",
+     "img/athome/43283_2.jpg",
+     "img/athome/43283_3.jpg",
+     "img/athome/43283_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 木次駅 / 徒歩3分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 木次駅 / 徒歩3分",
     "status_note": "",
@@ -43710,12 +43967,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43278.jpg"
+     "img/athome/43278_0.jpg",
+     "img/athome/43278_1.jpg",
+     "img/athome/43278_2.jpg",
+     "img/athome/43278_3.jpg",
+     "img/athome/43278_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 木次駅 / 徒歩1分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 木次駅 / 徒歩1分",
     "status_note": "",
@@ -43763,12 +44027,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42780.jpg"
+     "img/athome/42780_0.jpg",
+     "img/athome/42780_1.jpg",
+     "img/athome/42780_2.jpg",
+     "img/athome/42780_3.jpg",
+     "img/athome/42780_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 出雲大東駅 / 車2分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "物置２棟（31.48平米）、近隣の駐車場紹介します。屋根付き1台4,500円/月、露地1台2,500円/月。山林あり。 お問合せの際、アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 出雲大東駅 / 車2分",
     "status_note": "",
@@ -43816,12 +44087,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43259.jpg"
+     "img/athome/43259_0.jpg",
+     "img/athome/43259_1.jpg",
+     "img/athome/43259_2.jpg",
+     "img/athome/43259_3.jpg",
+     "img/athome/43259_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 木次駅 / 徒歩3分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "母屋・離れセットでの売却となります。自治会加入は要協議。土地は借地のため、借地料104,400円/年（1回払い）が必要となります。 アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 木次駅 / 徒歩3分",
     "status_note": "",
@@ -43869,12 +44147,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42902.jpg"
+     "img/athome/42902_0.jpg",
+     "img/athome/42902_1.jpg",
+     "img/athome/42902_2.jpg",
+     "img/athome/42902_3.jpg",
+     "img/athome/42902_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス北原線 北原発電所前 停歩30m",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "自治会加入を希望。 お問合せの際、アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス北原線 北原発電所前 停歩30m",
     "status_note": "",
@@ -43922,12 +44207,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42811.jpg"
+     "img/athome/42811_0.jpg",
+     "img/athome/42811_1.jpg",
+     "img/athome/42811_2.jpg",
+     "img/athome/42811_3.jpg",
+     "img/athome/42811_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス阿用・久野線 下土井 停歩1分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "公営水道",
+     "備考": "敷地は借地。お問合わせの際、アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス阿用・久野線 下土井 停歩1分",
     "status_note": "",
@@ -43975,12 +44268,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42813.jpg"
+     "img/athome/42813_0.jpg",
+     "img/athome/42813_1.jpg",
+     "img/athome/42813_2.jpg",
+     "img/athome/42813_3.jpg",
+     "img/athome/42813_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス塩田線 長安寺入口 停歩2分",
-     "fotos_total": "7"
+     "fotos_total": "7",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "農地の売買には農地法の制約があり、取得できない場合もあります。小修繕必要、要現地確認。 お問い合わせの際、アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス塩田線 長安寺入口 停歩2分",
     "status_note": "",
@@ -44028,12 +44328,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42320.jpg"
+     "img/athome/42320_0.jpg",
+     "img/athome/42320_1.jpg",
+     "img/athome/42320_2.jpg",
+     "img/athome/42320_3.jpg",
+     "img/athome/42320_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 松江駅 / 車25分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 松江駅 / 車25分",
     "status_note": "",
@@ -44081,12 +44388,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/41872.jpg"
+     "img/athome/41872_0.jpg",
+     "img/athome/41872_1.jpg",
+     "img/athome/41872_2.jpg",
+     "img/athome/41872_3.jpg",
+     "img/athome/41872_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "美保関コミュニティバス 森山公民館前 停歩3分",
-     "fotos_total": "5"
+     "fotos_total": "5",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "美保関コミュニティバス 森山公民館前 停歩3分",
     "status_note": "",
@@ -44134,12 +44448,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/40997.jpg"
+     "img/athome/40997_0.jpg",
+     "img/athome/40997_1.jpg",
+     "img/athome/40997_2.jpg",
+     "img/athome/40997_3.jpg",
+     "img/athome/40997_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 松江駅 / 車18分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 松江駅 / 車18分",
     "status_note": "",
@@ -44187,12 +44508,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/39955.jpg"
+     "img/athome/39955_0.jpg",
+     "img/athome/39955_1.jpg",
+     "img/athome/39955_2.jpg",
+     "img/athome/39955_3.jpg",
+     "img/athome/39955_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 松江駅 / 徒歩33分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 松江駅 / 徒歩33分",
     "status_note": "",
@@ -44240,12 +44568,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/36785.jpg"
+     "img/athome/36785_0.jpg",
+     "img/athome/36785_1.jpg",
+     "img/athome/36785_2.jpg",
+     "img/athome/36785_3.jpg",
+     "img/athome/36785_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 松江駅 / 徒歩80分",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 松江駅 / 徒歩80分",
     "status_note": "",
@@ -44292,11 +44626,19 @@
     "foreigner_ok": "unknown",
     "pet_ok": "unknown",
     "renovated": 0,
-    "photos": [],
+    "photos": [
+     "img/athome/35127_0.jpg",
+     "img/athome/35127_1.jpg",
+     "img/athome/35127_2.jpg",
+     "img/athome/35127_3.jpg",
+     "img/athome/35127_4.jpg"
+    ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 松江駅 / 車13km",
-     "fotos_total": "0"
+     "fotos_total": "0",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 松江駅 / 車13km",
     "status_note": "",
@@ -44344,12 +44686,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38432.jpg"
+     "img/athome/38432_0.jpg",
+     "img/athome/38432_1.jpg",
+     "img/athome/38432_2.jpg",
+     "img/athome/38432_3.jpg",
+     "img/athome/38432_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "市民バス吉田大東線 渡部診療所 停歩7分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "お問合せの際、アットホーム空き家バンクをみたとお伝えいただくとスムーズです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "市民バス吉田大東線 渡部診療所 停歩7分",
     "status_note": "",
@@ -44397,12 +44746,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37435.jpg"
+     "img/athome/37435_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "-",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "-",
     "status_note": "",
@@ -44450,12 +44802,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/36582.jpg"
+     "img/athome/36582_0.jpg",
+     "img/athome/36582_1.jpg",
+     "img/athome/36582_2.jpg",
+     "img/athome/36582_3.jpg",
+     "img/athome/36582_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 美保関ターミナル 停歩3分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 美保関ターミナル 停歩3分",
     "status_note": "",
@@ -44503,12 +44861,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/34295.jpg"
+     "img/athome/34295_0.jpg",
+     "img/athome/34295_1.jpg",
+     "img/athome/34295_2.jpg",
+     "img/athome/34295_3.jpg",
+     "img/athome/34295_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 古浦漁業会館前 停歩2分",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "成約後、売り主により建物解体後の引き渡しとなります。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 古浦漁業会館前 停歩2分",
     "status_note": "",
@@ -44556,12 +44921,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/33965.jpg"
+     "img/athome/33965_0.jpg",
+     "img/athome/33965_1.jpg",
+     "img/athome/33965_2.jpg",
+     "img/athome/33965_3.jpg",
+     "img/athome/33965_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 本庄公民館 停歩1分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 本庄公民館 停歩1分",
     "status_note": "",
@@ -44609,12 +44980,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/32441.jpg"
+     "img/athome/32441_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "-",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・オール電化",
+     "備考": "※オール電化物件 ※お風呂リフォーム済み",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "-",
     "status_note": "",
@@ -44662,12 +45037,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/32483.jpg"
+     "img/athome/32483_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "-",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "-",
     "status_note": "",
@@ -44715,12 +45093,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31842.jpg"
+     "img/athome/31842_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場2.5km　診療所2km　保育所1km　小学校0.3km　中学校1.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.3km",
     "status_note": "",
@@ -44768,12 +45149,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31852.jpg"
+     "img/athome/31852_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場2.2km　診療所1.5km　保育所2.3km　小学校1km　中学校1km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.3km",
     "status_note": "",
@@ -44821,12 +45205,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31853.jpg"
+     "img/athome/31853_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.6km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場1.7km　宇野内科0.7km　下西保育所2km　西郷小学校1km　西郷中学校0.9km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.6km",
     "status_note": "",
@@ -44874,12 +45261,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31855.jpg"
+     "img/athome/31855_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場2.7km　診療所2km　保育所1km　小学校0.8km　中学校1.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.2km",
     "status_note": "",
@@ -44927,12 +45317,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31858.jpg"
+     "img/athome/31858_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場1.5km　診療所2km　保育所2km　小学校0.8km　中学校0.6km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.2km",
     "status_note": "",
@@ -44980,12 +45373,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31860.jpg"
+     "img/athome/31860_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場2.5km　診療所2.1km　保育所0.45km　小学校0.35km　中学校1.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
@@ -45033,12 +45429,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31861.jpg"
+     "img/athome/31861_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.5km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場1km　診療所0.6km　保育所1km　小学校1.5km　中学校1.2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.5km",
     "status_note": "",
@@ -45086,12 +45485,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31862.jpg"
+     "img/athome/31862_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場3km　診療所2.5km　保育所0.5km　小学校1km　中学校2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.2km",
     "status_note": "",
@@ -45139,12 +45541,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31863.jpg"
+     "img/athome/31863_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場4km　診療所4.2km　保育所3.5km　小学校3.5km　中学校3.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.2km",
     "status_note": "",
@@ -45192,12 +45597,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31866.jpg"
+     "img/athome/31866_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場4km　診療所4.2km　保育所3.5km　小学校3.5km　中学校3.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.2km",
     "status_note": "",
@@ -45245,12 +45653,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31867.jpg"
+     "img/athome/31867_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場4.5km　診療所5km　保育所4km　小学校3.5km　中学校4.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停2km",
     "status_note": "",
@@ -45298,12 +45709,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31868.jpg"
+     "img/athome/31868_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.05km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場4.6km　診療所5.5km　保育所4.5km　小学校3km　中学校5.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.05km",
     "status_note": "",
@@ -45351,12 +45765,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31870.jpg"
+     "img/athome/31870_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場4.5km　診療所5km　保育所4km　小学校4km　中学校4.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停2km",
     "status_note": "",
@@ -45404,12 +45821,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31872.jpg"
+     "img/athome/31872_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.4km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場0.6km　診療所1.5km　保育所0.6km　小学校1.3km　中学校1.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.4km",
     "status_note": "",
@@ -45457,12 +45877,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31874.jpg"
+     "img/athome/31874_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.5km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場4.2km　診療所5km　保育所4km　小学校4km　中学校4.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.5km",
     "status_note": "",
@@ -45510,12 +45933,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31875.jpg"
+     "img/athome/31875_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.03km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場3km　診療所3.4km　保育所2.7km　小学校2.6km　中学校3.2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.03km",
     "status_note": "",
@@ -45563,12 +45989,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31876.jpg"
+     "img/athome/31876_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停2.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場3.7km　診療所4.2km　保育所3.3km　小学校3.5km　中学校4km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停2.2km",
     "status_note": "",
@@ -45616,12 +46045,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31878.jpg"
+     "img/athome/31878_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.27km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場1.6km　隠岐病院0.7km　下西保育所1.5km　有木小学校0.9km　西郷中学校1.6km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.27km",
     "status_note": "",
@@ -45669,12 +46101,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31879.jpg"
+     "img/athome/31879_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場1km　診療所2km　保育所1km　小学校2.2km　中学校0.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.2km",
     "status_note": "",
@@ -45722,12 +46157,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31880.jpg"
+     "img/athome/31880_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "ー",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "五箇支所3.3km　五箇診療所4.3km　五箇保育所4.6km　五箇小学校4.43km　五箇中学校4km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ー",
     "status_note": "",
@@ -45775,12 +46213,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31881.jpg"
+     "img/athome/31881_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.5km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場6km　診療所6km　保育所7km　小学校7km　中学校7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.5km",
     "status_note": "",
@@ -45828,12 +46269,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31882.jpg"
+     "img/athome/31882_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.6km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場2.5km　診療所1km　保育所0.4km　小学校0.6km　中学校0.4km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.6km",
     "status_note": "",
@@ -45881,12 +46325,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31883.jpg"
+     "img/athome/31883_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.5km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場1km　診療所1km　保育所0.3km　小学校0.3km　中学校15km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.5km",
     "status_note": "",
@@ -45934,12 +46381,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31877.jpg"
+     "img/athome/31877_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "最寄りバス停2km　町役場4.3km　隠岐病院4.9km　共生第二保育所4.4km　磯小学校2.5km　西郷南中学校5.2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停2km",
     "status_note": "",
@@ -45987,12 +46437,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31871.jpg"
+     "img/athome/31871_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.7km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場6km　診療所6.5km　保育所6km　小学校5.5km　中学校6km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.7km",
     "status_note": "",
@@ -46040,12 +46493,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31850.jpg"
+     "img/athome/31850_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "最寄りバス停0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "町役場3km　診療所2.2km　保育所2km　小学校1km　中学校0.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.3km",
     "status_note": "",
@@ -46093,12 +46549,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31826.jpg"
+     "img/athome/31826_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "町役場3.1km　診療所0.2km　保育所0.6km　小学校0.7km　中学校4km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.3km",
     "status_note": "",
@@ -46146,12 +46606,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31801.jpg"
+     "img/athome/31801_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道",
+     "備考": "町役場2km　診療所2km　保育所2km　小学校2km　中学校16km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.3km",
     "status_note": "",
@@ -46199,12 +46663,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31805.jpg"
+     "img/athome/31805_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道",
+     "備考": "町役場16km　中村診療所1.4km　中村保育所1.9km　北小学校1.9km　南中学校16km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.3km",
     "status_note": "",
@@ -46252,12 +46720,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31806.jpg"
+     "img/athome/31806_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "町役場1.2km　診療所1km　保育所1km　小学校1km　中学校14km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.3km",
     "status_note": "",
@@ -46305,12 +46776,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31808.jpg"
+     "img/athome/31808_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "備考": "五箇支所8km　診療所5.8km　保育所7.2km　小学校7km　中学校7.2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
@@ -46358,12 +46833,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31810.jpg"
+     "img/athome/31810_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "町役場3.5km　診療所6.5km　保育所6km　小学校5.3km　中学校6km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
@@ -46411,12 +46890,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31819.jpg"
+     "img/athome/31819_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・その他水道",
+     "備考": "町役場3.6km　診療所4.2km　保育所1.4km　小学校1.1km　中学校3.6km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
@@ -46464,12 +46947,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31823.jpg"
+     "img/athome/31823_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停3.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "町役場2.9km　診療所3.5km　保育所2.9km　小学校2.6km　中学校3.2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停3.1km",
     "status_note": "",
@@ -46517,12 +47004,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31832.jpg"
+     "img/athome/31832_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.08km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "備考": "町役場3.2km　診療所2.31km　保育所1.28km　小学校0.71km　中学校1.27km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.08km",
     "status_note": "",
@@ -46570,12 +47061,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31833.jpg"
+     "img/athome/31833_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.4km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "町役場2.5km　診療所1.5km　保育所2km　小学校0.3km　中学校1km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.4km",
     "status_note": "",
@@ -46623,12 +47118,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31834.jpg"
+     "img/athome/31834_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "町役場2.1km　診療所1.5km　保育所1.5km　小学校0.3km　中学校1km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
@@ -46676,12 +47175,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31824.jpg"
+     "img/athome/31824_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "町役場5.2km　診療所6.2km　保育所5km　小学校3.6km　中学校6km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.3km",
     "status_note": "",
@@ -46729,12 +47232,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31828.jpg"
+     "img/athome/31828_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.1km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "町役場3km　診療所2.5km　保育所1km　小学校1.5km　中学校2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
@@ -46782,12 +47289,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31829.jpg"
+     "img/athome/31829_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.3km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "町役場3km　診療所3km　保育所0.7km　小学校1km　中学校2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.3km",
     "status_note": "",
@@ -46835,12 +47346,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31835.jpg"
+     "img/athome/31835_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.26km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "町役場2.2km　診療所1.5km　保育所1.4km　小学校0.9km　中学校0.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.26km",
     "status_note": "",
@@ -46888,12 +47403,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31838.jpg"
+     "img/athome/31838_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停0.2km",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・上水道",
+     "備考": "町役場3.2km　診療所2.2km　保育所1km　小学校0.6km　中学校2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停0.2km",
     "status_note": "",
@@ -46941,12 +47460,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31768.jpg"
+     "img/athome/31768_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "-",
-     "fotos_total": "4"
+     "fotos_total": "4",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "100万円以下",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "-",
     "status_note": "",
@@ -46994,12 +47516,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31014.jpg"
+     "img/athome/31014_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "木次線 八川駅 / 車7分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・その他水道",
+     "備考": "100万円以下",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "木次線 八川駅 / 車7分",
     "status_note": "",
@@ -47047,12 +47573,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31012.jpg"
+     "img/athome/31012_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "-",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "-",
     "status_note": "",
@@ -47100,12 +47629,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/30414.jpg"
+     "img/athome/30414_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "‐",
-     "fotos_total": "4"
+     "fotos_total": "4",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "‐",
     "status_note": "",
@@ -47153,12 +47684,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/30415.jpg"
+     "img/athome/30415_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "‐",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "CATV\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "※所有者の方は退去予定。 古民家風住宅",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "‐",
     "status_note": "",
@@ -47206,12 +47741,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/30407.jpg"
+     "img/athome/30407_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "至便な戸建住宅。 価格 180 万円 間取 3K 建物面積 151.4㎡ 土地面積 面積不明 私道負担面積 物件種目 売戸建 築年月 1974年4月 所在地 島根県仁多郡奥出雲町下阿井 交通 ‐",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "二階部分は未造作",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "至便な戸建住宅。 価格 180 万円 間取 3K 建物面積 151.4㎡ 土地面積 面積不明 私道負担面積 物件種目 売戸建 築年月 1974年4月 所在地 島根県仁多郡奥出雲町下阿井 交通 ‐",
     "status_note": "",
@@ -47259,12 +47798,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/30413.jpg"
+     "img/athome/30413_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "‐",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "‐",
     "status_note": "",
@@ -47312,12 +47854,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/16944.jpg"
+     "img/athome/16944_0.jpg",
+     "img/athome/16944_1.jpg",
+     "img/athome/16944_2.jpg",
+     "img/athome/16944_3.jpg",
+     "img/athome/16944_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 手結バス停 停歩7分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "ガスレンジ\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "恵曇小学校近くにある239平方メートルの土地も含めた販売となります。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 手結バス停 停歩7分",
     "status_note": "",
@@ -47365,12 +47915,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/10753.jpg"
+     "img/athome/10753_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 釜屋 停歩2分",
-     "fotos_total": "3"
+     "fotos_total": "3",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "備考": "町役場0.7km　診療所0.7km　保育所0.8km　小学校1.1km　中学校1.1km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 釜屋 停歩2分",
     "status_note": "",
@@ -47418,12 +47972,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/10741.jpg"
+     "img/athome/10741_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 釜屋 停歩4分",
-     "fotos_total": "7"
+     "fotos_total": "7",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "備考": "都万支所1km　都万診療所0.9km　都万保育所0.95km　都万小学校1.1km　都万中学校1km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 釜屋 停歩4分",
     "status_note": "",
@@ -47470,11 +48028,20 @@
     "foreigner_ok": "unknown",
     "pet_ok": "unknown",
     "renovated": 0,
-    "photos": [],
+    "photos": [
+     "img/athome/8224_0.jpg",
+     "img/athome/8224_1.jpg",
+     "img/athome/8224_2.jpg",
+     "img/athome/8224_3.jpg",
+     "img/athome/8224_4.jpg"
+    ],
     "features": {
      "物件種目": "貸戸建住宅",
      "交通": "木次線 木次駅 / 徒歩3分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "2階以上 駐車場(近隣含む) 洗濯機置き場 B/T(バストイレ)別室 追焚機能 フローリング エアコン ペット相談 オートロック 南向",
+     "備考": "駐車場所は要相談。 退去時には現状回復費用が発生する場合があります。 アットホーム空き家バンクをみたとお伝えいただくとスムーズです。 引き渡し：即時",
+     "敷金保証金": "1ヶ月\n\t\t\t\t\t\t\t\t/\n\t\t\t\t\t\t\t\t\tなし"
     },
     "description_raw": "木次線 木次駅 / 徒歩3分",
     "status_note": "",
