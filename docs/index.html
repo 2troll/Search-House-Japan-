@@ -42,6 +42,8 @@ button{font-family:inherit}
 #listhead{padding:9px 14px;border-bottom:1px solid var(--line);background:var(--panel);font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
 #list{overflow:auto;flex:1;padding:10px}
 #map{flex:1}
+#body.mapfull #filters,#body.mapfull #listcol{display:none}
+#mapFull{position:absolute;top:10px;left:10px;z-index:1001;background:#fff;border:1px solid var(--line2);border-radius:8px;padding:7px 11px;font-size:12px;font-weight:600;cursor:pointer;box-shadow:var(--shadow)}
 
 .fg{margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .fg:last-child{border:none}
@@ -73,8 +75,10 @@ input[type=text]{width:100%;padding:8px 10px;border:1px solid var(--line2);borde
 .badge.park{background:#dcfce7;color:#166534}.badge.reno{background:#ede9fe;color:#6d28d9}
 .badge.new{background:var(--gold);color:#fff}.badge.fr{background:#cffafe;color:#0e7490}
 
-.price-pin{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;padding:3px 7px;white-space:nowrap;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.35)}
-.pin-sale{border-radius:13px}.pin-rent{border-radius:4px}.pin.fav{outline:3px solid var(--gold)}
+.price-pin{display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;height:22px;padding:0 9px;white-space:nowrap;border-radius:11px;border:1.5px solid #fff;box-shadow:0 2px 5px rgba(0,0,0,.3);letter-spacing:-.01em;line-height:1}
+.pin-rent{border-style:dashed;border-width:2px}
+.pin.fav{outline:2px solid var(--gold);outline-offset:1px}
+.price-pin.land{border-radius:4px}
 
 /* ====== Ficha lateral (drawer) ====== */
 #drawer{position:absolute;top:0;right:0;height:100%;width:430px;max-width:100%;background:#fff;box-shadow:var(--shadow-lg);transform:translateX(105%);transition:transform .25s;z-index:1500;display:flex;flex-direction:column}
@@ -158,7 +162,13 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
           <span class="chip" data-pt="apartment">🏢 Apartamento</span>
           <span class="chip" data-pt="land">🟫 Terreno</span>
         </div></div>
+      <div class="fg"><h4>Ofertas</h4>
+        <div class="row" id="dealRow">
+          <span class="chip" data-deal="cheap">💸 Gangas ≤100万</span>
+          <span class="chip" data-deal="free">🆓 Casi gratis ≤10万</span>
+        </div></div>
       <div class="fg"><h4>Alquiler máx: <span class="v" id="rentVal"></span>/mes</h4><input type="range" id="maxRent" min="0" max="100000" step="5000" value="40000"></div>
+      <div class="fg"><h4>Precio compra máx: <span class="v" id="saleVal">Sin límite</span></h4><input type="range" id="maxSale" min="0" max="30000000" step="500000" value="30000000"></div>
       <div class="fg"><h4>Parking 駐車場</h4>
         <label class="toggle"><input type="checkbox" id="parkingOnly"> Solo con parking</label>
         <label class="toggle"><input type="checkbox" id="parkingNearby" checked> Aceptar cercano</label></div>
@@ -185,6 +195,7 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
     </section>
 
     <div id="map"></div>
+    <button id="mapFull" title="Ver solo el mapa / volver">🗺️ Solo mapa</button>
 
     <!-- Ficha lateral -->
     <aside id="drawer">
@@ -300,7 +311,15 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
 <script>
 // ====== Mapa ======
 const map=L.map('map',{zoomControl:true}).setView([34.6,135.6],8);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}).addTo(map);
+// Varios mapas base seleccionables (esquina arriba-derecha)
+const BASEMAPS={
+  "Mapa claro":L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:20,attribution:'© OSM © CARTO'}),
+  "Calles (OSM)":L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'© OpenStreetMap'}),
+  "Satélite":L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'© Esri'}),
+  "Relieve":L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'© OpenTopoMap'}),
+};
+BASEMAPS["Mapa claro"].addTo(map);
+L.control.layers(BASEMAPS,null,{position:'topright',collapsed:true}).addTo(map);
 const cluster=L.markerClusterGroup({maxClusterRadius:45});map.addLayer(cluster);
 
 // ====== Zonas (sincronizar con TARGET_AREAS) ======
@@ -335,7 +354,7 @@ const $=id=>document.getElementById(id);
 function priceColor(f){let t;if(f.listing_type==='rent'){t=Math.min(1,(f.rent_yen||0)/80000);}else{t=Math.min(1,(f.sale_price_yen||0)/30000000);}return`hsl(${(1-t)*120},70%,42%)`;}
 
 let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZONES=new Set();
-let OP='rent',SORT='cost',CURRENT=null,PTYPE='all';
+let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='';
 let FAVS=new Set(JSON.parse(localStorage.getItem('favs')||'[]'));
 // tipo de inmueble: usa prop_type o lo deriva de los campos japoneses
 function propType(f){
@@ -367,7 +386,7 @@ function stayCost(f,months){
 // ====== Carga ======
 fetch('data.geojson').then(r=>r.json()).then(geo=>{
   FEATURES=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
-  buildLayouts();buildZones();loadAssume();updateRentLabel();apply();
+  buildLayouts();buildZones();loadAssume();updateRentLabel();updateSaleLabel();apply();
 }).catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data.geojson. Ejecuta refresh.py y abre con un servidor.</div>';});
 
 function buildLayouts(){
@@ -381,17 +400,21 @@ function buildZones(){
   present.forEach(z=>{ZONES.add(z);const c=document.createElement('span');c.className='chip on';c.textContent=AREA_LABELS[z]||z;c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);apply();};row.appendChild(c);});
 }
 function updateRentLabel(){const v=+$('maxRent').value;$('rentVal').textContent=(v>=100000?'Sin límite':money(v));}
+function updateSaleLabel(){const v=+$('maxSale').value;$('saleVal').textContent=(v>=30000000?'Sin límite':money(v));}
 
 // Controles
 $('months').oninput=()=>{apply();renderCompare();if(CURRENT)openDetail(CURRENT);};
 $('sortBy').onchange=e=>{SORT=e.target.value;apply();};
 $('maxRent').oninput=()=>{updateRentLabel();apply();};
+$('maxSale').oninput=()=>{updateSaleLabel();apply();};
+$('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFull').textContent=b?'◀ Mostrar lista':'🗺️ Solo mapa';setTimeout(()=>map.invalidateSize(),60);};
+document.querySelectorAll('#dealRow .chip').forEach(c=>c.onclick=()=>{const d=c.dataset.deal;if(DEAL===d){DEAL='';c.classList.remove('on');}else{DEAL=d;document.querySelectorAll('#dealRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');}apply();});
 $('maxAge').oninput=e=>{const v=+e.target.value;$('ageVal').textContent=v>=80?'Cualquiera':v+' años';apply();};
 ['parkingOnly','parkingNearby','renovatedOnly','newOnly'].forEach(id=>$(id).onchange=apply);
 $('search').oninput=apply;
 document.querySelectorAll('#opSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#opSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');OP=b.dataset.op;apply();});
 document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#ptypeRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');PTYPE=c.dataset.pt;apply();});
-document.querySelectorAll('#curSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#curSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');CUR=b.dataset.c;updateRentLabel();apply();renderCompare();if(CURRENT)openDetail(CURRENT);});
+document.querySelectorAll('#curSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#curSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');CUR=b.dataset.c;updateRentLabel();updateSaleLabel();apply();renderCompare();if(CURRENT)openDetail(CURRENT);});
 $('openAssume').onclick=()=>$('assumeModal').classList.add('show');
 $('openCompare').onclick=()=>{renderCompare();$('compareModal').classList.add('show');};
 document.querySelectorAll('[data-close]').forEach(b=>b.onclick=e=>e.target.closest('.modal-bg').classList.remove('show'));
@@ -407,6 +430,8 @@ function matches(f){
   if(OP!=='both'&&f.listing_type!==OP)return false;
   if(PTYPE!=='all'&&propType(f)!==PTYPE)return false;
   if(f.listing_type==='rent'){const mr=+$('maxRent').value;if(mr<100000&&(f.rent_yen||1e9)>mr)return false;}
+  if(f.listing_type==='sale'){const ms=+$('maxSale').value;if(ms<30000000&&f.sale_price_yen&&f.sale_price_yen>ms)return false;}
+  if(DEAL){const p=f.sale_price_yen;const lim=DEAL==='free'?100000:1000000;if(!(p&&p<=lim))return false;}
   if($('parkingOnly').checked){const ok=f.parking==='yes'||(f.parking==='nearby'&&$('parkingNearby').checked);if(!ok)return false;}
   if(LAYOUTS.size){const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];if(!m||!LAYOUTS.has(m.toUpperCase()))return false;}
   const ma=+$('maxAge').value;if(ma<80&&f.age_years!=null&&f.age_years>ma)return false;
@@ -419,10 +444,11 @@ function matches(f){
 }
 
 function makeIcon(f){
-  const cls=f.listing_type==='rent'?'pin-rent':'pin-sale';
   const months=+$('months').value,sc=stayCost(f,months);
-  let val=f.listing_type==='rent'?(sc?moneyShort(sc.total):(f.rent_yen?moneyShort(f.rent_yen):'?')):(f.sale_price_yen?moneyShort(f.sale_price_yen):'?');
-  return L.divIcon({className:'',html:`<div class="price-pin ${cls} pin ${FAVS.has(f.id)?'fav':''}" style="background:${priceColor(f)}">${val}</div>`,iconAnchor:[20,12]});
+  const pt=propType(f);
+  let val=f.listing_type==='rent'?(sc?moneyShort(sc.total):(f.rent_yen?moneyShort(f.rent_yen):'¥?')):(f.sale_price_yen?moneyShort(f.sale_price_yen):'¥?');
+  const cls=[(f.listing_type==='rent'?'pin-rent':''),(pt==='land'?'land':''),(FAVS.has(f.id)?'fav':'')].join(' ');
+  return L.divIcon({className:'',html:`<span class="price-pin pin ${cls}" style="background:${priceColor(f)}">${val}</span>`,iconSize:null,iconAnchor:[22,11]});
 }
 
 function sortFn(months){return(a,b)=>{
