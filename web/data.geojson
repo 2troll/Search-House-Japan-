@@ -25795,7 +25795,12 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46981_0.jpg"
+     "img/athome/46981_0.jpg",
+     "img/athome/46981_1.jpg",
+     "img/athome/46981_2.jpg",
+     "img/athome/46981_3.jpg",
+     "img/athome/46981_4.jpg",
+     "img/athome/46981_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -25803,7 +25808,8 @@
      "fotos_total": "19",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・温水洗浄便座\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・洗髪洗面化粧台",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 元山上口駅 / 徒歩20分",
     "status_note": "",
@@ -25854,7 +25860,9 @@
      "img/athome/46977_0.jpg",
      "img/athome/46977_1.jpg",
      "img/athome/46977_2.jpg",
-     "img/athome/46977_3.jpg"
+     "img/athome/46977_3.jpg",
+     "img/athome/46977_4.jpg",
+     "img/athome/46977_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -25863,7 +25871,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "昭和52年（倉庫昭和51年）築 補修必要（利用者） 住宅設備機器の作動は未確認 ＊本物件をご利用の際には、川西町空き家バンクの利用登録が必要となります。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-44-2280"
     },
     "description_raw": "近鉄橿原線 結崎駅 / 車6分",
     "status_note": "",
@@ -25914,7 +25923,9 @@
      "img/athome/46945_0.jpg",
      "img/athome/46945_1.jpg",
      "img/athome/46945_2.jpg",
-     "img/athome/46945_3.jpg"
+     "img/athome/46945_3.jpg",
+     "img/athome/46945_4.jpg",
+     "img/athome/46945_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -25923,7 +25934,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "※本物件のご案内には、「下市町空き家バンク」へのご登録が必要です。 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車5分",
     "status_note": "",
@@ -25974,7 +25986,9 @@
      "img/athome/46923_0.jpg",
      "img/athome/46923_1.jpg",
      "img/athome/46923_2.jpg",
-     "img/athome/46923_3.jpg"
+     "img/athome/46923_3.jpg",
+     "img/athome/46923_4.jpg",
+     "img/athome/46923_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -25983,7 +25997,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "※本物件のご案内には、「下市町空き家バンク」へのご登録が必要です。 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車7分",
     "status_note": "",
@@ -26034,7 +26049,8 @@
      "img/athome/46764_0.jpg",
      "img/athome/46764_1.jpg",
      "img/athome/46764_2.jpg",
-     "img/athome/46764_3.jpg"
+     "img/athome/46764_3.jpg",
+     "img/athome/46764_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26043,7 +26059,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "バス無\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "※本物件のご案内には、「五條市情報空き家バンク」へのご登録が必要です。 上水道引き込み必要 一部崩壊部分有 水回り改修必要 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-22-4001"
     },
     "description_raw": "ＪＲ和歌山線 五条駅 / 車4分",
     "status_note": "",
@@ -26096,10 +26113,7 @@
      "img/athome/46156_2.jpg",
      "img/athome/46156_3.jpg",
      "img/athome/46156_4.jpg",
-     "img/athome/46156_5.jpg",
-     "img/athome/46156_6.jpg",
-     "img/athome/46156_7.jpg",
-     "img/athome/46156_8.jpg"
+     "img/athome/46156_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26160,7 +26174,8 @@
      "img/athome/44513_1.jpg",
      "img/athome/44513_2.jpg",
      "img/athome/44513_3.jpg",
-     "img/athome/44513_4.jpg"
+     "img/athome/44513_4.jpg",
+     "img/athome/44513_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26169,7 +26184,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上",
      "備考": "建物のみが売買対象となり、土地は借地継続 ※御所市空き家・町家バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-44-3641"
     },
     "description_raw": "ＪＲ和歌山線 御所駅 / 車5分",
     "status_note": "",
@@ -26222,10 +26238,7 @@
      "img/athome/45818_2.jpg",
      "img/athome/45818_3.jpg",
      "img/athome/45818_4.jpg",
-     "img/athome/45818_5.jpg",
-     "img/athome/45818_6.jpg",
-     "img/athome/45818_7.jpg",
-     "img/athome/45818_8.jpg"
+     "img/athome/45818_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26285,7 +26298,9 @@
      "img/athome/42322_0.jpg",
      "img/athome/42322_1.jpg",
      "img/athome/42322_2.jpg",
-     "img/athome/42322_3.jpg"
+     "img/athome/42322_3.jpg",
+     "img/athome/42322_4.jpg",
+     "img/athome/42322_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26294,7 +26309,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "※黒滝村空き家バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-62-2031"
     },
     "description_raw": "近鉄吉野線 吉野駅 / 車26分",
     "status_note": "",
@@ -26347,10 +26363,7 @@
      "img/athome/45571_2.jpg",
      "img/athome/45571_3.jpg",
      "img/athome/45571_4.jpg",
-     "img/athome/45571_5.jpg",
-     "img/athome/45571_6.jpg",
-     "img/athome/45571_7.jpg",
-     "img/athome/45571_8.jpg"
+     "img/athome/45571_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26408,7 +26421,11 @@
     "renovated": 0,
     "photos": [
      "img/athome/45264_0.jpg",
-     "img/athome/45264_1.jpg"
+     "img/athome/45264_1.jpg",
+     "img/athome/45264_2.jpg",
+     "img/athome/45264_3.jpg",
+     "img/athome/45264_4.jpg",
+     "img/athome/45264_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26416,7 +26433,8 @@
      "fotos_total": "9",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・庭",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-5501"
     },
     "description_raw": "近鉄吉野線 福神駅 / 車4分",
     "status_note": "",
@@ -26467,7 +26485,9 @@
      "img/athome/44472_0.jpg",
      "img/athome/44472_1.jpg",
      "img/athome/44472_2.jpg",
-     "img/athome/44472_3.jpg"
+     "img/athome/44472_3.jpg",
+     "img/athome/44472_4.jpg",
+     "img/athome/44472_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26476,7 +26496,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "補修必要（利用者負担） 五條東小学校区 ※五條市空き家情報バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-22-4001"
     },
     "description_raw": "ＪＲ和歌山線 北宇智駅 / 徒歩1分",
     "status_note": "",
@@ -26527,7 +26548,9 @@
      "img/athome/44515_0.jpg",
      "img/athome/44515_1.jpg",
      "img/athome/44515_2.jpg",
-     "img/athome/44515_3.jpg"
+     "img/athome/44515_3.jpg",
+     "img/athome/44515_4.jpg",
+     "img/athome/44515_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26536,7 +26559,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "五條市立五條南小学校（3,900ｍ） 築70年 多少の補修必要 ※五條市空き家情報バンクの利用登録が必要です。 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-22-4001"
     },
     "description_raw": "ＪＲ和歌山線 隅田駅 / 車9分",
     "status_note": "",
@@ -26587,7 +26611,9 @@
      "img/athome/45127_0.jpg",
      "img/athome/45127_1.jpg",
      "img/athome/45127_2.jpg",
-     "img/athome/45127_3.jpg"
+     "img/athome/45127_3.jpg",
+     "img/athome/45127_4.jpg",
+     "img/athome/45127_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26596,7 +26622,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "補修必要（利用者） 建物は数か所で補修必要、雨漏り痕跡、 築年数不詳 ・住宅設備機器の作動は未確認 ・存置荷物有り要相談 ※川西町空き家バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-44-2280"
     },
     "description_raw": "近鉄田原本線 箸尾駅 / 車5分",
     "status_note": "",
@@ -26647,7 +26674,9 @@
      "img/athome/44727_0.jpg",
      "img/athome/44727_1.jpg",
      "img/athome/44727_2.jpg",
-     "img/athome/44727_3.jpg"
+     "img/athome/44727_3.jpg",
+     "img/athome/44727_4.jpg",
+     "img/athome/44727_5.jpg"
     ],
     "features": {
      "物件種目": "",
@@ -26655,7 +26684,8 @@
      "fotos_total": "6",
      "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
      "備考": "・現状のままの引渡し希望 ※上牧町空き家・空き地バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-76-1001"
     },
     "description_raw": "ＪＲ和歌山線 志都美駅 / 車5分",
     "status_note": "",
@@ -26717,7 +26747,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "補修必要（利用者） 付帯物件：母屋・離れ・蔵・倉庫 ※台所は現状利用不可 ※本物件のご案内には、「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 三本松駅 / 車13分",
     "status_note": "",
@@ -26770,10 +26801,7 @@
      "img/athome/44335_2.jpg",
      "img/athome/44335_3.jpg",
      "img/athome/44335_4.jpg",
-     "img/athome/44335_5.jpg",
-     "img/athome/44335_6.jpg",
-     "img/athome/44335_7.jpg",
-     "img/athome/44335_8.jpg"
+     "img/athome/44335_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26833,7 +26861,9 @@
      "img/athome/43996_0.jpg",
      "img/athome/43996_1.jpg",
      "img/athome/43996_2.jpg",
-     "img/athome/43996_3.jpg"
+     "img/athome/43996_3.jpg",
+     "img/athome/43996_4.jpg",
+     "img/athome/43996_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26842,7 +26872,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "五條南小学校区 多少の補修必要（利用者負担） ※五條市空き家情報バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-22-4001"
     },
     "description_raw": "ＪＲ和歌山線 五条駅 / 車22分",
     "status_note": "",
@@ -26895,10 +26926,7 @@
      "img/athome/43834_2.jpg",
      "img/athome/43834_3.jpg",
      "img/athome/43834_4.jpg",
-     "img/athome/43834_5.jpg",
-     "img/athome/43834_6.jpg",
-     "img/athome/43834_7.jpg",
-     "img/athome/43834_8.jpg"
+     "img/athome/43834_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26956,7 +26984,11 @@
     "renovated": 0,
     "photos": [
      "img/athome/43619_0.jpg",
-     "img/athome/43619_1.jpg"
+     "img/athome/43619_1.jpg",
+     "img/athome/43619_2.jpg",
+     "img/athome/43619_3.jpg",
+     "img/athome/43619_4.jpg",
+     "img/athome/43619_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -26965,7 +26997,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "道が狭い為、軽自動車推奨 畑331平米（相談可） ※大和郡山市空き家バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0743-53-1759"
     },
     "description_raw": "近鉄橿原線 平端駅 / 徒歩4分",
     "status_note": "",
@@ -27026,7 +27059,8 @@
      "fotos_total": "6",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "補修必要（利用者） ※宇陀市空き家情報バンクへの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車5分",
     "status_note": "",
@@ -27074,12 +27108,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43299_0.jpg",
-     "img/athome/43299_1.jpg",
-     "img/athome/43299_2.jpg",
-     "img/athome/43299_3.jpg",
-     "img/athome/43299_4.jpg",
-     "img/athome/43299_5.jpg"
+     "img/athome/43299_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -27088,7 +27117,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
      "備考": "昭和35年築 付帯物件：倉庫 補修必要（利用者） ※物件の中に入ることができません ※周辺環境の確認・物件外観確認のみ ※市街化調整地域 ※宇陀市空き家バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車13分",
     "status_note": "",
@@ -27139,7 +27169,9 @@
      "img/athome/43155_0.jpg",
      "img/athome/43155_1.jpg",
      "img/athome/43155_2.jpg",
-     "img/athome/43155_3.jpg"
+     "img/athome/43155_3.jpg",
+     "img/athome/43155_4.jpg",
+     "img/athome/43155_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -27148,7 +27180,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・エアコン",
      "備考": "※下市町空き家バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車6分",
     "status_note": "",
@@ -27199,7 +27232,8 @@
      "img/athome/42201_0.jpg",
      "img/athome/42201_1.jpg",
      "img/athome/42201_2.jpg",
-     "img/athome/42201_3.jpg"
+     "img/athome/42201_3.jpg",
+     "img/athome/42201_4.jpg"
     ],
     "features": {
      "物件種目": "",
@@ -27207,7 +27241,8 @@
      "fotos_total": "5",
      "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
      "備考": "下市あきつ学園（小中一貫校）校区 ※下市町空き家バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車5分",
     "status_note": "",
@@ -27259,8 +27294,7 @@
      "img/athome/42743_1.jpg",
      "img/athome/42743_2.jpg",
      "img/athome/42743_3.jpg",
-     "img/athome/42743_4.jpg",
-     "img/athome/42743_5.jpg"
+     "img/athome/42743_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -27269,7 +27303,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・納戸",
      "備考": "昭和47年築　補修必要（利用者）　付帯物件：離れ・倉庫 洗面所・浴室まで床老朽化のため進入できない　給湯器交換必要　現状引き渡し　補修・改修利用者負担 ※宇陀市空き家バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 三本松駅 / 徒歩18分",
     "status_note": "",
@@ -27331,7 +27366,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・私設水道\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "補修必要（利用者） 給湯器交換必要・私設水道の汲み上げポンプ交換必要(現在、水道使用できない状況)・トイレ臭気抜きがないので確認必要・地目変更必要 ※宇陀市空き家情報バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 室生口大野駅 / 車10分",
     "status_note": "",
@@ -27382,7 +27418,9 @@
      "img/athome/42624_0.jpg",
      "img/athome/42624_1.jpg",
      "img/athome/42624_2.jpg",
-     "img/athome/42624_3.jpg"
+     "img/athome/42624_3.jpg",
+     "img/athome/42624_4.jpg",
+     "img/athome/42624_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -27391,7 +27429,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "下市町立下市あきつ学園　徒歩13分(950m) ※下市町空き家バンクの利用登録が必要です 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車5分",
     "status_note": "",
@@ -27443,7 +27482,8 @@
      "img/athome/42621_1.jpg",
      "img/athome/42621_2.jpg",
      "img/athome/42621_3.jpg",
-     "img/athome/42621_4.jpg"
+     "img/athome/42621_4.jpg",
+     "img/athome/42621_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -27452,7 +27492,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "※御所市空き家・町家バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-44-3641"
     },
     "description_raw": "近鉄御所線 近鉄御所駅 / 車6分",
     "status_note": "",
@@ -27507,7 +27548,8 @@
      "交通": "近鉄生駒線 東山駅 / 徒歩14分",
      "fotos_total": "1",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 東山駅 / 徒歩14分",
     "status_note": "",
@@ -27569,7 +27611,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "ガスコンロ付\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・畑\n\t\t\t\t\t\t\t\t\t\t\t・納戸",
      "備考": "補修必要（利用者） 附帯物件：倉庫 ※本物件のご案内には、「宇陀市空き家情報バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車20分",
     "status_note": "",
@@ -27631,7 +27674,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・ロフト\n\t\t\t\t\t\t\t\t\t\t\t・バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "お風呂の給湯器、ガス配管なしのため設置必要。 補修必要（利用者負担） ※本物件のご案内には、「宇陀市空き家情報バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 三本松駅 / 車17分",
     "status_note": "",
@@ -27693,7 +27737,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・その他水道\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "別途/畑・山林・原野有(要相談) 天川村小中学校区 ※天川村空き家バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-63-0321"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車44分",
     "status_note": "",
@@ -27744,7 +27789,9 @@
      "img/athome/41045_0.jpg",
      "img/athome/41045_1.jpg",
      "img/athome/41045_2.jpg",
-     "img/athome/41045_3.jpg"
+     "img/athome/41045_3.jpg",
+     "img/athome/41045_4.jpg",
+     "img/athome/41045_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -27753,7 +27800,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "大幅な補修が必要 ※下市町空き家バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩22分",
     "status_note": "",
@@ -27814,7 +27862,8 @@
      "fotos_total": "6",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "補修必要（利用者） ※宇陀市空き家情報バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 室生口大野駅 / 車10分",
     "status_note": "",
@@ -27863,11 +27912,7 @@
     "renovated": 0,
     "photos": [
      "img/athome/41221_0.jpg",
-     "img/athome/41221_1.jpg",
-     "img/athome/41221_2.jpg",
-     "img/athome/41221_3.jpg",
-     "img/athome/41221_4.jpg",
-     "img/athome/41221_5.jpg"
+     "img/athome/41221_1.jpg"
     ],
     "features": {
      "物件種目": "",
@@ -27876,7 +27921,8 @@
      "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
      "設備": "プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
      "備考": "※宇陀市空き家情報バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車9分",
     "status_note": "",
@@ -27925,7 +27971,11 @@
     "renovated": 0,
     "photos": [
      "img/athome/40843_0.jpg",
-     "img/athome/40843_1.jpg"
+     "img/athome/40843_1.jpg",
+     "img/athome/40843_2.jpg",
+     "img/athome/40843_3.jpg",
+     "img/athome/40843_4.jpg",
+     "img/athome/40843_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -27934,7 +27984,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室",
      "備考": "※大淀町空き家バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-5501"
     },
     "description_raw": "近鉄吉野線 六田駅 / 車4分",
     "status_note": "",
@@ -27987,10 +28038,7 @@
      "img/athome/40938_2.jpg",
      "img/athome/40938_3.jpg",
      "img/athome/40938_4.jpg",
-     "img/athome/40938_5.jpg",
-     "img/athome/40938_6.jpg",
-     "img/athome/40938_7.jpg",
-     "img/athome/40938_8.jpg"
+     "img/athome/40938_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -28050,7 +28098,9 @@
      "img/athome/39970_0.jpg",
      "img/athome/39970_1.jpg",
      "img/athome/39970_2.jpg",
-     "img/athome/39970_3.jpg"
+     "img/athome/39970_3.jpg",
+     "img/athome/39970_4.jpg",
+     "img/athome/39970_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -28059,7 +28109,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "※本物件のご案内には「黒滝村空き家バンク」へのご登録が必要です。 旧の風呂あり。使用可否不明。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-62-2031"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車24分",
     "status_note": "",
@@ -28121,7 +28172,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "補修必要（利用者負担） 地図混乱地域 ※宇陀市空き家情報バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 室生口大野駅 / 車15分",
     "status_note": "",
@@ -28173,8 +28225,7 @@
      "img/athome/39724_1.jpg",
      "img/athome/39724_2.jpg",
      "img/athome/39724_3.jpg",
-     "img/athome/39724_4.jpg",
-     "img/athome/39724_5.jpg"
+     "img/athome/39724_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -28183,7 +28234,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・私設水道",
      "備考": "お風呂がなし 補修必要（利用者負担） 平成9年築 管理費必要 ※宇陀市空き家情報バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 名張駅 / 車19分",
     "status_note": "",
@@ -28245,7 +28297,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・井戸",
      "備考": "補修必要（利用者負担） ガス管の点検必要 五右衛門風呂(給湯器なしの為、設置必要) 電気メーター撤去(電気工事必要) ※本物件のご案内には、「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車13分",
     "status_note": "",
@@ -28296,7 +28349,9 @@
      "img/athome/39696_0.jpg",
      "img/athome/39696_1.jpg",
      "img/athome/39696_2.jpg",
-     "img/athome/39696_3.jpg"
+     "img/athome/39696_3.jpg",
+     "img/athome/39696_4.jpg",
+     "img/athome/39696_5.jpg"
     ],
     "features": {
      "物件種目": "",
@@ -28304,7 +28359,8 @@
      "fotos_total": "6",
      "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
      "備考": "・現状のままの引渡し（杭無し、スチール倉庫存置） ・貸し駐車場の解消期間2か月要す ※上牧町空き家・空き地バンクへの利用登録が必要になります。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-76-1001"
     },
     "description_raw": "ＪＲ和歌山線 香芝駅 / 徒歩17分",
     "status_note": "",
@@ -28366,7 +28422,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸",
      "備考": "応募者多数の場合、非公開になります。 四輪駆動必須（急坂、冬場は凍結） 湿気が多い 井戸水 ※本物件のご案内には、「山添村空き家バンク」へのご登録が必要です。 山添村役所での手続きとなるため",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0743-85-0048"
     },
     "description_raw": "近鉄大阪線 名張駅 / 車29分",
     "status_note": "",
@@ -28423,7 +28480,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・システムキッチン\n\t\t\t\t\t\t\t\t\t\t\t・コンロ三口\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩8分",
     "status_note": "",
@@ -28485,7 +28543,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "コンロ二口\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・私設水道\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・室外洗濯機置場",
      "備考": "平成8年築 補修必要（利用者負担） ※宇陀市空き家情報バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 名張駅 / 車19分",
     "status_note": "",
@@ -28533,7 +28592,12 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38759_0.jpg"
+     "img/athome/38759_0.jpg",
+     "img/athome/38759_1.jpg",
+     "img/athome/38759_2.jpg",
+     "img/athome/38759_3.jpg",
+     "img/athome/38759_4.jpg",
+     "img/athome/38759_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -28542,7 +28606,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩10分",
     "status_note": "",
@@ -28595,10 +28660,7 @@
      "img/athome/38548_2.jpg",
      "img/athome/38548_3.jpg",
      "img/athome/38548_4.jpg",
-     "img/athome/38548_5.jpg",
-     "img/athome/38548_6.jpg",
-     "img/athome/38548_7.jpg",
-     "img/athome/38548_8.jpg"
+     "img/athome/38548_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -28669,7 +28731,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "コンロ二口\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "昭和50年築 補修必要（利用者） ※桜井市空き家バンクへの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-42-9111"
     },
     "description_raw": "ＪＲ桜井線 巻向駅 / 徒歩5分",
     "status_note": "",
@@ -28731,7 +28794,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・コンロ三口\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・室外洗濯機置場",
      "備考": "補修必要（利用者） 平成12年1月リフォーム済 現存建物の大部分は昭和51年に増築されているとのことです。 ※本物件のご案内には、「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車11分",
     "status_note": "",
@@ -28783,8 +28847,7 @@
      "img/athome/34602_1.jpg",
      "img/athome/34602_2.jpg",
      "img/athome/34602_3.jpg",
-     "img/athome/34602_4.jpg",
-     "img/athome/34602_5.jpg"
+     "img/athome/34602_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -28793,7 +28856,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "バス無\n\t\t\t\t\t\t\t\t\t\t\t・トイレ無",
      "備考": "・建物は倉庫利用の為、居住空間には大幅な改修が必要、給電有。 ・別敷地の住宅は解体済みで空き地状態、給水有。 ※山添村空き家バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0743-85-0048"
     },
     "description_raw": "近鉄大阪線 桔梗が丘駅 / 車15分",
     "status_note": "",
@@ -28844,7 +28908,9 @@
      "img/athome/37485_0.jpg",
      "img/athome/37485_1.jpg",
      "img/athome/37485_2.jpg",
-     "img/athome/37485_3.jpg"
+     "img/athome/37485_3.jpg",
+     "img/athome/37485_4.jpg",
+     "img/athome/37485_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -28853,7 +28919,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・室外洗濯機置場",
      "備考": "下市町立下市あきつ学園校区 設備動作未確認 雨漏り跡有(改修済) ※本物件のご案内には、「下市町空き家バンク」へのご登録が必要です。 総戸数：2戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩18分",
     "status_note": "",
@@ -28905,11 +28972,7 @@
      "img/athome/37544_1.jpg",
      "img/athome/37544_2.jpg",
      "img/athome/37544_3.jpg",
-     "img/athome/37544_4.jpg",
-     "img/athome/37544_5.jpg",
-     "img/athome/37544_6.jpg",
-     "img/athome/37544_7.jpg",
-     "img/athome/37544_8.jpg"
+     "img/athome/37544_4.jpg"
     ],
     "features": {
      "物件種目": "",
@@ -28970,11 +29033,7 @@
      "img/athome/37545_1.jpg",
      "img/athome/37545_2.jpg",
      "img/athome/37545_3.jpg",
-     "img/athome/37545_4.jpg",
-     "img/athome/37545_5.jpg",
-     "img/athome/37545_6.jpg",
-     "img/athome/37545_7.jpg",
-     "img/athome/37545_8.jpg"
+     "img/athome/37545_4.jpg"
     ],
     "features": {
      "物件種目": "",
@@ -29045,7 +29104,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "補修必要（利用者） 附帯物件：倉庫 駐車場なし ※本物件のご案内には、「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 三本松駅 / 徒歩10分",
     "status_note": "",
@@ -29097,7 +29157,8 @@
      "img/athome/37134_1.jpg",
      "img/athome/37134_2.jpg",
      "img/athome/37134_3.jpg",
-     "img/athome/37134_4.jpg"
+     "img/athome/37134_4.jpg",
+     "img/athome/37134_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29106,7 +29167,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "風呂（2017）、トイレ（2023）にリフォーム済 S51年築 ※御所市空き家・町家バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-44-3641"
     },
     "description_raw": "近鉄御所線 近鉄御所駅 / 徒歩11分",
     "status_note": "",
@@ -29156,7 +29218,9 @@
     "photos": [
      "img/athome/36876_0.jpg",
      "img/athome/36876_1.jpg",
-     "img/athome/36876_2.jpg"
+     "img/athome/36876_2.jpg",
+     "img/athome/36876_3.jpg",
+     "img/athome/36876_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29164,7 +29228,8 @@
      "fotos_total": "5",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・庭",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-43-7342"
     },
     "description_raw": "ＪＲ関西本線 三郷駅 / 徒歩5分",
     "status_note": "",
@@ -29213,8 +29278,7 @@
     "renovated": 0,
     "photos": [
      "img/athome/36874_0.jpg",
-     "img/athome/36874_1.jpg",
-     "img/athome/36874_2.jpg"
+     "img/athome/36874_1.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29223,7 +29287,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス",
      "備考": "夕陽ケ丘診療所0.5km　コープ竜田川0.7km　三郷町役場1.8km　希望ヶ丘保育園0.7km　三郷北小学校1.6km",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-43-7342"
     },
     "description_raw": "近鉄生駒線 勢野北口駅 / 徒歩13分",
     "status_note": "",
@@ -29273,7 +29338,8 @@
     "photos": [
      "img/athome/36866_0.jpg",
      "img/athome/36866_1.jpg",
-     "img/athome/36866_2.jpg"
+     "img/athome/36866_2.jpg",
+     "img/athome/36866_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29281,7 +29347,8 @@
      "fotos_total": "4",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・庭",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-43-7342"
     },
     "description_raw": "ＪＲ関西本線 三郷駅 / 徒歩10分",
     "status_note": "",
@@ -29331,7 +29398,10 @@
     "photos": [
      "img/athome/36863_0.jpg",
      "img/athome/36863_1.jpg",
-     "img/athome/36863_2.jpg"
+     "img/athome/36863_2.jpg",
+     "img/athome/36863_3.jpg",
+     "img/athome/36863_4.jpg",
+     "img/athome/36863_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29339,7 +29409,8 @@
      "fotos_total": "8",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-43-7342"
     },
     "description_raw": "近鉄生駒線 信貴山下駅 / 徒歩9分",
     "status_note": "",
@@ -29389,7 +29460,9 @@
     "photos": [
      "img/athome/36862_0.jpg",
      "img/athome/36862_1.jpg",
-     "img/athome/36862_2.jpg"
+     "img/athome/36862_2.jpg",
+     "img/athome/36862_3.jpg",
+     "img/athome/36862_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29397,7 +29470,8 @@
      "fotos_total": "5",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・庭",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-43-7342"
     },
     "description_raw": "ー",
     "status_note": "",
@@ -29454,7 +29528,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・共同ガス",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩8分",
     "status_note": "",
@@ -29505,7 +29580,9 @@
      "img/athome/36287_0.jpg",
      "img/athome/36287_1.jpg",
      "img/athome/36287_2.jpg",
-     "img/athome/36287_3.jpg"
+     "img/athome/36287_3.jpg",
+     "img/athome/36287_4.jpg",
+     "img/athome/36287_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29514,7 +29591,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "補修必要 建物未登記 ※空き家コンシェルジュ空き家バンクの利用登録が必要です",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-57-0200"
     },
     "description_raw": "近鉄田原本線 大輪田駅 / 車3分",
     "status_note": "",
@@ -29565,7 +29643,9 @@
      "img/athome/35176_0.jpg",
      "img/athome/35176_1.jpg",
      "img/athome/35176_2.jpg",
-     "img/athome/35176_3.jpg"
+     "img/athome/35176_3.jpg",
+     "img/athome/35176_4.jpg",
+     "img/athome/35176_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29574,7 +29654,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "CATV\n\t\t\t\t\t\t\t\t\t\t\t・給湯\n\t\t\t\t\t\t\t\t\t\t\t・コンロ二口\n\t\t\t\t\t\t\t\t\t\t\t・ガスレンジ\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・照明器具\n\t\t\t\t\t\t\t\t\t\t\t・家具付\n\t\t\t\t\t\t\t\t\t\t\t・テレビ\n\t\t\t\t\t\t\t\t\t\t\t・家電付",
      "備考": "定期的に換気を行っております 洋室の床が緩い 荷物あり（片付け 利用者負担） ＊上北山村空き家バンクの利用登録が必要となります。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-45-5210"
     },
     "description_raw": "近鉄吉野線 大和上市駅 / 車50分",
     "status_note": "",
@@ -29626,7 +29707,8 @@
      "img/athome/33148_1.jpg",
      "img/athome/33148_2.jpg",
      "img/athome/33148_3.jpg",
-     "img/athome/33148_4.jpg"
+     "img/athome/33148_4.jpg",
+     "img/athome/33148_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29635,7 +29717,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・縁側\n\t\t\t\t\t\t\t\t\t\t\t・納戸",
      "備考": "※奈良市空き家・町家バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0742-34-5175"
     },
     "description_raw": "ＪＲ桜井線 京終駅 / 車21分",
     "status_note": "",
@@ -29687,7 +29770,8 @@
      "img/athome/34376_1.jpg",
      "img/athome/34376_2.jpg",
      "img/athome/34376_3.jpg",
-     "img/athome/34376_4.jpg"
+     "img/athome/34376_4.jpg",
+     "img/athome/34376_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29696,7 +29780,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス無\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "S42年築 風呂無し 1階は元工場 ※御所市空き家・町家バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-44-3641"
     },
     "description_raw": "近鉄御所線 近鉄御所駅 / 車4分",
     "status_note": "",
@@ -29758,7 +29843,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "追焚機能\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室外洗濯機置場",
      "備考": "築年数不詳 補修必要（利用者負担） 付帯物件：納屋 井戸水・水道引き込みご希望の方は工事必要 ※「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車14分",
     "status_note": "",
@@ -29820,7 +29906,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室",
      "備考": "補修必要(利用者負担) 風呂のリフォーム必要な方はガス配管から必要 台所給湯器取替必要 荷物処分は利用者負担　現状引き渡し 物件進入路は他人地含むため駐車できません ※利用者登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 室生口大野駅 / 車12分",
     "status_note": "",
@@ -29871,7 +29958,9 @@
      "img/athome/33430_0.jpg",
      "img/athome/33430_1.jpg",
      "img/athome/33430_2.jpg",
-     "img/athome/33430_3.jpg"
+     "img/athome/33430_3.jpg",
+     "img/athome/33430_4.jpg",
+     "img/athome/33430_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -29880,7 +29969,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "CATV\n\t\t\t\t\t\t\t\t\t\t\t・コンロ二口\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・エアコン",
      "備考": "和室荷物あり（片付け利用者負担） ＊上北山村空き家バンクの利用登録が必要となります。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-45-5210"
     },
     "description_raw": "近鉄吉野線 大和上市駅 / 車62分",
     "status_note": "",
@@ -29937,7 +30027,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "追焚機能\n\t\t\t\t\t\t\t\t\t\t\t・温水洗浄便座\n\t\t\t\t\t\t\t\t\t\t\t・ユニットバス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・シューズボックス\n\t\t\t\t\t\t\t\t\t\t\t・洗髪洗面化粧台\n\t\t\t\t\t\t\t\t\t\t\t・南庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩8分",
     "status_note": "",
@@ -29990,10 +30081,7 @@
      "img/athome/33316_2.jpg",
      "img/athome/33316_3.jpg",
      "img/athome/33316_4.jpg",
-     "img/athome/33316_5.jpg",
-     "img/athome/33316_6.jpg",
-     "img/athome/33316_7.jpg",
-     "img/athome/33316_8.jpg"
+     "img/athome/33316_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30055,10 +30143,7 @@
      "img/athome/33185_2.jpg",
      "img/athome/33185_3.jpg",
      "img/athome/33185_4.jpg",
-     "img/athome/33185_5.jpg",
-     "img/athome/33185_6.jpg",
-     "img/athome/33185_7.jpg",
-     "img/athome/33185_8.jpg"
+     "img/athome/33185_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30120,10 +30205,7 @@
      "img/athome/33182_2.jpg",
      "img/athome/33182_3.jpg",
      "img/athome/33182_4.jpg",
-     "img/athome/33182_5.jpg",
-     "img/athome/33182_6.jpg",
-     "img/athome/33182_7.jpg",
-     "img/athome/33182_8.jpg"
+     "img/athome/33182_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30185,10 +30267,7 @@
      "img/athome/33153_2.jpg",
      "img/athome/33153_3.jpg",
      "img/athome/33153_4.jpg",
-     "img/athome/33153_5.jpg",
-     "img/athome/33153_6.jpg",
-     "img/athome/33153_7.jpg",
-     "img/athome/33153_8.jpg"
+     "img/athome/33153_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30250,10 +30329,7 @@
      "img/athome/33318_2.jpg",
      "img/athome/33318_3.jpg",
      "img/athome/33318_4.jpg",
-     "img/athome/33318_5.jpg",
-     "img/athome/33318_6.jpg",
-     "img/athome/33318_7.jpg",
-     "img/athome/33318_8.jpg"
+     "img/athome/33318_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30315,10 +30391,7 @@
      "img/athome/33179_2.jpg",
      "img/athome/33179_3.jpg",
      "img/athome/33179_4.jpg",
-     "img/athome/33179_5.jpg",
-     "img/athome/33179_6.jpg",
-     "img/athome/33179_7.jpg",
-     "img/athome/33179_8.jpg"
+     "img/athome/33179_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30380,10 +30453,7 @@
      "img/athome/33181_2.jpg",
      "img/athome/33181_3.jpg",
      "img/athome/33181_4.jpg",
-     "img/athome/33181_5.jpg",
-     "img/athome/33181_6.jpg",
-     "img/athome/33181_7.jpg",
-     "img/athome/33181_8.jpg"
+     "img/athome/33181_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30445,10 +30515,7 @@
      "img/athome/33317_2.jpg",
      "img/athome/33317_3.jpg",
      "img/athome/33317_4.jpg",
-     "img/athome/33317_5.jpg",
-     "img/athome/33317_6.jpg",
-     "img/athome/33317_7.jpg",
-     "img/athome/33317_8.jpg"
+     "img/athome/33317_5.jpg"
     ],
     "features": {
      "物件種目": "",
@@ -30510,10 +30577,7 @@
      "img/athome/33178_2.jpg",
      "img/athome/33178_3.jpg",
      "img/athome/33178_4.jpg",
-     "img/athome/33178_5.jpg",
-     "img/athome/33178_6.jpg",
-     "img/athome/33178_7.jpg",
-     "img/athome/33178_8.jpg"
+     "img/athome/33178_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30575,10 +30639,7 @@
      "img/athome/33176_2.jpg",
      "img/athome/33176_3.jpg",
      "img/athome/33176_4.jpg",
-     "img/athome/33176_5.jpg",
-     "img/athome/33176_6.jpg",
-     "img/athome/33176_7.jpg",
-     "img/athome/33176_8.jpg"
+     "img/athome/33176_5.jpg"
     ],
     "features": {
      "物件種目": "",
@@ -30639,10 +30700,7 @@
      "img/athome/33151_2.jpg",
      "img/athome/33151_3.jpg",
      "img/athome/33151_4.jpg",
-     "img/athome/33151_5.jpg",
-     "img/athome/33151_6.jpg",
-     "img/athome/33151_7.jpg",
-     "img/athome/33151_8.jpg"
+     "img/athome/33151_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30713,7 +30771,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "補修不要 建物だけの売買となります(地代必要) ※駐車場は高さ確認必要 ※本物件のご案内には、「桜井市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-42-9111"
     },
     "description_raw": "近鉄大阪線 大和朝倉駅 / 車9分",
     "status_note": "",
@@ -30761,10 +30820,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/33004_0.jpg",
-     "img/athome/33004_1.jpg",
-     "img/athome/33004_2.jpg",
-     "img/athome/33004_3.jpg"
+     "img/athome/33004_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30773,7 +30829,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・畑",
      "備考": "役場1.7km　診療所1.6km　保育所5.3km　小学校0.2km　中学校0.2km",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-95-2001"
     },
     "description_raw": "最寄りバス停0.2km",
     "status_note": "",
@@ -30821,10 +30878,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/33000_0.jpg",
-     "img/athome/33000_1.jpg",
-     "img/athome/33000_2.jpg",
-     "img/athome/33000_3.jpg"
+     "img/athome/33000_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30833,7 +30887,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・井戸",
      "備考": "役場2.1km　診療所1.8km　保育所5.5km　小学校0.3km　中学校0.3km",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-95-2001"
     },
     "description_raw": "最寄りバス停0.4km",
     "status_note": "",
@@ -30881,10 +30936,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/32999_0.jpg",
-     "img/athome/32999_1.jpg",
-     "img/athome/32999_2.jpg",
-     "img/athome/32999_3.jpg"
+     "img/athome/32999_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30893,7 +30945,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道",
      "備考": "役場3.1km　診療所3.2km　保育所0.6km　小学校4.5km　中学校4.5km",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-95-2001"
     },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
@@ -30941,10 +30994,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/32995_0.jpg",
-     "img/athome/32995_1.jpg",
-     "img/athome/32995_2.jpg",
-     "img/athome/32995_3.jpg"
+     "img/athome/32995_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -30953,7 +31003,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・納戸",
      "備考": "役場0.4km　診療所0.5km　保育所3.8km　小学校1.0km　中学校1.0km",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-95-2001"
     },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
@@ -31001,10 +31052,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/32994_0.jpg",
-     "img/athome/32994_1.jpg",
-     "img/athome/32994_2.jpg",
-     "img/athome/32994_3.jpg"
+     "img/athome/32994_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31013,7 +31061,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道",
      "備考": "役場5.5km　診療所5.4km　保育所8.5km　小学校5.3km　中学校5.3km　伊勢本街道　御杖0.9km",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-95-2001"
     },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
@@ -31064,7 +31113,9 @@
      "img/athome/31563_0.jpg",
      "img/athome/31563_1.jpg",
      "img/athome/31563_2.jpg",
-     "img/athome/31563_3.jpg"
+     "img/athome/31563_3.jpg",
+     "img/athome/31563_4.jpg",
+     "img/athome/31563_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31073,7 +31124,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス無\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "五條東小学校区 S51年築 全体的に使用感あり ※五條市空き家バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-22-4001"
     },
     "description_raw": "ＪＲ和歌山線 五条駅 / 車6分",
     "status_note": "",
@@ -31124,7 +31176,9 @@
      "img/athome/31530_0.jpg",
      "img/athome/31530_1.jpg",
      "img/athome/31530_2.jpg",
-     "img/athome/31530_3.jpg"
+     "img/athome/31530_3.jpg",
+     "img/athome/31530_4.jpg",
+     "img/athome/31530_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31133,7 +31187,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "補修必要（利用者） 別棟89.0有、設備の作動状態未確認、隣接宅地211.22含む ※上牧町空き家・空き地バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-76-1001"
     },
     "description_raw": "ＪＲ和歌山線 志都美駅 / 徒歩11分",
     "status_note": "",
@@ -31181,7 +31236,12 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/30007_0.jpg"
+     "img/athome/30007_0.jpg",
+     "img/athome/30007_1.jpg",
+     "img/athome/30007_2.jpg",
+     "img/athome/30007_3.jpg",
+     "img/athome/30007_4.jpg",
+     "img/athome/30007_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31189,7 +31249,8 @@
      "fotos_total": "13",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "・平群町各種ハザードマップはこちらから確認できます https://www.town.heguri.nara.jp/soshiki/6/5479.html",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 元山上口駅 / 徒歩15分",
     "status_note": "",
@@ -31237,7 +31298,12 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/29741_0.jpg"
+     "img/athome/29741_0.jpg",
+     "img/athome/29741_1.jpg",
+     "img/athome/29741_2.jpg",
+     "img/athome/29741_3.jpg",
+     "img/athome/29741_4.jpg",
+     "img/athome/29741_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31246,7 +31312,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "温水洗浄便座\n\t\t\t\t\t\t\t\t\t\t\t・トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩8分",
     "status_note": "",
@@ -31298,7 +31365,8 @@
      "img/athome/28015_1.jpg",
      "img/athome/28015_2.jpg",
      "img/athome/28015_3.jpg",
-     "img/athome/28015_4.jpg"
+     "img/athome/28015_4.jpg",
+     "img/athome/28015_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31307,7 +31375,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース",
      "備考": "大幅な補修必要 再建築相談可 ※奈良市空き家・町家バンク利用登録申込が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0742-34-5175"
     },
     "description_raw": "近鉄難波・奈良線 近鉄奈良駅 / 車18分",
     "status_note": "",
@@ -31356,7 +31425,11 @@
     "renovated": 0,
     "photos": [
      "img/athome/28924_0.jpg",
-     "img/athome/28924_1.jpg"
+     "img/athome/28924_1.jpg",
+     "img/athome/28924_2.jpg",
+     "img/athome/28924_3.jpg",
+     "img/athome/28924_4.jpg",
+     "img/athome/28924_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31365,7 +31438,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "※本物件のご案内には、「大淀町空き家バンク」へのご登録が必要です。 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-5501"
     },
     "description_raw": "近鉄吉野線 大阿太駅 / 徒歩7分",
     "status_note": "",
@@ -31417,7 +31491,8 @@
      "img/athome/27961_1.jpg",
      "img/athome/27961_2.jpg",
      "img/athome/27961_3.jpg",
-     "img/athome/27961_4.jpg"
+     "img/athome/27961_4.jpg",
+     "img/athome/27961_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31426,7 +31501,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・畑\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "奈良市立興東館柳生中学校校区　7200ｍ 大幅な補修が必要 雨漏りあり（軒が逆勾配で工事困難）シロアリ跡あり 給湯器取替必要 進入路狭くて急坂 ※奈良市空き家・町家バンク利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0742-34-5175"
     },
     "description_raw": "ＪＲ関西本線 笠置駅 / 車14分",
     "status_note": "",
@@ -31475,7 +31551,11 @@
     "renovated": 0,
     "photos": [
      "img/athome/27940_0.jpg",
-     "img/athome/27940_1.jpg"
+     "img/athome/27940_1.jpg",
+     "img/athome/27940_2.jpg",
+     "img/athome/27940_3.jpg",
+     "img/athome/27940_4.jpg",
+     "img/athome/27940_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31484,7 +31564,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・集中LPG\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "※本物件のご案内には、「大淀町空き家バンク」へのご登録が必要です。 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-5501"
     },
     "description_raw": "近鉄吉野線 六田駅 / 徒歩17分",
     "status_note": "",
@@ -31539,7 +31620,8 @@
      "交通": "近鉄生駒線 竜田川駅 / 車4分",
      "fotos_total": "1",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 竜田川駅 / 車4分",
     "status_note": "",
@@ -31594,7 +31676,8 @@
      "交通": "近鉄生駒線 平群駅 / 徒歩18分",
      "fotos_total": "1",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩18分",
     "status_note": "",
@@ -31645,7 +31728,9 @@
      "img/athome/25717_0.jpg",
      "img/athome/25717_1.jpg",
      "img/athome/25717_2.jpg",
-     "img/athome/25717_3.jpg"
+     "img/athome/25717_3.jpg",
+     "img/athome/25717_4.jpg",
+     "img/athome/25717_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31654,7 +31739,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩13分",
     "status_note": "",
@@ -31716,7 +31802,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・その他水道\n\t\t\t\t\t\t\t\t\t\t\t・畑\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "現状渡し 設備動作未確認 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-63-0321"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車32分",
     "status_note": "",
@@ -31768,7 +31855,8 @@
      "img/athome/25473_1.jpg",
      "img/athome/25473_2.jpg",
      "img/athome/25473_3.jpg",
-     "img/athome/25473_4.jpg"
+     "img/athome/25473_4.jpg",
+     "img/athome/25473_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31777,7 +31865,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "多少補修必要 ガレージが建っている部分の地目が畑 ※奈良市空き家・町家バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0742-34-5175"
     },
     "description_raw": "ＪＲ関西本線 笠置駅 / 車14分",
     "status_note": "",
@@ -31833,7 +31922,8 @@
      "fotos_total": "1",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "・家財等一部残っていますが現状渡しです ・平群町各種ハザードマップはこちらから確認できます https://www.town.heguri.nara.jp/soshiki/6/5479.html",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 東山駅 / 徒歩20分",
     "status_note": "",
@@ -31882,7 +31972,11 @@
     "renovated": 0,
     "photos": [
      "img/athome/24531_0.jpg",
-     "img/athome/24531_1.jpg"
+     "img/athome/24531_1.jpg",
+     "img/athome/24531_2.jpg",
+     "img/athome/24531_3.jpg",
+     "img/athome/24531_4.jpg",
+     "img/athome/24531_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -31891,7 +31985,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・LDK25畳以上\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・3面バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "補修必要。 敷地への車の進入不可。近隣の貸駐車場情報有り。 敷地前までの下水道計画有り。 越境部分あり。 ※本物件のご案内には「大和郡山市空き家バンク」へのご利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0743-53-1759"
     },
     "description_raw": "ＪＲ関西本線 郡山駅 / 車5分",
     "status_note": "",
@@ -31953,7 +32048,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・集中LPG\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "※掘り込み式駐車場(車高さ確認) 付帯：離れ有り ※本物件のご案内には、「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 徒歩20分",
     "status_note": "",
@@ -32004,7 +32100,9 @@
      "img/athome/24062_0.jpg",
      "img/athome/24062_1.jpg",
      "img/athome/24062_2.jpg",
-     "img/athome/24062_3.jpg"
+     "img/athome/24062_3.jpg",
+     "img/athome/24062_4.jpg",
+     "img/athome/24062_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32013,7 +32111,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
      "備考": "風呂の灯油ボイラー作動未確認 トイレ2カ所 (水洗・汲取） ＊上北山村空き家バンクの利用登録が必要となります。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-45-5210"
     },
     "description_raw": "量の少ない静かな旧国道沿い。道路から少し高台にあり、眺めの良い物件。 価格 200 万円 間取 3DK 建物面積 面積不明 土地面積 224.68㎡ 私道負担面積 物件種目 売戸建 築年月 不詳 所在地 奈良県吉野郡上北山村大字西原 交通 近鉄吉野線 大和上市駅 / 車51分",
     "status_note": "",
@@ -32064,7 +32163,9 @@
      "img/athome/23935_0.jpg",
      "img/athome/23935_1.jpg",
      "img/athome/23935_2.jpg",
-     "img/athome/23935_3.jpg"
+     "img/athome/23935_3.jpg",
+     "img/athome/23935_4.jpg",
+     "img/athome/23935_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32073,7 +32174,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・コンロ三口\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・照明器具\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "売買価格（交渉可） 駐車場1台有り IHクッキングレンジ ※上北山村空き家バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-45-5210"
     },
     "description_raw": "近鉄吉野線 大和上市駅 / 車62分",
     "status_note": "",
@@ -32135,7 +32237,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "居住中のため引き渡し時期は要相談 付帯：倉庫・車庫、田（応相談） ※本物件のご案内には、「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車12分",
     "status_note": "",
@@ -32191,7 +32294,8 @@
      "fotos_total": "1",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 元山上口駅 / 徒歩11分",
     "status_note": "",
@@ -32240,7 +32344,11 @@
     "renovated": 0,
     "photos": [
      "img/athome/22837_0.jpg",
-     "img/athome/22837_1.jpg"
+     "img/athome/22837_1.jpg",
+     "img/athome/22837_2.jpg",
+     "img/athome/22837_3.jpg",
+     "img/athome/22837_4.jpg",
+     "img/athome/22837_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32249,7 +32357,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "※設備動作未確認 ※近隣駐車場は有料 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-5501"
     },
     "description_raw": "近鉄吉野線 越部駅 / 徒歩5分",
     "status_note": "",
@@ -32298,7 +32407,11 @@
     "renovated": 0,
     "photos": [
      "img/athome/22833_0.jpg",
-     "img/athome/22833_1.jpg"
+     "img/athome/22833_1.jpg",
+     "img/athome/22833_2.jpg",
+     "img/athome/22833_3.jpg",
+     "img/athome/22833_4.jpg",
+     "img/athome/22833_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32307,7 +32420,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・畑",
      "備考": "総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-5501"
     },
     "description_raw": "近鉄吉野線 大和上市駅 / 徒歩25分",
     "status_note": "",
@@ -32363,7 +32477,8 @@
      "fotos_total": "1",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩3分",
     "status_note": "",
@@ -32411,7 +32526,12 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/22198_0.jpg"
+     "img/athome/22198_0.jpg",
+     "img/athome/22198_1.jpg",
+     "img/athome/22198_2.jpg",
+     "img/athome/22198_3.jpg",
+     "img/athome/22198_4.jpg",
+     "img/athome/22198_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32420,7 +32540,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩18分",
     "status_note": "",
@@ -32468,7 +32589,8 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/21587_0.jpg"
+     "img/athome/21587_0.jpg",
+     "img/athome/21587_1.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32476,7 +32598,8 @@
      "fotos_total": "2",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩9分",
     "status_note": "",
@@ -32527,7 +32650,9 @@
      "img/athome/17066_0.jpg",
      "img/athome/17066_1.jpg",
      "img/athome/17066_2.jpg",
-     "img/athome/17066_3.jpg"
+     "img/athome/17066_3.jpg",
+     "img/athome/17066_4.jpg",
+     "img/athome/17066_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32536,7 +32661,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "バス無\n\t\t\t\t\t\t\t\t\t\t\t・トイレ無\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "風呂、トイレ使用不可 その他大規模な改修が必要 100万円 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-62-2031"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車27分",
     "status_note": "",
@@ -32588,8 +32714,7 @@
      "img/athome/20673_1.jpg",
      "img/athome/20673_2.jpg",
      "img/athome/20673_3.jpg",
-     "img/athome/20673_4.jpg",
-     "img/athome/20673_5.jpg"
+     "img/athome/20673_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32598,7 +32723,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・納戸",
      "備考": "昭和22年築 水道通っていません。工事必要。 ★山・畑あり　別途条件応相談 ※裏山のお墓参りの為、敷地を通る事あり ※本物件のご案内には、「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車16分",
     "status_note": "",
@@ -32647,11 +32773,7 @@
     "renovated": 0,
     "photos": [
      "img/athome/20393_0.jpg",
-     "img/athome/20393_1.jpg",
-     "img/athome/20393_2.jpg",
-     "img/athome/20393_3.jpg",
-     "img/athome/20393_4.jpg",
-     "img/athome/20393_5.jpg"
+     "img/athome/20393_1.jpg"
     ],
     "features": {
      "物件種目": "",
@@ -32660,7 +32782,8 @@
      "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
      "設備": "上水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
      "備考": "※本物件のご案内には、「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 車7分",
     "status_note": "",
@@ -32709,7 +32832,11 @@
     "renovated": 0,
     "photos": [
      "img/athome/20300_0.jpg",
-     "img/athome/20300_1.jpg"
+     "img/athome/20300_1.jpg",
+     "img/athome/20300_2.jpg",
+     "img/athome/20300_3.jpg",
+     "img/athome/20300_4.jpg",
+     "img/athome/20300_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32718,7 +32845,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "大規模補修が必要 住居併用店舗としても 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-5501"
     },
     "description_raw": "近鉄吉野線 六田駅 / 徒歩12分",
     "status_note": "",
@@ -32780,7 +32908,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "大幅な修理必要 水道廃止：分担金20万＋配管接続工事必要 駐車場1台可 家庭菜園、倉庫付帯 ※本物件のご案内には、「山添村空き家バンク」へのご利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0743-85-0048"
     },
     "description_raw": "近鉄大阪線 名張駅 / 車17分",
     "status_note": "",
@@ -32836,7 +32965,8 @@
      "fotos_total": "1",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html 法令等制限：宅地造成工事規制区域",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩12分",
     "status_note": "",
@@ -32887,7 +33017,9 @@
      "img/athome/19840_0.jpg",
      "img/athome/19840_1.jpg",
      "img/athome/19840_2.jpg",
-     "img/athome/19840_3.jpg"
+     "img/athome/19840_3.jpg",
+     "img/athome/19840_4.jpg",
+     "img/athome/19840_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32896,7 +33028,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "※本物件のご案内には、「下市町空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩22分",
     "status_note": "",
@@ -32947,7 +33080,9 @@
      "img/athome/19728_0.jpg",
      "img/athome/19728_1.jpg",
      "img/athome/19728_2.jpg",
-     "img/athome/19728_3.jpg"
+     "img/athome/19728_3.jpg",
+     "img/athome/19728_4.jpg",
+     "img/athome/19728_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -32956,7 +33091,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "バス無\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "※本物件のご案内には、「下市町空き家バンク」へのご登録が必要です。 設備動作未確認 風呂無し",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩17分",
     "status_note": "",
@@ -33018,7 +33154,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室",
      "備考": "昭和46年築 補修必要（利用者） 給湯器等交換必要の可能性あり(利用者負担) ※本物件のご案内には、「桜井市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-42-9111"
     },
     "description_raw": "近鉄大阪線 長谷寺駅 / 徒歩6分",
     "status_note": "",
@@ -33074,7 +33211,8 @@
      "fotos_total": "1",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html 法令等制限：宅地造成工事規制区域",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩15分",
     "status_note": "",
@@ -33125,7 +33263,9 @@
      "img/athome/19020_0.jpg",
      "img/athome/19020_1.jpg",
      "img/athome/19020_2.jpg",
-     "img/athome/19020_3.jpg"
+     "img/athome/19020_3.jpg",
+     "img/athome/19020_4.jpg",
+     "img/athome/19020_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -33134,7 +33274,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "別途畑有(要相談) 駐車場の施工には土木工事が必要。 売買価格(相談可) ※上北山村空き家バンクの利用登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-45-5210"
     },
     "description_raw": "近鉄吉野線 大和上市駅 / 車61分",
     "status_note": "",
@@ -33196,7 +33337,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・畑",
      "備考": "納屋・畑有 100万円以下",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-63-0321"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車35分",
     "status_note": "",
@@ -33258,7 +33400,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "昭和41年築 付帯建物：蔵・離れ 付帯土地：山林<散在しています> ※本物件のご案内には、「桜井市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-42-9111"
     },
     "description_raw": "近鉄大阪線 桜井駅 / 車15分",
     "status_note": "",
@@ -33320,7 +33463,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "追焚機能\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・全居室収納\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "付帯建物：物置 補修必要（利用者負担） ※本物件のご案内には、「宇陀市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 榛原駅 / 徒歩11分",
     "status_note": "",
@@ -33371,7 +33515,9 @@
      "img/athome/18338_0.jpg",
      "img/athome/18338_1.jpg",
      "img/athome/18338_2.jpg",
-     "img/athome/18338_3.jpg"
+     "img/athome/18338_3.jpg",
+     "img/athome/18338_4.jpg",
+     "img/athome/18338_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -33380,7 +33526,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "玄関前タイル割れあり 給湯器取り換え ハウスクリーニング必要 ※五條市空き家情報バンクへの登録が必要です。 総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0747-22-4001"
     },
     "description_raw": "ＪＲ和歌山線 大和二見駅 / 車4分",
     "status_note": "",
@@ -33436,7 +33583,8 @@
      "fotos_total": "1",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "・平群町各種ハザードマップはこちらから確認できます。 https://www.town.heguri.nara.jp/soshiki/6/5479.html",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩8分",
     "status_note": "",
@@ -33498,7 +33646,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・私設水道\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
      "備考": "平成13年築 ※本物件のご案内には、「宇陀市空き家情報バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0745-82-2130"
     },
     "description_raw": "近鉄大阪線 名張駅 / 車18分",
     "status_note": "",
@@ -33549,7 +33698,9 @@
      "img/athome/17486_0.jpg",
      "img/athome/17486_1.jpg",
      "img/athome/17486_2.jpg",
-     "img/athome/17486_3.jpg"
+     "img/athome/17486_3.jpg",
+     "img/athome/17486_4.jpg",
+     "img/athome/17486_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -33558,7 +33709,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室",
      "備考": "売買の場合は畑も込みとなります 義務教育学校　上北山村立上北山やまゆり学園　徒歩29分（2,400m） ＊上北山村空き家バンクの利用登録が必要となります。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-45-5210"
     },
     "description_raw": "近鉄吉野線 大和上市駅 / 車60分",
     "status_note": "",
@@ -33609,7 +33761,9 @@
      "img/athome/17541_0.jpg",
      "img/athome/17541_1.jpg",
      "img/athome/17541_2.jpg",
-     "img/athome/17541_3.jpg"
+     "img/athome/17541_3.jpg",
+     "img/athome/17541_4.jpg",
+     "img/athome/17541_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -33618,7 +33772,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
      "備考": "義務教育学校　上北山村立上北山やまゆり学園上北山小中学校　徒歩29分（2,400ｍ） 100万円以下 ＊上北山村空き家バンクの利用登録が必要となります。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0744-45-5210"
     },
     "description_raw": "近鉄吉野線 大和上市駅 / 車60分",
     "status_note": "",
@@ -33670,7 +33825,8 @@
      "img/athome/14832_1.jpg",
      "img/athome/14832_2.jpg",
      "img/athome/14832_3.jpg",
-     "img/athome/14832_4.jpg"
+     "img/athome/14832_4.jpg",
+     "img/athome/14832_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -33679,7 +33835,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・LDK18畳以上\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
      "備考": "補修必要（利用者） ※本物件のご案内には、「奈良市空き家バンク」へのご登録が必要です。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0742-34-5175"
     },
     "description_raw": "ＪＲ桜井線 京終駅 / 車19分",
     "status_note": "",
@@ -33731,7 +33888,8 @@
      "img/athome/4744_1.jpg",
      "img/athome/4744_2.jpg",
      "img/athome/4744_3.jpg",
-     "img/athome/4744_4.jpg"
+     "img/athome/4744_4.jpg",
+     "img/athome/4744_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -33739,7 +33897,8 @@
      "fotos_total": "10",
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "備考": "総戸数：1戸",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "0742-34-5175"
     },
     "description_raw": "ＪＲ関西本線 笠置駅 / 徒歩46分",
     "status_note": "",
@@ -33787,7 +33946,12 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/8400_0.jpg"
+     "img/athome/8400_0.jpg",
+     "img/athome/8400_1.jpg",
+     "img/athome/8400_2.jpg",
+     "img/athome/8400_3.jpg",
+     "img/athome/8400_4.jpg",
+     "img/athome/8400_5.jpg"
     ],
     "features": {
      "物件種目": "貸戸建住宅",
@@ -33796,7 +33960,8 @@
      "条件": "2階以上 駐車場(近隣含む) 洗濯機置き場 B/T(バストイレ)別室 追焚機能 フローリング エアコン ペット相談 オートロック 南向",
      "設備": "エコキュート\n\t\t\t\t\t\t\t\t\t\t\t・モニタ付インターホン\n\t\t\t\t\t\t\t\t\t\t\t・追焚機能\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
      "備考": "引き渡し：相談 賃貸総戸数：1戸",
-     "敷金保証金": "なし\n\t\t\t\t\t\t\t\t/\n\t\t\t\t\t\t\t\t\t-"
+     "敷金保証金": "なし\n\t\t\t\t\t\t\t\t/\n\t\t\t\t\t\t\t\t\t-",
+     "contacto_tel": "0745-45-2077"
     },
     "description_raw": "近鉄生駒線 元山上口駅 / 徒歩10分",
     "status_note": "",
@@ -33848,7 +34013,8 @@
      "img/athome/5749_1.jpg",
      "img/athome/5749_2.jpg",
      "img/athome/5749_3.jpg",
-     "img/athome/5749_4.jpg"
+     "img/athome/5749_4.jpg",
+     "img/athome/5749_5.jpg"
     ],
     "features": {
      "物件種目": "貸戸建住宅",
@@ -33857,7 +34023,8 @@
      "条件": "2階以上 駐車場(近隣含む) 洗濯機置き場 B/T(バストイレ)別室 追焚機能 フローリング エアコン ペット相談 オートロック 南向",
      "設備": "キッチンに窓\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・リビングの隣和室\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・続和室\n\t\t\t\t\t\t\t\t\t\t\t・倉庫\n\t\t\t\t\t\t\t\t\t\t\t・押入\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "◆所有者との直接契約 ※賃料は目安。賃貸対象建物(母屋のみ、母屋＋離れ等)に応じて調整 ◆面積は実測との差異あり ◆キッチン・風呂改修相談可 ◆農地利用希望あれば別途相談可 ※利用登録が必要 引き渡し：相談",
-     "敷金保証金": "不明"
+     "敷金保証金": "不明",
+     "contacto_tel": "0742-34-5175"
     },
     "description_raw": "ＪＲ桜井線 京終駅 / 車26分",
     "status_note": "",
@@ -33905,10 +34072,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/8411_0.jpg",
-     "img/athome/8411_1.jpg",
-     "img/athome/8411_2.jpg",
-     "img/athome/8411_3.jpg"
+     "img/athome/8411_0.jpg"
     ],
     "features": {
      "物件種目": "貸テラスハウス",
@@ -33917,7 +34081,8 @@
      "条件": "2階以上 駐車場(近隣含む) 洗濯機置き場 B/T(バストイレ)別室 追焚機能 フローリング エアコン ペット相談 オートロック 南向",
      "設備": "プロパンガス給湯\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
      "備考": "※本物件のご案内には、「下市町空き家バンク」へのご登録が必要です。 引き渡し：相談 賃貸総戸数：2戸",
-     "敷金保証金": "不明"
+     "敷金保証金": "不明",
+     "contacto_tel": "0747-52-0001"
     },
     "description_raw": "近鉄吉野線 下市口駅 / 車5分",
     "status_note": "",
