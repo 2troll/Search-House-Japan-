@@ -26,22 +26,21 @@ import config
 import db
 from sources.base import (HttpClient, detect_foreigner_ok, parse_price_yen,
                           parse_area_m2, parse_year_built)
-from sources.athome_akiya import IMG_DIR, _img_session
+from sources.athome_akiya import IMG_DIR, _img_session, save_webp
 
 AWAJI = ["minamiawaji", "sumoto", "awaji_shi"]
 
 
 def _download(url, bid, idx):
     os.makedirs(IMG_DIR, exist_ok=True)
-    rel = f"img/athome/{bid}_{idx}.jpg"
-    dest = os.path.join(IMG_DIR, f"{bid}_{idx}.jpg")
-    if os.path.exists(dest) and os.path.getsize(dest) > 1000:
+    rel = f"img/athome/{bid}_{idx}.webp"
+    dest = os.path.join(IMG_DIR, f"{bid}_{idx}.webp")
+    if os.path.exists(dest) and os.path.getsize(dest) > 500:
         return rel
     try:
         r = _img_session.get(url, timeout=config.HTTP_TIMEOUT)
         if r.status_code == 200 and r.headers.get("content-type", "").startswith("image"):
-            with open(dest, "wb") as f:
-                f.write(r.content)
+            save_webp(r.content, dest)
             return rel
     except Exception:
         pass

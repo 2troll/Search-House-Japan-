@@ -20,11 +20,14 @@ User-Agent del HttpClient. Uso personal, sin redistribución.
 """
 
 import os
+import io
+import os
 import re
 from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
+from PIL import Image
 
 from sources.base import (
     Listing, parse_price_yen, parse_area_m2, detect_foreigner_ok, assign_area,
@@ -35,8 +38,9 @@ SLUG = "athome"
 NAME = "アットホーム空き家バンク"
 BASE = "https://www.akiya-athome.jp"
 
-# Carpeta donde guardamos las fotos descargadas (at-home las bloquea por hotlink,
-# así que las copiamos al propio sitio). Se sirven como /img/athome/<id>.jpg.
+# Carpeta donde guardamos las fotos. Las guardamos en WebP (mucho más ligero,
+# misma resolución) para no superar el límite de espacio. Se sirven como
+# /img/athome/<id>.webp.
 IMG_DIR = os.path.join(config.BASE_DIR, "web", "img", "athome")
 _img_session = requests.Session()
 _img_session.headers.update({
@@ -44,21 +48,30 @@ _img_session.headers.update({
     "Referer": BASE + "/",
 })
 
+WEBP_QUALITY = 82
+WEBP_MAXDIM = 1280
+
+
+def save_webp(content, dest):
+    """Guarda los bytes de una imagen como WebP (cap 1280px, calidad 82)."""
+    im = Image.open(io.BytesIO(content)).convert("RGB")
+    im.thumbnail((WEBP_MAXDIM, WEBP_MAXDIM))
+    im.save(dest, "WEBP", quality=WEBP_QUALITY, method=4)
+
 
 def _download_photo(remote_url, bid):
-    """Descarga la foto de la card al sitio. Devuelve la ruta relativa o ''."""
+    """Descarga la foto de la card y la guarda en WebP. Devuelve ruta relativa o ''."""
     if not remote_url or not bid:
         return ""
     os.makedirs(IMG_DIR, exist_ok=True)
-    rel = f"img/athome/{bid}.jpg"
-    dest = os.path.join(IMG_DIR, f"{bid}.jpg")
-    if os.path.exists(dest) and os.path.getsize(dest) > 1000:
+    rel = f"img/athome/{bid}.webp"
+    dest = os.path.join(IMG_DIR, f"{bid}.webp")
+    if os.path.exists(dest) and os.path.getsize(dest) > 500:
         return rel  # ya descargada
     try:
         r = _img_session.get(remote_url, timeout=config.HTTP_TIMEOUT)
         if r.status_code == 200 and r.headers.get("content-type", "").startswith("image"):
-            with open(dest, "wb") as f:
-                f.write(r.content)
+            save_webp(r.content, dest)
             return rel
     except Exception:
         pass
