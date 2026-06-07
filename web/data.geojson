@@ -12604,12 +12604,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46518.jpg"
+     "img/athome/46518_0.jpg",
+     "img/athome/46518_1.jpg",
+     "img/athome/46518_2.jpg",
+     "img/athome/46518_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "帝産バス金勝線 金勝小学校前 停歩5分",
-     "fotos_total": "3"
+     "fotos_total": "3",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "帝産バス金勝線 金勝小学校前 停歩5分",
     "status_note": "",
@@ -12657,12 +12662,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46602.jpg"
+     "img/athome/46602_0.jpg",
+     "img/athome/46602_1.jpg",
+     "img/athome/46602_2.jpg",
+     "img/athome/46602_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 尼子駅 / 車2.4km",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 車2.4km",
     "status_note": "",
@@ -12710,12 +12721,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46227.jpg"
+     "img/athome/46227_0.jpg",
+     "img/athome/46227_1.jpg",
+     "img/athome/46227_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ東海道本線 稲枝駅 / 車21分",
-     "fotos_total": "4"
+     "fotos_total": "4",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ東海道本線 稲枝駅 / 車21分",
     "status_note": "",
@@ -12763,12 +12780,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45811.jpg"
+     "img/athome/45811_0.jpg",
+     "img/athome/45811_1.jpg",
+     "img/athome/45811_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ東海道本線 能登川駅 / ちょこっとバス大中線 栗見新田 停歩4分 乗車33分",
-     "fotos_total": "15"
+     "fotos_total": "15",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "モニタ付インターホン\n\t\t\t\t\t\t\t\t\t\t\t・追焚機能\n\t\t\t\t\t\t\t\t\t\t\t・トイレ3箇所\n\t\t\t\t\t\t\t\t\t\t\t・男女別トイレ\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・シューズボックス\n\t\t\t\t\t\t\t\t\t\t\t・納戸",
+     "備考": "※一部増築未登記部分有 東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ東海道本線 能登川駅 / ちょこっとバス大中線 栗見新田 停歩4分 乗車33分",
     "status_note": "",
@@ -12816,12 +12839,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46006.jpg"
+     "img/athome/46006_0.jpg",
+     "img/athome/46006_1.jpg",
+     "img/athome/46006_2.jpg",
+     "img/athome/46006_3.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 尼子駅 / 車999.9km",
-     "fotos_total": "3"
+     "fotos_total": "3",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 車999.9km",
     "status_note": "",
@@ -12869,12 +12897,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45965.jpg"
+     "img/athome/45965_0.jpg",
+     "img/athome/45965_1.jpg",
+     "img/athome/45965_2.jpg",
+     "img/athome/45965_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 尼子駅 / 徒歩27分",
-     "fotos_total": "5"
+     "fotos_total": "5",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 徒歩27分",
     "status_note": "",
@@ -12922,12 +12956,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45805.jpg"
+     "img/athome/45805_0.jpg",
+     "img/athome/45805_1.jpg",
+     "img/athome/45805_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 八日市駅 / 車27分",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "バス\n\t\t\t\t\t\t\t\t\t\t\t・男女別トイレ\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・その他水道\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・屋根裏収納\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "※現況有姿 東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 八日市駅 / 車27分",
     "status_note": "",
@@ -12975,12 +13015,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45237.jpg"
+     "img/athome/45237_0.jpg",
+     "img/athome/45237_1.jpg",
+     "img/athome/45237_2.jpg",
+     "img/athome/45237_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ東海道本線 草津駅 / 金勝線 日吉が丘 停歩1分 乗車15分",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "内覧について即日お答えすることができません。 都合によっては、期日の変更やお断りすることがございますのでご了承ください。 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ東海道本線 草津駅 / 金勝線 日吉が丘 停歩1分 乗車15分",
     "status_note": "",
@@ -13028,12 +13074,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45697.jpg"
+     "img/athome/45697_0.jpg",
+     "img/athome/45697_1.jpg",
+     "img/athome/45697_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "量少なめで、子育てやぜんそくが気になる方におすすめです。 ルーフバルコニーあり。日当たりが良く開放感があります。 価格 700 万円 間取 4SLDK 建物面積 109.15㎡ 土地面積 181.81㎡ 私道負担面積 物件種目 売戸建 築年月 1981年11月 所在地 滋賀県東近江市三津屋町 交通 近江鉄道八日市線 市辺駅 / 徒歩15分",
-     "fotos_total": "4"
+     "fotos_total": "4",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・ルーフバルコニー",
+     "備考": "※現況有姿 東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：1戸 法令等制限：都市再生特別地区/景観法",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "量少なめで、子育てやぜんそくが気になる方におすすめです。 ルーフバルコニーあり。日当たりが良く開放感があります。 価格 700 万円 間取 4SLDK 建物面積 109.15㎡ 土地面積 181.81㎡ 私道負担面積 物件種目 売戸建 築年月 1981年11月 所在地 滋賀県東近江市三津屋町 交通 近江鉄道八日市線 市辺駅 / 徒歩15分",
     "status_note": "",
@@ -13081,12 +13133,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45471.jpg"
+     "img/athome/45471_0.jpg",
+     "img/athome/45471_1.jpg",
+     "img/athome/45471_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "量少なめで、子育てやぜんそくが気になる方におすすめです。 ゴルフ場が近くにあり、少しの空き時間でも足を運べます。 価格 400 万円 間取 6SDK 建物面積 89.25㎡ 土地面積 396.69㎡ 私道負担面積 物件種目 売戸建 築年月 1935年1月 所在地 滋賀県東近江市土器町 交通 近江鉄道本線 八日市駅 / ちょこっとバス５南部御園線 土器 停歩3分 乗車25分",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "追焚機能\n\t\t\t\t\t\t\t\t\t\t\t・トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・縁側\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・庭10坪以上",
+     "備考": "※宅地とは別に、畑地1191平米(360.27坪)含みます。畑地は農地転用を要する。 ※現況有姿 東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：4戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "量少なめで、子育てやぜんそくが気になる方におすすめです。 ゴルフ場が近くにあり、少しの空き時間でも足を運べます。 価格 400 万円 間取 6SDK 建物面積 89.25㎡ 土地面積 396.69㎡ 私道負担面積 物件種目 売戸建 築年月 1935年1月 所在地 滋賀県東近江市土器町 交通 近江鉄道本線 八日市駅 / ちょこっとバス５南部御園線 土器 停歩3分 乗車25分",
     "status_note": "",
@@ -13134,12 +13192,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45487.jpg"
+     "img/athome/45487_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 近江バス 向町 停歩1分 乗車10分",
-     "fotos_total": "20"
+     "fotos_total": "20",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 日野駅 / 近江バス 向町 停歩1分 乗車10分",
     "status_note": "",
@@ -13187,12 +13247,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45090.jpg"
+     "img/athome/45090_0.jpg",
+     "img/athome/45090_1.jpg",
+     "img/athome/45090_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "量が少なく子育てやぜんそくが気になる方におすすめです。 価格 260 万円 間取 4DK 建物面積 73.36㎡ 土地面積 159.47㎡ 私道負担面積 物件種目 売戸建 築年月 1978年1月 所在地 滋賀県東近江市北坂町 交通 近江鉄道本線 八日市駅 / ちょこっとバス2愛東線北回り 北坂 停歩2分 乗車24分",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・全居室6畳以上\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立",
+     "備考": "※現況有姿 ※現況と建物登記内容に相違有、実測は記載内容と異なる場合があります。 東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "量が少なく子育てやぜんそくが気になる方におすすめです。 価格 260 万円 間取 4DK 建物面積 73.36㎡ 土地面積 159.47㎡ 私道負担面積 物件種目 売戸建 築年月 1978年1月 所在地 滋賀県東近江市北坂町 交通 近江鉄道本線 八日市駅 / ちょこっとバス2愛東線北回り 北坂 停歩2分 乗車24分",
     "status_note": "",
@@ -13240,12 +13306,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45032.jpg"
+     "img/athome/45032_0.jpg",
+     "img/athome/45032_1.jpg",
+     "img/athome/45032_2.jpg",
+     "img/athome/45032_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 尼子駅 / 徒歩33分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 徒歩33分",
     "status_note": "",
@@ -13293,12 +13364,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44782.jpg"
+     "img/athome/44782_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 車13分",
-     "fotos_total": "20"
+     "fotos_total": "20",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：5,000円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車13分",
     "status_note": "",
@@ -13346,12 +13420,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44019.jpg"
+     "img/athome/44019_0.jpg",
+     "img/athome/44019_1.jpg",
+     "img/athome/44019_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 八日市駅 / ちょこっとバス湖東線 僧坊 停歩1分 乗車29分",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・男女別トイレ\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "駐車場は道向かいと敷地内に2台 ※現況有姿 東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：2戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 八日市駅 / ちょこっとバス湖東線 僧坊 停歩1分 乗車29分",
     "status_note": "",
@@ -13399,12 +13479,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44135.jpg"
+     "img/athome/44135_0.jpg",
+     "img/athome/44135_1.jpg",
+     "img/athome/44135_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 八日市駅 / 車30分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "瞬間湯沸器\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・井戸",
+     "備考": "トイレ・浴室は外の別棟。 東近江市の各種補助金については、こちらをご覧ください。 https://www.higashiomiakiya.com/info 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 八日市駅 / 車30分",
     "status_note": "",
@@ -13452,12 +13538,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43926.jpg"
+     "img/athome/43926_0.jpg",
+     "img/athome/43926_1.jpg",
+     "img/athome/43926_2.jpg",
+     "img/athome/43926_3.jpg",
+     "img/athome/43926_4.jpg",
+     "img/athome/43926_5.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "めぐるくん　下田線 中山口 停歩6分",
-     "fotos_total": "18"
+     "fotos_total": "18",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・コンロ三口\n\t\t\t\t\t\t\t\t\t\t\t・グリル\n\t\t\t\t\t\t\t\t\t\t\t・ダブルロックキー\n\t\t\t\t\t\t\t\t\t\t\t・追焚機能\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・床下収納\n\t\t\t\t\t\t\t\t\t\t\t・シューズボックス\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・出窓",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "めぐるくん　下田線 中山口 停歩6分",
     "status_note": "",
@@ -13505,12 +13599,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/36550.jpg"
+     "img/athome/36550_0.jpg",
+     "img/athome/36550_1.jpg",
+     "img/athome/36550_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ東海道本線 近江八幡駅 / 長峰線 長峰集会所前 停歩10分 乗車35分",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "※現況有姿 ※下水道未接続 東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ東海道本線 近江八幡駅 / 長峰線 長峰集会所前 停歩10分 乗車35分",
     "status_note": "",
@@ -13558,12 +13658,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43183.jpg"
+     "img/athome/43183_0.jpg",
+     "img/athome/43183_1.jpg",
+     "img/athome/43183_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ東海道本線 能登川駅 / 徒歩40分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・ウォークインクローゼット",
+     "備考": "※現況有姿 ※下水道は敷地内まできてますが、未接続 東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ東海道本線 能登川駅 / 徒歩40分",
     "status_note": "",
@@ -13611,12 +13717,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43391.jpg"
+     "img/athome/43391_0.jpg",
+     "img/athome/43391_1.jpg",
+     "img/athome/43391_2.jpg",
+     "img/athome/43391_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 尼子駅 / 徒歩18分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 徒歩18分",
     "status_note": "",
@@ -13664,12 +13775,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43397.jpg"
+     "img/athome/43397_0.jpg",
+     "img/athome/43397_1.jpg",
+     "img/athome/43397_2.jpg",
+     "img/athome/43397_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 尼子駅 / 徒歩43分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 徒歩43分",
     "status_note": "",
@@ -13717,12 +13833,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43384.jpg"
+     "img/athome/43384_0.jpg",
+     "img/athome/43384_1.jpg",
+     "img/athome/43384_2.jpg",
+     "img/athome/43384_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 尼子駅 / 徒歩18分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 徒歩18分",
     "status_note": "",
@@ -13770,12 +13891,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43390.jpg"
+     "img/athome/43390_0.jpg",
+     "img/athome/43390_1.jpg",
+     "img/athome/43390_2.jpg",
+     "img/athome/43390_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 尼子駅 / 徒歩12分",
-     "fotos_total": "14"
+     "fotos_total": "14",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 徒歩12分",
     "status_note": "",
@@ -13823,12 +13949,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43381.jpg"
+     "img/athome/43381_0.jpg",
+     "img/athome/43381_1.jpg",
+     "img/athome/43381_2.jpg",
+     "img/athome/43381_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 尼子駅 / 徒歩58分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 徒歩58分",
     "status_note": "",
@@ -13876,12 +14007,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43371.jpg"
+     "img/athome/43371_0.jpg",
+     "img/athome/43371_1.jpg",
+     "img/athome/43371_2.jpg",
+     "img/athome/43371_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 尼子駅 / 徒歩24分",
-     "fotos_total": "5"
+     "fotos_total": "5",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 徒歩24分",
     "status_note": "",
@@ -13929,12 +14065,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43376.jpg"
+     "img/athome/43376_0.jpg",
+     "img/athome/43376_1.jpg",
+     "img/athome/43376_2.jpg",
+     "img/athome/43376_3.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 尼子駅 / 徒歩28分",
-     "fotos_total": "4"
+     "fotos_total": "4",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 尼子駅 / 徒歩28分",
     "status_note": "",
@@ -13982,12 +14123,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42726.jpg"
+     "img/athome/42726_0.jpg",
+     "img/athome/42726_1.jpg",
+     "img/athome/42726_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道八日市線 市辺駅 / 徒歩17分",
-     "fotos_total": "15"
+     "fotos_total": "15",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "※現況有姿 ※トイレは外のみ 東近江市の各種補助金→ https://www.higashiomiakiya.com/info 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道八日市線 市辺駅 / 徒歩17分",
     "status_note": "",
@@ -14035,12 +14182,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/41874.jpg"
+     "img/athome/41874_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 町営バス 佐久良 停歩3分 乗車15分",
-     "fotos_total": "14"
+     "fotos_total": "14",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "自治会加入要。 土地建物面積は登記上実際の面積と誤差の場合あり。 土地地目は宅地、畑、山林建物は未登記あり固定資産上は170平米で道路挟み農地・山林（物置19.83平米）敷地一部土砂災害警戒区域。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：3,000円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 町営バス 佐久良 停歩3分 乗車15分",
     "status_note": "",
@@ -14088,12 +14239,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38861.jpg"
+     "img/athome/38861_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 徒歩7分",
-     "fotos_total": "18"
+     "fotos_total": "18",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 日野駅 / 徒歩7分",
     "status_note": "",
@@ -14141,12 +14294,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/39335.jpg"
+     "img/athome/39335_0.jpg",
+     "img/athome/39335_1.jpg",
+     "img/athome/39335_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 八日市駅 / 車11分",
-     "fotos_total": "5"
+     "fotos_total": "5",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・屋根裏収納\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "東近江市の各種補助金については、こちらをご覧ください。 https://www.higashiomiakiya.com/info ◆外トイレ◆現状有姿◆未登記建物有（離れ）◆田2枚付き 総戸数：2戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 八日市駅 / 車11分",
     "status_note": "",
@@ -14194,12 +14353,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38781.jpg"
+     "img/athome/38781_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 車10分",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：3,500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車10分",
     "status_note": "",
@@ -14247,12 +14409,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38644.jpg"
+     "img/athome/38644_0.jpg",
+     "img/athome/38644_1.jpg",
+     "img/athome/38644_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 桜川駅 / 徒歩26分",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "瞬間湯沸器\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "東近江市の各種補助金については、こちらをご覧ください。 https://www.higashiomiakiya.com/info 駐車場：1台 セットバック有：約11.5平米 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 桜川駅 / 徒歩26分",
     "status_note": "",
@@ -14300,12 +14468,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37731.jpg"
+     "img/athome/37731_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 車1km",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：3,500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車1km",
     "status_note": "",
@@ -14353,12 +14524,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37728.jpg"
+     "img/athome/37728_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 車9.1km",
-     "fotos_total": "16"
+     "fotos_total": "16",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "法令等制限：土砂災害危険区域",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車9.1km",
     "status_note": "",
@@ -14406,12 +14580,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37628.jpg"
+     "img/athome/37628_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 車2.8km",
-     "fotos_total": "15"
+     "fotos_total": "15",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "・自治会への加入をお願いします。 ・2022年２月から空き家。 ・建物の一部は軽量鉄骨造り。 ・敷地内に下水桝あり。 ・土砂災害危険区域に該当します。 法令等制限：土砂災害危険区域",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：4,200円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車2.8km",
     "status_note": "",
@@ -14459,12 +14638,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/34702.jpg"
+     "img/athome/34702_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 車6.7km",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "・令和4年～空き家。 ・敷地内農地あり.農地取得は許可必要。 ・自治会加入要。 ・土地面積は登記上で実際と誤差がでる場合あり。 ・建物面積は固定資産税評価面積で登記上実際と誤差がでる場合あり。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：3,000円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車6.7km",
     "status_note": "",
@@ -14512,12 +14695,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/34712.jpg"
+     "img/athome/34712_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 車6km",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "・自治会加入が必要。 ・空家になった時期はＨ13年12月～。 ・現状の儘の取引（家具やタンス等少々有り）。 ・即入居可能だが、修繕等が必要（要現地確認）。 ・駐車可能スペースは２台（玄関前）。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：3,000円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車6km",
     "status_note": "",
@@ -14565,12 +14752,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37069.jpg"
+     "img/athome/37069_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線 日野駅 / 車2.5km",
-     "fotos_total": "15"
+     "fotos_total": "15",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "・自治会への加入をお願いします。 ・空き家になったのは平成30年4月頃。 ・下水未接続。 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車2.5km",
     "status_note": "",
@@ -14618,12 +14809,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37018.jpg"
+     "img/athome/37018_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車4.8km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車4.8km",
     "status_note": "",
@@ -14671,12 +14865,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37021.jpg"
+     "img/athome/37021_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車4.8km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車4.8km",
     "status_note": "",
@@ -14724,12 +14921,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37022.jpg"
+     "img/athome/37022_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車5.2km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車5.2km",
     "status_note": "",
@@ -14777,12 +14977,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37023.jpg"
+     "img/athome/37023_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車5km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車5km",
     "status_note": "",
@@ -14830,12 +15033,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37043.jpg"
+     "img/athome/37043_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車4.2km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車4.2km",
     "status_note": "",
@@ -14883,12 +15088,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37024.jpg"
+     "img/athome/37024_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車4.8km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車4.8km",
     "status_note": "",
@@ -14936,12 +15143,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37025.jpg"
+     "img/athome/37025_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車3.7km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：1,500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車3.7km",
     "status_note": "",
@@ -14989,12 +15199,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37026.jpg"
+     "img/athome/37026_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車3.5km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：1,500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車3.5km",
     "status_note": "",
@@ -15042,12 +15255,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37028.jpg"
+     "img/athome/37028_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車4.1km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車4.1km",
     "status_note": "",
@@ -15095,12 +15310,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37029.jpg"
+     "img/athome/37029_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車4.8km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車4.8km",
     "status_note": "",
@@ -15148,12 +15366,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37031.jpg"
+     "img/athome/37031_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車1.6km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：2,500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車1.6km",
     "status_note": "",
@@ -15201,12 +15422,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37035.jpg"
+     "img/athome/37035_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車3分",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：2,500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車3分",
     "status_note": "",
@@ -15254,12 +15478,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37037.jpg"
+     "img/athome/37037_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車4.8km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "維持費": "町会費用：500円/月"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車4.8km",
     "status_note": "",
@@ -15307,12 +15534,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37042.jpg"
+     "img/athome/37042_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "近江鉄道本線 日野駅 / 車4.5km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線 日野駅 / 車4.5km",
     "status_note": "",
@@ -15360,12 +15589,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/33256.jpg"
+     "img/athome/33256_0.jpg",
+     "img/athome/33256_1.jpg",
+     "img/athome/33256_2.jpg",
+     "img/athome/33256_3.jpg",
+     "img/athome/33256_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線「豊郷」駅",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線「豊郷」駅",
     "status_note": "",
@@ -15413,12 +15649,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/33255.jpg"
+     "img/athome/33255_0.jpg",
+     "img/athome/33255_1.jpg",
+     "img/athome/33255_2.jpg",
+     "img/athome/33255_3.jpg",
+     "img/athome/33255_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道本線「豊郷」駅",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "バス無\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道本線「豊郷」駅",
     "status_note": "",
@@ -15466,12 +15709,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/29145.jpg"
+     "img/athome/29145_0.jpg",
+     "img/athome/29145_1.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ湖西線 小野駅 / 徒歩10分",
-     "fotos_total": "15"
+     "fotos_total": "15",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "※当物件のご購入は協力宅建業者の媒介に基づき「仲介手数料」が必要となります。 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ湖西線 小野駅 / 徒歩10分",
     "status_note": "",
@@ -15519,12 +15766,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/27370.jpg"
+     "img/athome/27370_0.jpg",
+     "img/athome/27370_1.jpg",
+     "img/athome/27370_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "近江鉄道八日市線 八日市駅 / ちょこっとバス湖東線 大沢 停歩3分 乗車22分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "倉庫有り※未登記 田198平米・畑49平米付 東近江市の各種補助金については、こちらをご覧ください。 https://www.higashiomiakiya.com/info 総戸数：2戸 傾斜地面積：0",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "近江鉄道八日市線 八日市駅 / ちょこっとバス湖東線 大沢 停歩3分 乗車22分",
     "status_note": "",
@@ -15572,12 +15825,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/26537.jpg"
+     "img/athome/26537_0.jpg",
+     "img/athome/26537_1.jpg",
+     "img/athome/26537_2.jpg",
+     "img/athome/26537_3.jpg",
+     "img/athome/26537_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ東海道本線 稲枝駅 / 車10分",
-     "fotos_total": "20"
+     "fotos_total": "20",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "残置物を含む、現状有姿でのお引渡しです。諸設備の動作確認は不明です。ご契約後、隣地との境界確定等少しお時間がかかる事にご留意下さい。未登記物件あり必要に応じて引渡までに登記の整理等が必要になります。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ東海道本線 稲枝駅 / 車10分",
     "status_note": "",
@@ -15625,12 +15885,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/22741.jpg"
+     "img/athome/22741_0.jpg",
+     "img/athome/22741_1.jpg",
+     "img/athome/22741_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ちょこっとバス　甲津畑線 甲津畑 停歩2分",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・全居室6畳以上",
+     "備考": "※公図では接道面無、囲繞地。現状進入路有、但し公図訂正必要。　築年不詳物件。上水接続無。 東近江市の各種補助金 https://www.higashiomiakiya.com/info 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ちょこっとバス　甲津畑線 甲津畑 停歩2分",
     "status_note": "",
