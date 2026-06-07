@@ -33796,12 +33796,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46911.jpg"
+     "img/athome/46911_0.jpg",
+     "img/athome/46911_1.jpg",
+     "img/athome/46911_2.jpg",
+     "img/athome/46911_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 隼駅 /",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "現状有姿渡しを希望 売却額は応相談 残置の家財は使用可（不要の場合は所有者負担で処分） 必ず自治会に加入すること",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 隼駅 /",
     "status_note": "",
@@ -33849,12 +33856,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46910.jpg"
+     "img/athome/46910_0.jpg",
+     "img/athome/46910_1.jpg",
+     "img/athome/46910_2.jpg",
+     "img/athome/46910_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 丹比駅 /",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室",
+     "備考": "現状有姿渡しを希望 残置している家財は使用可（要らない場合は所有者負担で処分） 売却額は相談に応じる",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 丹比駅 /",
     "status_note": "",
@@ -33902,12 +33916,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46908.jpg"
+     "img/athome/46908_0.jpg",
+     "img/athome/46908_1.jpg",
+     "img/athome/46908_2.jpg",
+     "img/athome/46908_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 安部駅 /",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "現状有姿渡しを希望 残置している家財は使用可 詳細や内覧については、次の媒介業者へ直接お問い合わせください。 すまいる不動産（鳥取市末広温泉町702） 電話： 0857-30-7788",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 安部駅 /",
     "status_note": "",
@@ -33955,12 +33976,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46261.jpg"
+     "img/athome/46261_0.jpg",
+     "img/athome/46261_1.jpg",
+     "img/athome/46261_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車15.5km",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・個別浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・シューズボックス\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・出窓",
+     "備考": "保育園（約2.6ｋｍ）、公立小学校（約6.4ｋｍ）、公立中学校（約5.3ｋｍ）、郵便局（約3.8ｋｍ）、スーパー（約6.2ｋｍ）、コンビニ（約1.3ｋｍ）、病院（約2.6ｋｍ）、温泉（約1.8ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車15.5km",
     "status_note": "",
@@ -34008,12 +34035,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46617.jpg"
+     "img/athome/46617_0.jpg",
+     "img/athome/46617_1.jpg",
+     "img/athome/46617_2.jpg",
+     "img/athome/46617_3.jpg",
+     "img/athome/46617_4.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "日ノ丸自動車 法勝寺中 停歩4分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "仲介業者あり 分筆及び合筆予定のため、面積は予定面積です 上水道引込要 敷地接道部分電柱有 従前建物基礎一部残存(道路側溝床板につながる箇所)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "日ノ丸自動車 法勝寺中 停歩4分",
     "status_note": "",
@@ -34061,12 +34096,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46773.jpg"
+     "img/athome/46773_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "利便が良好／スーパー等の主要施設がやや遠い ・避難場所…300m（弓原浜公民館） ・病院…2.1km（高見医院） ・スーパー…4.7km（ダイレックス湯梨浜店） ・コンビニ…1.3km（ローソン 北栄町北尾店） 価格 1,500 万円 間取 6SDK 建物面積 154.41㎡ 土地面積 788.39㎡ 私道負担面積 物件種目 売戸建 築年月 1989年1月 所在地 鳥取県東伯郡北栄町弓原 交通 ＪＲ山陰本線 下北条駅 /",
-     "fotos_total": "16"
+     "fotos_total": "16",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "・町役場…2.3km（北栄町役場北条支所） ・こども園…2.3km（北条こども園） ・小学校…2.2km（北条小学校） ・中学校…2.3km（北条中学校） ・交番…2.1km（北条駐在所）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "利便が良好／スーパー等の主要施設がやや遠い ・避難場所…300m（弓原浜公民館） ・病院…2.1km（高見医院） ・スーパー…4.7km（ダイレックス湯梨浜店） ・コンビニ…1.3km（ローソン 北栄町北尾店） 価格 1,500 万円 間取 6SDK 建物面積 154.41㎡ 土地面積 788.39㎡ 私道負担面積 物件種目 売戸建 築年月 1989年1月 所在地 鳥取県東伯郡北栄町弓原 交通 ＪＲ山陰本線 下北条駅 /",
     "status_note": "",
@@ -34114,12 +34153,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46567.jpg"
+     "img/athome/46567_0.jpg",
+     "img/athome/46567_1.jpg",
+     "img/athome/46567_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車1.4km",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・照明器具\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・全居室6畳以上\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・シューズボックス\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園（約900ｍ）、公立小学校（約1.4ｋｍ）、公立中学校（約1.2ｋｍ）、郵便局（約700ｍ）、スーパー（約450ｍ）、コンビニ（約450ｍ）、病院（約500ｍ）、温泉（約14.6ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車1.4km",
     "status_note": "",
@@ -34167,12 +34212,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46671.jpg"
+     "img/athome/46671_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "至便／小学校や病院が徒歩圏内 ・病院…600m（高見医院） ・こども園…600m（北条こども園） ・小学校…550m（北条小学校） ・スーパー…2.9km（ダイレックス湯梨浜店） ・中学校…800m（北条中学校） 価格 850 万円 間取 2K 建物面積 86.73㎡ 土地面積 262.53㎡ 私道負担面積 物件種目 売戸建 築年月 不詳 所在地 鳥取県東伯郡北栄町田井 交通 ＪＲ山陰本線 下北条駅 /",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "・避難場所…450m（田井集落センター） ・交番…400m（北条駐在所） ・町役場…600m（北栄町役場北条支所） ・コンビニ…800m（ローソン 北栄町国坂店）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "至便／小学校や病院が徒歩圏内 ・病院…600m（高見医院） ・こども園…600m（北条こども園） ・小学校…550m（北条小学校） ・スーパー…2.9km（ダイレックス湯梨浜店） ・中学校…800m（北条中学校） 価格 850 万円 間取 2K 建物面積 86.73㎡ 土地面積 262.53㎡ 私道負担面積 物件種目 売戸建 築年月 不詳 所在地 鳥取県東伯郡北栄町田井 交通 ＪＲ山陰本線 下北条駅 /",
     "status_note": "",
@@ -34220,12 +34269,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46382.jpg"
+     "img/athome/46382_0.jpg",
+     "img/athome/46382_1.jpg",
+     "img/athome/46382_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車1.6km",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・シューズボックス\n\t\t\t\t\t\t\t\t\t\t\t・バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園（約1.1ｋｍ）、公立小学校（約1.3ｋｍ）、公立中学校（約2.4ｋｍ）、郵便局（約850ｍ）、スーパー（約1.3ｋｍ）、コンビニ（約600ｍ）、病院（約750ｍ）、温泉（約18.6ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車1.6km",
     "status_note": "",
@@ -34273,12 +34328,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45994.jpg"
+     "img/athome/45994_0.jpg",
+     "img/athome/45994_1.jpg",
+     "img/athome/45994_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車4.2km",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・照明器具\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立",
+     "備考": "保育園（約500ｍ）、公立小学校（約650ｍ）、公立中学校（約180ｍ）、郵便局（約900ｍ）、スーパー（約550ｍ）、コンビニ（約300ｍ）病院（約500ｍ）、温泉（約11.54ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車4.2km",
     "status_note": "",
@@ -34326,12 +34387,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46631.jpg"
+     "img/athome/46631_0.jpg",
+     "img/athome/46631_1.jpg",
+     "img/athome/46631_2.jpg",
+     "img/athome/46631_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 八頭高校前駅 /",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "現状有姿渡し 売却額は相談に応じる 残置している家財は使用可（要らない場合は所有者が処分する） 自治会に参加すること",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 八頭高校前駅 /",
     "status_note": "",
@@ -34379,12 +34447,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46630.jpg"
+     "img/athome/46630_0.jpg",
+     "img/athome/46630_1.jpg",
+     "img/athome/46630_2.jpg",
+     "img/athome/46630_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "因美線 東郡家駅 /",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・和室",
+     "備考": "売却額は相談に応じる 農地・山林も併せて売却希望 土砂災害特別警戒区域（急傾斜地） 土砂災害警戒区域（土石流）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "因美線 東郡家駅 /",
     "status_note": "",
@@ -34432,12 +34507,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46189.jpg"
+     "img/athome/46189_0.jpg",
+     "img/athome/46189_1.jpg",
+     "img/athome/46189_2.jpg",
+     "img/athome/46189_3.jpg",
+     "img/athome/46189_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "日の丸バス　法勝寺線 東町 停歩4分",
-     "fotos_total": "18"
+     "fotos_total": "18",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "コンロ二口\n\t\t\t\t\t\t\t\t\t\t\t・ガスコンロ付\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "増築部分あり。（増築登記は売主様負担） 仲介業者あり",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "日の丸バス　法勝寺線 東町 停歩4分",
     "status_note": "",
@@ -34485,12 +34568,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/46246.jpg"
+     "img/athome/46246_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 榎原バス停 停歩10分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "■車庫（駐車台数2台）・物置あり（昭和55年新築） ■建物増改築あり ■土砂災害警戒区域（イエローゾーン）内ですが、対象地域にて擁壁対策施工済により建物再建築可能。 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 榎原バス停 停歩10分",
     "status_note": "",
@@ -34538,12 +34624,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45913.jpg"
+     "img/athome/45913_0.jpg",
+     "img/athome/45913_1.jpg",
+     "img/athome/45913_2.jpg",
+     "img/athome/45913_3.jpg",
+     "img/athome/45913_4.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "日の丸バス　御内谷線　 宮前一 停歩2分",
-     "fotos_total": "5"
+     "fotos_total": "5",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "仲介業者あり 土砂災害警戒区域内、現在畑として利用中。現況での引き渡しとなります。 敷地内に電柱・支線、消火栓あり 敷地内に農業用倉庫、樹木有 農地転用許可申請については買主様負担",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "日の丸バス　御内谷線　 宮前一 停歩2分",
     "status_note": "",
@@ -34591,12 +34684,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45936.jpg"
+     "img/athome/45936_0.jpg",
+     "img/athome/45936_1.jpg",
+     "img/athome/45936_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車3.2km",
-     "fotos_total": "18"
+     "fotos_total": "18",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・シューズボックス\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場\n\t\t\t\t\t\t\t\t\t\t\t・出窓",
+     "備考": "保育園（約920ｍ）、公立小学校（約370ｍ）、公立中学校（約1.5ｋｍ）、郵便局（約990ｍ）、スーパー（約350ｍ）、コンビニ（約280ｍ）、病院（約1.1ｋｍ）、温泉（約13.3ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車3.2km",
     "status_note": "",
@@ -34644,12 +34743,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45499.jpg"
+     "img/athome/45499_0.jpg",
+     "img/athome/45499_1.jpg",
+     "img/athome/45499_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車1km",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・照明器具\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・全居室6畳以上\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場\n\t\t\t\t\t\t\t\t\t\t\t・フローリング",
+     "備考": "保育園（約750ｍ）、公立小学校（約1.5ｋｍ）、市立中学校（約300ｍ）、郵便局（約800ｍ）、スーパー（約650ｍ）、コンビニ（約750ｍ）、病院（約290ｍ）、温泉（約15.1ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車1km",
     "status_note": "",
@@ -34697,12 +34802,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45302.jpg"
+     "img/athome/45302_0.jpg",
+     "img/athome/45302_1.jpg",
+     "img/athome/45302_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車17.1km",
-     "fotos_total": "16"
+     "fotos_total": "16",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・コンロ三口\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園（約７５０ｍ）、公立小学校（約９００ｍ）、公立中学校（約９５０ｍ）、郵便局（約４００ｍ）、スーパー（約７．６ｋｍ）、コンビニ（約４００ｍ）、病院（約９５０ｍ）、温泉（約３００ｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車17.1km",
     "status_note": "",
@@ -34750,12 +34861,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45709.jpg"
+     "img/athome/45709_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 下北条駅 / 徒歩38分",
-     "fotos_total": "14"
+     "fotos_total": "14",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "・こども園…240m（北条みどりこども園） ・町役場…1.8km（北栄町役場北条支所） ・小学校…1.3km（北条小学校） ・中学校…1.3km（北条中学校） ・交番…1.7km（北条駐在所）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 下北条駅 / 徒歩38分",
     "status_note": "",
@@ -34803,12 +34918,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45329.jpg"
+     "img/athome/45329_0.jpg",
+     "img/athome/45329_1.jpg",
+     "img/athome/45329_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / バス 鍛冶町1丁目 停歩3分 乗車17分",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・全居室6畳以上\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園(約120m)、公立小学校(約240m)、公立中学校(約2.1km)、郵便局(約200m)、スーパー(約1.0km)、コンビニ(約300m)、病院(約540m)、温泉(約10.2km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / バス 鍛冶町1丁目 停歩3分 乗車17分",
     "status_note": "",
@@ -34856,12 +34977,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45546.jpg"
+     "img/athome/45546_0.jpg",
+     "img/athome/45546_1.jpg",
+     "img/athome/45546_2.jpg",
+     "img/athome/45546_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 丹比駅 / 徒歩34分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・縁側\n\t\t\t\t\t\t\t\t\t\t\t・畑\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "現状有姿渡し 売却額は相談に応じる 残置している家財は使用可（要らない場合は所有者が処分する） 自治会に参加すること 建物未登記 土砂災害警戒区域（土石流）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 丹比駅 / 徒歩34分",
     "status_note": "",
@@ -34909,12 +35037,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45545.jpg"
+     "img/athome/45545_0.jpg",
+     "img/athome/45545_1.jpg",
+     "img/athome/45545_2.jpg",
+     "img/athome/45545_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 因幡船岡駅 / 徒歩49分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・畑\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "本物件の詳細や内覧については、次の媒介業者へ直接お問い合わせください。 （株）すまいる不動産（鳥取市末広温泉町702）電話：0857-30-778",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 因幡船岡駅 / 徒歩49分",
     "status_note": "",
@@ -34962,12 +35097,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44886.jpg"
+     "img/athome/44886_0.jpg",
+     "img/athome/44886_1.jpg",
+     "img/athome/44886_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車5.9km",
-     "fotos_total": "20"
+     "fotos_total": "20",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・畑\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・屋根裏収納\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園(約1.9km)、公立小学校(約1.7km)、公立中学校(約3.9km)、郵便局(約2.1km)、スーパー(約2.1km)、コンビニ(約900m)、病院(約2.7km)、温泉(約12.5km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車5.9km",
     "status_note": "",
@@ -35015,12 +35156,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44873.jpg"
+     "img/athome/44873_0.jpg",
+     "img/athome/44873_1.jpg",
+     "img/athome/44873_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車9.8km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "システムキッチン\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・全居室6畳以上\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・出窓\n\t\t\t\t\t\t\t\t\t\t\t・エアコン\n\t\t\t\t\t\t\t\t\t\t\t・エアコン4基以上",
+     "備考": "保育園(約830m)、公立小学校(約750m)、公立中学校(約2.3km)、郵便局(約750m)、スーパー(約1.3km)、コンビニ(約1.2km)、病院(約1.6km)、温泉(約6.9km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車9.8km",
     "status_note": "",
@@ -35068,12 +35215,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/45017.jpg"
+     "img/athome/45017_0.jpg",
+     "img/athome/45017_1.jpg",
+     "img/athome/45017_2.jpg",
+     "img/athome/45017_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "因美線 河原駅 / 徒歩18分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・和室",
+     "備考": "売却金額は相談に応じる 一部相続登記未了 大幅な修繕が必要",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "因美線 河原駅 / 徒歩18分",
     "status_note": "",
@@ -35121,12 +35275,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42999.jpg"
+     "img/athome/42999_0.jpg",
+     "img/athome/42999_1.jpg",
+     "img/athome/42999_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車1km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室",
+     "備考": "保育園(約450m)、公立小学校(約1.7km)、公立中学校(約1.1km)、郵便局(約550m) スーパー(約750m)、コンビニ(約950m)、病院(約550m)、温泉(約14.7km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車1km",
     "status_note": "",
@@ -35174,12 +35334,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44754.jpg"
+     "img/athome/44754_0.jpg",
+     "img/athome/44754_1.jpg",
+     "img/athome/44754_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車3.4km",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・コンロ三口\n\t\t\t\t\t\t\t\t\t\t\t・独立キッチン\n\t\t\t\t\t\t\t\t\t\t\t・シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・温水洗浄便座\n\t\t\t\t\t\t\t\t\t\t\t・トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・本下水\n\t\t\t\t\t\t\t\t\t\t\t・照明器具\n\t\t\t\t\t\t\t\t\t\t\t・駐輪場\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・シューズボックス\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・エアコン",
+     "備考": "保育園（約1.4km）、公立小学校（約2km）、公立中学校（約1.5km）、コンビニ（約700ｍ）、病院（1.6km）、温泉（15.5km）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車3.4km",
     "status_note": "",
@@ -35227,12 +35393,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44284.jpg"
+     "img/athome/44284_0.jpg",
+     "img/athome/44284_1.jpg",
+     "img/athome/44284_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車14.1km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・洗髪洗面化粧台\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園(約500m)、公立小学校(約3.0km)、公立中学校(約4.5km)、郵便局(約950m)、スーパー(約4.0km)、コンビニ(約3.3km)、病院(約3.5km)、温泉(約4.5km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車14.1km",
     "status_note": "",
@@ -35280,12 +35452,17 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44173.jpg"
+     "img/athome/44173_0.jpg",
+     "img/athome/44173_1.jpg",
+     "img/athome/44173_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車7.2km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車7.2km",
     "status_note": "",
@@ -35333,12 +35510,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44562.jpg"
+     "img/athome/44562_0.jpg",
+     "img/athome/44562_1.jpg",
+     "img/athome/44562_2.jpg",
+     "img/athome/44562_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "境線 余子駅 / 徒歩11分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・冷房\n\t\t\t\t\t\t\t\t\t\t\t・暖房",
+     "備考": "小学校に近いエリアになります。 古いですが車庫付きです。 小上がり和室付きLDK、風呂・トイレ広いです。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "境線 余子駅 / 徒歩11分",
     "status_note": "",
@@ -35386,12 +35570,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44341.jpg"
+     "img/athome/44341_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 湯所 停歩8分",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "ユニットバス\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス",
+     "備考": "※物件に関するお問い合わせ、詳細については、以下にお問い合わせください。 (有）住宅センター 電話番号　0857－24－8531 F　A　X　 0857-24－8532 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 湯所 停歩8分",
     "status_note": "",
@@ -35439,12 +35627,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44263.jpg"
+     "img/athome/44263_0.jpg",
+     "img/athome/44263_1.jpg",
+     "img/athome/44263_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車6.7km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・全居室6畳以上\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・洗髪洗面化粧台\n\t\t\t\t\t\t\t\t\t\t\t・エアコン",
+     "備考": "保育園(約360m)、公立小学校(約1.3km)、公立中学校(約700m)、郵便局(約750m)、スーパー(約630m)、コンビニ(約500m)、病院(約1.6km)、温泉(約9.9km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車6.7km",
     "status_note": "",
@@ -35492,12 +35686,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44017.jpg"
+     "img/athome/44017_0.jpg",
+     "img/athome/44017_1.jpg",
+     "img/athome/44017_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車16.5km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・畑\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・床下収納\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園(約4.4km)、公立小学校(約8.3km)、公立中学校(約5.9km)、郵便局(約4.2km)、スーパー(約9.9km)、コンビニ(約6.8km)、病院(約6.5km)、温泉(約8.1km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車16.5km",
     "status_note": "",
@@ -35545,12 +35745,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44385.jpg"
+     "img/athome/44385_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 由良駅 / 徒歩14分",
-     "fotos_total": "15"
+     "fotos_total": "15",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・都市ガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "•避難場所…450m（出会いの広場） •病院…2.2km（宮川医院） •こども園…1.6km（由良こども園） •小学校…1.4km（大栄小学校） •中学校…1.4km（大栄中学校）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 由良駅 / 徒歩14分",
     "status_note": "",
@@ -35598,12 +35802,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/41055.jpg"
+     "img/athome/41055_0.jpg",
+     "img/athome/41055_1.jpg",
+     "img/athome/41055_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車6.9km",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・全居室6畳以上\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園（約3.4km）、公立小学校（約2.8km）、公立中学校（約3.8km） 郵便局（約3.2km）、スーパー（約3.7km）、病院（約4.0km）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車6.9km",
     "status_note": "",
@@ -35651,12 +35861,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44226.jpg"
+     "img/athome/44226_0.jpg",
+     "img/athome/44226_1.jpg",
+     "img/athome/44226_2.jpg",
+     "img/athome/44226_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 徳丸駅 / 徒歩13分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室",
+     "備考": "売買価格は応相談",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 徳丸駅 / 徒歩13分",
     "status_note": "",
@@ -35704,12 +35921,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/44032.jpg"
+     "img/athome/44032_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "利便性良好 •避難場所…150m（東園浜コミュニケーションセンター） •病院…1.3km（宮川医院） •スーパー…1.9km（東宝ストア由良店） •コンビニ…1.7km（ローソン鳥取大栄店） 価格 500 万円 間取 6DK 建物面積 面積不明 土地面積 249.19㎡ 私道負担面積 物件種目 売戸建 築年月 不詳 所在地 鳥取県東伯郡北栄町東園 交通 ＪＲ山陰本線 由良駅 / 徒歩33分",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "•こども園…1.3km（大誠こども園） •町役場…2.2km（北栄町役場） •交番…1.3km（瀬戸駐在所） •小学校…2.9km（大栄小学校） •中学校…2.8km（大栄中学校）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "利便性良好 •避難場所…150m（東園浜コミュニケーションセンター） •病院…1.3km（宮川医院） •スーパー…1.9km（東宝ストア由良店） •コンビニ…1.7km（ローソン鳥取大栄店） 価格 500 万円 間取 6DK 建物面積 面積不明 土地面積 249.19㎡ 私道負担面積 物件種目 売戸建 築年月 不詳 所在地 鳥取県東伯郡北栄町東園 交通 ＪＲ山陰本線 由良駅 / 徒歩33分",
     "status_note": "",
@@ -35757,12 +35978,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43734.jpg"
+     "img/athome/43734_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "至便／駐車可能台数３～4台程度 •こども園…650m（由良こども園） •小学校…1.2km（大栄小学校） •中学校…1km（大栄中学校） •町役場…700m（北栄町役場大栄庁舎） •スーパー…900m（東宝ストア由良店） 価格 725 万円 間取 5SDK 建物面積 144.95㎡ 土地面積 328.33㎡ 私道負担面積 物件種目 売戸建 築年月 1984年7月 所在地 鳥取県東伯郡北栄町由良宿 交通 ＪＲ山陰本線 由良駅 / 徒歩5分",
-     "fotos_total": "15"
+     "fotos_total": "15",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "•避難場所…280m（由良宿3区構造改善センター） •病院…2.9km（宮川医院） •交番…170m（由良宿駐在所） •コンビニ…1km（ローソン北栄町妻波店）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "至便／駐車可能台数３～4台程度 •こども園…650m（由良こども園） •小学校…1.2km（大栄小学校） •中学校…1km（大栄中学校） •町役場…700m（北栄町役場大栄庁舎） •スーパー…900m（東宝ストア由良店） 価格 725 万円 間取 5SDK 建物面積 144.95㎡ 土地面積 328.33㎡ 私道負担面積 物件種目 売戸建 築年月 1984年7月 所在地 鳥取県東伯郡北栄町由良宿 交通 ＪＲ山陰本線 由良駅 / 徒歩5分",
     "status_note": "",
@@ -35810,12 +36035,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43356.jpg"
+     "img/athome/43356_0.jpg",
+     "img/athome/43356_1.jpg",
+     "img/athome/43356_2.jpg",
+     "img/athome/43356_3.jpg",
+     "img/athome/43356_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "日ノ丸バス　法勝寺線 法勝寺上 停歩1分",
-     "fotos_total": "16"
+     "fotos_total": "16",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・温水洗浄便座\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "残置物は売主様負担で撤去処分いたします 仲介業者あり 土砂災害警戒区域に属します",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "日ノ丸バス　法勝寺線 法勝寺上 停歩1分",
     "status_note": "",
@@ -35863,12 +36096,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43324.jpg"
+     "img/athome/43324_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 下北条駅 / 徒歩58分",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "•避難場所…50m（江北浜多目的集会施設） •町役場…3.5km（北栄町役場北条支所） •小学校…2.5km（北条小学校） •中学校…3.2km（北条中学校） •交番…2.8km（倉吉警察署）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 下北条駅 / 徒歩58分",
     "status_note": "",
@@ -35916,12 +36153,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/41930.jpg"
+     "img/athome/41930_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 立川町五丁目 停歩1分",
-     "fotos_total": "5"
+     "fotos_total": "5",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・照明器具\n\t\t\t\t\t\t\t\t\t\t\t・側溝\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "建物未登記、工作物を壊せば軽自動車程度の空間が作れます。 ※物件に関するお問い合わせ詳細については以下の専任媒介業者にお問い合わせ下さい （有）住宅センター TEL0857−24−8531 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 立川町五丁目 停歩1分",
     "status_note": "",
@@ -35969,12 +36210,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/43275.jpg"
+     "img/athome/43275_0.jpg",
+     "img/athome/43275_1.jpg",
+     "img/athome/43275_2.jpg",
+     "img/athome/43275_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 丹比駅 / 徒歩30分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・畑\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "入居者は集落の付き合いをきちんとすること 建物未登記",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 丹比駅 / 徒歩30分",
     "status_note": "",
@@ -36022,12 +36270,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42822.jpg"
+     "img/athome/42822_0.jpg",
+     "img/athome/42822_1.jpg",
+     "img/athome/42822_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車15km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園(約700m)、公立小学校(約900m)、公立中学校(約1km)、郵便局(約750m) スーパー(約7.7km)、コンビニ(約500m)、病院(約900m)、温泉(約350m)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車15km",
     "status_note": "",
@@ -36075,12 +36329,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42938.jpg"
+     "img/athome/42938_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "利便性良好 •避難場所…400m（松神公民館） •病院…2.4km（髙見医院） •スーパー…3.7km（東宝ストア由良店） •コンビニ…240m（セブンイレブン北栄下神店） 価格 700 万円 間取 5SDK 建物面積 125.11㎡ 土地面積 282.24㎡ 私道負担面積 物件種目 売戸建 築年月 1998年2月 所在地 鳥取県東伯郡北栄町松神 交通 ＪＲ山陰本線 下北条駅 / 徒歩12分",
-     "fotos_total": "15"
+     "fotos_total": "15",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "•こども園…2.6km（北条こども園） •交番…2.4km（北条駐在所） •町役場…2.6km（北栄町役場北条支所） •小学校…2.5km（北条小学校） •中学校…2.5km（北条中学校）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "利便性良好 •避難場所…400m（松神公民館） •病院…2.4km（髙見医院） •スーパー…3.7km（東宝ストア由良店） •コンビニ…240m（セブンイレブン北栄下神店） 価格 700 万円 間取 5SDK 建物面積 125.11㎡ 土地面積 282.24㎡ 私道負担面積 物件種目 売戸建 築年月 1998年2月 所在地 鳥取県東伯郡北栄町松神 交通 ＪＲ山陰本線 下北条駅 / 徒歩12分",
     "status_note": "",
@@ -36128,12 +36386,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42663.jpg"
+     "img/athome/42663_0.jpg",
+     "img/athome/42663_1.jpg",
+     "img/athome/42663_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車6.2km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・全居室収納\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園(約450m)、公立小学校(約1.5km)、公立中学校(約1km)、郵便局(約1.1km) スーパー(約750m)、コンビニ(約600m)、病院(約2.1km)、温泉(約9.6km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車6.2km",
     "status_note": "",
@@ -36181,12 +36445,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42907.jpg"
+     "img/athome/42907_0.jpg",
+     "img/athome/42907_1.jpg",
+     "img/athome/42907_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車5km",
-     "fotos_total": "20"
+     "fotos_total": "20",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車5km",
     "status_note": "",
@@ -36234,12 +36502,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42572.jpg"
+     "img/athome/42572_0.jpg",
+     "img/athome/42572_1.jpg",
+     "img/athome/42572_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車1.6km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園(約900m)、公立小学校(約950m)、公立中学校(約1.4km)、郵便局(約400m) スーパー(約600m)、コンビニ(約300m)、病院(約1.3km)、温泉(約6km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車1.6km",
     "status_note": "",
@@ -36287,12 +36561,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42749.jpg"
+     "img/athome/42749_0.jpg",
+     "img/athome/42749_1.jpg",
+     "img/athome/42749_2.jpg",
+     "img/athome/42749_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "因美線 郡家駅 / 徒歩7分",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・和室",
+     "備考": "詳細や内覧については、次の媒介業者へ直接お問い合わせください。 株式会社アジーレ おたから不動産 （鳥取市永楽温泉町459） 電話：0857-35-0975",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "因美線 郡家駅 / 徒歩7分",
     "status_note": "",
@@ -36340,12 +36621,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/42251.jpg"
+     "img/athome/42251_0.jpg",
+     "img/athome/42251_1.jpg",
+     "img/athome/42251_2.jpg",
+     "img/athome/42251_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 因幡船岡駅 / 徒歩44分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "残置している家財は使用可（要らない場合は所有者で処分） 建物未登記 売却額は応相談",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 因幡船岡駅 / 徒歩44分",
     "status_note": "",
@@ -36393,12 +36681,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/41678.jpg"
+     "img/athome/41678_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "利便良好／3台分の駐車スペースあり（1台分はカーポート） •避難場所…90m（中央公民館大栄分館） •交番…220m（由良宿駐在所） •スーパー…700m（東宝ストア由良店） •コンビニ…750m（ローソン・ポプラ北栄町由良店） 価格 780 万円 間取 6DK 建物面積 149.58㎡ 土地面積 386.91㎡ 私道負担面積 物件種目 売戸建 築年月 1978年8月 所在地 鳥取県東伯郡北栄町由良宿 交通 ＪＲ山陰本線 由良駅 / 徒歩5分",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "•病院…2.7km（宮川医院） •こども園…850m（由良こども園） •町役場…450m（北栄町役場） •小学校…1.4km（大栄小学校） •中学校…1.2km（大栄中学校）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "利便良好／3台分の駐車スペースあり（1台分はカーポート） •避難場所…90m（中央公民館大栄分館） •交番…220m（由良宿駐在所） •スーパー…700m（東宝ストア由良店） •コンビニ…750m（ローソン・ポプラ北栄町由良店） 価格 780 万円 間取 6DK 建物面積 149.58㎡ 土地面積 386.91㎡ 私道負担面積 物件種目 売戸建 築年月 1978年8月 所在地 鳥取県東伯郡北栄町由良宿 交通 ＪＲ山陰本線 由良駅 / 徒歩5分",
     "status_note": "",
@@ -36446,12 +36738,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/41636.jpg"
+     "img/athome/41636_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "ＪＲ山陰本線 伯耆大山駅 / 徒歩40分",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "・敷地の一部が「周知の埋蔵文化財包蔵地」 ・未登記建物あり",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 伯耆大山駅 / 徒歩40分",
     "status_note": "",
@@ -36499,12 +36794,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/40303.jpg"
+     "img/athome/40303_0.jpg",
+     "img/athome/40303_1.jpg",
+     "img/athome/40303_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 由良駅 / 車6.2km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・タンクレストイレ\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・洗髪洗面化粧台\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園(約2.8km)、公立小学校(約6.7km)、公立中学校(約7km)、郵便局(約2.7km) スーパー(約4.6km)、コンビニ(約4.5km)、病院(約3.2km)、温泉(約10.1km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 由良駅 / 車6.2km",
     "status_note": "",
@@ -36552,12 +36853,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/41079.jpg"
+     "img/athome/41079_0.jpg",
+     "img/athome/41079_1.jpg",
+     "img/athome/41079_2.jpg",
+     "img/athome/41079_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 因幡船岡駅 / 徒歩4分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "・現状有姿渡しを希望 ・残置している家財は使用可（要らない場合は所有者負担で処分） ・建物の相続登記未了、登記と現況に相違あり ・売却額は相談に応じる",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 因幡船岡駅 / 徒歩4分",
     "status_note": "",
@@ -36605,12 +36913,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/40862.jpg"
+     "img/athome/40862_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "境線 河崎口駅 / 徒歩5分",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "設備": "上水道\n\t\t\t\t\t\t\t\t\t\t\t・個別浄化槽",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "境線 河崎口駅 / 徒歩5分",
     "status_note": "",
@@ -36658,12 +36969,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/40818.jpg"
+     "img/athome/40818_0.jpg",
+     "img/athome/40818_1.jpg",
+     "img/athome/40818_2.jpg",
+     "img/athome/40818_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "因美線 東郡家駅 / 車6.2km",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・その他水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・縁側\n\t\t\t\t\t\t\t\t\t\t\t・畑",
+     "備考": "土蔵・外物置・山林あり 残置している家財は使用可（要らない場合は、所有者負担で処分） 現状有姿渡しを希望",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "因美線 東郡家駅 / 車6.2km",
     "status_note": "",
@@ -36711,12 +37029,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/40470.jpg"
+     "img/athome/40470_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "利便性良好 •避難場所…240m（弓原多目的研修施設） •病院…1.5km（高見医院） •スーパー…4.6km（東宝ストア由良店） •コンビニ…700m（ローソン北栄町北尾店） 価格 200 万円 間取 5DK 建物面積 90.3㎡ 土地面積 313.5㎡ 私道負担面積 物件種目 売戸建 築年月 1989年4月 所在地 鳥取県東伯郡北栄町弓原 交通 ＪＲ山陰本線 下北条駅 / 徒歩4分",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "•交番…1.6km（北条駐在所） •町役場…1.7km（北栄町役場北条支所） •こども園…1.8km（北条こども園） •小学校…1.7km（北条小学校） •中学校…1.6km（北条中学校）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "利便性良好 •避難場所…240m（弓原多目的研修施設） •病院…1.5km（高見医院） •スーパー…4.6km（東宝ストア由良店） •コンビニ…700m（ローソン北栄町北尾店） 価格 200 万円 間取 5DK 建物面積 90.3㎡ 土地面積 313.5㎡ 私道負担面積 物件種目 売戸建 築年月 1989年4月 所在地 鳥取県東伯郡北栄町弓原 交通 ＪＲ山陰本線 下北条駅 / 徒歩4分",
     "status_note": "",
@@ -36764,12 +37086,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/40298.jpg"
+     "img/athome/40298_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "境線 河崎口駅 / 徒歩17分",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "境線 河崎口駅 / 徒歩17分",
     "status_note": "",
@@ -36817,12 +37142,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/39432.jpg"
+     "img/athome/39432_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "ＪＲ山陰本線 伯耆大山駅 / 徒歩14分",
-     "fotos_total": "3"
+     "fotos_total": "3",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "設備": "上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 伯耆大山駅 / 徒歩14分",
     "status_note": "",
@@ -36870,12 +37198,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37926.jpg"
+     "img/athome/37926_0.jpg",
+     "img/athome/37926_1.jpg",
+     "img/athome/37926_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車15.8km",
-     "fotos_total": "20"
+     "fotos_total": "20",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・その他水道\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園(約3.6km)、公立小学校(約7.8km)、公立中学校(約6.8km)、郵便局(約6.5km) スーパー(約9.2km)、コンビニ(約7.3km)、病院(約8.4km)、温泉(約10km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車15.8km",
     "status_note": "",
@@ -36923,12 +37257,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/39064.jpg"
+     "img/athome/39064_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 浜村駅 / 徒歩78分",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "温泉引込可",
+     "備考": "■温泉の給湯可能【温泉分担金有、不動産業者に要相談】 ■熱源   給湯器（灯油）・電気 ※お問い合わせ先 （株）マツワ TEL：0857−50−1117 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 浜村駅 / 徒歩78分",
     "status_note": "",
@@ -36976,12 +37314,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/39037.jpg"
+     "img/athome/39037_0.jpg",
+     "img/athome/39037_1.jpg",
+     "img/athome/39037_2.jpg",
+     "img/athome/39037_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 徳丸駅 / 徒歩12分",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "残置している家財は所有者負担で撤去予定 未登記建物あり、一部滅失登記未了",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 徳丸駅 / 徒歩12分",
     "status_note": "",
@@ -37029,12 +37374,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38665.jpg"
+     "img/athome/38665_0.jpg",
+     "img/athome/38665_1.jpg",
+     "img/athome/38665_2.jpg",
+     "img/athome/38665_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 八東駅 / 徒歩4分",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・縁側\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "建物未登記 詳細や内覧については、次の媒介業者へ直接お問い合わせください。 LIXIL不動産ショップ すまラボ（鳥取市若葉台北6町目3-35） 電話：0857-30-4649",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 八東駅 / 徒歩4分",
     "status_note": "",
@@ -37082,12 +37434,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38399.jpg"
+     "img/athome/38399_0.jpg",
+     "img/athome/38399_1.jpg",
+     "img/athome/38399_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車3.4km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園(約1.1km)、公立小学校(約1.1km)、公立中学校(約3km)、郵便局(約1.9km) スーパー(約2.3km)、直売所(約2km)、病院(約2.7km)、温泉(約15km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車3.4km",
     "status_note": "",
@@ -37135,12 +37493,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38317.jpg"
+     "img/athome/38317_0.jpg",
+     "img/athome/38317_1.jpg",
+     "img/athome/38317_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車12.7km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・その他排水\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園(約550m)、公立小学校(約4.5km)、公立中学校(約3.5km)、郵便局(約3.4km) スーパー(約6.1km)、コンビニ(約4.2km)、病院(約5.3km)、温泉(約7.5km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車12.7km",
     "status_note": "",
@@ -37188,12 +37552,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38416.jpg"
+     "img/athome/38416_0.jpg",
+     "img/athome/38416_1.jpg",
+     "img/athome/38416_2.jpg",
+     "img/athome/38416_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "因美線 東郡家駅 / 徒歩4分",
-     "fotos_total": "7"
+     "fotos_total": "7",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・全居室6畳以上\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・エアコン",
+     "備考": "建物のみ相続登記未了 詳細や内覧については、次の媒介業者へ直接お問い合わせください。 （株）すまいる不動産（鳥取市末広温泉町702） 電話：0857-30-7788 担当：浅井",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "因美線 東郡家駅 / 徒歩4分",
     "status_note": "",
@@ -37241,12 +37612,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38419.jpg"
+     "img/athome/38419_0.jpg",
+     "img/athome/38419_1.jpg",
+     "img/athome/38419_2.jpg",
+     "img/athome/38419_3.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "若桜鉄道 因幡船岡駅 / 徒歩7分",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "隣接する田（809.00平米）も別途売却可能",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 因幡船岡駅 / 徒歩7分",
     "status_note": "",
@@ -37294,12 +37672,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38330.jpg"
+     "img/athome/38330_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "境線 博労町駅 / 徒歩8分",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "●解体更地渡し（売主負担） ●接道道路は、建築基準法2項道路につきセットバック必要 ●土地面積のうち一部9公衆用道路",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "境線 博労町駅 / 徒歩8分",
     "status_note": "",
@@ -37347,12 +37728,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37919.jpg"
+     "img/athome/37919_0.jpg",
+     "img/athome/37919_1.jpg",
+     "img/athome/37919_2.jpg",
+     "img/athome/37919_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 八東駅 / 徒歩23分",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・縁側\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "土砂災害警戒区域（急傾斜他） 荷物は所有者が撤去します。 ※駐車場は近隣地にて応相談。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 八東駅 / 徒歩23分",
     "status_note": "",
@@ -37400,12 +37788,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37914.jpg"
+     "img/athome/37914_0.jpg",
+     "img/athome/37914_1.jpg",
+     "img/athome/37914_2.jpg",
+     "img/athome/37914_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 八東駅 / 徒歩10分",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・和室8畳以上\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭",
+     "備考": "売却の場合、現状有姿渡しを希望 残置物は所有者負担で処分する",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 八東駅 / 徒歩10分",
     "status_note": "",
@@ -37453,12 +37848,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37944.jpg"
+     "img/athome/37944_0.jpg",
+     "img/athome/37944_1.jpg",
+     "img/athome/37944_2.jpg",
+     "img/athome/37944_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "因美線 郡家駅 / 徒歩14分",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・システムキッチン\n\t\t\t\t\t\t\t\t\t\t\t・オープンキッチン\n\t\t\t\t\t\t\t\t\t\t\t・追焚機能\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・温水洗浄便座\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・ウォークインクローゼット\n\t\t\t\t\t\t\t\t\t\t\t・シューズインクローク\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場\n\t\t\t\t\t\t\t\t\t\t\t・フローリング",
+     "備考": "入居者決定後3か月以内に所有者は退去。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "因美線 郡家駅 / 徒歩14分",
     "status_note": "",
@@ -37506,12 +37908,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37928.jpg"
+     "img/athome/37928_0.jpg",
+     "img/athome/37928_1.jpg",
+     "img/athome/37928_2.jpg",
+     "img/athome/37928_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 八東駅 / 車2.3km",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・システムキッチン\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・温水洗浄便座\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・LDK15畳以上\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・縁側\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・専用庭\n\t\t\t\t\t\t\t\t\t\t\t・サンルーム\n\t\t\t\t\t\t\t\t\t\t\t・一部フローリング",
+     "備考": "土砂災害警戒区域（急傾斜地）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 八東駅 / 車2.3km",
     "status_note": "",
@@ -37559,12 +37968,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37915.jpg"
+     "img/athome/37915_0.jpg",
+     "img/athome/37915_1.jpg",
+     "img/athome/37915_2.jpg",
+     "img/athome/37915_3.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "若桜鉄道 安部駅 / 徒歩12分",
-     "fotos_total": "7"
+     "fotos_total": "7",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園",
+     "備考": "土砂災害警戒区域（土石流） 本物件の詳細や内覧については、次の媒介業者へ直接お問い合わせください。 （株）みつかね洋装店（鳥取市永楽温泉町111） 担当：有元（電話：090-7132-9559）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 安部駅 / 徒歩12分",
     "status_note": "",
@@ -37612,12 +38028,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37896.jpg"
+     "img/athome/37896_0.jpg",
+     "img/athome/37896_1.jpg",
+     "img/athome/37896_2.jpg",
+     "img/athome/37896_3.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "因美線 郡家駅 / 徒歩3分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "設備": "上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "備考": "対象不動産は、建築基準法上の道路に接道していません。 令和5年5月火災歴あり。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "因美線 郡家駅 / 徒歩3分",
     "status_note": "",
@@ -37665,12 +38088,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37894.jpg"
+     "img/athome/37894_0.jpg",
+     "img/athome/37894_1.jpg",
+     "img/athome/37894_2.jpg",
+     "img/athome/37894_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "若桜鉄道 因幡船岡駅 / 徒歩12分",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "IHクッキングヒータ\n\t\t\t\t\t\t\t\t\t\t\t・システムキッチン\n\t\t\t\t\t\t\t\t\t\t\t・モニタ付インターホン\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・温水洗浄便座\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・南面バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・フローリング",
+     "備考": "土砂災害警戒区域（土石流） 【お問い合わせ先】 株式会社すまいる不動産 電話：0857-30-7788 担当：浅井（携帯：080-4153-7060）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "若桜鉄道 因幡船岡駅 / 徒歩12分",
     "status_note": "",
@@ -37718,12 +38148,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37659.jpg"
+     "img/athome/37659_0.jpg",
+     "img/athome/37659_1.jpg",
+     "img/athome/37659_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車16.3km",
-     "fotos_total": "18"
+     "fotos_total": "18",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・納戸",
+     "備考": "保育園（約1m）公立小学校（約1.1m）公立中学校（約180m） スーパー（約8km）コンビニ（約950m） 病院（約450m）郵便局（約500m）温泉（約1km）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車16.3km",
     "status_note": "",
@@ -37771,12 +38207,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/37228.jpg"
+     "img/athome/37228_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 下北条駅 / 徒歩22分",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "•病院…1.3km（宮川医院） •交番…1.4km（瀬戸駐在所） •こども園…1.3km（大誠こども園） •小学校…2.9km（大栄小学校） •中学校…2.9km（大栄中学校）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 下北条駅 / 徒歩22分",
     "status_note": "",
@@ -37824,12 +38264,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/36631.jpg"
+     "img/athome/36631_0.jpg",
+     "img/athome/36631_1.jpg",
+     "img/athome/36631_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車1.1km",
-     "fotos_total": "18"
+     "fotos_total": "18",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園(約700m)、公立小学校(約1.5km)、公立中学校(約1km)、郵便局(約700m) スーパー(約400m)、直売所(約700m)、病院(約1.8km)、温泉(約6.3km)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車1.1km",
     "status_note": "",
@@ -37877,12 +38323,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/33683.jpg"
+     "img/athome/33683_0.jpg",
+     "img/athome/33683_1.jpg",
+     "img/athome/33683_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車16km",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "シャワー\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・納戸\n\t\t\t\t\t\t\t\t\t\t\t・サンルーム",
+     "備考": "保育園（約1m）公立小学校（約1.1m）公立中学校（約180m） スーパー（約8km）コンビニ（約950m） 病院（約450m）郵便局（約500m）温泉（約1km）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車16km",
     "status_note": "",
@@ -37930,12 +38382,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/35911.jpg"
+     "img/athome/35911_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 下北条駅 / 徒歩15分",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "•避難場所…100m（田井集落センター） •交　番…800m（北条駐在所） •病　院…1ｋm（高見医院） •町役場…1ｋm（北栄町役場北条支所） •こども園…900m（北条こども園)",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 下北条駅 / 徒歩15分",
     "status_note": "",
@@ -37983,12 +38439,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/33106.jpg"
+     "img/athome/33106_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 中島 停歩14分",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・側溝",
+     "備考": "総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 中島 停歩14分",
     "status_note": "",
@@ -38036,12 +38496,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/29327.jpg"
+     "img/athome/29327_0.jpg",
+     "img/athome/29327_1.jpg",
+     "img/athome/29327_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車7.6km",
-     "fotos_total": "24"
+     "fotos_total": "24",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・クローゼット\n\t\t\t\t\t\t\t\t\t\t\t・ウッドデッキ\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園（約1.2ｋｍ）、公立小学校（約1.6ｋｍ）、公立中学校（約2.7ｋｍ） 郵便局（約1.1ｋｍ）、スーパー（約1.7ｋｍ）、病院（約3.2ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車7.6km",
     "status_note": "",
@@ -38089,12 +38555,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/29011.jpg"
+     "img/athome/29011_0.jpg",
+     "img/athome/29011_1.jpg",
+     "img/athome/29011_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車4.1km",
-     "fotos_total": "27"
+     "fotos_total": "27",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "保育園（約１．５ｋｍ）、公立小学校（約１．１ｋｍ）、公立中学校（約２．４ｋｍ） 郵便局（約２．１ｋｍ）、スーパー（約６００ｍ）、病院（約１．９ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車4.1km",
     "status_note": "",
@@ -38142,12 +38614,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/29034.jpg"
+     "img/athome/29034_0.jpg",
+     "img/athome/29034_1.jpg",
+     "img/athome/29034_2.jpg",
+     "img/athome/29034_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "因美線 郡家駅 / 徒歩10分",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "現状有姿渡しを希望／売主は契約不適合責任を負わない。 本物件の詳細や内覧については、次の媒介業者へ直接お問い合わせください。 すまラボ（鳥取市若葉台北6町目3-35）電話：0857-30-4649 総戸数：1戸",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "因美線 郡家駅 / 徒歩10分",
     "status_note": "",
@@ -38195,12 +38674,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/28664.jpg"
+     "img/athome/28664_0.jpg",
+     "img/athome/28664_1.jpg",
+     "img/athome/28664_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車3.5km",
-     "fotos_total": "27"
+     "fotos_total": "27",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園（約１．７ｋｍ）、公立小学校（約１．９ｋｍ）、公立中学校（約１ｋｍ） 郵便局（約１．２ｋｍ）、スーパー（約１．１ｋｍ）、病院（約１．５ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車3.5km",
     "status_note": "",
@@ -38248,12 +38733,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/28752.jpg"
+     "img/athome/28752_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "バス 上後藤 停歩2分",
-     "fotos_total": "17"
+     "fotos_total": "17",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・側溝",
+     "備考": "1964年築（1977、1981年増築） 増築部分一部未登記 別途物置あり※物置を撤去すると縦列で2台駐車可",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 上後藤 停歩2分",
     "status_note": "",
@@ -38301,12 +38790,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/28430.jpg"
+     "img/athome/28430_0.jpg",
+     "img/athome/28430_1.jpg",
+     "img/athome/28430_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車20分",
-     "fotos_total": "27"
+     "fotos_total": "27",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・家庭菜園\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園（約500ｍ）、公立小学校（約550ｍ） 公立中学校（約5.1ｋｍ）、郵便局（約2ｋｍ） スーパー（約4.3ｋｍ）、病院（6.9ｋｍ）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車20分",
     "status_note": "",
@@ -38354,12 +38849,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/27468.jpg"
+     "img/athome/27468_0.jpg",
+     "img/athome/27468_1.jpg",
+     "img/athome/27468_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車18分",
-     "fotos_total": "23"
+     "fotos_total": "23",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園約1.4km　小学校約1.3km　中学校約2.1km　郵便局約1.5km　スーパー約4.9km　病院約4km　はわい温泉車で約25分　東郷温泉車で約27分　三朝温泉車で約28分",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車18分",
     "status_note": "",
@@ -38407,12 +38908,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/27462.jpg"
+     "img/athome/27462_0.jpg",
+     "img/athome/27462_1.jpg",
+     "img/athome/27462_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車6分",
-     "fotos_total": "22"
+     "fotos_total": "22",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "備考": "保育園約1.6km　小学校約1.7km　中学校約2.8km　郵便局約1.4km　スーパー約1.4km　病院約0.9km　はわい温泉車で約8分　東郷温泉車で約11分　三朝温泉車で約20分",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車6分",
     "status_note": "",
@@ -38460,12 +38967,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/27433.jpg"
+     "img/athome/27433_0.jpg",
+     "img/athome/27433_1.jpg",
+     "img/athome/27433_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車22分",
-     "fotos_total": "32"
+     "fotos_total": "32",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園約2.9km　小学校約2.9kｍ　中学校約4.8km　郵便局約4.4km　スーパー約4.4km　病院約3.5km　はわい温泉車で30分　東郷温泉車で約32分　三朝温泉車で約32分",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車22分",
     "status_note": "",
@@ -38513,12 +39026,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/27426.jpg"
+     "img/athome/27426_0.jpg",
+     "img/athome/27426_1.jpg",
+     "img/athome/27426_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車28分",
-     "fotos_total": "26"
+     "fotos_total": "26",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・その他水道\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園約3.5km　小学校約3.5km　中学校約6.4km　郵便局約3.3km　スーパー約9.1km　病院約7.1km　はわい温泉車で35分　東郷温泉車で38分　三朝温泉車で37分　関金温泉車で18分",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車28分",
     "status_note": "",
@@ -38566,12 +39085,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/27411.jpg"
+     "img/athome/27411_0.jpg",
+     "img/athome/27411_1.jpg",
+     "img/athome/27411_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車23分",
-     "fotos_total": "33"
+     "fotos_total": "33",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・その他水道\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園約4.4km　小学校約4.15km　中学校約7.5km　郵便局約3km　スーパー約5.6km　病院約5.7km　はわい温泉車で約31分　東郷温泉車で約31分　三朝温泉車で約27分",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車23分",
     "status_note": "",
@@ -38619,12 +39144,18 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/27280.jpg"
+     "img/athome/27280_0.jpg",
+     "img/athome/27280_1.jpg",
+     "img/athome/27280_2.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 倉吉駅 / 車5分",
-     "fotos_total": "19"
+     "fotos_total": "19",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・庭",
+     "備考": "保育園約0.32km　小学校約0.29km　郵便局約0.92km　ショッピングセンター約1.75km　中学校約2.4km　ホームセンター約2.9km　三朝温泉約7.4km　はわい温泉約7.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 倉吉駅 / 車5分",
     "status_note": "",
@@ -38672,12 +39203,14 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/25591.jpg"
+     "img/athome/25591_0.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "バス 昭和町 停歩8分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "バス 昭和町 停歩8分",
     "status_note": "",
@@ -38725,12 +39258,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/22641.jpg"
+     "img/athome/22641_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 由良駅 / 徒歩17分",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "•こども園…1.7km（大誠こども園） •小学校…1.3km（大栄小学校） •中学校…1.2km（大栄中学校） •交番…1.8km（瀬戸駐在所） •避難場所…230m（六尾構造改善センター）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 由良駅 / 徒歩17分",
     "status_note": "",
@@ -38778,12 +39315,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/22501.jpg"
+     "img/athome/22501_0.jpg",
+     "img/athome/22501_1.jpg",
+     "img/athome/22501_2.jpg",
+     "img/athome/22501_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "因美線 郡家駅 / 徒歩4分",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・ガスコンロ付\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・縁側\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・洗面所独立\n\t\t\t\t\t\t\t\t\t\t\t・庭\n\t\t\t\t\t\t\t\t\t\t\t・室外洗濯機置場",
+     "備考": "現状有姿渡しを希望。 家財は所有者が撤去する意向あり。 値引き相談可能。",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "因美線 郡家駅 / 徒歩4分",
     "status_note": "",
@@ -38831,12 +39375,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/22260.jpg"
+     "img/athome/22260_0.jpg",
+     "img/athome/22260_1.jpg",
+     "img/athome/22260_2.jpg",
+     "img/athome/22260_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "境線 境港駅 / 車5分",
-     "fotos_total": "7"
+     "fotos_total": "7",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "給湯\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・側溝\n\t\t\t\t\t\t\t\t\t\t\t・冷房\n\t\t\t\t\t\t\t\t\t\t\t・暖房",
+     "備考": "築年月：昭和35年 設備：電話あり",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "境線 境港駅 / 車5分",
     "status_note": "",
@@ -38884,12 +39435,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/22017.jpg"
+     "img/athome/22017_0.jpg",
+     "img/athome/22017_1.jpg",
+     "img/athome/22017_2.jpg",
+     "img/athome/22017_3.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "境線 高松町駅 / 徒歩10分",
-     "fotos_total": "11"
+     "fotos_total": "11",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "備考": "■木造瓦葺2階建て ■設備ガスあり ■屋根付き駐車場1台分あり ■平成19年に一部リフォームしました ■開発許可等による分譲地内",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "境線 高松町駅 / 徒歩10分",
     "status_note": "",
@@ -38937,12 +39495,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/21739.jpg"
+     "img/athome/21739_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 由良駅 / 徒歩9分",
-     "fotos_total": "9"
+     "fotos_total": "9",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "備考": "町役場…700m（北栄町役場大栄庁舎） 避難場所…500m（北栄町中央公民館大栄分館） 交　番…700m（由良宿駐在所） 病　院…2.8km（宮川医院）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 由良駅 / 徒歩9分",
     "status_note": "",
@@ -38990,12 +39552,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/20728.jpg"
+     "img/athome/20728_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 由良駅 / 徒歩57分",
-     "fotos_total": "14"
+     "fotos_total": "14",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・共同ガス",
+     "備考": "•こども園…2.0km（大誠こども園） •小学校…4.5km（大栄小学校） •中学校…4.5km（大栄中学校） •町役場…4.1km（北栄町役場大栄庁舎） •交番…1.8km（瀬戸駐在所）",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 由良駅 / 徒歩57分",
     "status_note": "",
@@ -39043,12 +39609,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/15116.jpg"
+     "img/athome/15116_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 由良駅 / 徒歩29分",
-     "fotos_total": "13"
+     "fotos_total": "13",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "トイレ2箇所\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "瀬戸駐在所550m　北栄町役場大栄庁舎1.9km　東宝ストア由良店1.5km　ローソン北栄町由良店1.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 由良駅 / 徒歩29分",
     "status_note": "",
@@ -39096,12 +39666,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/14733.jpg"
+     "img/athome/14733_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 下北条駅 / 徒歩11分",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス",
+     "備考": "北栄町役場北条庁舎1.1ｋｍ　Aコープ下北条店350ｍ　ローソン北栄町北尾店270ｍ",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 下北条駅 / 徒歩11分",
     "status_note": "",
@@ -39149,12 +39723,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/14680.jpg"
+     "img/athome/14680_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ山陰本線 由良駅 / 車7分",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・浄化槽\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "北栄町役場大栄庁舎1.8ｋｍ　東宝ストア由良店1.5ｋｍ　ローソンポプラ北栄町由良店1.5ｋｍ",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 由良駅 / 車7分",
     "status_note": "",
@@ -39202,12 +39780,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/5681.jpg"
+     "img/athome/5681_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "至便／海の近く／広い駐車スペースあり／敷地内に畑（約162坪）と山林（約78坪）あり 岡本医院3.5km　大谷こども園200m　大栄小学校3.8km　大栄中学校3.8km　大谷多目的集会所（避難場所）260m　由良駐在所2.9km　北栄町役場大栄庁舎3.4km 価格 300 万円 間取 10LDK 建物面積 面積不明 土地面積 889.96㎡ 私道負担面積 物件種目 売戸建 築年月 不詳 所在地 鳥取県東伯郡北栄町大谷 交通 ＪＲ山陰本線 由良駅 / 車3.3km",
-     "fotos_total": "8"
+     "fotos_total": "8",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・畑",
+     "備考": "東宝ストア由良店3.5km　ローソン北栄町妻波店1.7km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "至便／海の近く／広い駐車スペースあり／敷地内に畑（約162坪）と山林（約78坪）あり 岡本医院3.5km　大谷こども園200m　大栄小学校3.8km　大栄中学校3.8km　大谷多目的集会所（避難場所）260m　由良駐在所2.9km　北栄町役場大栄庁舎3.4km 価格 300 万円 間取 10LDK 建物面積 面積不明 土地面積 889.96㎡ 私道負担面積 物件種目 売戸建 築年月 不詳 所在地 鳥取県東伯郡北栄町大谷 交通 ＪＲ山陰本線 由良駅 / 車3.3km",
     "status_note": "",
@@ -39255,12 +39837,16 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/8428.jpg"
+     "img/athome/8428_0.jpg"
     ],
     "features": {
      "物件種目": "貸戸建住宅",
      "交通": "ＪＲ山陰本線 下北条駅 /",
-     "fotos_total": "10"
+     "fotos_total": "10",
+     "条件": "2階以上 駐車場(近隣含む) 洗濯機置き場 B/T(バストイレ)別室 追焚機能 フローリング エアコン ペット相談 オートロック 南向",
+     "設備": "システムキッチン\n\t\t\t\t\t\t\t\t\t\t\t・温水洗浄便座\n\t\t\t\t\t\t\t\t\t\t\t・水洗トイレ\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・公営水道",
+     "備考": "・避難場所…130m（北尾公民館） ・交番…1.6km（北条駐在所） ・町役場…1.4km（北栄町役場北条支所） ・スーパー…4.1km（ダイレックス湯梨浜店） 引き渡し：相談",
+     "敷金保証金": "なし\n\t\t\t\t\t\t\t\t/\n\t\t\t\t\t\t\t\t\t-"
     },
     "description_raw": "ＪＲ山陰本線 下北条駅 /",
     "status_note": "",
