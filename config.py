@@ -63,6 +63,16 @@ TARGET_AREAS = [
     {"key": "fukui_obama", "es": "Obama / Wakasa", "pref": "福井県", "pref_code": "18",
      "match": ["小浜市", "若狭町", "おおい町", "高浜町", "美浜町", "大飯郡", "三方"],
      "center": [35.4955, 135.7463]},
+
+    # --- Más zonas rurales (prefecturas enteras) ---
+    {"key": "shiga",    "es": "Shiga (lago Biwa)", "pref": "滋賀県", "pref_code": "25",
+     "match": ["滋賀県"], "center": [35.3292, 136.0570]},
+    {"key": "mie",      "es": "Mie",               "pref": "三重県", "pref_code": "24",
+     "match": ["三重県"], "center": [34.4900, 136.3000]},
+    {"key": "okayama",  "es": "Okayama (rural)",   "pref": "岡山県", "pref_code": "33",
+     "match": ["岡山県"], "center": [34.9000, 133.8000]},
+    {"key": "tottori",  "es": "Tottori",           "pref": "鳥取県", "pref_code": "31",
+     "match": ["鳥取県"], "center": [35.3600, 134.2000]},
 ]
 
 # Mapa rápido  nombre japonés -> bloque de zona (lo usan los adaptadores).

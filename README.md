@@ -246,12 +246,23 @@ Puedes tener varios `imports/*.csv`; se leen todos.
 
 | Slug                | Fuente                                          | Estado |
 |---------------------|-------------------------------------------------|--------|
+| `athome`            | アットホーム空き家バンク — agregador nacional        | ✅ activa (Nara, Kyoto N, Osaka, Fukui, Shiga, Mie, Okayama, Tottori, Hyogo, Wakayama) |
 | `suminiko`          | 住みニコ — 南あわじ市 空き家バンク (público)         | ✅ activa (incluye 福良 y 沼島) |
 | `sumonavi`          | 洲本移住ナビ — 洲本市 空き家バンク (público)         | ✅ activa |
 | `wakayama_portal`   | わかやま住まいポータル — **toda Wakayama** (público) | ✅ activa (白浜/串本/那智勝浦/田辺/和歌山市) |
-| `csv`               | Importación manual (CSV)                        | ✅ activa |
+| `csv`               | Importación manual (CSV) — pisos/apartamentos    | ✅ activa |
 | `awaji_city`        | 淡路市 (web municipal)                            | ⚪ opcional (sin listado limpio; usa CSV) |
 | `homes_akiyabank`   | LIFULL HOME'S 空き家バンク (agregador)              | ⚪ opcional (bloquea bots: solo enlaces/CSV) |
+
+> **Apartamentos:** los bancos de casas vacías (空き家バンク) son casi todo casas y
+> terrenos, no pisos. Para apartamentos de portales comerciales (SUUMO, HOME'S,
+> at-home賃貸) — que **prohíben el scraping** — usa la **importación CSV**: copia
+> `sample_import.csv` a `imports/`, rellena con la columna `tipo_inmueble`
+> (`casa`/`apartamento`) y ejecuta `refresh.py`.
+>
+> **Fotos de at-home:** se descargan al sitio (`web/img/athome/`) porque at-home
+> bloquea el enlace externo (hotlink). Esas imágenes se versionan para que la web
+> pública las muestre.
 
 `wakayama_portal` cubre **todos los municipios de Wakayama** de `TARGET_AREAS`
 con una sola fuente: pagina el listado de la prefectura, se queda solo con tus

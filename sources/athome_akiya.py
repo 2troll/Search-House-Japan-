@@ -19,9 +19,11 @@ No hay robots.txt que lo prohíba; aun así se respeta el rate limit y el
 User-Agent del HttpClient. Uso personal, sin redistribución.
 """
 
+import os
 import re
 from urllib.parse import urljoin
 
+import requests
 from bs4 import BeautifulSoup
 
 from sources.base import (
@@ -32,6 +34,35 @@ import config
 SLUG = "athome"
 NAME = "アットホーム空き家バンク"
 BASE = "https://www.akiya-athome.jp"
+
+# Carpeta donde guardamos las fotos descargadas (at-home las bloquea por hotlink,
+# así que las copiamos al propio sitio). Se sirven como /img/athome/<id>.jpg.
+IMG_DIR = os.path.join(config.BASE_DIR, "web", "img", "athome")
+_img_session = requests.Session()
+_img_session.headers.update({
+    "User-Agent": "Mozilla/5.0 akiya-personal-tool/1.0",
+    "Referer": BASE + "/",
+})
+
+
+def _download_photo(remote_url, bid):
+    """Descarga la foto de la card al sitio. Devuelve la ruta relativa o ''."""
+    if not remote_url or not bid:
+        return ""
+    os.makedirs(IMG_DIR, exist_ok=True)
+    rel = f"img/athome/{bid}.jpg"
+    dest = os.path.join(IMG_DIR, f"{bid}.jpg")
+    if os.path.exists(dest) and os.path.getsize(dest) > 1000:
+        return rel  # ya descargada
+    try:
+        r = _img_session.get(remote_url, timeout=config.HTTP_TIMEOUT)
+        if r.status_code == 200 and r.headers.get("content-type", "").startswith("image"):
+            with open(dest, "wb") as f:
+                f.write(r.content)
+            return rel
+    except Exception:
+        pass
+    return ""
 
 _LAYOUT_RE = re.compile(r"[1-9０-９]+\s*[SLDKR]+")
 
@@ -81,11 +112,22 @@ def _parse_card(node, listing_type):
     rent_yen = price_yen if listing_type == "rent" else None
     sale_yen = price_yen if listing_type == "sale" else None
 
-    # NOTA: las fotos de at-home (img.akiya-athome.jp) están protegidas contra
-    # hotlinking (devuelven 403 desde otro dominio), así que NO las guardamos
-    # para no mostrar imágenes rotas. Las fuentes municipales (suminiko, wakayama)
-    # sí traen fotos que cargan bien. El nº total de fotos queda en features.
+    # Fotos: at-home las bloquea por hotlink (403 desde otro dominio), así que
+    # descargamos la foto principal al propio sitio y la servimos localmente.
     photos = []
+    bid = ""
+    bm = re.search(r"/(\d+)\s*$", url)
+    if bm:
+        bid = bm.group(1)
+    img = node.find("img")
+    if img:
+        src = img.get("data-src") or img.get("src") or ""
+        if src.startswith("//"):
+            src = "https:" + src
+        if src and "img.akiya-athome.jp" in src:
+            local = _download_photo(src, bid)
+            if local:
+                photos.append(local)
 
     lst = Listing(
         source=SLUG, source_name=NAME, source_url=url,

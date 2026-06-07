@@ -33,6 +33,7 @@ IMPORTS_DIR = os.path.join(config.BASE_DIR, "imports")
 FIELD_ALIASES = {
     "url": "source_url", "enlace": "source_url", "source_url": "source_url",
     "tipo": "listing_type", "operacion": "listing_type", "listing_type": "listing_type",
+    "inmueble": "prop_type", "tipo_inmueble": "prop_type", "prop_type": "prop_type",
     "titulo": "title", "title": "title",
     "direccion": "address_raw", "address": "address_raw", "address_raw": "address_raw",
     "municipio": "city", "city": "city",
@@ -89,9 +90,17 @@ def _row_to_listing(data):
 
     photos = [p.strip() for p in data.get("photos", "").split("|") if p.strip()]
 
+    ptype = (data.get("prop_type") or "").lower()
+    if ptype in ("apartamento", "piso", "apartment", "マンション", "アパート", "mansion"):
+        ptype = "apartment"
+    elif ptype in ("casa", "house", "戸建て", "一戸建て"):
+        ptype = "house"
+    else:
+        ptype = "house"
+
     lst = Listing(
         source=SLUG, source_name=NAME, source_url=url,
-        listing_type=ltype,
+        listing_type=ltype, prop_type=ptype,
         title=data.get("title", data.get("address_raw", "Casa importada")),
         city=data.get("city", ""),
         address_raw=data.get("address_raw", data.get("city", "")),
