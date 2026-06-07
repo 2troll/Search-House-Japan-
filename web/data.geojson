@@ -25545,9 +25545,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/2579_0.jpg",
-     "img/athome/2579_1.jpg",
-     "img/athome/2579_2.jpg"
+     "img/athome/2579_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
@@ -25556,7 +25554,8 @@
      "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
      "設備": "トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・和室\n\t\t\t\t\t\t\t\t\t\t\t・庭",
      "備考": "買いたい、借りたい、詳しい住所を知りたい、内覧したいという方は、姫路市役所HPの「空き家を買いたい・借りたい」のページから利用申込書等の様式をダウンロードし、姫路市役所の住宅課に提出してください。",
-     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-",
+     "contacto_tel": "079-221-2642"
     },
     "description_raw": "山陽電気鉄道本線 白浜の宮駅 / 徒歩8分",
     "status_note": "",
