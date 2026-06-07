@@ -320,7 +320,8 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
 
 <script>
 // ====== Mapa ======
-const map=L.map('map',{zoomControl:true}).setView([34.6,135.6],8);
+const map=L.map('map',{zoomControl:false}).setView([34.6,135.6],8);
+L.control.zoom({position:'topright'}).addTo(map);  // +/- a la derecha (no tapa "Solo mapa")
 // Varios mapas base seleccionables (esquina arriba-derecha)
 const BASEMAPS={
   "Mapa claro":L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:20,attribution:'© OSM © CARTO'}),
@@ -331,6 +332,8 @@ const BASEMAPS={
 BASEMAPS["Mapa claro"].addTo(map);
 L.control.layers(BASEMAPS,null,{position:'topright',collapsed:true}).addTo(map);
 const cluster=L.markerClusterGroup({maxClusterRadius:38,disableClusteringAtZoom:15,spiderfyOnMaxZoom:true,showCoverageOnHover:false});map.addLayer(cluster);
+// Tocar/mover el mapa cierra el panel de filtros (no hay que estar dándole al botón)
+map.on('click movestart',()=>{const f=document.getElementById('filters');if(f)f.classList.remove('open');});
 
 // ====== Zonas (sincronizar con TARGET_AREAS) ======
 const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県",hiroshima:"Hiroshima 広島県",shimane:"Shimane 島根県",kagawa:"Kagawa 香川県",tokushima:"Tokushima 徳島県",ehime:"Ehime 愛媛県"};
