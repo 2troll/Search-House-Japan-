@@ -139,15 +139,13 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
 <body>
 <div id="app">
   <div id="topbar">
-    <div class="brand">🏡 Casas Japón<small>coste real · fichas en español</small></div>
-    <div class="tb"><label>Estancia</label><input type="number" id="months" min="1" max="36" value="4"><span style="color:#94a3b8">m</span></div>
-    <div class="tb"><label>Tipo</label><div class="seg" id="opSeg"><button data-op="rent" class="on">Alquiler</button><button data-op="sale">Venta</button><button data-op="both">Ambos</button></div></div>
-    <div class="tb"><label>Moneda</label><div class="seg" id="curSeg"><button data-c="EUR" class="on">€</button><button data-c="USD">$</button><button data-c="ILS">₪</button><button data-c="JPY">¥</button></div></div>
-    <div class="tb"><label>Orden</label><select id="sortBy"><option value="cost">Coste estancia ↑</option><option value="permonth">Coste/mes ↑</option><option value="price">Precio ↑</option><option value="age">Más nuevas</option><option value="area">Más grandes</option></select></div>
+    <div class="brand">🏡 Casas Japón<small>tu agencia personal en español</small></div>
+    <div class="tb"><div class="seg" id="opSeg"><button data-op="rent" class="on">Alquiler</button><button data-op="sale">Venta</button><button data-op="both">Ambos</button></div></div>
+    <div class="tb"><div class="seg" id="curSeg"><button data-c="EUR" class="on">€</button><button data-c="USD">$</button><button data-c="ILS">₪</button><button data-c="JPY">¥</button></div></div>
     <div class="spacer"></div>
     <button class="tb-btn" id="openGuide">📖 Guía</button>
     <button class="tb-btn" id="openAssume">⚙️ Gastos</button>
-    <button class="tb-btn" id="openCompare">⭐ Comparar <span class="n" id="favN">0</span></button>
+    <button class="tb-btn" id="openCompare">⭐ <span class="n" id="favN">0</span></button>
     <button class="tb-btn" id="openAgent" style="background:#4f46e5;border-color:#6366f1">🤖 Agente IA</button>
   </div>
 
@@ -173,7 +171,15 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
     </aside>
 
     <section id="listcol" class="show">
-      <div id="listhead"><span id="count">—</span><span style="font-size:11px">Pulsa una casa para ver la ficha</span></div>
+      <div id="listhead">
+        <span id="count" style="font-weight:600;color:var(--ink)">—</span>
+        <div style="display:flex;align-items:center;gap:10px">
+          <label style="display:flex;align-items:center;gap:4px">Estancia <input type="number" id="months" min="1" max="36" value="4" style="width:44px;padding:3px;border:1px solid var(--line2);border-radius:6px;text-align:center"> m</label>
+          <select id="sortBy" style="padding:4px;border:1px solid var(--line2);border-radius:6px;font-size:12px">
+            <option value="cost">Coste estancia ↑</option><option value="permonth">Coste/mes ↑</option><option value="price">Precio ↑</option><option value="age">Más nuevas</option><option value="area">Más grandes</option>
+          </select>
+        </div>
+      </div>
       <div id="list"></div>
     </section>
 
