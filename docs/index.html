@@ -378,6 +378,7 @@ function propType(f){
   return 'house';
 }
 function propLabel(p){return p==='apartment'?'🏢 Apto':p==='land'?'🟫 Terreno':'🏠 Casa';}
+function layoutLabel(f){return f.layout||(propType(f)==='apartment'?'Varios tipos':'—');}
 const CMP_MONTHS={};
 
 // ====== Supuestos de gastos ======
@@ -519,7 +520,7 @@ function renderList(shown,months){
         <div class="price" style="color:${priceColor(f)}">${price}</div>
         ${sc?`<span class="cost">${months}m: ${money(sc.total)}</span><span class="cost pm">${money(sc.perMonth)}/mes</span>`:''}
         <div class="title">${f.title||''}</div>
-        <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${f.layout||'—'} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+tr(f.year_built):''}</div>
+        <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${layoutLabel(f)} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+tr(f.year_built):''}</div>
         ${(f.features&&f.features['交通'])?`<div class="meta" style="margin-top:2px">🚉 ${tr(f.features['交通']).slice(0,46)}</div>`:''}
         <div class="badges">
           <span class="badge">${propLabel(propType(f))}</span>
@@ -586,7 +587,7 @@ function openDetail(f){
       <table class="specs">
         <tr><td>Operación</td><td>${f.listing_type==='rent'?'Alquiler 賃貸':'Venta 売買'}</td></tr>
         ${kind?`<tr><td>Tipo</td><td>${trKind(kind)} <span style="color:#94a3b8">${kind}</span></td></tr>`:''}
-        <tr><td>Distribución 間取り</td><td>${f.layout||'—'} ${f.features&&f.features['間取り詳細']?'· '+tr(f.features['間取り詳細']):''}</td></tr>
+        <tr><td>Distribución 間取り</td><td>${layoutLabel(f)} ${f.features&&f.features['間取り詳細']?'· '+tr(f.features['間取り詳細']):''}</td></tr>
         <tr><td>Sup. edificio</td><td>${f.building_area_m2?f.building_area_m2+' ㎡':'—'}</td></tr>
         <tr><td>Sup. terreno</td><td>${f.land_area_m2?f.land_area_m2+' ㎡':'—'}</td></tr>
         <tr><td>Construcción 築年</td><td>${tr(f.year_built)||'—'}${f.age_years!=null?` (${f.age_years} años)`:''}</td></tr>
