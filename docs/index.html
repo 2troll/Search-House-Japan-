@@ -17,6 +17,8 @@
   --shadow:0 1px 3px rgba(15,23,42,.08);--shadow-lg:0 12px 30px -8px rgba(15,23,42,.28);
 }
 *{box-sizing:border-box}
+.lang{display:none}
+body[data-lang="es"] .lang-es,body[data-lang="en"] .lang-en{display:revert}
 html,body{margin:0;height:100%;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;color:var(--ink);background:var(--soft)}
 button{font-family:inherit}
 #app{display:flex;flex-direction:column;height:100%;overflow:hidden}
@@ -147,51 +149,52 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
 <body>
 <div id="app">
   <div id="topbar">
-    <div class="brand">🏡 Casas Japón<small>tu agencia personal en español</small></div>
-    <div class="tb"><div class="seg" id="opSeg"><button data-op="rent" class="on">Alquiler</button><button data-op="sale">Venta</button><button data-op="both">Ambos</button></div></div>
+    <div class="brand">🏡 Casas Japón<small data-i18n="brand_sub">tu agencia personal en español</small></div>
+    <div class="tb"><div class="seg" id="opSeg"><button data-op="rent" class="on" data-i18n="rent">Alquiler</button><button data-op="sale" data-i18n="sale">Venta</button><button data-op="both" data-i18n="both">Ambos</button></div></div>
     <div class="tb"><div class="seg" id="curSeg"><button data-c="EUR" class="on">€</button><button data-c="USD">$</button><button data-c="ILS">₪</button><button data-c="JPY">¥</button></div></div>
+    <div class="tb"><div class="seg" id="langSeg"><button data-l="es" class="on">ES</button><button data-l="en">EN</button></div></div>
     <div class="spacer"></div>
-    <button class="tb-btn" id="openGuide">📖 Guía</button>
-    <button class="tb-btn" id="openAssume">⚙️ Gastos</button>
+    <button class="tb-btn" id="openGuide">📖 <span data-i18n="guide">Guía</span></button>
+    <button class="tb-btn" id="openAssume">⚙️ <span data-i18n="costs">Gastos</span></button>
     <button class="tb-btn" id="openCompare">⭐ <span class="n" id="favN">0</span></button>
-    <button class="tb-btn" id="openAgent" style="background:#4f46e5;border-color:#6366f1">🤖 Agente IA</button>
+    <button class="tb-btn" id="openAgent" style="background:#4f46e5;border-color:#6366f1">🤖 <span data-i18n="agent">Agente IA</span></button>
   </div>
 
   <div id="body">
     <aside id="filters">
-      <div class="fg"><h4>Tipo de inmueble</h4>
+      <div class="fg"><h4 data-i18n="ptype">Tipo de inmueble</h4>
         <div class="row" id="ptypeRow">
-          <span class="chip on" data-pt="all">Todos</span>
-          <span class="chip" data-pt="house">🏠 Casa</span>
-          <span class="chip" data-pt="apartment">🏢 Apartamento</span>
-          <span class="chip" data-pt="land">🟫 Terreno</span>
+          <span class="chip on" data-pt="all" data-i18n="all">Todos</span>
+          <span class="chip" data-pt="house">🏠 <span data-i18n="house">Casa</span></span>
+          <span class="chip" data-pt="apartment">🏢 <span data-i18n="apt">Apartamento</span></span>
+          <span class="chip" data-pt="land">🟫 <span data-i18n="land">Terreno</span></span>
         </div></div>
-      <div class="fg"><h4>Ofertas</h4>
+      <div class="fg"><h4 data-i18n="deals">Ofertas</h4>
         <div class="row" id="dealRow">
-          <span class="chip" data-deal="cheap">💸 Gangas ≤100万</span>
-          <span class="chip" data-deal="free">🆓 Casi gratis ≤10万</span>
+          <span class="chip" data-deal="cheap" data-i18n="cheap">💸 Gangas ≤100万</span>
+          <span class="chip" data-deal="free" data-i18n="free">🆓 Casi gratis ≤10万</span>
         </div></div>
-      <div class="fg"><h4>Alquiler máx: <span class="v" id="rentVal"></span>/mes</h4><input type="range" id="maxRent" min="0" max="100000" step="5000" value="40000"></div>
-      <div class="fg"><h4>Precio compra máx: <span class="v" id="saleVal">Sin límite</span></h4><input type="range" id="maxSale" min="0" max="30000000" step="500000" value="30000000"></div>
-      <div class="fg"><h4>Parking 駐車場</h4>
-        <label class="toggle"><input type="checkbox" id="parkingOnly"> Solo con parking</label>
-        <label class="toggle"><input type="checkbox" id="parkingNearby" checked> Aceptar cercano</label></div>
-      <div class="fg"><h4>Distribución 間取り</h4><div class="row" id="layoutRow"></div></div>
-      <div class="fg"><h4>Antigüedad máx: <span class="v" id="ageVal">Cualquiera</span></h4><input type="range" id="maxAge" min="0" max="80" step="5" value="80"></div>
-      <div class="fg"><h4>Otros</h4>
-        <label class="toggle"><input type="checkbox" id="renovatedOnly"> Solo reformadas</label>
-        <label class="toggle"><input type="checkbox" id="newOnly"> Solo novedades</label></div>
-      <div class="fg"><h4>Zona</h4><div class="row" id="zoneRow"></div></div>
-      <div class="fg"><h4>Buscar</h4><input type="text" id="search" placeholder="海, 平屋, 福良, 沼島..."></div>
+      <div class="fg"><h4><span data-i18n="rentmax">Alquiler máx</span>: <span class="v" id="rentVal"></span>/mes</h4><input type="range" id="maxRent" min="0" max="100000" step="5000" value="40000"></div>
+      <div class="fg"><h4><span data-i18n="salemax">Precio compra máx</span>: <span class="v" id="saleVal"></span></h4><input type="range" id="maxSale" min="0" max="30000000" step="500000" value="30000000"></div>
+      <div class="fg"><h4 data-i18n="parking">Parking 駐車場</h4>
+        <label class="toggle"><input type="checkbox" id="parkingOnly"> <span data-i18n="parkonly">Solo con parking</span></label>
+        <label class="toggle"><input type="checkbox" id="parkingNearby" checked> <span data-i18n="parknear">Aceptar cercano</span></label></div>
+      <div class="fg"><h4 data-i18n="layout">Distribución 間取り</h4><div class="row" id="layoutRow"></div></div>
+      <div class="fg"><h4><span data-i18n="agemax">Antigüedad máx</span>: <span class="v" id="ageVal"></span></h4><input type="range" id="maxAge" min="0" max="80" step="5" value="80"></div>
+      <div class="fg"><h4 data-i18n="other">Otros</h4>
+        <label class="toggle"><input type="checkbox" id="renovatedOnly"> <span data-i18n="reno">Solo reformadas</span></label>
+        <label class="toggle"><input type="checkbox" id="newOnly"> <span data-i18n="newonly">Solo novedades</span></label></div>
+      <div class="fg"><h4 data-i18n="zone">Zona</h4><div class="row" id="zoneRow"></div></div>
+      <div class="fg"><h4 data-i18n="search">Buscar</h4><input type="text" id="search" data-i18n-ph="searchph" placeholder="海, 平屋, 福良, 沼島..."></div>
     </aside>
 
     <section id="listcol" class="show">
       <div id="listhead">
         <span id="count" style="font-weight:600;color:var(--ink)">—</span>
         <div style="display:flex;align-items:center;gap:10px">
-          <label style="display:flex;align-items:center;gap:4px">Estancia <input type="number" id="months" min="1" max="36" value="4" style="width:44px;padding:3px;border:1px solid var(--line2);border-radius:6px;text-align:center"> m</label>
+          <label style="display:flex;align-items:center;gap:4px"><span data-i18n="stay">Estancia</span> <input type="number" id="months" min="1" max="36" value="4" style="width:44px;padding:3px;border:1px solid var(--line2);border-radius:6px;text-align:center"> m</label>
           <select id="sortBy" style="padding:4px;border:1px solid var(--line2);border-radius:6px;font-size:12px">
-            <option value="cost">Coste estancia ↑</option><option value="permonth">Coste/mes ↑</option><option value="price">Precio ↑</option><option value="age">Más nuevas</option><option value="area">Más grandes</option>
+            <option value="cost" data-i18n="o_cost">Coste estancia ↑</option><option value="permonth" data-i18n="o_pm">Coste/mes ↑</option><option value="price" data-i18n="o_price">Precio ↑</option><option value="age" data-i18n="o_age">Más nuevas</option><option value="area" data-i18n="o_area">Más grandes</option>
           </select>
         </div>
       </div>
@@ -199,12 +202,12 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
     </section>
 
     <div id="map"></div>
-    <button id="mapFull" title="Ver solo el mapa / volver">🗺️ Solo mapa</button>
+    <button id="mapFull" data-i18n="onlymap">🗺️ Solo mapa</button>
     <div id="legend">
-      <b>Leyenda</b>
-      <span class="sw" style="background:hsl(120,70%,42%)"></span>barato &nbsp;<span class="sw" style="background:hsl(0,70%,42%)"></span>caro<br>
-      <span class="sw" style="background:#64748b;border-style:dashed;border-width:2px"></span>alquiler &nbsp;<span class="sw" style="background:#64748b;border-radius:3px"></span>terreno<br>
-      <span style="display:inline-block;width:20px;height:20px;border-radius:50%;background:#6366f1;color:#fff;text-align:center;line-height:20px;font-weight:700;margin-right:5px">8</span>varias casas (acerca el zoom)
+      <b data-i18n="legend">Leyenda</b>
+      <span class="sw" style="background:hsl(120,70%,42%)"></span><span data-i18n="cheapw">barato</span> &nbsp;<span class="sw" style="background:hsl(0,70%,42%)"></span><span data-i18n="exp">caro</span><br>
+      <span class="sw" style="background:#64748b;border-style:dashed;border-width:2px"></span><span data-i18n="rentw">alquiler</span> &nbsp;<span class="sw" style="background:#64748b;border-radius:3px"></span><span data-i18n="landw">terreno</span><br>
+      <span style="display:inline-block;width:20px;height:20px;border-radius:50%;background:#6366f1;color:#fff;text-align:center;line-height:20px;font-weight:700;margin-right:5px">8</span><span data-i18n="several">varias casas (acerca el zoom)</span>
     </div>
 
     <!-- Ficha lateral -->
@@ -215,42 +218,43 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
   </div>
 
   <div class="mobtabs">
-    <button id="tabFilters">Filtros</button>
-    <button id="tabList" class="on">Lista</button>
-    <button id="tabMap">Mapa</button>
+    <button id="tabFilters" data-i18n="tabFilters">Filtros</button>
+    <button id="tabList" class="on" data-i18n="tabList">Lista</button>
+    <button id="tabMap" data-i18n="tabMap">Mapa</button>
   </div>
 </div>
 
 <!-- Modal gastos -->
 <div class="modal-bg" id="assumeModal"><div class="modal">
-  <header><h2>⚙️ Gastos de alquiler (Japón)</h2><button class="x" data-close>×</button></header>
+  <header><h2 data-i18n="m_costs">⚙️ Gastos de alquiler (Japón)</h2><button class="x" data-close>×</button></header>
   <div class="mb">
-    <p style="font-size:13px;color:var(--muted);margin-top:0">Los bancos de casas casi nunca publican estos gastos; se usan estos supuestos (editables, guardados en tu navegador). Si el anuncio trae el dato real, se usa el real.</p>
+    <p style="font-size:13px;color:var(--muted);margin-top:0"><span class="lang lang-es">Los bancos de casas casi nunca publican estos gastos; se usan estos supuestos (editables, guardados en tu navegador). Si el anuncio trae el dato real, se usa el real.</span><span class="lang lang-en">Akiya banks rarely publish these fees, so these editable assumptions are used (saved in your browser). If the listing has the real figure, the real one is used.</span></p>
     <div class="agrid">
-      <div class="af"><label>礼金 Key money (no se devuelve)</label><small>Meses de alquiler</small><input type="number" id="a_key" step="0.5" value="1"></div>
-      <div class="af"><label>仲介手数料 Comisión agencia</label><small>Meses de alquiler</small><input type="number" id="a_agency" step="0.5" value="1"></div>
-      <div class="af"><label>保証会社 Aval</label><small>% de un mes</small><input type="number" id="a_guarantor" step="5" value="50"></div>
-      <div class="af"><label>敷金 Fianza</label><small>Meses de alquiler</small><input type="number" id="a_deposit" step="0.5" value="1"></div>
-      <div class="af"><label>Limpieza al salir</label><small>Importe fijo (¥)</small><input type="number" id="a_cleaning" step="5000" value="30000"></div>
-      <div class="af"><label>Penalización salida anticipada</label><small>Meses (si te vas antes)</small><input type="number" id="a_penalty" step="0.5" value="1"></div>
-      <div class="af"><label>Duración contrato</label><small>Meses</small><input type="number" id="a_contract" step="1" value="24"></div>
-      <div class="af"><label>IVA comisiones</label><small>%</small><input type="number" id="a_tax" step="1" value="10"></div>
-      <div class="af"><label>¿La fianza se devuelve?</label><small>Si sí, no cuenta como gasto</small><select id="a_deprefund"><option value="1" selected>Sí (no contar)</option><option value="0">No / 敷引</option></select></div>
+      <div class="af"><label>礼金 <span class="lang lang-es">Key money (no se devuelve)</span><span class="lang lang-en">Key money (non-refundable)</span></label><small><span class="lang lang-es">Meses de alquiler</span><span class="lang lang-en">Months of rent</span></small><input type="number" id="a_key" step="0.5" value="1"></div>
+      <div class="af"><label>仲介手数料 <span class="lang lang-es">Comisión agencia</span><span class="lang lang-en">Agency fee</span></label><small><span class="lang lang-es">Meses de alquiler</span><span class="lang lang-en">Months of rent</span></small><input type="number" id="a_agency" step="0.5" value="1"></div>
+      <div class="af"><label>保証会社 <span class="lang lang-es">Aval</span><span class="lang lang-en">Guarantor</span></label><small><span class="lang lang-es">% de un mes</span><span class="lang lang-en">% of one month</span></small><input type="number" id="a_guarantor" step="5" value="50"></div>
+      <div class="af"><label>敷金 <span class="lang lang-es">Fianza</span><span class="lang lang-en">Deposit</span></label><small><span class="lang lang-es">Meses de alquiler</span><span class="lang lang-en">Months of rent</span></small><input type="number" id="a_deposit" step="0.5" value="1"></div>
+      <div class="af"><label><span class="lang lang-es">Limpieza al salir</span><span class="lang lang-en">Move-out cleaning</span></label><small><span class="lang lang-es">Importe fijo (¥)</span><span class="lang lang-en">Fixed amount (¥)</span></small><input type="number" id="a_cleaning" step="5000" value="30000"></div>
+      <div class="af"><label><span class="lang lang-es">Penalización salida anticipada</span><span class="lang lang-en">Early move-out penalty</span></label><small><span class="lang lang-es">Meses (si te vas antes)</span><span class="lang lang-en">Months (if you leave early)</span></small><input type="number" id="a_penalty" step="0.5" value="1"></div>
+      <div class="af"><label><span class="lang lang-es">Duración contrato</span><span class="lang lang-en">Contract length</span></label><small><span class="lang lang-es">Meses</span><span class="lang lang-en">Months</span></small><input type="number" id="a_contract" step="1" value="24"></div>
+      <div class="af"><label><span class="lang lang-es">IVA comisiones</span><span class="lang lang-en">Tax on fees</span></label><small>%</small><input type="number" id="a_tax" step="1" value="10"></div>
+      <div class="af"><label><span class="lang lang-es">¿La fianza se devuelve?</span><span class="lang lang-en">Is the deposit refunded?</span></label><small><span class="lang lang-es">Si sí, no cuenta como gasto</span><span class="lang lang-en">If yes, not counted as cost</span></small><select id="a_deprefund"><option value="1" selected data-i18n="dep_yes">Sí (no contar)</option><option value="0">No / 敷引</option></select></div>
     </div>
-    <div class="note">💡 <b>Coste total</b> = key money + comisión + aval + (alquiler+gastos)×meses + limpieza + penalización. <b>Coste/mes</b> = total ÷ meses (para comparar estancias de distinta duración).</div>
+    <div class="note"><span class="lang lang-es">💡 <b>Coste total</b> = key money + comisión + aval + (alquiler+gastos)×meses + limpieza + penalización. <b>Coste/mes</b> = total ÷ meses (para comparar estancias de distinta duración).</span><span class="lang lang-en">💡 <b>Total cost</b> = key money + agency + guarantor + (rent+fees)×months + cleaning + penalty. <b>Cost/month</b> = total ÷ months (to compare stays of different length).</span></div>
   </div>
 </div></div>
 
 <!-- Modal comparador -->
 <div class="modal-bg" id="compareModal"><div class="modal">
-  <header><h2>⭐ Comparar casas</h2><button class="x" data-close>×</button></header>
+  <header><h2 data-i18n="m_compare">⭐ Comparar casas</h2><button class="x" data-close>×</button></header>
   <div class="mb" id="compareBody"></div>
 </div></div>
 
 <!-- Modal GUÍA -->
 <div class="modal-bg" id="guideModal"><div class="modal">
-  <header><h2>📖 Guía: cómo alquilar o comprar en Japón</h2><button class="x" data-close>×</button></header>
+  <header><h2 data-i18n="m_guide">📖 Guía: cómo alquilar o comprar en Japón</h2><button class="x" data-close>×</button></header>
   <div class="mb" style="font-size:14px;line-height:1.6">
+   <div class="lang lang-es">
     <p style="color:var(--muted);margin-top:0">Esto es lo que las agencias no te explican claro. Tú ya tienes residencia en Japón, así que los ayuntamientos te aceptan sin problema (buscan 移住者).</p>
 
     <h3 style="margin:14px 0 6px">🔑 ALQUILAR (賃貸) — pasos</h3>
@@ -290,13 +294,55 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
       <li>Coste TOTAL de tu estancia (no solo el alquiler) — míralo en la ficha de cada casa.</li>
     </ul>
     <p style="color:var(--muted);font-size:12px;margin-top:14px">Orientativo, de uso personal. Las cifras varían por zona y propiedad; confirma siempre con el ayuntamiento o el agente.</p>
+   </div>
+   <div class="lang lang-en">
+    <p style="color:var(--muted);margin-top:0">This is what agencies don't explain clearly. If you already have residency in Japan, town halls accept you without trouble (they actively look for 移住者, new residents).</p>
+
+    <h3 style="margin:14px 0 6px">🔑 RENT (賃貸) — steps</h3>
+    <ol style="padding-left:18px;margin:0">
+      <li><b>Find the home</b> and contact the town hall (空き家バンク akiya bank) or the agency in the listing.</li>
+      <li><b>Viewing</b> (内見). Check: damp/mould, orientation, real parking, mobile coverage, distance to station/shop.</li>
+      <li><b>Application</b> (入居申込). They ask for: 住民票 (residence certificate), proof of income, ID, and sometimes a <b>guarantor</b> (保証人) or a <b>guarantor company</b> (保証会社, ~50-100% of one month).</li>
+      <li><b>Move-in cost</b> (初期費用), usually 4-6 months in total:
+        <ul style="margin:4px 0">
+          <li>礼金 (key money): a gift to the landlord, <b>non-refundable</b> (0-2 months).</li>
+          <li>敷金 (deposit): refundable minus cleaning/damage (0-2 months).</li>
+          <li>仲介手数料 (agency fee): ~1 month + tax.</li>
+          <li>保証会社 (guarantor), 火災保険 (fire insurance ~¥15-20k/2 yrs), 鍵交換 (lock change ~¥15k).</li>
+        </ul>
+      </li>
+      <li><b>Contract</b> (契約): usually <b>2 years</b>. Leaving early may trigger a <b>penalty</b> (短期解約違約金, 1-2 months) + move-out cleaning. ➜ Use the ⚙️ calculator in this app to see the real cost of your stay.</li>
+      <li><b>Moving in</b>: transfer your 住民票 to the new town hall, set up electricity/water/gas (sometimes a 浄化槽/septic tank), internet.</li>
+    </ol>
+
+    <h3 style="margin:16px 0 6px">🏡 BUY (売買) — steps</h3>
+    <ol style="padding-left:18px;margin:0">
+      <li><b>Choose</b> and visit. On 空き家バンク many are nearly free but may need renovation — ask for a works estimate.</li>
+      <li><b>Offer and negotiation</b> (買付). The price is usually negotiable.</li>
+      <li><b>Important disclosure</b> (重要事項説明) by a licensed agent (宅建士): zoning, easements, septic tank, risks (flood/landslide).</li>
+      <li><b>Contract</b> (売買契約) + deposit (手付金, ~5-10%).</li>
+      <li><b>Added costs</b> (~6-9% of price): acquisition tax (不動産取得税), registration (登記) + judicial scrivener (司法書士), 印紙税 stamp duty, agency fee (~3% + ¥60k + tax), then the <b>annual</b> property tax 固定資産税.</li>
+      <li><b>Closing</b> (決済) and registration in your name. It's yours!</li>
+      <li><b>Grants</b>: many towns give 移住者 renovation subsidies (リフォーム補助金). Ask at the town hall.</li>
+    </ol>
+
+    <h3 style="margin:16px 0 6px">✅ Checklist before deciding</h3>
+    <ul style="padding-left:18px;margin:0">
+      <li>Parking for your car (駐車場) — on the plot or rented separately?</li>
+      <li>Access: station/bus, shop, hospital, school.</li>
+      <li>Condition: year (築年), structure (木造 wood…), renovated? septic tank or sewer?</li>
+      <li>Foreigners: if the listing doesn't say, ask — with residency it's rarely an issue.</li>
+      <li>TOTAL cost of your stay (not just the rent) — see it on each home's card.</li>
+    </ul>
+    <p style="color:var(--muted);font-size:12px;margin-top:14px">Indicative, for personal use. Figures vary by area and property; always confirm with the town hall or the agent.</p>
+   </div>
   </div>
 </div></div>
 
 <!-- Modal AGENTE IA -->
 <div class="modal-bg" id="agentModal"><div class="modal" style="max-width:560px;display:flex;flex-direction:column;height:82vh">
   <header>
-    <h2>🤖 Tu agente inmobiliario IA</h2>
+    <h2 data-i18n="m_agent">🤖 Tu agente inmobiliario IA</h2>
     <div style="display:flex;gap:8px;align-items:center">
       <span id="aiModeBadge" style="font-size:11px;background:var(--soft);padding:3px 8px;border-radius:10px;color:var(--muted)">Gratis</span>
       <button class="tb-btn" id="openPro" title="Usar tu clave (mejor calidad)" style="padding:4px 8px">⚡ Pro</button>
@@ -304,17 +350,17 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
     </div>
   </header>
   <div class="mb" id="agentSetup" style="display:none;border-bottom:1px solid var(--line)">
-    <p style="font-size:13px;color:var(--muted);margin-top:0">Modo <b>Pro</b>: usa tu clave de Claude (mejores respuestas, sin esperas). Se guarda solo en tu navegador. La consigues en <a href="https://console.anthropic.com/" target="_blank">console.anthropic.com</a>. Sin clave funciona igual en modo <b>Gratis</b> (IA Llama/GPT-OSS).</p>
+    <p style="font-size:13px;color:var(--muted);margin-top:0"><span class="lang lang-es"><b>Pro</b>: usa tu clave de Claude (mejores respuestas, sin esperas). Se guarda solo en tu navegador. La consigues en <a href="https://console.anthropic.com/" target="_blank">console.anthropic.com</a>. Sin clave funciona igual en modo <b>Gratis</b> (IA Llama/GPT-OSS).</span><span class="lang lang-en"><b>Pro</b>: use your own Claude key (better answers, no waits). Stored only in your browser. Get one at <a href="https://console.anthropic.com/" target="_blank">console.anthropic.com</a>. Without a key it still works in <b>Free</b> mode (Llama/GPT-OSS AI).</span></p>
     <input type="text" id="apiKey" placeholder="sk-ant-..." style="width:100%;padding:9px;border:1px solid var(--line2);border-radius:8px;font-size:13px">
     <div style="display:flex;gap:6px;margin-top:8px">
-      <button class="tb-btn" id="saveKey" style="background:var(--accent);color:#fff;border:none">Guardar clave (Pro)</button>
-      <button class="tb-btn" id="chatClearKey">Quitar clave (volver a Gratis)</button>
+      <button class="tb-btn" id="saveKey" data-i18n="savekey" style="background:var(--accent);color:#fff;border:none">Guardar clave (Pro)</button>
+      <button class="tb-btn" id="chatClearKey" data-i18n="rmkey">Quitar clave (volver a Gratis)</button>
     </div>
   </div>
   <div id="chatArea" style="flex:1;overflow:auto;padding:14px;background:var(--soft2)"></div>
   <div id="chatInputBar" style="padding:10px;border-top:1px solid var(--line)">
-    <textarea id="chatInput" rows="2" placeholder="Ej: las 3 casas más baratas con parking en Awaji para 5 meses" style="width:100%;padding:8px;border:1px solid var(--line2);border-radius:8px;font-size:13px;resize:none"></textarea>
-    <button class="tb-btn" id="chatSend" style="width:100%;background:var(--accent);color:#fff;border:none;margin-top:6px">Enviar</button>
+    <textarea id="chatInput" rows="2" data-i18n-ph="chatph" placeholder="Ej: las 3 casas más baratas con parking en Awaji para 5 meses" style="width:100%;padding:8px;border:1px solid var(--line2);border-radius:8px;font-size:13px;resize:none"></textarea>
+    <button class="tb-btn" id="chatSend" data-i18n="send" style="width:100%;background:var(--accent);color:#fff;border:none;margin-top:6px">Enviar</button>
   </div>
 </div></div>
 
@@ -364,6 +410,78 @@ function money(jpy){ if(jpy==null)return"—"; const v=Math.round(jpy*RATE[CUR])
 function moneyShort(jpy){ if(jpy==null)return"?"; const v=jpy*RATE[CUR]; if(CUR==='JPY')return v>=10000?'¥'+Math.round(v/10000)+'万':'¥'+Math.round(v); return SYM[CUR]+Math.round(v).toLocaleString('es-ES'); }
 
 const $=id=>document.getElementById(id);
+
+// ====== Idiomas (ES / EN) ======
+let LANG=localStorage.getItem('lang')||'es';
+document.body.dataset.lang=LANG;document.documentElement.lang=LANG;
+const I18N={
+ es:{rent:'Alquiler',sale:'Venta',both:'Ambos',guide:'Guía',costs:'Gastos',compare:'Comparar',agent:'Agente IA',
+  ptype:'Tipo de inmueble',all:'Todos',house:'Casa',apt:'Apartamento',land:'Terreno',
+  deals:'Ofertas',cheap:'💸 Gangas ≤100万',free:'🆓 Casi gratis ≤10万',
+  rentmax:'Alquiler máx',salemax:'Precio compra máx',nolimit:'Sin límite',
+  parking:'Parking 駐車場',parkonly:'Solo con parking',parknear:'Aceptar cercano',
+  layout:'Distribución 間取り',agemax:'Antigüedad máx',anyage:'Cualquiera',years:'años',
+  other:'Otros',reno:'Solo reformadas',newonly:'Solo novedades',zone:'Zona',search:'Buscar',
+  searchph:'海, 平屋, 福良, 沼島...',stay:'Estancia',months:'meses',order:'Ordenar',
+  o_cost:'Coste estancia ↑',o_pm:'Coste/mes ↑',o_price:'Precio ↑',o_age:'Más nuevas',o_area:'Más grandes',
+  tabFilters:'Filtros',tabList:'Lista',tabMap:'Mapa',onlymap:'🗺️ Solo mapa',showlist:'◀ Mostrar lista',
+  houses:'casas',legend:'Leyenda',cheapw:'barato',exp:'caro',rentw:'alquiler',landw:'terreno',several:'varias casas (acerca el zoom)',
+  toconsult:'A consultar',permonth:'/mes',various:'Varios tipos',
+  b_new:'Novedad',b_park:'parking',b_near:'cerca',b_reno:'reformada',b_fr:'extranjeros',
+  d_op:'Operación',d_type:'Tipo',d_bldg:'Sup. edificio',d_land:'Sup. terreno',d_built:'Construcción',
+  d_struct:'Estructura',d_park:'Parking',d_fr:'Extranjeros',d_pet:'Mascotas',d_reno:'Reformada',d_zone:'Zona',
+  d_addr:'Dirección',d_access:'Acceso',d_char:'Características',d_equip:'Equipamiento',d_notes:'Notas',
+  d_contact:'Contacto',d_status:'Estado',gmaps:'📍 Abrir en Google Maps ↗',
+  costof:'Coste de',monthseff:'/mes efectivo',vermore:'Ver anuncio original',
+  addfav:'★ Añadir a comparar',rmfav:'★ Quitar de comparar',approxN:'📍 Ubicación a nivel de barrio (confírmala en el anuncio/contacto)',
+  approxC:'📍 Ubicación aproximada (centro del municipio)',nophoto:'Sin fotos disponibles',
+  yes:'Sí',no:'No',unknown:'Desconocido',negotiable:'A consultar',nearby:'Cercano',
+  cmp_empty:'Marca casas con la ⭐ para compararlas. Podrás poner meses distintos por casa y ver cuánto te sale en cada zona.',
+  c_home:'Casa',c_park:'Park',c_months:'Meses',c_rentmo:'Alq/mes',c_total:'Total',
+  cmp_best:'🏆 Mejor coste/mes',cmp_cheaper:'más barata que la más cara de tu lista.',
+  m_costs:'⚙️ Gastos de alquiler (Japón)',m_compare:'⭐ Comparar casas',m_guide:'📖 Guía: cómo alquilar o comprar en Japón',m_agent:'🤖 Tu agente inmobiliario IA',
+  savekey:'Guardar clave (Pro)',rmkey:'Quitar clave (volver a Gratis)',chatph:'Pregunta lo que quieras…',send:'Enviar',dep_yes:'Sí (no contar)',brand_sub:'tu agencia personal en español',
+  ai_free:'Gratis (Llama)',ai_pro:'Pro (Claude)',ai_pro_on:'✅ Modo Pro activado (Claude). Pregúntame lo que quieras.',ai_free_on:'Vuelto al modo Gratis (Llama/GPT-OSS).',
+  agent_hi:'¡Hola! Soy tu agente inmobiliario. Veo las casas filtradas ahora. Pregúntame: las más baratas con parking, comparar zonas, qué casa me conviene, pasos para alquilar/comprar...'},
+ en:{rent:'Rent',sale:'Buy',both:'Both',guide:'Guide',costs:'Fees',compare:'Compare',agent:'AI Agent',
+  ptype:'Property type',all:'All',house:'House',apt:'Apartment',land:'Land',
+  deals:'Deals',cheap:'💸 Bargains ≤100万',free:'🆓 Almost free ≤10万',
+  rentmax:'Max rent',salemax:'Max buy price',nolimit:'No limit',
+  parking:'Parking 駐車場',parkonly:'Parking only',parknear:'Allow nearby',
+  layout:'Layout 間取り',agemax:'Max age',anyage:'Any',years:'yrs',
+  other:'Other',reno:'Renovated only',newonly:'New only',zone:'Area',search:'Search',
+  searchph:'sea, 1-floor, station...',stay:'Stay',months:'months',order:'Sort',
+  o_cost:'Total stay cost ↑',o_pm:'Cost/month ↑',o_price:'Price ↑',o_age:'Newest',o_area:'Largest',
+  tabFilters:'Filters',tabList:'List',tabMap:'Map',onlymap:'🗺️ Map only',showlist:'◀ Show list',
+  houses:'homes',legend:'Legend',cheapw:'cheap',exp:'pricey',rentw:'rent',landw:'land',several:'several homes (zoom in)',
+  toconsult:'On request',permonth:'/mo',various:'Various types',
+  b_new:'New',b_park:'parking',b_near:'nearby',b_reno:'renovated',b_fr:'foreigners OK',
+  d_op:'Type',d_type:'Kind',d_bldg:'Building area',d_land:'Land area',d_built:'Built',
+  d_struct:'Structure',d_park:'Parking',d_fr:'Foreigners',d_pet:'Pets',d_reno:'Renovated',d_zone:'Area',
+  d_addr:'Address',d_access:'Access',d_char:'Features',d_equip:'Equipment',d_notes:'Notes',
+  d_contact:'Contact',d_status:'Status',gmaps:'📍 Open in Google Maps ↗',
+  costof:'Cost for',monthseff:'/mo effective',vermore:'View original listing',
+  addfav:'★ Add to compare',rmfav:'★ Remove from compare',approxN:'📍 Neighborhood-level location (confirm on the listing/contact)',
+  approxC:'📍 Approximate location (town center)',nophoto:'No photos available',
+  yes:'Yes',no:'No',unknown:'Unknown',negotiable:'On request',nearby:'Nearby',
+  cmp_empty:'Mark homes with ⭐ to compare them. You can set different months per home and see the cost in each area.',
+  c_home:'Home',c_park:'Park',c_months:'Months',c_rentmo:'Rent/mo',c_total:'Total',
+  cmp_best:'🏆 Best cost/month',cmp_cheaper:'cheaper than the priciest in your list.',
+  m_costs:'⚙️ Rental fees (Japan)',m_compare:'⭐ Compare homes',m_guide:'📖 Guide: how to rent or buy in Japan',m_agent:'🤖 Your AI real-estate agent',
+  savekey:'Save key (Pro)',rmkey:'Remove key (back to Free)',chatph:'Ask me anything…',send:'Send',dep_yes:"Yes (don't count)",brand_sub:'your personal home-finder in Japan',
+  ai_free:'Free (Llama)',ai_pro:'Pro (Claude)',ai_pro_on:'✅ Pro mode on (Claude). Ask me anything.',ai_free_on:'Back to Free mode (Llama/GPT-OSS).',
+  agent_hi:'Hi! I am your real-estate agent. I can see the homes you have filtered. Ask me: cheapest with parking, compare areas, which home suits me, steps to rent/buy...'}
+};
+function t(k){return (I18N[LANG]&&I18N[LANG][k])||I18N.es[k]||k;}
+function applyLang(){
+  document.documentElement.lang=LANG;document.body.dataset.lang=LANG;
+  document.querySelectorAll('[data-i18n]').forEach(e=>{e.textContent=t(e.dataset.i18n);});
+  document.querySelectorAll('[data-i18n-ph]').forEach(e=>{e.placeholder=t(e.dataset.i18nPh);});
+  document.querySelectorAll('#langSeg button').forEach(b=>b.classList.toggle('on',b.dataset.l===LANG));
+  updateRentLabel();updateSaleLabel();
+  if(typeof apply==='function')apply();
+  if(typeof CURRENT!=='undefined'&&CURRENT)openDetail(CURRENT);
+}
 function priceColor(f){let t;if(f.listing_type==='rent'){t=Math.min(1,(f.rent_yen||0)/80000);}else{t=Math.min(1,(f.sale_price_yen||0)/30000000);}return`hsl(${(1-t)*120},70%,42%)`;}
 
 let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZONES=new Set();
@@ -377,8 +495,10 @@ function propType(f){
   if(/土地/.test(k)) return 'land';
   return 'house';
 }
-function propLabel(p){return p==='apartment'?'🏢 Apto':p==='land'?'🟫 Terreno':'🏠 Casa';}
-function layoutLabel(f){return f.layout||(propType(f)==='apartment'?'Varios tipos':'—');}
+function propLabel(p){return p==='apartment'?'🏢 '+t('apt'):p==='land'?'🟫 '+t('land'):'🏠 '+t('house');}
+function layoutLabel(f){return f.layout||(propType(f)==='apartment'?t('various'):'—');}
+function frLabel(v){return ({yes:t('yes')+' ✅',negotiable:t('negotiable')+' 🟡',no:t('no')+' ❌',unknown:t('unknown')+' ❔'})[v]||'❔';}
+function pkLabel(v){return ({yes:t('yes'),nearby:t('nearby'),no:t('no'),unknown:'?'})[v]||'?';}
 const CMP_MONTHS={};
 
 // ====== Supuestos de gastos ======
@@ -398,10 +518,14 @@ function stayCost(f,months){
 }
 
 // ====== Carga ======
+// Filtra imágenes que NO son de la casa (placeholders, logos, banners, publicidad)
+const JUNK_IMG=/noimage|no_image|nophoto|no_photo|now_printing|nowprinting|comingsoon|準備中|\blogo\b|banner|bnr|\/common\/|spacer|dummy/i;
+function cleanPhotos(arr){return (arr||[]).filter(p=>p && !JUNK_IMG.test(p));}
 fetch('data.geojson').then(r=>r.json()).then(geo=>{
   FEATURES=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
+  FEATURES.forEach(f=>{f.photos=cleanPhotos(f.photos);});
   spreadOverlaps();
-  buildLayouts();buildZones();loadAssume();updateRentLabel();updateSaleLabel();apply();
+  buildLayouts();buildZones();loadAssume();applyLang();
 }).catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data.geojson. Ejecuta refresh.py y abre con un servidor.</div>';});
 
 // Muchas direcciones rurales geocodifican al MISMO punto del barrio (大字).
@@ -431,17 +555,18 @@ function buildZones(){
   const present=[...new Set(FEATURES.map(f=>f.area_key).filter(Boolean))];const row=$('zoneRow');row.innerHTML='';
   present.forEach(z=>{ZONES.add(z);const c=document.createElement('span');c.className='chip on';c.textContent=AREA_LABELS[z]||z;c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);apply();};row.appendChild(c);});
 }
-function updateRentLabel(){const v=+$('maxRent').value;$('rentVal').textContent=(v>=100000?'Sin límite':money(v));}
-function updateSaleLabel(){const v=+$('maxSale').value;$('saleVal').textContent=(v>=30000000?'Sin límite':money(v));}
+function updateRentLabel(){const v=+$('maxRent').value;$('rentVal').textContent=(v>=100000?t('nolimit'):money(v));}
+function updateSaleLabel(){const v=+$('maxSale').value;$('saleVal').textContent=(v>=30000000?t('nolimit'):money(v));}
 
 // Controles
 $('months').oninput=()=>{apply();renderCompare();if(CURRENT)openDetail(CURRENT);};
 $('sortBy').onchange=e=>{SORT=e.target.value;apply();};
 $('maxRent').oninput=()=>{updateRentLabel();apply();};
 $('maxSale').oninput=()=>{updateSaleLabel();apply();};
-$('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFull').textContent=b?'◀ Mostrar lista':'🗺️ Solo mapa';setTimeout(()=>map.invalidateSize(),60);};
+$('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFull').textContent=b?t('showlist'):t('onlymap');setTimeout(()=>map.invalidateSize(),60);};
 document.querySelectorAll('#dealRow .chip').forEach(c=>c.onclick=()=>{const d=c.dataset.deal;if(DEAL===d){DEAL='';c.classList.remove('on');}else{DEAL=d;document.querySelectorAll('#dealRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');}apply();});
-$('maxAge').oninput=e=>{const v=+e.target.value;$('ageVal').textContent=v>=80?'Cualquiera':v+' años';apply();};
+$('maxAge').oninput=e=>{const v=+e.target.value;$('ageVal').textContent=v>=80?t('anyage'):v+' '+t('years');apply();};
+document.querySelectorAll('#langSeg button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;localStorage.setItem('lang',LANG);applyLang();});
 ['parkingOnly','parkingNearby','renovatedOnly','newOnly'].forEach(id=>$(id).onchange=apply);
 $('search').oninput=apply;
 document.querySelectorAll('#opSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#opSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');OP=b.dataset.op;apply();});
@@ -503,31 +628,31 @@ function apply(){
   shown.forEach(f=>{const m=L.marker([f.lat,f.lng],{icon:makeIcon(f)});m.on('click',()=>openDetail(f));m.on('mouseover',()=>hl(f.id,true));m.on('mouseout',()=>hl(f.id,false));cluster.addLayer(m);MARKERS.set(f.id,m);bounds.push([f.lat,f.lng]);});
   if(bounds.length)map.fitBounds(bounds,{padding:[40,40],maxZoom:12});
   renderList(shown.slice().sort(sortFn(months)),months);
-  $('count').textContent=shown.length+' casas';$('favN').textContent=FAVS.size;
+  $('count').textContent=shown.length+' '+t('houses');$('favN').textContent=FAVS.size;
 }
 
 function renderList(shown,months){
   const list=$('list');list.innerHTML='';
   shown.slice(0,600).forEach(f=>{
     const sc=stayCost(f,months);
-    const price=f.listing_type==='rent'?(f.rent_yen?money(f.rent_yen)+'/mes':'A consultar'):(f.sale_price_yen?money(f.sale_price_yen):'A consultar');
+    const price=f.listing_type==='rent'?(f.rent_yen?money(f.rent_yen)+t('permonth'):t('toconsult')):(f.sale_price_yen?money(f.sale_price_yen):t('toconsult'));
     const photo=(f.photos&&f.photos[0])?`<img class="thumb" src="${f.photos[0]}" loading="lazy" onerror="this.style.display='none'">`:'';
     const div=document.createElement('div');div.className='card';div.dataset.id=f.id;
     div.innerHTML=`${photo}
       <button class="fav ${FAVS.has(f.id)?'on':''}" onclick="event.stopPropagation();toggleFav(${f.id});">★</button>
       <div class="cc">
-        <span class="ttype ${f.listing_type}">${f.listing_type==='rent'?'賃貸 Alquiler':'売買 Venta'}</span>
+        <span class="ttype ${f.listing_type}">${f.listing_type==='rent'?'賃貸 '+t('rent'):'売買 '+t('sale')}</span>
         <div class="price" style="color:${priceColor(f)}">${price}</div>
-        ${sc?`<span class="cost">${months}m: ${money(sc.total)}</span><span class="cost pm">${money(sc.perMonth)}/mes</span>`:''}
+        ${sc?`<span class="cost">${months}m: ${money(sc.total)}</span><span class="cost pm">${money(sc.perMonth)}${t('permonth')}</span>`:''}
         <div class="title">${f.title||''}</div>
         <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${layoutLabel(f)} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+tr(f.year_built):''}</div>
         ${(f.features&&f.features['交通'])?`<div class="meta" style="margin-top:2px">🚉 ${tr(f.features['交通']).slice(0,46)}</div>`:''}
         <div class="badges">
           <span class="badge">${propLabel(propType(f))}</span>
-          ${f.is_new?'<span class="badge new">Novedad</span>':''}
-          ${f.parking==='yes'?'<span class="badge park">🚗 parking</span>':(f.parking==='nearby'?'<span class="badge park">🚗 cerca</span>':'')}
-          ${f.renovated?'<span class="badge reno">✨ reformada</span>':''}
-          ${(f.foreigner_ok==='yes'||f.foreigner_ok==='negotiable')?'<span class="badge fr">🌐 extranjeros</span>':''}
+          ${f.is_new?'<span class="badge new">'+t('b_new')+'</span>':''}
+          ${f.parking==='yes'?'<span class="badge park">🚗 '+t('b_park')+'</span>':(f.parking==='nearby'?'<span class="badge park">🚗 '+t('b_near')+'</span>':'')}
+          ${f.renovated?'<span class="badge reno">✨ '+t('b_reno')+'</span>':''}
+          ${(f.foreigner_ok==='yes'||f.foreigner_ok==='negotiable')?'<span class="badge fr">🌐 '+t('b_fr')+'</span>':''}
         </div>
       </div>`;
     div.onmouseover=()=>hl(f.id,true);div.onmouseout=()=>hl(f.id,false);
@@ -545,24 +670,24 @@ function openDetail(f){
   const m=MARKERS.get(f.id); if(m){map.panTo([f.lat,f.lng]);}
   $('dTitle').textContent=f.title||'';
   GAL=(f.photos&&f.photos.length)?f.photos:[];GI=0;
-  const price=f.listing_type==='rent'?(f.rent_yen?money(f.rent_yen)+'<small>/mes</small>':'A consultar'):(f.sale_price_yen?money(f.sale_price_yen):'A consultar');
-  const fr={yes:'Sí ✅',negotiable:'A consultar 🟡',no:'No ❌',unknown:'Desconocido ❔'}[f.foreigner_ok]||'❔';
-  const pk={yes:'Sí',nearby:'Cercano',no:'No',unknown:'?'}[f.parking]||'?';
-  const pet={yes:'Sí',no:'No',unknown:'?'}[f.pet_ok]||'?';
+  const price=f.listing_type==='rent'?(f.rent_yen?money(f.rent_yen)+'<small>'+t('permonth')+'</small>':t('toconsult')):(f.sale_price_yen?money(f.sale_price_yen):t('toconsult'));
+  const fr=frLabel(f.foreigner_ok);
+  const pk=pkLabel(f.parking);
+  const pet=({yes:t('yes'),no:t('no'),unknown:'?'})[f.pet_ok]||'?';
   let cost='';
-  if(sc){cost=`<div class="costcard"><div>Coste de <b>${months} meses</b>: <span class="big">${money(sc.total)}</span></div>
-    <div class="pm">≈ ${money(sc.perMonth)}/mes efectivo</div>
+  if(sc){cost=`<div class="costcard"><div>${t('costof')} <b>${months} ${t('months')}</b>: <span class="big">${money(sc.total)}</span></div>
+    <div class="pm">≈ ${money(sc.perMonth)}${t('monthseff')}</div>
     <table>
-      <tr><td>Alquiler × ${months}${sc.mgmt?' (+gastos)':''}</td><td>${money(sc.monthly)}</td></tr>
+      <tr><td>${t('rent')} × ${months}</td><td>${money(sc.monthly)}</td></tr>
       <tr><td>礼金 Key money</td><td>${money(sc.key)}</td></tr>
-      <tr><td>Comisión + aval</td><td>${money(sc.agency+sc.guarantor)}</td></tr>
-      <tr><td>Limpieza salida</td><td>${money(sc.cleaning)}</td></tr>
-      ${sc.penalty?`<tr><td>⚠️ Penalización</td><td>${money(sc.penalty)}</td></tr>`:''}
-      <tr><td>敷金 Fianza ${sc.depCounted?'(no reemb.)':'(reembolsable ↩︎)'}</td><td>${money(sc.deposit)}</td></tr>
+      <tr><td>${LANG==='en'?'Agency + guarantor':'Comisión + aval'}</td><td>${money(sc.agency+sc.guarantor)}</td></tr>
+      <tr><td>${LANG==='en'?'Move-out cleaning':'Limpieza salida'}</td><td>${money(sc.cleaning)}</td></tr>
+      ${sc.penalty?`<tr><td>⚠️ ${LANG==='en'?'Early-exit penalty':'Penalización'}</td><td>${money(sc.penalty)}</td></tr>`:''}
+      <tr><td>敷金 ${LANG==='en'?'Deposit':'Fianza'} ${sc.depCounted?'':'↩︎'}</td><td>${money(sc.deposit)}</td></tr>
     </table></div>`;}
   const kind=f.features&&f.features['物件区分']?f.features['物件区分']:(f.features&&f.features['物件種目']?f.features['物件種目']:'');
   const access=f.features&&f.features['交通']?f.features['交通']:'';
-  const approx=(!f.geocode_exact)?'<div class="approxnote">📍 Ubicación aproximada (centro del municipio)</div>':(f.approxLoc?'<div class="approxnote">📍 Ubicación a nivel de barrio (la exacta, confírmala en el anuncio o con el contacto)</div>':'');
+  const approx=(!f.geocode_exact)?'<div class="approxnote">'+t('approxC')+'</div>':(f.approxLoc?'<div class="approxnote">'+t('approxN')+'</div>':'');
   // Google Maps: por dirección si la hay, si no por coordenadas
   const gq=encodeURIComponent(f.address_raw||(f.lat+','+f.lng));
   const gmaps=`https://www.google.com/maps/search/?api=1&query=${gq}`;
@@ -570,11 +695,11 @@ function openDetail(f){
   const ft=f.features||{};
   const cTel=ft.contacto_tel||'', cMail=ft.contacto_email||'', cName=ft.contacto||'', cWeb=ft.contacto_web||'';
   const fCond=ft['条件']||'', fEquip=ft['設備']||'', fNota=ft['備考']||'';
-  const featRows=(fCond?`<tr><td>Características</td><td>${tr(fCond)}</td></tr>`:'')
-    +(fEquip&&fEquip!=='-'?`<tr><td>Equipamiento</td><td>${tr(fEquip)}</td></tr>`:'')
-    +(fNota?`<tr><td>Notas</td><td>${tr(fNota)}</td></tr>`:'');
+  const featRows=(fCond?`<tr><td>${t('d_char')}</td><td>${tr(fCond)}</td></tr>`:'')
+    +(fEquip&&fEquip!=='-'?`<tr><td>${t('d_equip')}</td><td>${tr(fEquip)}</td></tr>`:'')
+    +(fNota?`<tr><td>${t('d_notes')}</td><td>${tr(fNota)}</td></tr>`:'');
   const contactRows=(cName||cTel||cMail||cWeb)?(
-    `<tr><td>Contacto</td><td>${cName?cName+'<br>':''}`+
+    `<tr><td>${t('d_contact')}</td><td>${cName?cName+'<br>':''}`+
     (cTel?`📞 <a href="tel:${cTel.replace(/[^\\d+]/g,'')}">${cTel}</a><br>`:'')+
     (cMail?`✉️ <a href="mailto:${cMail}">${cMail}</a><br>`:'')+
     (cWeb?`🌐 <a href="${cWeb.startsWith('http')?cWeb:'http://'+cWeb}" target="_blank" rel="noopener">web</a>`:'')+
@@ -585,35 +710,35 @@ function openDetail(f){
       <div class="dprice" style="color:${priceColor(f)}">${price}</div>${approx}
       ${cost}
       <table class="specs">
-        <tr><td>Operación</td><td>${f.listing_type==='rent'?'Alquiler 賃貸':'Venta 売買'}</td></tr>
-        ${kind?`<tr><td>Tipo</td><td>${trKind(kind)} <span style="color:#94a3b8">${kind}</span></td></tr>`:''}
-        <tr><td>Distribución 間取り</td><td>${layoutLabel(f)} ${f.features&&f.features['間取り詳細']?'· '+tr(f.features['間取り詳細']):''}</td></tr>
-        <tr><td>Sup. edificio</td><td>${f.building_area_m2?f.building_area_m2+' ㎡':'—'}</td></tr>
-        <tr><td>Sup. terreno</td><td>${f.land_area_m2?f.land_area_m2+' ㎡':'—'}</td></tr>
-        <tr><td>Construcción 築年</td><td>${tr(f.year_built)||'—'}${f.age_years!=null?` (${f.age_years} años)`:''}</td></tr>
-        <tr><td>Estructura</td><td>${trStruct(f.structure)||'—'} ${f.structure&&trStruct(f.structure)!==f.structure?'<span style="color:#94a3b8">'+f.structure+'</span>':''} ${f.floors?'· '+tr(f.floors):''}</td></tr>
-        <tr><td>Parking 駐車場</td><td>${pk}${f.parking_detail?' · '+tr(f.parking_detail):''}</td></tr>
-        <tr><td>Extranjeros 外国人</td><td>${fr}</td></tr>
-        <tr><td>Mascotas</td><td>${pet}</td></tr>
-        <tr><td>Reformada</td><td>${f.renovated?'Sí ✨':'—'}</td></tr>
-        <tr><td>Zona</td><td>${AREA_LABELS[f.area_key]||f.city||'—'}</td></tr>
-        <tr><td>Dirección</td><td>${f.address_raw||'—'}<br><a href="${gmaps}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">📍 Abrir en Google Maps ↗</a></td></tr>
-        ${access?`<tr><td>Acceso 交通</td><td>${tr(access)}</td></tr>`:''}
+        <tr><td>${t('d_op')}</td><td>${f.listing_type==='rent'?t('rent')+' 賃貸':t('sale')+' 売買'}</td></tr>
+        ${kind?`<tr><td>${t('d_type')}</td><td>${trKind(kind)} <span style="color:#94a3b8">${kind}</span></td></tr>`:''}
+        <tr><td>${t('layout')}</td><td>${layoutLabel(f)} ${f.features&&f.features['間取り詳細']?'· '+tr(f.features['間取り詳細']):''}</td></tr>
+        <tr><td>${t('d_bldg')}</td><td>${f.building_area_m2?f.building_area_m2+' ㎡':'—'}</td></tr>
+        <tr><td>${t('d_land')}</td><td>${f.land_area_m2?f.land_area_m2+' ㎡':'—'}</td></tr>
+        <tr><td>${t('d_built')} 築年</td><td>${tr(f.year_built)||'—'}${f.age_years!=null?` (${f.age_years} ${t('years')})`:''}</td></tr>
+        <tr><td>${t('d_struct')}</td><td>${trStruct(f.structure)||'—'} ${f.structure&&trStruct(f.structure)!==f.structure?'<span style="color:#94a3b8">'+f.structure+'</span>':''} ${f.floors?'· '+tr(f.floors):''}</td></tr>
+        <tr><td>${t('d_park')} 駐車場</td><td>${pk}${f.parking_detail?' · '+tr(f.parking_detail):''}</td></tr>
+        <tr><td>${t('d_fr')} 外国人</td><td>${fr}</td></tr>
+        <tr><td>${t('d_pet')}</td><td>${pet}</td></tr>
+        <tr><td>${t('d_reno')}</td><td>${f.renovated?t('yes')+' ✨':'—'}</td></tr>
+        <tr><td>${t('d_zone')}</td><td>${AREA_LABELS[f.area_key]||f.city||'—'}</td></tr>
+        <tr><td>${t('d_addr')}</td><td>${f.address_raw||'—'}<br><a href="${gmaps}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">${t('gmaps')}</a></td></tr>
+        ${access?`<tr><td>${t('d_access')} 交通</td><td>${tr(access)}</td></tr>`:''}
         ${featRows}
         ${contactRows}
-        ${f.status_note?`<tr><td>Estado</td><td>${tr(f.status_note)} <span style="color:#94a3b8">${f.status_note}</span></td></tr>`:''}
+        ${f.status_note?`<tr><td>${t('d_status')}</td><td>${tr(f.status_note)} <span style="color:#94a3b8">${f.status_note}</span></td></tr>`:''}
       </table>
-      ${f.description_raw?`<div class="desc"><b>Descripción:</b><br>${tr(f.description_raw)}</div>`:''}
-      <button class="fav ${FAVS.has(f.id)?'on':''}" style="position:static;background:var(--soft);color:${FAVS.has(f.id)?'var(--gold)':'var(--muted)'};width:auto;border-radius:8px;padding:8px 12px;margin-top:12px;font-size:13px" onclick="toggleFav(${f.id});openDetail(CURRENT);">★ ${FAVS.has(f.id)?'Quitar de comparar':'Añadir a comparar'}</button>
+      ${f.description_raw?`<div class="desc">${tr(f.description_raw)}</div>`:''}
+      <button class="fav ${FAVS.has(f.id)?'on':''}" style="position:static;background:var(--soft);color:${FAVS.has(f.id)?'var(--gold)':'var(--muted)'};width:auto;border-radius:8px;padding:8px 12px;margin-top:12px;font-size:13px" onclick="toggleFav(${f.id});openDetail(CURRENT);">${FAVS.has(f.id)?t('rmfav'):t('addfav')}</button>
     </div>
-    <a class="dlink" href="${f.source_url}" target="_blank" rel="noopener">Ver anuncio original (${f.source_name||f.source}) ↗</a>`;
+    <a class="dlink" href="${f.source_url}" target="_blank" rel="noopener">${t('vermore')} (${f.source_name||f.source}) ↗</a>`;
   renderGallery();
   $('drawer').classList.add('open');
   if(window.innerWidth<=920){setMob('map');setTimeout(()=>map.invalidateSize(),60);}
 }
 function renderGallery(){
   const g=$('gal');if(!g)return;
-  if(!GAL.length){g.innerHTML='<div style="height:120px;display:flex;align-items:center;justify-content:center;color:#64748b;background:#0f172a">Sin fotos disponibles</div>';return;}
+  if(!GAL.length){g.innerHTML='<div style="height:120px;display:flex;align-items:center;justify-content:center;color:#64748b;background:#0f172a">'+t('nophoto')+'</div>';return;}
   g.innerHTML=`<img src="${GAL[GI]}" onerror="this.style.opacity=.3">
     ${GAL.length>1?`<button class="nav prev" onclick="galMove(-1)">‹</button><button class="nav next" onclick="galMove(1)">›</button><div class="counter">${GI+1} / ${GAL.length}</div>`:''}`;
 }
@@ -623,22 +748,22 @@ window.galMove=function(d){GI=(GI+d+GAL.length)%GAL.length;renderGallery();};
 window.toggleFav=function(id){FAVS.has(id)?FAVS.delete(id):FAVS.add(id);localStorage.setItem('favs',JSON.stringify([...FAVS]));apply();renderCompare();};
 function renderCompare(){
   const body=$('compareBody'),months=+$('months').value,favs=FEATURES.filter(f=>FAVS.has(f.id));
-  if(!favs.length){body.innerHTML='<div class="cmp-empty">Marca casas con la ⭐ para compararlas. Podrás poner <b>meses distintos por casa</b> y ver cuánto te sale en cada zona.</div>';return;}
+  if(!favs.length){body.innerHTML='<div class="cmp-empty">'+t('cmp_empty')+'</div>';return;}
   const rows=favs.map(f=>{const mo=CMP_MONTHS[f.id]||months;return{f,mo,sc:stayCost(f,mo)};});
   const rentRows=rows.filter(r=>r.sc);const best=rentRows.length?Math.min(...rentRows.map(r=>r.sc.perMonth)):null;
-  let html=`<table class="cmp"><thead><tr><th>Casa</th><th>Zona</th><th>間取</th><th>m²</th><th>築年</th><th>Park</th><th>Meses</th><th>Alq/mes</th><th>Total</th><th>/mes</th><th></th></tr></thead><tbody>`;
+  let html=`<table class="cmp"><thead><tr><th>${t('c_home')}</th><th>${t('zone')}</th><th>間取</th><th>m²</th><th>築年</th><th>${t('c_park')}</th><th>${t('c_months')}</th><th>${t('c_rentmo')}</th><th>${t('c_total')}</th><th>${t('permonth')}</th><th></th></tr></thead><tbody>`;
   rows.forEach(({f,mo,sc})=>{
     const win=(sc&&best!=null&&Math.abs(sc.perMonth-best)<1)?'winner':'';
     html+=`<tr class="${win}"><td><a href="#" onclick="event.preventDefault();document.getElementById('compareModal').classList.remove('show');openDetail(FEATURES.find(x=>x.id===${f.id}))">${(f.title||'').slice(0,20)}</a></td>
       <td>${(AREA_LABELS[f.area_key]||f.city||'').replace(/ .*/,'')}</td><td>${f.layout||'—'}</td><td class="num">${f.building_area_m2||'—'}</td>
-      <td class="num">${f.age_years!=null?f.age_years+'a':'—'}</td><td>${({yes:'Sí',nearby:'Cerca',no:'No',unknown:'?'})[f.parking]||'?'}</td>
+      <td class="num">${f.age_years!=null?f.age_years+'a':'—'}</td><td>${pkLabel(f.parking)}</td>
       <td><input class="mo" type="number" min="1" max="36" value="${mo}" onchange="setCmpMonths(${f.id},this.value)"></td>
-      <td class="num">${f.rent_yen?money(f.rent_yen):'—'}</td><td class="num total">${sc?money(sc.total):'venta '+money(f.sale_price_yen)}</td>
+      <td class="num">${f.rent_yen?money(f.rent_yen):'—'}</td><td class="num total">${sc?money(sc.total):t('sale')+' '+money(f.sale_price_yen)}</td>
       <td class="num">${sc?money(sc.perMonth):'—'}</td><td><button class="rm" onclick="toggleFav(${f.id})">✕</button></td></tr>`;
   });
   html+='</tbody></table>';
   if(rentRows.length>1){const o=rentRows.slice().sort((a,b)=>a.sc.perMonth-b.sc.perMonth);const w=o[0],l=o[o.length-1];
-    html+=`<div class="note">🏆 Mejor coste/mes: <b>${(AREA_LABELS[w.f.area_key]||'').replace(/ .*/,'')}</b> a ${money(w.sc.perMonth)}/mes (${w.mo} meses), ${money(l.sc.perMonth-w.sc.perMonth)}/mes más barata que la más cara de tu lista.</div>`;}
+    html+=`<div class="note">${t('cmp_best')}: <b>${(AREA_LABELS[w.f.area_key]||'').replace(/ .*/,'')}</b> ${money(w.sc.perMonth)}${t('permonth')} (${w.mo} ${t('months')}), ${money(l.sc.perMonth-w.sc.perMonth)}${t('permonth')} ${t('cmp_cheaper')}</div>`;}
   body.innerHTML=html;
 }
 window.setCmpMonths=function(id,v){CMP_MONTHS[id]=Math.max(1,+v||1);renderCompare();};
@@ -651,15 +776,15 @@ function getKey(){return localStorage.getItem('anthropic_key')||'';}
 function aiMode(){return getKey()?'pro':'free';}
 $('openAgent').onclick=()=>{$('agentModal').classList.add('show');refreshAgentUI();};
 function refreshAgentUI(){
-  $('aiModeBadge').textContent=aiMode()==='pro'?'Pro (Claude)':'Gratis (Llama)';
+  $('aiModeBadge').textContent=aiMode()==='pro'?t('ai_pro'):t('ai_free');
   if(!$('chatArea').dataset.init){
     $('chatArea').dataset.init='1';
-    addChat('agent','¡Hola! Soy tu agente inmobiliario. Veo las casas que tienes filtradas ahora mismo. Pregúntame lo que quieras: las más baratas con parking en Awaji, comparar zonas para X meses, qué casa me conviene, los pasos para alquilar o comprar...\n\n(Funciono gratis. Para respuestas mejores y sin esperas, pulsa ⚡ Pro y añade tu clave de Claude.)');
+    addChat('agent',t('agent_hi'));
   }
 }
 $('openPro').onclick=()=>{const s=$('agentSetup');s.style.display=s.style.display==='none'?'block':'none';};
-$('saveKey').onclick=()=>{const k=$('apiKey').value.trim();if(k){localStorage.setItem('anthropic_key',k);$('agentSetup').style.display='none';refreshAgentUI();addChat('agent','✅ Modo Pro activado (Claude). Pregúntame lo que quieras.');}};
-$('chatClearKey').onclick=()=>{localStorage.removeItem('anthropic_key');$('agentSetup').style.display='none';refreshAgentUI();addChat('agent','Vuelto al modo Gratis (Llama/GPT-OSS).');};
+$('saveKey').onclick=()=>{const k=$('apiKey').value.trim();if(k){localStorage.setItem('anthropic_key',k);$('agentSetup').style.display='none';refreshAgentUI();addChat('agent',t('ai_pro_on'));}};
+$('chatClearKey').onclick=()=>{localStorage.removeItem('anthropic_key');$('agentSetup').style.display='none';refreshAgentUI();addChat('agent',t('ai_free_on'));};
 function addChat(who,text){
   const d=document.createElement('div');
   d.style.cssText='margin-bottom:10px;padding:9px 11px;border-radius:10px;font-size:13px;line-height:1.5;white-space:pre-wrap;max-width:90%;'+(who==='user'?'background:var(--accent);color:#fff;margin-left:auto':'background:#fff;border:1px solid var(--line)');
@@ -676,7 +801,10 @@ function listingsContext(){
   });
   return shown.length?`Casas filtradas ahora (${shown.length}, moneda base ¥, estancia ${months} meses):\n`+lines.join('\n'):'No hay casas en el filtro actual.';
 }
-const SYS_AGENT=()=>`Eres un agente inmobiliario personal experto en Japón; hablas español claro y directo. Ayudas al usuario (tiene residencia en Japón) a elegir entre las casas/apartamentos/terrenos que tiene filtrados. Usa SOLO los datos que te paso; si falta un dato di que se consulte el anuncio o el contacto. Recomienda opciones concretas por su título, compara coste total de estancia, parking, acceso a tren, antigüedad y zona. Explica pasos de alquiler/compra si lo piden. Sé conciso y útil.\n\n${listingsContext()}`;
+const SYS_AGENT=()=>{
+  const lang=LANG==='en'?'Reply in clear, direct English.':'Responde en español claro y directo.';
+  return `You are a personal real-estate agent expert in Japan, helping the user (a resident of Japan) choose among the houses/apartments/land they have filtered. ${lang} Use ONLY the data given below; if a field is missing, say to check the listing or contact. Recommend specific options by their title, compare total stay cost, parking, train access, age and area. Explain rent/buy steps if asked. Be concise and useful.\n\n${listingsContext()}`;
+};
 
 async function callClaude(sys){
   const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
