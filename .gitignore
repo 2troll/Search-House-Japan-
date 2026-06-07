@@ -1,5 +1,8 @@
 # Base de datos local y caché HTTP (se regeneran con refresh.py)
 db/listings.sqlite
+db/listings.sqlite-journal
+db/*.sqlite-wal
+db/*.sqlite-shm
 cache/
 __pycache__/
 *.pyc
