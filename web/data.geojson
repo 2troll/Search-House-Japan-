@@ -41,6 +41,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "小浜線 小浜駅 / 車9分",
+     "fotos_total": "1"
+    },
     "description_raw": "小浜線 小浜駅 / 車9分",
     "status_note": "",
     "is_new": true,
@@ -87,6 +92,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "小浜線 東小浜駅 / 車7分",
+     "fotos_total": "3"
+    },
     "description_raw": "小浜線 東小浜駅 / 車7分",
     "status_note": "",
     "is_new": true,
@@ -133,6 +143,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "小浜線 東小浜駅 / 車3分",
+     "fotos_total": "3"
+    },
     "description_raw": "小浜線 東小浜駅 / 車3分",
     "status_note": "",
     "is_new": true,
@@ -179,6 +194,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "最寄りバス停より0.6km",
+     "fotos_total": "2"
+    },
     "description_raw": "最寄りバス停より0.6km",
     "status_note": "",
     "is_new": true,
@@ -225,6 +245,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "最寄バス停より500m",
+     "fotos_total": "7"
+    },
     "description_raw": "最寄バス停より500m",
     "status_note": "",
     "is_new": true,
@@ -271,6 +296,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "最寄駅より10.9km",
+     "fotos_total": "3"
+    },
     "description_raw": "最寄駅より10.9km",
     "status_note": "",
     "is_new": true,
@@ -317,6 +347,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "小浜線 東小浜駅 / 車2km",
+     "fotos_total": "2"
+    },
     "description_raw": "小浜線 東小浜駅 / 車2km",
     "status_note": "",
     "is_new": true,
@@ -363,6 +398,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "小浜線 新平野駅 / 車3.1km",
+     "fotos_total": "7"
+    },
     "description_raw": "小浜線 新平野駅 / 車3.1km",
     "status_note": "",
     "is_new": true,
@@ -409,6 +449,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "小浜線 美浜駅 / 徒歩12分",
+     "fotos_total": "6"
+    },
     "description_raw": "小浜線 美浜駅 / 徒歩12分",
     "status_note": "",
     "is_new": true,
@@ -455,6 +500,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "小浜線 東美浜駅 / 車6分",
+     "fotos_total": "3"
+    },
     "description_raw": "小浜線 東美浜駅 / 車6分",
     "status_note": "",
     "is_new": true,
@@ -501,6 +551,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / 車7分",
+     "fotos_total": "12"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / 車7分",
     "status_note": "",
     "is_new": true,
@@ -547,6 +602,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車3分",
+     "fotos_total": "16"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車3分",
     "status_note": "",
     "is_new": true,
@@ -593,6 +653,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車8分",
+     "fotos_total": "11"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車8分",
     "status_note": "",
     "is_new": true,
@@ -639,6 +704,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 安栖里駅 / 徒歩3分",
+     "fotos_total": "18"
+    },
     "description_raw": "ＪＲ山陰本線 安栖里駅 / 徒歩3分",
     "status_note": "",
     "is_new": true,
@@ -685,6 +755,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 安栖里駅 / 車4分",
+     "fotos_total": "11"
+    },
     "description_raw": "ＪＲ山陰本線 安栖里駅 / 車4分",
     "status_note": "",
     "is_new": true,
@@ -731,6 +806,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車17分",
+     "fotos_total": "19"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車17分",
     "status_note": "",
     "is_new": true,
@@ -777,6 +857,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車11分",
+     "fotos_total": "11"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車11分",
     "status_note": "",
     "is_new": true,
@@ -823,6 +908,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 胡麻駅 / 車13分",
+     "fotos_total": "15"
+    },
     "description_raw": "ＪＲ山陰本線 胡麻駅 / 車13分",
     "status_note": "",
     "is_new": true,
@@ -869,6 +959,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車18分",
+     "fotos_total": "12"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車18分",
     "status_note": "",
     "is_new": true,
@@ -915,6 +1010,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / 車10分",
+     "fotos_total": "19"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / 車10分",
     "status_note": "",
     "is_new": true,
@@ -961,6 +1061,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / 車7分",
+     "fotos_total": "17"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / 車7分",
     "status_note": "",
     "is_new": true,
@@ -1007,6 +1112,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車6分",
+     "fotos_total": "14"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車6分",
     "status_note": "",
     "is_new": true,
@@ -1053,6 +1163,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / 徒歩10分",
+     "fotos_total": "12"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / 徒歩10分",
     "status_note": "",
     "is_new": true,
@@ -1099,6 +1214,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 和泉 停歩4分 乗車43分",
+     "fotos_total": "20"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 和泉 停歩4分 乗車43分",
     "status_note": "",
     "is_new": true,
@@ -1145,6 +1265,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 田歌 停歩3分 乗車68分",
+     "fotos_total": "27"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 田歌 停歩3分 乗車68分",
     "status_note": "",
     "is_new": true,
@@ -1191,6 +1316,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 中佐々江 停歩3分 乗車31分",
+     "fotos_total": "27"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 中佐々江 停歩3分 乗車31分",
     "status_note": "",
     "is_new": true,
@@ -1237,6 +1367,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 園部駅 / バス 大峠 停歩2分 乗車3分",
+     "fotos_total": "26"
+    },
     "description_raw": "ＪＲ山陰本線 園部駅 / バス 大峠 停歩2分 乗車3分",
     "status_note": "",
     "is_new": true,
@@ -1283,6 +1418,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 板橋 停歩5分 乗車36分",
+     "fotos_total": "26"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 板橋 停歩5分 乗車36分",
     "status_note": "",
     "is_new": true,
@@ -1329,6 +1469,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 胡麻駅 / バス 畑郷 停歩9分 乗車8分",
+     "fotos_total": "20"
+    },
     "description_raw": "ＪＲ山陰本線 胡麻駅 / バス 畑郷 停歩9分 乗車8分",
     "status_note": "",
     "is_new": true,
@@ -1375,6 +1520,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 志和賀 停歩6分 乗車7分",
+     "fotos_total": "27"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 志和賀 停歩6分 乗車7分",
     "status_note": "",
     "is_new": true,
@@ -1421,6 +1571,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / 車8分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / 車8分",
     "status_note": "",
     "is_new": true,
@@ -1467,6 +1622,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車15分",
+     "fotos_total": "13"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車15分",
     "status_note": "",
     "is_new": true,
@@ -1513,6 +1673,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 園部駅 / 中京バス 坂井 停歩7分 乗車30分",
+     "fotos_total": "8"
+    },
     "description_raw": "ＪＲ山陰本線 園部駅 / 中京バス 坂井 停歩7分 乗車30分",
     "status_note": "",
     "is_new": true,
@@ -1559,6 +1724,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 田原 停歩4分 乗車8分",
+     "fotos_total": "22"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 田原 停歩4分 乗車8分",
     "status_note": "",
     "is_new": true,
@@ -1605,6 +1775,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 田歌 停歩3分 乗車68分",
+     "fotos_total": "23"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 田歌 停歩3分 乗車68分",
     "status_note": "",
     "is_new": true,
@@ -1651,6 +1826,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 花ノ木 停歩3分 乗車41分",
+     "fotos_total": "20"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 花ノ木 停歩3分 乗車41分",
     "status_note": "",
     "is_new": true,
@@ -1697,6 +1877,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 園部駅 / 車15分",
+     "fotos_total": "17"
+    },
     "description_raw": "ＪＲ山陰本線 園部駅 / 車15分",
     "status_note": "",
     "is_new": true,
@@ -1743,6 +1928,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 徒歩25分",
+     "fotos_total": "10"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 徒歩25分",
     "status_note": "",
     "is_new": true,
@@ -1789,6 +1979,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / バス 下樫原 停歩3分 乗車16分",
+     "fotos_total": "24"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / バス 下樫原 停歩3分 乗車16分",
     "status_note": "",
     "is_new": true,
@@ -1835,6 +2030,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "ＪＲ山陰本線 吉富駅 / 徒歩15分",
+     "fotos_total": "9"
+    },
     "description_raw": "ＪＲ山陰本線 吉富駅 / 徒歩15分",
     "status_note": "",
     "is_new": true,
@@ -1881,6 +2081,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 綾部駅 / 車14.9km",
+     "fotos_total": "3"
+    },
     "description_raw": "ＪＲ山陰本線 綾部駅 / 車14.9km",
     "status_note": "",
     "is_new": true,
@@ -1927,6 +2132,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車12分",
+     "fotos_total": "9"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車12分",
     "status_note": "",
     "is_new": true,
@@ -1973,6 +2183,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / 車15分",
+     "fotos_total": "10"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / 車15分",
     "status_note": "",
     "is_new": true,
@@ -2019,6 +2234,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 園部駅 / 車30分",
+     "fotos_total": "8"
+    },
     "description_raw": "ＪＲ山陰本線 園部駅 / 車30分",
     "status_note": "",
     "is_new": true,
@@ -2065,6 +2285,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車5分",
+     "fotos_total": "10"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -2111,6 +2336,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "車",
+     "fotos_total": "2"
+    },
     "description_raw": "車",
     "status_note": "",
     "is_new": true,
@@ -2157,6 +2387,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "車",
+     "fotos_total": "0"
+    },
     "description_raw": "車",
     "status_note": "",
     "is_new": true,
@@ -2203,6 +2438,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ舞鶴線 西舞鶴駅 / 徒歩10分",
+     "fotos_total": "11"
+    },
     "description_raw": "ＪＲ舞鶴線 西舞鶴駅 / 徒歩10分",
     "status_note": "",
     "is_new": true,
@@ -2249,6 +2489,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ舞鶴線 西舞鶴駅 / 徒歩13分",
+     "fotos_total": "9"
+    },
     "description_raw": "ＪＲ舞鶴線 西舞鶴駅 / 徒歩13分",
     "status_note": "",
     "is_new": true,
@@ -2295,6 +2540,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "小浜線 松尾寺駅 /",
+     "fotos_total": "6"
+    },
     "description_raw": "小浜線 松尾寺駅 /",
     "status_note": "",
     "is_new": true,
@@ -2341,6 +2591,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / バス 大野 停歩3分 乗車28分",
+     "fotos_total": "20"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / バス 大野 停歩3分 乗車28分",
     "status_note": "",
     "is_new": true,
@@ -2387,6 +2642,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 田土 停歩4分 乗車46分",
+     "fotos_total": "23"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 田土 停歩4分 乗車46分",
     "status_note": "",
     "is_new": true,
@@ -2433,6 +2693,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 八木駅 / 徒歩30分",
+     "fotos_total": "22"
+    },
     "description_raw": "ＪＲ山陰本線 八木駅 / 徒歩30分",
     "status_note": "",
     "is_new": true,
@@ -2479,6 +2744,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 下木住 停歩1分 乗車20分",
+     "fotos_total": "16"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 下木住 停歩1分 乗車20分",
     "status_note": "",
     "is_new": true,
@@ -2525,6 +2795,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 園部駅 / 車30分",
+     "fotos_total": "14"
+    },
     "description_raw": "ＪＲ山陰本線 園部駅 / 車30分",
     "status_note": "",
     "is_new": true,
@@ -2571,6 +2846,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / 車3分",
+     "fotos_total": "7"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / 車3分",
     "status_note": "",
     "is_new": true,
@@ -2617,6 +2897,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / 車8分",
+     "fotos_total": "7"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / 車8分",
     "status_note": "",
     "is_new": true,
@@ -2663,6 +2948,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / 車5分",
+     "fotos_total": "8"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -2709,6 +2999,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 下山駅 / 車10分",
+     "fotos_total": "5"
+    },
     "description_raw": "ＪＲ山陰本線 下山駅 / 車10分",
     "status_note": "",
     "is_new": true,
@@ -2755,6 +3050,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / 徒歩17分",
+     "fotos_total": "27"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / 徒歩17分",
     "status_note": "",
     "is_new": true,
@@ -2801,6 +3101,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / バス 上大野 停歩3分 乗車24分",
+     "fotos_total": "26"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / バス 上大野 停歩3分 乗車24分",
     "status_note": "",
     "is_new": true,
@@ -2847,6 +3152,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 北谷口 停歩5分 乗車22分",
+     "fotos_total": "25"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 北谷口 停歩5分 乗車22分",
     "status_note": "",
     "is_new": true,
@@ -2893,6 +3203,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 安栖里駅 / 車5分",
+     "fotos_total": "7"
+    },
     "description_raw": "ＪＲ山陰本線 安栖里駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -2939,6 +3254,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 江和 停歩2分 乗車65分",
+     "fotos_total": "26"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 江和 停歩2分 乗車65分",
     "status_note": "",
     "is_new": true,
@@ -2985,6 +3305,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / バス 大野 停歩1分 乗車23分",
+     "fotos_total": "27"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / バス 大野 停歩1分 乗車23分",
     "status_note": "",
     "is_new": true,
@@ -3031,6 +3356,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 和知駅 / バス 保育所前 停歩6分 乗車28分",
+     "fotos_total": "26"
+    },
     "description_raw": "ＪＲ山陰本線 和知駅 / バス 保育所前 停歩6分 乗車28分",
     "status_note": "",
     "is_new": true,
@@ -3077,6 +3407,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 会館前 停歩1分 乗車60分",
+     "fotos_total": "25"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 会館前 停歩1分 乗車60分",
     "status_note": "",
     "is_new": true,
@@ -3123,6 +3458,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / 徒歩1分",
+     "fotos_total": "22"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / 徒歩1分",
     "status_note": "",
     "is_new": true,
@@ -3169,6 +3509,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "5"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -3215,6 +3560,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ー",
+     "fotos_total": "8"
+    },
     "description_raw": "ー",
     "status_note": "",
     "is_new": true,
@@ -3261,6 +3611,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ー",
+     "fotos_total": "7"
+    },
     "description_raw": "ー",
     "status_note": "",
     "is_new": true,
@@ -3307,6 +3662,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ー",
+     "fotos_total": "3"
+    },
     "description_raw": "ー",
     "status_note": "",
     "is_new": true,
@@ -3353,6 +3713,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ー",
+     "fotos_total": "6"
+    },
     "description_raw": "ー",
     "status_note": "",
     "is_new": true,
@@ -3399,6 +3764,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / 徒歩3分",
+     "fotos_total": "26"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / 徒歩3分",
     "status_note": "",
     "is_new": true,
@@ -3445,6 +3815,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "ＪＲ山陰本線 日吉駅 / 市バス 安掛 停歩3分 乗車45分",
+     "fotos_total": "18"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / 市バス 安掛 停歩3分 乗車45分",
     "status_note": "",
     "is_new": true,
@@ -3491,6 +3866,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 棚 停歩2分 乗車46分",
+     "fotos_total": "16"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 棚 停歩2分 乗車46分",
     "status_note": "",
     "is_new": true,
@@ -3537,6 +3917,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 宮ノ前 停歩3分 乗車91分",
+     "fotos_total": "24"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 宮ノ前 停歩3分 乗車91分",
     "status_note": "",
     "is_new": true,
@@ -3583,6 +3968,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 胡麻駅 / 徒歩20分",
+     "fotos_total": "16"
+    },
     "description_raw": "ＪＲ山陰本線 胡麻駅 / 徒歩20分",
     "status_note": "",
     "is_new": true,
@@ -3629,6 +4019,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 鍼灸大学前駅 / 徒歩28分",
+     "fotos_total": "15"
+    },
     "description_raw": "ＪＲ山陰本線 鍼灸大学前駅 / 徒歩28分",
     "status_note": "",
     "is_new": true,
@@ -3675,6 +4070,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 舟津 停歩1分 乗車73分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 舟津 停歩1分 乗車73分",
     "status_note": "",
     "is_new": true,
@@ -3721,6 +4121,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 日吉駅 / バス 横田上 停歩7分 乗車10分",
+     "fotos_total": "15"
+    },
     "description_raw": "ＪＲ山陰本線 日吉駅 / バス 横田上 停歩7分 乗車10分",
     "status_note": "",
     "is_new": true,
@@ -3767,6 +4172,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "ＪＲ山陰本線 園部駅 / 車25分",
+     "fotos_total": "7"
+    },
     "description_raw": "ＪＲ山陰本線 園部駅 / 車25分",
     "status_note": "",
     "is_new": true,
@@ -3813,6 +4223,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 八木駅 / 徒歩14分",
+     "fotos_total": "17"
+    },
     "description_raw": "ＪＲ山陰本線 八木駅 / 徒歩14分",
     "status_note": "",
     "is_new": true,
@@ -3859,6 +4274,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陰本線 亀岡駅 / 車17.8km",
+     "fotos_total": "11"
+    },
     "description_raw": "ＪＲ山陰本線 亀岡駅 / 車17.8km",
     "status_note": "",
     "is_new": true,
@@ -3905,6 +4325,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "‐",
+     "fotos_total": "0"
+    },
     "description_raw": "‐",
     "status_note": "",
     "is_new": true,
@@ -3951,6 +4376,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ舞鶴線 綾部駅 / 車7km",
+     "fotos_total": "2"
+    },
     "description_raw": "ＪＲ舞鶴線 綾部駅 / 車7km",
     "status_note": "",
     "is_new": true,
@@ -3997,6 +4427,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ舞鶴線 西舞鶴駅 / 徒歩10分",
+     "fotos_total": "7"
+    },
     "description_raw": "ＪＲ舞鶴線 西舞鶴駅 / 徒歩10分",
     "status_note": "",
     "is_new": true,
@@ -4043,6 +4478,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "貸戸建住宅",
+     "交通": "ＪＲ山陰本線 胡麻駅 / 車17分",
+     "fotos_total": "11"
+    },
     "description_raw": "ＪＲ山陰本線 胡麻駅 / 車17分",
     "status_note": "",
     "is_new": true,
@@ -4089,6 +4529,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "貸戸建住宅",
+     "交通": "ＪＲ山陰本線 鍼灸大学前駅 / 徒歩13分",
+     "fotos_total": "15"
+    },
     "description_raw": "ＪＲ山陰本線 鍼灸大学前駅 / 徒歩13分",
     "status_note": "",
     "is_new": true,
@@ -4135,6 +4580,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "能勢電鉄 光風台駅 / 徒歩7分",
+     "fotos_total": "1"
+    },
     "description_raw": "能勢電鉄 光風台駅 / 徒歩7分",
     "status_note": "",
     "is_new": true,
@@ -4181,6 +4631,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "バス 希望ヶ丘２丁目 車0.5km",
+     "fotos_total": "1"
+    },
     "description_raw": "バス 希望ヶ丘２丁目 車0.5km",
     "status_note": "",
     "is_new": true,
@@ -4227,6 +4682,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "阪急電鉄宝塚線 池田駅 / バス 希望ヶ丘2丁目 停歩5分 乗車40分",
+     "fotos_total": "0"
+    },
     "description_raw": "阪急電鉄宝塚線 池田駅 / バス 希望ヶ丘2丁目 停歩5分 乗車40分",
     "status_note": "",
     "is_new": true,
@@ -4273,6 +4733,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "能勢電鉄 光風台駅 / 徒歩14分",
+     "fotos_total": "0"
+    },
     "description_raw": "能勢電鉄 光風台駅 / 徒歩14分",
     "status_note": "",
     "is_new": true,
@@ -4319,6 +4784,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "能勢電鉄 光風台駅 / 徒歩14分",
+     "fotos_total": "1"
+    },
     "description_raw": "能勢電鉄 光風台駅 / 徒歩14分",
     "status_note": "",
     "is_new": true,
@@ -4365,6 +4835,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "能勢電鉄 光風台駅 / 徒歩15分",
+     "fotos_total": "1"
+    },
     "description_raw": "能勢電鉄 光風台駅 / 徒歩15分",
     "status_note": "",
     "is_new": true,
@@ -4411,6 +4886,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "能勢電鉄 光風台駅 / 徒歩12分",
+     "fotos_total": "1"
+    },
     "description_raw": "能勢電鉄 光風台駅 / 徒歩12分",
     "status_note": "",
     "is_new": true,
@@ -4457,6 +4937,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "13"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4503,6 +4988,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "11"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4549,6 +5039,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "10"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4595,6 +5090,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "7"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4641,6 +5141,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "9"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4687,6 +5192,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "6"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4733,6 +5243,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "6"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4779,6 +5294,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "5"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4825,6 +5345,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "5"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4871,6 +5396,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "5"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4917,6 +5447,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "15"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -4963,6 +5498,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "13"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5009,6 +5549,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "5"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5055,6 +5600,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "5"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5101,6 +5651,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "8"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5147,6 +5702,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "9"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5193,6 +5753,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ山陽本線 網干駅 / 車8分",
+     "fotos_total": "1"
+    },
     "description_raw": "ＪＲ山陽本線 網干駅 / 車8分",
     "status_note": "",
     "is_new": true,
@@ -5239,6 +5804,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "8"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5285,6 +5855,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "20"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5331,6 +5906,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "12"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5377,6 +5957,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "10"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5423,6 +6008,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "5"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5469,6 +6059,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "7"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5515,6 +6110,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "9"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5561,6 +6161,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "9"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5607,6 +6212,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "11"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5653,6 +6263,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "9"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5699,6 +6314,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "10"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5745,6 +6365,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "9"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5791,6 +6416,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "8"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5837,6 +6467,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "6"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5883,6 +6518,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "8"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5929,6 +6569,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "9"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -5975,6 +6620,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "12"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -6021,6 +6671,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "8"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -6067,6 +6722,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "-",
+     "fotos_total": "9"
+    },
     "description_raw": "-",
     "status_note": "",
     "is_new": true,
@@ -6113,6 +6773,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "JR姫新線播磨新宮駅",
+     "fotos_total": "12"
+    },
     "description_raw": "JR姫新線播磨新宮駅",
     "status_note": "",
     "is_new": true,
@@ -6159,6 +6824,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ー",
+     "fotos_total": "7"
+    },
     "description_raw": "ー",
     "status_note": "",
     "is_new": true,
@@ -6205,6 +6875,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ー",
+     "fotos_total": "7"
+    },
     "description_raw": "ー",
     "status_note": "",
     "is_new": true,
@@ -6251,6 +6926,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "※",
+     "fotos_total": "6"
+    },
     "description_raw": "※",
     "status_note": "",
     "is_new": true,
@@ -6297,6 +6977,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "小学校より0.1km",
+     "fotos_total": "9"
+    },
     "description_raw": "小学校より0.1km",
     "status_note": "",
     "is_new": true,
@@ -6343,6 +7028,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "市役所まで13km",
+     "fotos_total": "10"
+    },
     "description_raw": "市役所まで13km",
     "status_note": "",
     "is_new": true,
@@ -6389,6 +7079,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "市役所より1.7km",
+     "fotos_total": "6"
+    },
     "description_raw": "市役所より1.7km",
     "status_note": "",
     "is_new": true,
@@ -6435,6 +7130,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ姫新線 播磨新宮駅",
+     "fotos_total": "3"
+    },
     "description_raw": "ＪＲ姫新線 播磨新宮駅",
     "status_note": "",
     "is_new": true,
@@ -6481,6 +7181,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "山陽電気鉄道本線 白浜の宮駅 / 徒歩8分",
+     "fotos_total": "1"
+    },
     "description_raw": "山陽電気鉄道本線 白浜の宮駅 / 徒歩8分",
     "status_note": "",
     "is_new": true,
@@ -6527,6 +7232,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 元山上口駅 / 徒歩20分",
+     "fotos_total": "19"
+    },
     "description_raw": "近鉄生駒線 元山上口駅 / 徒歩20分",
     "status_note": "",
     "is_new": true,
@@ -6573,6 +7283,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄橿原線 結崎駅 / 車6分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄橿原線 結崎駅 / 車6分",
     "status_note": "",
     "is_new": true,
@@ -6619,6 +7334,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 車5分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -6665,6 +7385,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 車7分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車7分",
     "status_note": "",
     "is_new": true,
@@ -6711,6 +7436,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ和歌山線 五条駅 / 車4分",
+     "fotos_total": "5"
+    },
     "description_raw": "ＪＲ和歌山線 五条駅 / 車4分",
     "status_note": "",
     "is_new": true,
@@ -6757,6 +7487,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車87分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車87分",
     "status_note": "",
     "is_new": true,
@@ -6803,6 +7538,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ和歌山線 御所駅 / 車5分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ和歌山線 御所駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -6849,6 +7589,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車93分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車93分",
     "status_note": "",
     "is_new": true,
@@ -6895,6 +7640,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 吉野駅 / 車26分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 吉野駅 / 車26分",
     "status_note": "",
     "is_new": true,
@@ -6941,6 +7691,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車77分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車77分",
     "status_note": "",
     "is_new": true,
@@ -6987,6 +7742,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 福神駅 / 車4分",
+     "fotos_total": "9"
+    },
     "description_raw": "近鉄吉野線 福神駅 / 車4分",
     "status_note": "",
     "is_new": true,
@@ -7033,6 +7793,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ和歌山線 北宇智駅 / 徒歩1分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ和歌山線 北宇智駅 / 徒歩1分",
     "status_note": "",
     "is_new": true,
@@ -7079,6 +7844,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ和歌山線 隅田駅 / 車9分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ和歌山線 隅田駅 / 車9分",
     "status_note": "",
     "is_new": true,
@@ -7125,6 +7895,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄田原本線 箸尾駅 / 車5分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄田原本線 箸尾駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -7171,6 +7946,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "ＪＲ和歌山線 志都美駅 / 車5分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ和歌山線 志都美駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -7217,6 +7997,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 三本松駅 / 車13分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 三本松駅 / 車13分",
     "status_note": "",
     "is_new": true,
@@ -7263,6 +8048,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車85分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車85分",
     "status_note": "",
     "is_new": true,
@@ -7309,6 +8099,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ和歌山線 五条駅 / 車22分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ和歌山線 五条駅 / 車22分",
     "status_note": "",
     "is_new": true,
@@ -7355,6 +8150,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車80分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車80分",
     "status_note": "",
     "is_new": true,
@@ -7401,6 +8201,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄橿原線 平端駅 / 徒歩4分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄橿原線 平端駅 / 徒歩4分",
     "status_note": "",
     "is_new": true,
@@ -7447,6 +8252,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 車5分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -7493,6 +8303,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 車13分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車13分",
     "status_note": "",
     "is_new": true,
@@ -7539,6 +8354,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 車6分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車6分",
     "status_note": "",
     "is_new": true,
@@ -7585,6 +8405,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "近鉄吉野線 下市口駅 / 車5分",
+     "fotos_total": "5"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -7631,6 +8456,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 三本松駅 / 徒歩18分",
+     "fotos_total": "5"
+    },
     "description_raw": "近鉄大阪線 三本松駅 / 徒歩18分",
     "status_note": "",
     "is_new": true,
@@ -7677,6 +8507,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 室生口大野駅 / 車10分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 室生口大野駅 / 車10分",
     "status_note": "",
     "is_new": true,
@@ -7723,6 +8558,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 車5分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -7769,6 +8609,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄御所線 近鉄御所駅 / 車6分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄御所線 近鉄御所駅 / 車6分",
     "status_note": "",
     "is_new": true,
@@ -7815,6 +8660,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 東山駅 / 徒歩14分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 東山駅 / 徒歩14分",
     "status_note": "",
     "is_new": true,
@@ -7861,6 +8711,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 車20分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車20分",
     "status_note": "",
     "is_new": true,
@@ -7907,6 +8762,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 三本松駅 / 車17分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 三本松駅 / 車17分",
     "status_note": "",
     "is_new": true,
@@ -7953,6 +8813,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 車44分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車44分",
     "status_note": "",
     "is_new": true,
@@ -7999,6 +8864,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 徒歩22分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩22分",
     "status_note": "",
     "is_new": true,
@@ -8045,6 +8915,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 室生口大野駅 / 車10分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 室生口大野駅 / 車10分",
     "status_note": "",
     "is_new": true,
@@ -8091,6 +8966,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "近鉄大阪線 榛原駅 / 車9分",
+     "fotos_total": "2"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車9分",
     "status_note": "",
     "is_new": true,
@@ -8137,6 +9017,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 六田駅 / 車4分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 六田駅 / 車4分",
     "status_note": "",
     "is_new": true,
@@ -8183,6 +9068,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車83分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車83分",
     "status_note": "",
     "is_new": true,
@@ -8229,6 +9119,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 車24分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車24分",
     "status_note": "",
     "is_new": true,
@@ -8275,6 +9170,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 室生口大野駅 / 車15分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 室生口大野駅 / 車15分",
     "status_note": "",
     "is_new": true,
@@ -8321,6 +9221,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 名張駅 / 車19分",
+     "fotos_total": "5"
+    },
     "description_raw": "近鉄大阪線 名張駅 / 車19分",
     "status_note": "",
     "is_new": true,
@@ -8367,6 +9272,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 車13分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車13分",
     "status_note": "",
     "is_new": true,
@@ -8413,6 +9323,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "ＪＲ和歌山線 香芝駅 / 徒歩17分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ和歌山線 香芝駅 / 徒歩17分",
     "status_note": "",
     "is_new": true,
@@ -8459,6 +9374,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 名張駅 / 車29分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 名張駅 / 車29分",
     "status_note": "",
     "is_new": true,
@@ -8505,6 +9425,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 平群駅 / 徒歩8分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩8分",
     "status_note": "",
     "is_new": true,
@@ -8551,6 +9476,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 名張駅 / 車19分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 名張駅 / 車19分",
     "status_note": "",
     "is_new": true,
@@ -8597,6 +9527,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 平群駅 / 徒歩10分",
+     "fotos_total": "17"
+    },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩10分",
     "status_note": "",
     "is_new": true,
@@ -8643,6 +9578,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車81分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車81分",
     "status_note": "",
     "is_new": true,
@@ -8689,6 +9629,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ桜井線 巻向駅 / 徒歩5分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ桜井線 巻向駅 / 徒歩5分",
     "status_note": "",
     "is_new": true,
@@ -8735,6 +9680,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 車11分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車11分",
     "status_note": "",
     "is_new": true,
@@ -8781,6 +9731,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 桔梗が丘駅 / 車15分",
+     "fotos_total": "5"
+    },
     "description_raw": "近鉄大阪線 桔梗が丘駅 / 車15分",
     "status_note": "",
     "is_new": true,
@@ -8827,6 +9782,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 徒歩18分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩18分",
     "status_note": "",
     "is_new": true,
@@ -8873,6 +9833,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "近鉄吉野線 大和上市駅 / 車84分",
+     "fotos_total": "5"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車84分",
     "status_note": "",
     "is_new": true,
@@ -8919,6 +9884,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "近鉄吉野線 大和上市駅 / 車84分",
+     "fotos_total": "5"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車84分",
     "status_note": "",
     "is_new": true,
@@ -8965,6 +9935,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 三本松駅 / 徒歩10分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 三本松駅 / 徒歩10分",
     "status_note": "",
     "is_new": true,
@@ -9011,6 +9986,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄御所線 近鉄御所駅 / 徒歩11分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄御所線 近鉄御所駅 / 徒歩11分",
     "status_note": "",
     "is_new": true,
@@ -9057,6 +10037,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ関西本線 三郷駅 / 徒歩5分",
+     "fotos_total": "5"
+    },
     "description_raw": "ＪＲ関西本線 三郷駅 / 徒歩5分",
     "status_note": "",
     "is_new": true,
@@ -9103,6 +10088,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 勢野北口駅 / 徒歩13分",
+     "fotos_total": "2"
+    },
     "description_raw": "近鉄生駒線 勢野北口駅 / 徒歩13分",
     "status_note": "",
     "is_new": true,
@@ -9149,6 +10139,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ関西本線 三郷駅 / 徒歩10分",
+     "fotos_total": "4"
+    },
     "description_raw": "ＪＲ関西本線 三郷駅 / 徒歩10分",
     "status_note": "",
     "is_new": true,
@@ -9195,6 +10190,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 信貴山下駅 / 徒歩9分",
+     "fotos_total": "8"
+    },
     "description_raw": "近鉄生駒線 信貴山下駅 / 徒歩9分",
     "status_note": "",
     "is_new": true,
@@ -9241,6 +10241,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ー",
+     "fotos_total": "5"
+    },
     "description_raw": "ー",
     "status_note": "",
     "is_new": true,
@@ -9287,6 +10292,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 竜田川駅 / 徒歩8分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩8分",
     "status_note": "",
     "is_new": true,
@@ -9333,6 +10343,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄田原本線 大輪田駅 / 車3分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄田原本線 大輪田駅 / 車3分",
     "status_note": "",
     "is_new": true,
@@ -9379,6 +10394,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車50分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車50分",
     "status_note": "",
     "is_new": true,
@@ -9425,6 +10445,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ桜井線 京終駅 / 車21分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ桜井線 京終駅 / 車21分",
     "status_note": "",
     "is_new": true,
@@ -9471,6 +10496,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄御所線 近鉄御所駅 / 車4分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄御所線 近鉄御所駅 / 車4分",
     "status_note": "",
     "is_new": true,
@@ -9517,6 +10547,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 車14分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車14分",
     "status_note": "",
     "is_new": true,
@@ -9563,6 +10598,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 室生口大野駅 / 車12分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 室生口大野駅 / 車12分",
     "status_note": "",
     "is_new": true,
@@ -9609,6 +10649,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車62分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車62分",
     "status_note": "",
     "is_new": true,
@@ -9655,6 +10700,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 竜田川駅 / 徒歩8分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩8分",
     "status_note": "",
     "is_new": true,
@@ -9701,6 +10751,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車80分",
+     "fotos_total": "8"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車80分",
     "status_note": "",
     "is_new": true,
@@ -9747,6 +10802,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車104分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車104分",
     "status_note": "",
     "is_new": true,
@@ -9793,6 +10853,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車100分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車100分",
     "status_note": "",
     "is_new": true,
@@ -9839,6 +10904,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車100分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車100分",
     "status_note": "",
     "is_new": true,
@@ -9885,6 +10955,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車104分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車104分",
     "status_note": "",
     "is_new": true,
@@ -9931,6 +11006,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車82分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車82分",
     "status_note": "",
     "is_new": true,
@@ -9977,6 +11057,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車80分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車80分",
     "status_note": "",
     "is_new": true,
@@ -10023,6 +11108,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "近鉄吉野線 大和上市駅 / 車104分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車104分",
     "status_note": "",
     "is_new": true,
@@ -10069,6 +11159,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車79分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車79分",
     "status_note": "",
     "is_new": true,
@@ -10115,6 +11210,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "近鉄吉野線 大和上市駅 / 車80分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車80分",
     "status_note": "",
     "is_new": true,
@@ -10161,6 +11261,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車94分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車94分",
     "status_note": "",
     "is_new": true,
@@ -10207,6 +11312,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 大和朝倉駅 / 車9分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 大和朝倉駅 / 車9分",
     "status_note": "",
     "is_new": true,
@@ -10253,6 +11363,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "最寄りバス停0.2km",
+     "fotos_total": "1"
+    },
     "description_raw": "最寄りバス停0.2km",
     "status_note": "",
     "is_new": true,
@@ -10299,6 +11414,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "最寄りバス停0.4km",
+     "fotos_total": "1"
+    },
     "description_raw": "最寄りバス停0.4km",
     "status_note": "",
     "is_new": true,
@@ -10345,6 +11465,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "最寄りバス停0.1km",
+     "fotos_total": "1"
+    },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
     "is_new": true,
@@ -10391,6 +11516,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "最寄りバス停0.1km",
+     "fotos_total": "1"
+    },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
     "is_new": true,
@@ -10437,6 +11567,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "最寄りバス停0.1km",
+     "fotos_total": "1"
+    },
     "description_raw": "最寄りバス停0.1km",
     "status_note": "",
     "is_new": true,
@@ -10483,6 +11618,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ和歌山線 五条駅 / 車6分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ和歌山線 五条駅 / 車6分",
     "status_note": "",
     "is_new": true,
@@ -10529,6 +11669,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ和歌山線 志都美駅 / 徒歩11分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ和歌山線 志都美駅 / 徒歩11分",
     "status_note": "",
     "is_new": true,
@@ -10575,6 +11720,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 元山上口駅 / 徒歩15分",
+     "fotos_total": "13"
+    },
     "description_raw": "近鉄生駒線 元山上口駅 / 徒歩15分",
     "status_note": "",
     "is_new": true,
@@ -10621,6 +11771,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 竜田川駅 / 徒歩8分",
+     "fotos_total": "15"
+    },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩8分",
     "status_note": "",
     "is_new": true,
@@ -10667,6 +11822,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄難波・奈良線 近鉄奈良駅 / 車18分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄難波・奈良線 近鉄奈良駅 / 車18分",
     "status_note": "",
     "is_new": true,
@@ -10713,6 +11873,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大阿太駅 / 徒歩7分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大阿太駅 / 徒歩7分",
     "status_note": "",
     "is_new": true,
@@ -10759,6 +11924,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ関西本線 笠置駅 / 車14分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ関西本線 笠置駅 / 車14分",
     "status_note": "",
     "is_new": true,
@@ -10805,6 +11975,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 六田駅 / 徒歩17分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 六田駅 / 徒歩17分",
     "status_note": "",
     "is_new": true,
@@ -10851,6 +12026,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 竜田川駅 / 車4分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 竜田川駅 / 車4分",
     "status_note": "",
     "is_new": true,
@@ -10897,6 +12077,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 平群駅 / 徒歩18分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩18分",
     "status_note": "",
     "is_new": true,
@@ -10943,6 +12128,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 徒歩13分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩13分",
     "status_note": "",
     "is_new": true,
@@ -10989,6 +12179,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 車32分",
+     "fotos_total": "8"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車32分",
     "status_note": "",
     "is_new": true,
@@ -11035,6 +12230,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ関西本線 笠置駅 / 車14分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ関西本線 笠置駅 / 車14分",
     "status_note": "",
     "is_new": true,
@@ -11081,6 +12281,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 東山駅 / 徒歩20分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 東山駅 / 徒歩20分",
     "status_note": "",
     "is_new": true,
@@ -11127,6 +12332,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ関西本線 郡山駅 / 車5分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ関西本線 郡山駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -11173,6 +12383,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 徒歩20分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 徒歩20分",
     "status_note": "",
     "is_new": true,
@@ -11219,6 +12434,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "量の少ない静かな旧国道沿い。道路から少し高台にあり、眺めの良い物件。 価格 200 万円 間取 3DK 建物面積 面積不明 土地面積 224.68㎡ 私道負担面積 物件種目 売戸建 築年月 不詳 所在地 奈良県吉野郡上北山村大字西原 交通 近鉄吉野線 大和上市駅 / 車51分",
+     "fotos_total": "7"
+    },
     "description_raw": "量の少ない静かな旧国道沿い。道路から少し高台にあり、眺めの良い物件。 価格 200 万円 間取 3DK 建物面積 面積不明 土地面積 224.68㎡ 私道負担面積 物件種目 売戸建 築年月 不詳 所在地 奈良県吉野郡上北山村大字西原 交通 近鉄吉野線 大和上市駅 / 車51分",
     "status_note": "",
     "is_new": true,
@@ -11265,6 +12485,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車62分",
+     "fotos_total": "10"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車62分",
     "status_note": "",
     "is_new": true,
@@ -11311,6 +12536,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 車12分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車12分",
     "status_note": "",
     "is_new": true,
@@ -11357,6 +12587,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 元山上口駅 / 徒歩11分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 元山上口駅 / 徒歩11分",
     "status_note": "",
     "is_new": true,
@@ -11403,6 +12638,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 越部駅 / 徒歩5分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 越部駅 / 徒歩5分",
     "status_note": "",
     "is_new": true,
@@ -11449,6 +12689,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 徒歩25分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 徒歩25分",
     "status_note": "",
     "is_new": true,
@@ -11495,6 +12740,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 竜田川駅 / 徒歩3分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩3分",
     "status_note": "",
     "is_new": true,
@@ -11541,6 +12791,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 平群駅 / 徒歩18分",
+     "fotos_total": "22"
+    },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩18分",
     "status_note": "",
     "is_new": true,
@@ -11587,6 +12842,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 平群駅 / 徒歩9分",
+     "fotos_total": "2"
+    },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩9分",
     "status_note": "",
     "is_new": true,
@@ -11633,6 +12893,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 車27分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車27分",
     "status_note": "",
     "is_new": true,
@@ -11679,6 +12944,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 車16分",
+     "fotos_total": "5"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車16分",
     "status_note": "",
     "is_new": true,
@@ -11725,6 +12995,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "",
+     "交通": "近鉄大阪線 榛原駅 / 車7分",
+     "fotos_total": "2"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 車7分",
     "status_note": "",
     "is_new": true,
@@ -11771,6 +13046,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 六田駅 / 徒歩12分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 六田駅 / 徒歩12分",
     "status_note": "",
     "is_new": true,
@@ -11817,6 +13097,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 名張駅 / 車17分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 名張駅 / 車17分",
     "status_note": "",
     "is_new": true,
@@ -11863,6 +13148,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 竜田川駅 / 徒歩12分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩12分",
     "status_note": "",
     "is_new": true,
@@ -11909,6 +13199,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 徒歩22分",
+     "fotos_total": "7"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩22分",
     "status_note": "",
     "is_new": true,
@@ -11955,6 +13250,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 徒歩17分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 徒歩17分",
     "status_note": "",
     "is_new": true,
@@ -12001,6 +13301,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 長谷寺駅 / 徒歩6分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 長谷寺駅 / 徒歩6分",
     "status_note": "",
     "is_new": true,
@@ -12047,6 +13352,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 平群駅 / 徒歩15分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 平群駅 / 徒歩15分",
     "status_note": "",
     "is_new": true,
@@ -12093,6 +13403,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車61分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車61分",
     "status_note": "",
     "is_new": true,
@@ -12139,6 +13454,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 下市口駅 / 車35分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車35分",
     "status_note": "",
     "is_new": true,
@@ -12185,6 +13505,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 桜井駅 / 車15分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 桜井駅 / 車15分",
     "status_note": "",
     "is_new": true,
@@ -12231,6 +13556,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 榛原駅 / 徒歩11分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 榛原駅 / 徒歩11分",
     "status_note": "",
     "is_new": true,
@@ -12277,6 +13607,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ和歌山線 大和二見駅 / 車4分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ和歌山線 大和二見駅 / 車4分",
     "status_note": "",
     "is_new": true,
@@ -12323,6 +13658,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄生駒線 竜田川駅 / 徒歩8分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄生駒線 竜田川駅 / 徒歩8分",
     "status_note": "",
     "is_new": true,
@@ -12369,6 +13709,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄大阪線 名張駅 / 車18分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄大阪線 名張駅 / 車18分",
     "status_note": "",
     "is_new": true,
@@ -12415,6 +13760,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車60分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車60分",
     "status_note": "",
     "is_new": true,
@@ -12461,6 +13811,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "近鉄吉野線 大和上市駅 / 車60分",
+     "fotos_total": "6"
+    },
     "description_raw": "近鉄吉野線 大和上市駅 / 車60分",
     "status_note": "",
     "is_new": true,
@@ -12507,6 +13862,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ桜井線 京終駅 / 車19分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ桜井線 京終駅 / 車19分",
     "status_note": "",
     "is_new": true,
@@ -12553,6 +13913,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ関西本線 笠置駅 / 徒歩46分",
+     "fotos_total": "10"
+    },
     "description_raw": "ＪＲ関西本線 笠置駅 / 徒歩46分",
     "status_note": "",
     "is_new": true,
@@ -12599,6 +13964,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "貸戸建住宅",
+     "交通": "近鉄生駒線 元山上口駅 / 徒歩10分",
+     "fotos_total": "9"
+    },
     "description_raw": "近鉄生駒線 元山上口駅 / 徒歩10分",
     "status_note": "",
     "is_new": true,
@@ -12645,6 +14015,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "貸戸建住宅",
+     "交通": "ＪＲ桜井線 京終駅 / 車26分",
+     "fotos_total": "6"
+    },
     "description_raw": "ＪＲ桜井線 京終駅 / 車26分",
     "status_note": "",
     "is_new": true,
@@ -12691,6 +14066,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "貸テラスハウス",
+     "交通": "近鉄吉野線 下市口駅 / 車5分",
+     "fotos_total": "1"
+    },
     "description_raw": "近鉄吉野線 下市口駅 / 車5分",
     "status_note": "",
     "is_new": true,
@@ -12737,6 +14117,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "南海電鉄和歌山港線 和歌山港駅 / 徒歩30分",
+     "fotos_total": "14"
+    },
     "description_raw": "南海電鉄和歌山港線 和歌山港駅 / 徒歩30分",
     "status_note": "",
     "is_new": true,
@@ -12783,6 +14168,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "ＪＲ阪和線 紀伊駅 / 徒歩18分",
+     "fotos_total": "16"
+    },
     "description_raw": "ＪＲ阪和線 紀伊駅 / 徒歩18分",
     "status_note": "",
     "is_new": true,
@@ -12829,6 +14219,11 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "物件種目": "売戸建",
+     "交通": "南海電鉄加太支線 八幡前駅 / 徒歩7分",
+     "fotos_total": "9"
+    },
     "description_raw": "南海電鉄加太支線 八幡前駅 / 徒歩7分",
     "status_note": "",
     "is_new": true,
@@ -12884,6 +14279,17 @@
      "https://www.suminiko.jp/kanri/up/4_69911170.jpg",
      "https://www.suminiko.jp/kanri/up/4_94126656.jpg"
     ],
+    "features": {
+     "物件番号": "物件番号:A310号",
+     "付帯施設等": "なし",
+     "農地面積": "--",
+     "ガス": "プロパン",
+     "水道": "上水道",
+     "トイレ": "洋式 1箇所",
+     "風呂": "灯油",
+     "庭": "あり(花壇、家庭菜園等 可)",
+     "収納": "あり"
+    },
     "description_raw": "庭付きの物件です ・室内、未完成の部分あります ・駐車場３台以上 交通：バス停掃守から徒歩10分",
     "status_note": "放置・空き家(-年)",
     "is_new": true,
@@ -12942,6 +14348,17 @@
      "https://www.suminiko.jp/kanri/up/4_54244159.jpg",
      "https://www.suminiko.jp/kanri/up/4_37042630.jpg"
     ],
+    "features": {
+     "物件番号": "物件番号:A312号",
+     "付帯施設等": "なし",
+     "農地面積": "--",
+     "ガス": "プロパン",
+     "水道": "上水道",
+     "トイレ": "洋式 1箇所",
+     "風呂": "灯油 作動点検未実施",
+     "庭": "あり(花壇、家庭菜園等 可)",
+     "収納": "あり"
+    },
     "description_raw": "物置付きの物件です ・大規模修繕必要 ・売主は買主に対して契約不適合責任を一切負いません ・売主は買主に対して付帯設備の修復義務を負いません ・売主は買主に対して境界を明示いたしません ・建築基準法上の道路に接していないため、再建築不可物件（43条但し書き対応） ・現状有姿渡し、公簿面積の取引 ・井戸あり ・過去に浸水被害が発生した区域内 交通：らん・らんバス「新田中」約250ｍ 徒歩約3分",
     "status_note": "放置・空き家(-年)",
     "is_new": true,
@@ -13003,6 +14420,17 @@
      "https://www.suminiko.jp/kanri/up/4_61133130.jpg",
      "https://www.suminiko.jp/kanri/up/4_20521275.jpg"
     ],
+    "features": {
+     "物件番号": "物件番号:A314号",
+     "付帯施設等": "駐車場",
+     "農地面積": "--",
+     "ガス": "オール電化",
+     "水道": "上水道",
+     "トイレ": "洋式 3箇所",
+     "風呂": "電気",
+     "庭": "あり(花壇、家庭菜園等 可)",
+     "収納": "あり"
+    },
     "description_raw": "パナホーム施工、オール電化の物件です ・設計住宅性能評価書有り ・完了検査済証有り ・公共下水道引き込み済み（敷地内繋ぎ込み未了） ・井戸有り ・車庫・物置付き ・太陽光設備有り（設置年数19年） ・現状有姿渡し、公簿面積の取引とします ・売主は、契約不適合責任を一切負いません ・売主は、付帯設備の修復義務を一切負いません 交通：淡路交通「養宜」バス停から約160m",
     "status_note": "放置・空き家(-年)",
     "is_new": true,
@@ -13057,6 +14485,17 @@
      "https://www.suminiko.jp/kanri/up/4_26425637.jpg",
      "https://www.suminiko.jp/kanri/up/4_75923065.jpg"
     ],
+    "features": {
+     "物件番号": "物件番号:A320号",
+     "付帯施設等": "なし",
+     "農地面積": "--",
+     "ガス": "プロパン",
+     "水道": "上水道",
+     "トイレ": "洋式 和式",
+     "風呂": "ガス",
+     "庭": "あり(花壇、家庭菜園等 可)",
+     "収納": "あり"
+    },
     "description_raw": "部屋数豊富な6K、2階に広いテラスを備えた一戸建て。",
     "status_note": "放置・空き家(-年)",
     "is_new": true,
@@ -13113,6 +14552,17 @@
      "https://www.suminiko.jp/kanri/up/4_07152539.jpg",
      "https://www.suminiko.jp/kanri/up/4_74300446.jpg"
     ],
+    "features": {
+     "物件番号": "物件番号:A321号",
+     "付帯施設等": "なし",
+     "農地面積": "--",
+     "ガス": "プロパン",
+     "水道": "上水道",
+     "トイレ": "洋式 1箇所",
+     "風呂": "--",
+     "庭": "あり(花壇、家庭菜園等 可)",
+     "収納": "あり"
+    },
     "description_raw": "130万円で手に入る、福良中心部の利便性と大正レトロな趣が共存する、庭付き5DKの隠れ家平屋",
     "status_note": "",
     "is_new": true,
@@ -13173,6 +14623,17 @@
      "https://www.suminiko.jp/kanri/up/4_30676100.jpg",
      "https://www.suminiko.jp/kanri/up/4_33466699.jpg"
     ],
+    "features": {
+     "物件番号": "物件番号:A322号",
+     "付帯施設等": "店舗付き 駐車場",
+     "農地面積": "--",
+     "ガス": "--",
+     "水道": "上水道",
+     "トイレ": "洋式 2箇所",
+     "風呂": "電気",
+     "庭": "あり(花壇、家庭菜園等 可)",
+     "収納": "あり"
+    },
     "description_raw": "海まで徒歩6分、広い庭で家庭菜園も楽しめる、アイフルホーム施工のオール電化5LDK",
     "status_note": "",
     "is_new": true,
@@ -13225,6 +14686,17 @@
      "https://www.suminiko.jp/kanri/up/4_17794799.jpg",
      "https://www.suminiko.jp/kanri/up/4_63491496.jpg"
     ],
+    "features": {
+     "物件番号": "物件番号:A323号",
+     "付帯施設等": "なし",
+     "農地面積": "--",
+     "ガス": "プロパン",
+     "水道": "上水道",
+     "トイレ": "洋式 1箇所",
+     "風呂": "--",
+     "庭": "あり(花壇、家庭菜園等 可)",
+     "収納": "あり"
+    },
     "description_raw": "日当たり良好、コンパクトな平屋 ・敷地内駐車場なし ・土砂災害警戒区域",
     "status_note": "放置・空き家(-年)",
     "is_new": true,
@@ -13278,6 +14750,17 @@
      "https://www.suminiko.jp/kanri/up/4_91314695.jpg",
      "https://www.suminiko.jp/kanri/up/4_17057269.jpg"
     ],
+    "features": {
+     "物件番号": "物件番号:A319号",
+     "付帯施設等": "農地（田・畑） 倉庫（農機具庫） 農機具",
+     "農地面積": "--",
+     "ガス": "プロパン",
+     "水道": "上水道",
+     "トイレ": "洋式 1箇所",
+     "風呂": "--",
+     "庭": "あり(花壇、家庭菜園等 可)",
+     "収納": "あり"
+    },
     "description_raw": "毎日がリゾート。眼下に広がる圧倒的な海のパノラマ ※田の購入には農業委員会の許可が必要です。 詳しくは南あわじ市農業委員会にお問合せ下さい。（直通0799-43-5236）",
     "status_note": "",
     "is_new": true,
@@ -13334,6 +14817,17 @@
      "https://www.suminiko.jp/kanri/up/4_15425230.jpg",
      "https://www.suminiko.jp/kanri/up/4_15739461.jpg"
     ],
+    "features": {
+     "物件番号": "物件番号:A324号",
+     "付帯施設等": "なし",
+     "農地面積": "--",
+     "ガス": "プロパン",
+     "水道": "上水道",
+     "トイレ": "洋式 2箇所",
+     "風呂": "灯油",
+     "庭": "なし",
+     "収納": "あり"
+    },
     "description_raw": "沼島汽船から徒歩７分！すぐ住める２階建て物件！ ・売買、賃貸どちらでも可。ただし、売買優先。 ・賃貸の場合：月額４万円、敷金/１か月分、礼金/１か月分 ・ペットは要相談",
     "status_note": "放置・空き家(1年)",
     "is_new": true,
@@ -13380,6 +14874,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2026/05/202605B1号-1.pdf"
+    },
     "description_raw": "千草庚　木造4SDK（売買）　202605B",
     "status_note": "",
     "is_new": true,
@@ -13426,6 +14923,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2026/04/602604B37号.pdf"
+    },
     "description_raw": "池田　木造4K（売買）　602604B37号",
     "status_note": "",
     "is_new": true,
@@ -13472,6 +14972,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2026/04/1012603A3号.pdf"
+    },
     "description_raw": "上物部1丁目　木造5DK（売買）　10126",
     "status_note": "",
     "is_new": true,
@@ -13518,6 +15021,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2026/01/1012510A2号-1.pdf"
+    },
     "description_raw": "桑間　木造4DK（売買）　1012510A2",
     "status_note": "",
     "is_new": true,
@@ -13564,6 +15070,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2025/10/302510B1号-2.pdf"
+    },
     "description_raw": "上物部　木造４DK（売買）　302510B1",
     "status_note": "",
     "is_new": true,
@@ -13610,6 +15119,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2025/09/572505A7号.pdf"
+    },
     "description_raw": "物部　木造3K（売買）　572505A7号",
     "status_note": "",
     "is_new": true,
@@ -13656,6 +15168,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2025/07/282506A1号-1.pdf"
+    },
     "description_raw": "五色町鳥飼中　鉄筋コンクリート造2K（売買）",
     "status_note": "",
     "is_new": true,
@@ -13702,6 +15217,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2025/05/602505B28号-2.pdf"
+    },
     "description_raw": "本町　木造3DK（売買）　602505B28",
     "status_note": "",
     "is_new": true,
@@ -13748,6 +15266,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2025/03/972305A2号.pdf"
+    },
     "description_raw": "炬口　木造4DK（売買）　672305A2号",
     "status_note": "",
     "is_new": true,
@@ -13794,6 +15315,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2024/10/602410A24号-2.pdf"
+    },
     "description_raw": "千草庚　木造5K（売買）　602410A24",
     "status_note": "",
     "is_new": true,
@@ -13840,6 +15364,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2024/08/712408B14号-2.pdf"
+    },
     "description_raw": "由良　木造3K（売買）　712408B14号",
     "status_note": "",
     "is_new": true,
@@ -13886,6 +15413,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2024/08/172408B4号　登録フォーム.pdf"
+    },
     "description_raw": "大野　木造4LDK（売買）　172408B4",
     "status_note": "",
     "is_new": true,
@@ -13932,6 +15462,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/akiyabank/%e7%94%b1%e8%89%af-3/"
+    },
     "description_raw": "由良　木造（売買）　752405B5号",
     "status_note": "",
     "is_new": true,
@@ -13978,6 +15511,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2024/03/282403B1号-3.pdf"
+    },
     "description_raw": "由良　木造4LDK（売買）　282403B1",
     "status_note": "",
     "is_new": true,
@@ -14024,6 +15560,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/akiyabank/%e7%94%b1%e8%89%af/"
+    },
     "description_raw": "由良　木造（売買）　672311A4号",
     "status_note": "",
     "is_new": true,
@@ -14070,6 +15609,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2023/12/802311B2号.pdf"
+    },
     "description_raw": "上物部　木造（売買）　802311B2号",
     "status_note": "",
     "is_new": true,
@@ -14116,6 +15658,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/akiyabank/%e4%b8%8a%e7%89%a9%e9%83%a8%ef%bc%885ldk%ef%bc%89/"
+    },
     "description_raw": "上物部　木造5LDK（売買）　592309B",
     "status_note": "",
     "is_new": true,
@@ -14162,6 +15707,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/akiyabank/%e4%ba%94%e8%89%b2%e7%94%ba%e5%ba%83%e7%9f%b31ldk%e4%bb%98%e5%b1%9e%e5%bb%ba%e7%89%a9/"
+    },
     "description_raw": "五色町広石中　1LDK+付属建物（売買）　7",
     "status_note": "",
     "is_new": true,
@@ -14208,6 +15756,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2022/03/182201A1号-1.pdf"
+    },
     "description_raw": "五色町都志　木造８DK（売買）　182201",
     "status_note": "",
     "is_new": true,
@@ -14254,6 +15805,9 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {
+     "ficha_pdf": "https://sumo-navi.com/wp/wp-content/uploads/2021/12/172101A1号.pdf"
+    },
     "description_raw": "五色町鮎原西　木造（売買）　172101A1",
     "status_note": "",
     "is_new": true,
@@ -14314,6 +15868,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2024/202605251512310.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2024/202605251512340.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4"
+    },
     "description_raw": "田辺市本宮町伏拝",
     "status_note": "",
     "is_new": true,
@@ -14360,6 +15918,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県和歌山市三葛",
     "status_note": "",
     "is_new": true,
@@ -14422,6 +15981,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2021/202605211543459.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2021/202605211543523.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1洋室1、2階：和室2"
+    },
     "description_raw": "和歌山市田中町2丁目",
     "status_note": "",
     "is_new": true,
@@ -14496,6 +16059,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2019/202605211117354.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2019/202605211117355.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室3、2階：和室1洋室3"
+    },
     "description_raw": "串本町串本",
     "status_note": "",
     "is_new": true,
@@ -14558,6 +16125,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2014/202605141509452.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2014/202605141509453.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4"
+    },
     "description_raw": "美浜町濱ノ瀬",
     "status_note": "",
     "is_new": true,
@@ -14613,6 +16184,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2013/202605141456345.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2013/202605141456346.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "DK、洋室1"
+    },
     "description_raw": "美浜町和田",
     "status_note": "",
     "is_new": true,
@@ -14680,6 +16255,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2008/202604301143457.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/2008/202604301143458.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4洋室2"
+    },
     "description_raw": "和歌山市直川",
     "status_note": "",
     "is_new": true,
@@ -14726,6 +16305,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県西牟婁郡　白浜町才野",
     "status_note": "",
     "is_new": true,
@@ -14782,6 +16362,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1986/202604011519545.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1986/202604011519547.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室1"
+    },
     "description_raw": "串本町田原",
     "status_note": "",
     "is_new": true,
@@ -14853,6 +16437,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1985/202604011439571.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1985/202604011439572.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "母屋：和室3洋室1、離れ有：和室1"
+    },
     "description_raw": "串本町和深",
     "status_note": "",
     "is_new": true,
@@ -14911,6 +16499,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1978/202603261434058.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1978/202603261434059.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4（フローリング）"
+    },
     "description_raw": "白浜町日置",
     "status_note": "",
     "is_new": true,
@@ -14974,6 +16566,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1974/202603261142243.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1974/202603261142244.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室2洋室1、2階：和室2"
+    },
     "description_raw": "田辺市本宮町伏拝",
     "status_note": "",
     "is_new": true,
@@ -15046,6 +16642,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1970/202603261031502.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1970/202603261031503.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室6洋室2、2階：和室1"
+    },
     "description_raw": "美浜町吉原",
     "status_note": "",
     "is_new": true,
@@ -15106,6 +16706,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1969/202603251545540.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1969/202603251545541.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室3洋室2"
+    },
     "description_raw": "美浜町三尾",
     "status_note": "",
     "is_new": true,
@@ -15170,6 +16774,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1968/202603251535084.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1968/202603251535085.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室4、2階：和室1"
+    },
     "description_raw": "美浜町三尾",
     "status_note": "",
     "is_new": true,
@@ -15232,6 +16840,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1958/202603241436260.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1958/202603241436310.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "母屋：和室4 離れ：和室2"
+    },
     "description_raw": "田辺市本宮町静川",
     "status_note": "",
     "is_new": true,
@@ -15297,6 +16909,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1947/202603091526135.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1947/202603091526136.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4"
+    },
     "description_raw": "田辺市平瀬",
     "status_note": "",
     "is_new": true,
@@ -15360,6 +16976,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1946/202603091437283.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1946/202603091437284.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "１階：洋室1店舗スペース有、２階：和室3"
+    },
     "description_raw": "田辺市上屋敷一丁目",
     "status_note": "",
     "is_new": true,
@@ -15416,6 +17036,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1945/202603091203386.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1945/202603091203387.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室2"
+    },
     "description_raw": "田辺市本宮町本宮",
     "status_note": "",
     "is_new": true,
@@ -15482,6 +17106,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1942/202603061510006.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1942/202603061510007.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4洋室1"
+    },
     "description_raw": "田辺市本宮町上切原",
     "status_note": "",
     "is_new": true,
@@ -15545,6 +17173,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1941/202603061401363.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1941/202603061401364.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "母屋：和室6 離れ有（2階建）1階：板間1、2階：板間1"
+    },
     "description_raw": "田辺市本宮町本宮",
     "status_note": "",
     "is_new": true,
@@ -15604,6 +17236,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1935/202603041508450.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1935/202603041508490.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1、2階：和室2"
+    },
     "description_raw": "串本町中湊",
     "status_note": "",
     "is_new": true,
@@ -15667,6 +17303,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1934/202603041419544.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1934/202603041419482.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室2洋室1、離れあり"
+    },
     "description_raw": "串本町有田",
     "status_note": "",
     "is_new": true,
@@ -15738,6 +17378,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1933/202603041132356.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1933/202603041132357.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "１階：和室3洋室1、2階：和室2"
+    },
     "description_raw": "串本町串本",
     "status_note": "",
     "is_new": true,
@@ -15796,6 +17440,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1929/202602221535471.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1929/202602221535472.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室2、2階：和室2"
+    },
     "description_raw": "串本町田並",
     "status_note": "",
     "is_new": true,
@@ -15858,6 +17506,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1927/202602211423582.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1927/202602211423583.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室1洋室1"
+    },
     "description_raw": "和歌山市和歌浦東2丁目",
     "status_note": "",
     "is_new": true,
@@ -15922,6 +17574,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1926/202602211343304.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1926/202602211343305.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1、2階：和室1洋室"
+    },
     "description_raw": "和歌山市市小路",
     "status_note": "",
     "is_new": true,
@@ -15980,6 +17636,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1925/202602211310338.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1925/202602211310339.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室3"
+    },
     "description_raw": "和歌山市雑賀崎",
     "status_note": "",
     "is_new": true,
@@ -16045,6 +17705,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1921/202602121408390.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1921/202602121408360.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階:和室2洋室1、2階:和室3、3階:和室2洋室1"
+    },
     "description_raw": "田辺市湊",
     "status_note": "",
     "is_new": true,
@@ -16107,6 +17771,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1917/202602091453320.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1917/202602091453380.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室5"
+    },
     "description_raw": "田辺市本宮町渡瀬",
     "status_note": "",
     "is_new": true,
@@ -16168,6 +17836,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1908/202602021331091.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1908/202602021331092.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室1洋室1"
+    },
     "description_raw": "串本町姫",
     "status_note": "",
     "is_new": true,
@@ -16234,6 +17906,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1907/202601291514136.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1907/202601291514137.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室2洋室1、2階：和室2"
+    },
     "description_raw": "和歌山市毛見",
     "status_note": "",
     "is_new": true,
@@ -16297,6 +17973,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1902/202601261411100.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1902/202601261411140.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階:和室1洋室1、2階:和室1"
+    },
     "description_raw": "田辺市東陽",
     "status_note": "",
     "is_new": true,
@@ -16363,6 +18043,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1892/202602121035171.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1892/202602121035170.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室4洋室2、2階：和室1"
+    },
     "description_raw": "串本町田子",
     "status_note": "",
     "is_new": true,
@@ -16426,6 +18110,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1890/202601071402093.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1890/202601071402094.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室6洋室1"
+    },
     "description_raw": "串本町田原",
     "status_note": "",
     "is_new": true,
@@ -16498,6 +18186,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1887/202512221501452.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1887/202512221501453.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室2洋室2"
+    },
     "description_raw": "串本町田原",
     "status_note": "",
     "is_new": true,
@@ -16563,6 +18255,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1885/202512181048545.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1885/202512181048546.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室3"
+    },
     "description_raw": "串本町田並",
     "status_note": "",
     "is_new": true,
@@ -16624,6 +18320,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1882/202512171320560.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1882/202512171320590.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4"
+    },
     "description_raw": "田辺市本宮町高山",
     "status_note": "",
     "is_new": true,
@@ -16700,6 +18400,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1878/202512101351349.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1878/202512101351462.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室7、応接1"
+    },
     "description_raw": "美浜町和田",
     "status_note": "",
     "is_new": true,
@@ -16760,6 +18464,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1877/202512101332200.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1877/202512101332201.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室3"
+    },
     "description_raw": "美浜町和田",
     "status_note": "",
     "is_new": true,
@@ -16834,6 +18542,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1872/202511271511304.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1872/202511271511305.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "母屋（木造平屋）：和室4洋室2 母屋増築（鉄筋コンクリート造）1階：倉庫、2階：和室2洋室1 離れ（木造平屋）：和室2洋室1"
+    },
     "description_raw": "和歌山市北別所",
     "status_note": "",
     "is_new": true,
@@ -16906,6 +18618,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1856/202511071517321.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1856/202511071517522.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "母屋5DK：和室4洋室1 離れ：和室1洋室1"
+    },
     "description_raw": "和歌山市北野",
     "status_note": "",
     "is_new": true,
@@ -16952,6 +18668,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県田辺市新庄町",
     "status_note": "",
     "is_new": true,
@@ -16998,6 +18715,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県田辺市あけぼの",
     "status_note": "",
     "is_new": true,
@@ -17063,6 +18781,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1845/202510241318184.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1845/202510241318183.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室2、2階：和室2"
+    },
     "description_raw": "美浜町吉原",
     "status_note": "",
     "is_new": true,
@@ -17126,6 +18848,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1842/202510221325594.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1842/202510221325590.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "母屋：和室2洋室1 離れ1階：洋室1、離れ2階：和室2"
+    },
     "description_raw": "串本町田並",
     "status_note": "",
     "is_new": true,
@@ -17201,6 +18927,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1836/202510161519285.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1836/202510161519286.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室3洋室1、2階：和室2洋室1"
+    },
     "description_raw": "串本町西向",
     "status_note": "",
     "is_new": true,
@@ -17247,6 +18977,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県日高郡　美浜町大字三尾",
     "status_note": "",
     "is_new": true,
@@ -17311,6 +19042,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1829/202510061313024.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1829/202510061313025.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1洋室1、2階：和室1洋室1"
+    },
     "description_raw": "那智勝浦町天満",
     "status_note": "",
     "is_new": true,
@@ -17374,6 +19109,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1828/202510031436121.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1828/202510031436324.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室3、洋室1"
+    },
     "description_raw": "美浜町和田",
     "status_note": "",
     "is_new": true,
@@ -17435,6 +19174,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1825/202509291010550.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1825/202509291010580.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室3"
+    },
     "description_raw": "田辺市龍神村安井",
     "status_note": "",
     "is_new": true,
@@ -17481,6 +19224,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県東牟婁郡　串本町潮岬",
     "status_note": "",
     "is_new": true,
@@ -17550,6 +19294,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1816/202509041455043.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1816/202509041455042.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4洋室1"
+    },
     "description_raw": "串本町鬮野川",
     "status_note": "",
     "is_new": true,
@@ -17615,6 +19363,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1815/202509041328285.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1815/202509041328286.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室5洋室1"
+    },
     "description_raw": "串本町西向",
     "status_note": "",
     "is_new": true,
@@ -17674,6 +19426,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1787/202507281512019.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1787/202507281519570.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室3"
+    },
     "description_raw": "美浜町吉原",
     "status_note": "",
     "is_new": true,
@@ -17720,6 +19476,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県東牟婁郡　串本町潮岬",
     "status_note": "",
     "is_new": true,
@@ -17790,6 +19547,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1771/202507021433387.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1771/202507021433451.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1、2階：洋室2"
+    },
     "description_raw": "串本町田原",
     "status_note": "",
     "is_new": true,
@@ -17836,6 +19597,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県西牟婁郡　白浜町日置",
     "status_note": "",
     "is_new": true,
@@ -17897,6 +19659,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1765/202506261156570.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1765/202506261156571.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1、2階：和室1"
+    },
     "description_raw": "串本町古田",
     "status_note": "",
     "is_new": true,
@@ -17943,6 +19709,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県田辺市本宮町　本宮",
     "status_note": "",
     "is_new": true,
@@ -18010,6 +19777,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1755/202506111351147.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1755/202506111351148.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室5洋室1"
+    },
     "description_raw": "串本町有田",
     "status_note": "",
     "is_new": true,
@@ -18068,6 +19839,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1744/202505301330078.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1744/202505301330079.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1、洋室1　　2階：和室4"
+    },
     "description_raw": "白浜町日置",
     "status_note": "",
     "is_new": true,
@@ -18129,6 +19904,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1743/202505301142470.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1743/202505301142500.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室5洋室1"
+    },
     "description_raw": "田辺市本宮町土河屋",
     "status_note": "",
     "is_new": true,
@@ -18193,6 +19972,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1739/202505281526194.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1739/202505281526195.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4"
+    },
     "description_raw": "串本町有田",
     "status_note": "",
     "is_new": true,
@@ -18270,6 +20053,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1738/202505281335457.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1738/202505281335458.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室2洋室1、2階：和室1洋室1"
+    },
     "description_raw": "串本町有田",
     "status_note": "",
     "is_new": true,
@@ -18329,6 +20116,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1732/202505221501220.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1732/202505221501151.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4"
+    },
     "description_raw": "白浜町上露",
     "status_note": "",
     "is_new": true,
@@ -18389,6 +20180,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1716/202504181629390.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1716/202504181629430.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4"
+    },
     "description_raw": "田辺市本宮町大居",
     "status_note": "",
     "is_new": true,
@@ -18455,6 +20250,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1705/202504091412104.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1705/202504091412190.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室1、洋室2、リビング（和室）"
+    },
     "description_raw": "美浜町和田",
     "status_note": "",
     "is_new": true,
@@ -18521,6 +20320,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1703/202504071400176.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1703/202504071400177.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1洋室1、2階：和室3"
+    },
     "description_raw": "串本町中湊",
     "status_note": "",
     "is_new": true,
@@ -18578,6 +20381,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1678/202503131545301.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1678/202503131545300.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1洋室1　　2階：和室2"
+    },
     "description_raw": "和歌山市西浜",
     "status_note": "",
     "is_new": true,
@@ -18647,6 +20454,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1668/202502281554192.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1668/202502281554360.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4、洋室1 納屋あり（和室1付）"
+    },
     "description_raw": "串本町田原",
     "status_note": "",
     "is_new": true,
@@ -18711,6 +20522,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1664/202502271428183.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1664/202502271428184.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室2、2階：和室3"
+    },
     "description_raw": "田辺市龍神村福井",
     "status_note": "",
     "is_new": true,
@@ -18771,6 +20586,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1661/202502261550262.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1661/202502261550263.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4"
+    },
     "description_raw": "田辺市中辺路町栗栖川",
     "status_note": "",
     "is_new": true,
@@ -18833,6 +20652,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1658/202502211538091.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1658/202502211538092.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室2、洋室3　　2階：和室3"
+    },
     "description_raw": "田辺市本宮町請川",
     "status_note": "",
     "is_new": true,
@@ -18897,6 +20720,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1653/202502181117590.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1653/202502181117560.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階:和室4洋室1、2階:和室1"
+    },
     "description_raw": "田辺市本宮町切畑",
     "status_note": "",
     "is_new": true,
@@ -18960,6 +20787,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1652/202502171709300.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1652/202502171709490.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "洋室3"
+    },
     "description_raw": "田辺市上屋敷一丁目",
     "status_note": "",
     "is_new": true,
@@ -19032,6 +20863,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1651/202502171359502.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1651/202502171359503.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4、洋室1 離れ有（32.00㎡）：和室1、洋室1"
+    },
     "description_raw": "串本町高富",
     "status_note": "",
     "is_new": true,
@@ -19095,6 +20930,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1635/202501271451233.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1635/202501271451141.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室2"
+    },
     "description_raw": "白浜町",
     "status_note": "",
     "is_new": true,
@@ -19158,6 +20997,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1634/202501271037113.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1634/202501271036581.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室2"
+    },
     "description_raw": "美浜町三尾",
     "status_note": "",
     "is_new": true,
@@ -19219,6 +21062,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1631/202501221521351.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1631/202501221521352.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：店舗　2階：和室1、洋室1"
+    },
     "description_raw": "白浜町日置",
     "status_note": "",
     "is_new": true,
@@ -19283,6 +21130,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1605/202412131200450.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1605/202412131200500.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室5"
+    },
     "description_raw": "田辺市本宮町請川",
     "status_note": "",
     "is_new": true,
@@ -19348,6 +21199,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1600/202412121146555.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1600/202412121146556.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室1"
+    },
     "description_raw": "美浜町和田",
     "status_note": "",
     "is_new": true,
@@ -19407,6 +21262,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1589/202412051546393.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1589/202412051546391.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階:和室4、2階:和室3"
+    },
     "description_raw": "白浜町上露",
     "status_note": "",
     "is_new": true,
@@ -19470,6 +21329,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1586/202412091558591.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1586/202412091558423.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1、2階：和室2"
+    },
     "description_raw": "和歌山市北",
     "status_note": "",
     "is_new": true,
@@ -19540,6 +21403,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1584/202411281354263.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1584/202411281354264.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室4洋室1、2階：和室2"
+    },
     "description_raw": "白浜町日置",
     "status_note": "",
     "is_new": true,
@@ -19602,6 +21469,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1578/202411251738450.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1578/202411251738490.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室3洋室1、2階：和室1"
+    },
     "description_raw": "田辺市龍神村龍神",
     "status_note": "",
     "is_new": true,
@@ -19666,6 +21537,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1576/202412091412180.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1576/202412091411453.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室1、洋室1、2階：洋室2"
+    },
     "description_raw": "和歌山市島",
     "status_note": "",
     "is_new": true,
@@ -19731,6 +21606,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1562/202411080849170.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1562/202411080849290.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室3、洋室2"
+    },
     "description_raw": "田辺市龍神村東",
     "status_note": "",
     "is_new": true,
@@ -19793,6 +21672,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1561/202411070858420.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1561/202411070858450.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階:和室2、2階:和室3"
+    },
     "description_raw": "田辺市江川",
     "status_note": "",
     "is_new": true,
@@ -19854,6 +21737,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1551/202410211723068.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1551/202410211723066.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室４洋室１"
+    },
     "description_raw": "和歌山市葵町",
     "status_note": "",
     "is_new": true,
@@ -19910,6 +21797,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1550/202602121022040.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1550/202602121022041.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室4、2階：和室1"
+    },
     "description_raw": "串本町有田",
     "status_note": "",
     "is_new": true,
@@ -19972,6 +21863,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1532/202409301144223.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1532/202409301144221.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室2、2階：和室1、洋室1"
+    },
     "description_raw": "串本町有田",
     "status_note": "",
     "is_new": true,
@@ -20052,6 +21947,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1528/202409201515221.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1528/202409201515222.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室4、洋室1、2階：和室1"
+    },
     "description_raw": "那智勝浦町宇久井",
     "status_note": "",
     "is_new": true,
@@ -20116,6 +22015,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1523/202409190958020.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1523/202409190958025.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室6"
+    },
     "description_raw": "白浜町日置",
     "status_note": "",
     "is_new": true,
@@ -20180,6 +22083,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1521/202409131549300.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1521/202409131549480.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "母屋：和室4、板間1 離れあり（和室1、洋室1）"
+    },
     "description_raw": "田辺市中辺路町温川",
     "status_note": "",
     "is_new": true,
@@ -20252,6 +22159,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1503/202512171130402.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1503/202512171130403.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "母屋：和室5、離れ有：洋室2"
+    },
     "description_raw": "串本町田原",
     "status_note": "",
     "is_new": true,
@@ -20314,6 +22225,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1494/202408131059090.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1494/202408131059120.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階:和室2、2階:和室1洋室3"
+    },
     "description_raw": "田辺市上の山二丁目",
     "status_note": "",
     "is_new": true,
@@ -20379,6 +22294,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1490/202408051626116.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1490/202408051626117.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4"
+    },
     "description_raw": "白浜町日置",
     "status_note": "",
     "is_new": true,
@@ -20436,6 +22355,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1489/202408051614490.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1489/202408051614493.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室2"
+    },
     "description_raw": "白浜町日置",
     "status_note": "",
     "is_new": true,
@@ -20500,6 +22423,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1470/202407191429347.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1470/202407191429460.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "母屋：和室5、洋室1　　離れ：洋室1"
+    },
     "description_raw": "白浜町久木",
     "status_note": "",
     "is_new": true,
@@ -20546,6 +22473,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県和歌山市井戸",
     "status_note": "",
     "is_new": true,
@@ -20605,6 +22533,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1460/202407041127521.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1460/202407041127520.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室2"
+    },
     "description_raw": "串本町西向字タンサイ",
     "status_note": "",
     "is_new": true,
@@ -20687,6 +22619,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1455/202406281135011.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1455/202406281135012.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室4、2階：和室2"
+    },
     "description_raw": "美浜町三尾",
     "status_note": "",
     "is_new": true,
@@ -20748,6 +22684,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1451/202406261129320.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1451/202406261129350.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室4、洋室2"
+    },
     "description_raw": "田辺市本宮町大居",
     "status_note": "",
     "is_new": true,
@@ -20806,6 +22746,9 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1409/202406041554516.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1409/202406041554519.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て"
+    },
     "description_raw": "白浜町日置",
     "status_note": "",
     "is_new": true,
@@ -20866,6 +22809,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1397/202405291658550.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1397/202405291658590.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室2、板間1"
+    },
     "description_raw": "田辺市本宮町檜葉",
     "status_note": "",
     "is_new": true,
@@ -20927,6 +22874,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1364/202405201312390.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1364/202405201312420.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：和室3、2階：和室1"
+    },
     "description_raw": "田辺市本宮町渡瀬",
     "status_note": "",
     "is_new": true,
@@ -20983,6 +22934,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1363/202405011153474.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1363/202405011153473.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "1階：DK8畳、洋室6畳、和室6畳、和室3畳 風呂、トイレ、2階：和室6畳、和室6畳"
+    },
     "description_raw": "和歌山市古屋",
     "status_note": "",
     "is_new": true,
@@ -21029,6 +22984,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県東牟婁郡　串本町鬮野川",
     "status_note": "",
     "is_new": true,
@@ -21089,6 +23045,10 @@
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1347/202404081810040.jpg",
      "https://www.wakayamagurashi.jp/house/user_images/property/album/1347/202404081810070.jpg"
     ],
+    "features": {
+     "物件区分": "一戸建て",
+     "間取り詳細": "和室2洋室1"
+    },
     "description_raw": "田辺市本宮町高山",
     "status_note": "",
     "is_new": true,
@@ -21135,6 +23095,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県田辺市たきない町",
     "status_note": "",
     "is_new": true,
@@ -21181,6 +23142,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県和歌山市相坂",
     "status_note": "",
     "is_new": true,
@@ -21227,6 +23189,7 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [],
+    "features": {},
     "description_raw": "和歌山県西牟婁郡　白浜町",
     "status_note": "",
     "is_new": true,

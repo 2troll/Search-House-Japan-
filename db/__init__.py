@@ -133,9 +133,9 @@ def export_geojson(path=None):
             continue  # sin coordenadas no se puede pintar en el mapa
         photos = json.loads(r["photos"]) if r.get("photos") else []
         try:
-            features = json.loads(r["features"]) if r.get("features") else {}
+            feats = json.loads(r["features"]) if r.get("features") else {}
         except (ValueError, TypeError):
-            features = {}
+            feats = {}
         features.append({
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [r["lng"], r["lat"]]},
@@ -170,7 +170,7 @@ def export_geojson(path=None):
                 "pet_ok": r["pet_ok"],
                 "renovated": r["renovated"],
                 "photos": photos,
-                "features": features,
+                "features": feats,
                 "description_raw": r["description_raw"],
                 "status_note": r["status_note"],
                 "is_new": _is_new(r["first_seen"]),
