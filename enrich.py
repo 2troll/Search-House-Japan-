@@ -79,20 +79,17 @@ def enrich_listing(client, conn, row):
             u = "https:" + u
         if u not in remote:
             remote.append(u)
-    if not remote:  # respaldo: miniaturas o src directos
+    if not remote:  # respaldo: miniaturas del MISMO carrusel (siguen siendo de la casa)
         for u in re.findall(r'"image_url_thumbnail":"([^"]+)"', html):
             u = u.replace("\\/", "/")
             if u.startswith("//"):
                 u = "https:" + u
             if u not in remote:
                 remote.append(u)
-    if not remote:
-        for m in re.findall(r"(//img\.akiya-athome\.jp/[^\"'\s]+)", html):
-            u = "https:" + m
-            if u not in remote:
-                remote.append(u)
+    # IMPORTANTE: solo usamos el carrusel de fotos del inmueble (image_url_*),
+    # nunca banners/anuncios/vídeos sueltos.
     photos = []
-    for i, u in enumerate(remote[:10]):  # hasta 10 fotos por casa
+    for i, u in enumerate(remote[:6]):  # hasta 6 fotos de la casa
         local = _download(u, bid, i)
         if local:
             photos.append(local)
@@ -106,10 +103,23 @@ def enrich_listing(client, conn, row):
     keymoney = info.get("権利金", "")
     maint = info.get("維持費等", "")
 
+    # contacto: teléfono de la agencia/ayuntamiento (elemento shop-tel) + email si hay.
+    tel = ""
+    shop = soup.find(class_=re.compile("shop-tel"))
+    if shop:
+        mt = re.search(r"0\d{1,3}[-－‐]\d{2,4}[-－‐]\d{3,4}", shop.get_text())
+        tel = mt.group(0).replace("－", "-").replace("‐", "-") if mt else ""
+    if not tel:
+        tels = re.findall(r"0\d{1,3}[-－‐]\d{2,4}[-－‐]\d{3,4}", html)
+        tel = (max(set(tels), key=tels.count).replace("－", "-").replace("‐", "-")) if tels else ""
+    me = re.search(r"[\w.\-]+@[\w.\-]+\.\w{2,}", html)
+    email = me.group(0) if me else ""
+
     import json
     feats = json.loads(row["features"]) if row["features"] else {}
     for k, v in {"条件": cond, "設備": equip, "備考": remarks,
-                 "敷金保証金": deposit, "権利金": keymoney, "維持費": maint}.items():
+                 "敷金保証金": deposit, "権利金": keymoney, "維持費": maint,
+                 "contacto_tel": tel, "contacto_email": email}.items():
         if v and v not in ("-", "/"):
             feats[k] = v
 
