@@ -320,7 +320,7 @@ const BASEMAPS={
 };
 BASEMAPS["Mapa claro"].addTo(map);
 L.control.layers(BASEMAPS,null,{position:'topright',collapsed:true}).addTo(map);
-const cluster=L.markerClusterGroup({maxClusterRadius:45});map.addLayer(cluster);
+const cluster=L.markerClusterGroup({maxClusterRadius:38,disableClusteringAtZoom:15,spiderfyOnMaxZoom:true,showCoverageOnHover:false});map.addLayer(cluster);
 
 // ====== Zonas (sincronizar con TARGET_AREAS) ======
 const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県",hiroshima:"Hiroshima 広島県",shimane:"Shimane 島根県",kagawa:"Kagawa 香川県",tokushima:"Tokushima 徳島県",ehime:"Ehime 愛媛県"};
@@ -386,9 +386,27 @@ function stayCost(f,months){
 // ====== Carga ======
 fetch('data.geojson').then(r=>r.json()).then(geo=>{
   FEATURES=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
+  spreadOverlaps();
   buildLayouts();buildZones();loadAssume();updateRentLabel();updateSaleLabel();apply();
 }).catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data.geojson. Ejecuta refresh.py y abre con un servidor.</div>';});
 
+// Muchas direcciones rurales geocodifican al MISMO punto del barrio (大字).
+// Para que no se apilen en un "17", separamos las que comparten coordenada con
+// una pequeña espiral (quedan dentro del mismo barrio) y las marcamos como
+// ubicación aproximada (la exacta hay que confirmarla en el anuncio/contacto).
+function spreadOverlaps(){
+  const groups={};
+  FEATURES.forEach(f=>{const k=f.lat.toFixed(5)+','+f.lng.toFixed(5);(groups[k]=groups[k]||[]).push(f);});
+  Object.values(groups).forEach(g=>{
+    if(g.length<2)return;
+    g.forEach((f,i)=>{
+      const ang=i*2.399963, rad=0.0009*Math.sqrt(i+0.4);
+      f.lat+=rad*Math.cos(ang);
+      f.lng+=rad*Math.sin(ang)/Math.max(0.2,Math.cos(f.lat*Math.PI/180));
+      f.approxLoc=true;
+    });
+  });
+}
 function buildLayouts(){
   const fams=["1R","1K","1DK","1LDK","2K","2DK","2LDK","3K","3DK","3LDK","4K","4DK","4LDK","5DK","5LDK"];const present=new Set();
   FEATURES.forEach(f=>{const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];if(m)present.add(m.toUpperCase());});
@@ -525,7 +543,7 @@ function openDetail(f){
     </table></div>`;}
   const kind=f.features&&f.features['物件区分']?f.features['物件区分']:(f.features&&f.features['物件種目']?f.features['物件種目']:'');
   const access=f.features&&f.features['交通']?f.features['交通']:'';
-  const approx=f.geocode_exact?'':'<div class="approxnote">📍 Ubicación aproximada (centro del municipio)</div>';
+  const approx=(!f.geocode_exact)?'<div class="approxnote">📍 Ubicación aproximada (centro del municipio)</div>':(f.approxLoc?'<div class="approxnote">📍 Ubicación a nivel de barrio (la exacta, confírmala en el anuncio o con el contacto)</div>':'');
   // Google Maps: por dirección si la hay, si no por coordenadas
   const gq=encodeURIComponent(f.address_raw||(f.lat+','+f.lng));
   const gmaps=`https://www.google.com/maps/search/?api=1&query=${gq}`;
