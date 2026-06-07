@@ -57,8 +57,10 @@ def _rent_low(text):
 
 
 def _list_area(tdfk, area):
-    out = []
-    for page in range(0, 12):
+    """Lista los danchi de un área. La API repite resultados al paginar, así que
+    paramos cuando una página no aporta IDs nuevos."""
+    out, seen = [], set()
+    for page in range(0, 15):
         try:
             r = _sess.post(
                 f"{API}/chintai/api/bukken/search/list_bukken/",
@@ -71,8 +73,11 @@ def _list_area(tdfk, area):
             break
         if not isinstance(data, list) or not data:
             break
-        out.extend(data)
-        if len(data) < 50:  # última página
+        new = [d for d in data if d.get("id") not in seen]
+        for d in new:
+            seen.add(d["id"])
+        out.extend(new)
+        if not new:  # esta página no añade nada nuevo -> fin
             break
     return out
 

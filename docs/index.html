@@ -457,7 +457,12 @@ $('tabList').onclick=()=>setMob('list');
 $('tabMap').onclick=()=>{setMob('map');setTimeout(()=>map.invalidateSize(),50);};
 function setMob(w){$('listcol').classList.toggle('show',w==='list');$('map').classList.toggle('show',w==='map');$('tabList').classList.toggle('on',w==='list');$('tabMap').classList.toggle('on',w==='map');$('filters').classList.remove('open');}
 
+function isSold(f){
+  const s=(f.status_note||'')+' '+(f.description_raw||'')+' '+JSON.stringify(f.features||{});
+  return /成約|商談中|売約|契約済|申込済|お申込|終了|掲載終了/.test(s);
+}
 function matches(f){
+  if(isSold(f))return false; // nunca mostrar vendidas / en negociación
   if(OP!=='both'&&f.listing_type!==OP)return false;
   if(PTYPE!=='all'&&propType(f)!==PTYPE)return false;
   if(f.listing_type==='rent'){const mr=+$('maxRent').value;if(mr<100000&&(f.rent_yen||1e9)>mr)return false;}
