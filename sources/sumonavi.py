@@ -129,6 +129,14 @@ def _parse_pdf(text, url, listing_type):
         _field(raw, "駐車場") or _field(raw, "車庫") or ("あり" if "駐車" in raw else ""))
     remarks = _field(raw, "備考")
 
+    # contacto (teléfono, email, agencia) — están en el PDF
+    mtel = re.search(r"0\d{1,3}[-‐－]\d{2,4}[-‐－]\d{3,4}", raw)
+    tel = mtel.group(0).replace("‐", "-").replace("－", "-") if mtel else ""
+    memail = re.search(r"[\w.\-]+@[\w.\-]+\.\w+", raw)
+    email = memail.group(0) if memail else ""
+    magency = re.search(r"\S*(?:株式会社|有限会社)\S*", raw)
+    agency = magency.group(0) if magency else ""
+
     blob = raw
     lst = Listing(
         source=SLUG, source_name=NAME, source_url=url,
@@ -155,6 +163,9 @@ def _parse_pdf(text, url, listing_type):
             ])).strip(),
             "土地権利": _field(raw, "土地権利"),
             "備考": remarks,
+            "contacto": agency,
+            "contacto_tel": tel,
+            "contacto_email": email,
         }.items() if v},
     )
     assign_area(lst)

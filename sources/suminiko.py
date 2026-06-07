@@ -139,6 +139,11 @@ def _parse_detail(client, url):
         status_note=status_note,
         features=dict(
             {"物件番号": bukken_no} if bukken_no else {},
+            **{k: v for k, v in {
+                "contacto": info.get("名称", ""),
+                "contacto_tel": info.get("ＴＥＬ", "") or info.get("TEL", ""),
+                "contacto_web": info.get("ＨＰアドレス", ""),
+            }.items() if v},
             **{k: v for k, v in info.items() if k in (
                 "設備", "庭", "収納", "農地面積", "付帯施設等", "トイレ", "風呂", "水道", "ガス")},
         ),

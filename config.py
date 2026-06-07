@@ -47,17 +47,13 @@ TARGET_AREAS = [
     {"key": "nara", "es": "Nara (toda)", "pref": "奈良県", "pref_code": "29",
      "match": ["奈良県"], "center": [34.4880, 135.8048]},
 
-    # --- Kyoto norte / rural (京都府北部) ---
-    {"key": "kyoto_north", "es": "Kyoto norte", "pref": "京都府", "pref_code": "26",
-     "match": ["京丹後市", "福知山市", "綾部市", "宮津市", "舞鶴市", "与謝野町",
-               "伊根町", "南丹市", "京丹波町", "亀岡市", "和束町", "南山城村", "笠置町"],
-     "center": [35.4333, 135.0667]},
+    # --- Kyoto — TODA la prefectura (Kansai) ---
+    {"key": "kyoto_north", "es": "Kyoto", "pref": "京都府", "pref_code": "26",
+     "match": ["京都府"], "center": [35.1000, 135.5000]},
 
-    # --- Osaka rural (大阪府 — zonas rurales/montaña) ---
-    {"key": "osaka_rural", "es": "Osaka rural", "pref": "大阪府", "pref_code": "27",
-     "match": ["能勢町", "豊能町", "千早赤阪村", "河南町", "太子町", "岬町",
-               "熊取町", "田尻町", "島本町", "忠岡町"],
-     "center": [34.8500, 135.5000]},
+    # --- Osaka — TODA la prefectura (Kansai) ---
+    {"key": "osaka_rural", "es": "Osaka", "pref": "大阪府", "pref_code": "27",
+     "match": ["大阪府"], "center": [34.6900, 135.5200]},
 
     # --- Fukui — Obama y Wakasa (福井県 若狭) ---
     {"key": "fukui_obama", "es": "Obama / Wakasa", "pref": "福井県", "pref_code": "18",

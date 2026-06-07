@@ -89,12 +89,12 @@ def _parse_card(node, listing_type):
     elif rent_m:
         price_yen = parse_price_yen(rent_m.group(0))
 
-    # tipo de inmueble: casa, apartamento o terreno (descartamos solo terreno)
+    # tipo de inmueble: casa, apartamento o terreno (incluimos todo)
     kind = _field(text, "物件種目", "築年月|所在地|交通|間取|$")
-    if "土地" in kind:
-        return None
     if "マンション" in kind or "アパート" in kind:
         prop_type = "apartment"
+    elif "土地" in kind:
+        prop_type = "land"
     else:
         prop_type = "house"
 

@@ -156,6 +156,7 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
           <span class="chip on" data-pt="all">Todos</span>
           <span class="chip" data-pt="house">🏠 Casa</span>
           <span class="chip" data-pt="apartment">🏢 Apartamento</span>
+          <span class="chip" data-pt="land">🟫 Terreno</span>
         </div></div>
       <div class="fg"><h4>Alquiler máx: <span class="v" id="rentVal"></span>/mes</h4><input type="range" id="maxRent" min="0" max="100000" step="5000" value="40000"></div>
       <div class="fg"><h4>Parking 駐車場</h4>
@@ -296,7 +297,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribu
 const cluster=L.markerClusterGroup({maxClusterRadius:45});map.addLayer(cluster);
 
 // ====== Zonas (sincronizar con TARGET_AREAS) ======
-const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",nara:"Nara 奈良県",kyoto_north:"Kyoto norte 京都北部",osaka_rural:"Osaka rural 大阪",fukui_obama:"Obama/Wakasa 福井若狭",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県"};
+const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県"};
 
 // ====== Traducción japonés → español (glosario) ======
 // Valores exactos de campos estructurados:
@@ -334,8 +335,10 @@ function propType(f){
   if(f.prop_type) return f.prop_type;
   const k=(f.features&&(f.features['物件種目']||f.features['物件区分']))||'';
   if(/マンション|アパート/.test(k)) return 'apartment';
+  if(/土地/.test(k)) return 'land';
   return 'house';
 }
+function propLabel(p){return p==='apartment'?'🏢 Apto':p==='land'?'🟫 Terreno':'🏠 Casa';}
 const CMP_MONTHS={};
 
 // ====== Supuestos de gastos ======
@@ -450,7 +453,7 @@ function renderList(shown,months){
         <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${f.layout||'—'} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+tr(f.year_built):''}</div>
         ${(f.features&&f.features['交通'])?`<div class="meta" style="margin-top:2px">🚉 ${tr(f.features['交通']).slice(0,46)}</div>`:''}
         <div class="badges">
-          <span class="badge">${propType(f)==='apartment'?'🏢 Apto':'🏠 Casa'}</span>
+          <span class="badge">${propLabel(propType(f))}</span>
           ${f.is_new?'<span class="badge new">Novedad</span>':''}
           ${f.parking==='yes'?'<span class="badge park">🚗 parking</span>':(f.parking==='nearby'?'<span class="badge park">🚗 cerca</span>':'')}
           ${f.renovated?'<span class="badge reno">✨ reformada</span>':''}
@@ -490,6 +493,18 @@ function openDetail(f){
   const kind=f.features&&f.features['物件区分']?f.features['物件区分']:(f.features&&f.features['物件種目']?f.features['物件種目']:'');
   const access=f.features&&f.features['交通']?f.features['交通']:'';
   const approx=f.geocode_exact?'':'<div class="approxnote">📍 Ubicación aproximada (centro del municipio)</div>';
+  // Google Maps: por dirección si la hay, si no por coordenadas
+  const gq=encodeURIComponent(f.address_raw||(f.lat+','+f.lng));
+  const gmaps=`https://www.google.com/maps/search/?api=1&query=${gq}`;
+  // contacto (de la agencia/ayuntamiento) si se extrajo
+  const ft=f.features||{};
+  const cTel=ft.contacto_tel||'', cMail=ft.contacto_email||'', cName=ft.contacto||'', cWeb=ft.contacto_web||'';
+  const contactRows=(cName||cTel||cMail||cWeb)?(
+    `<tr><td>Contacto</td><td>${cName?cName+'<br>':''}`+
+    (cTel?`📞 <a href="tel:${cTel.replace(/[^\\d+]/g,'')}">${cTel}</a><br>`:'')+
+    (cMail?`✉️ <a href="mailto:${cMail}">${cMail}</a><br>`:'')+
+    (cWeb?`🌐 <a href="${cWeb.startsWith('http')?cWeb:'http://'+cWeb}" target="_blank" rel="noopener">web</a>`:'')+
+    `</td></tr>`):'';
   $('dBody').innerHTML=`
     <div class="gallery" id="gal"></div>
     <div class="dsec">
@@ -508,8 +523,9 @@ function openDetail(f){
         <tr><td>Mascotas</td><td>${pet}</td></tr>
         <tr><td>Reformada</td><td>${f.renovated?'Sí ✨':'—'}</td></tr>
         <tr><td>Zona</td><td>${AREA_LABELS[f.area_key]||f.city||'—'}</td></tr>
-        <tr><td>Dirección</td><td>${f.address_raw||'—'}</td></tr>
+        <tr><td>Dirección</td><td>${f.address_raw||'—'}<br><a href="${gmaps}" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">📍 Abrir en Google Maps ↗</a></td></tr>
         ${access?`<tr><td>Acceso 交通</td><td>${tr(access)}</td></tr>`:''}
+        ${contactRows}
         ${f.status_note?`<tr><td>Estado</td><td>${tr(f.status_note)} <span style="color:#94a3b8">${f.status_note}</span></td></tr>`:''}
       </table>
       ${f.description_raw?`<div class="desc"><b>Descripción:</b><br>${tr(f.description_raw)}</div>`:''}
@@ -604,6 +620,14 @@ async function sendChat(){
 }
 $('chatSend').onclick=sendChat;
 $('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat();}});
+
+// Cerrar con Esc cualquier ventana abierta (modales y ficha lateral)
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    document.querySelectorAll('.modal-bg.show').forEach(m=>m.classList.remove('show'));
+    if($('drawer').classList.contains('open')){$('drawer').classList.remove('open');CURRENT=null;}
+  }
+});
 
 if(window.innerWidth<=920)setMob('list');
 window.addEventListener('resize',()=>map.invalidateSize());
