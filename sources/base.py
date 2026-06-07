@@ -182,6 +182,16 @@ class HttpClient:
 # ==========================================================================
 _NUM = re.compile(r"[\d,\.]+")
 
+# Tabla para convertir dígitos y letras de ancho completo (zenkaku) a normales.
+_ZEN = str.maketrans(
+    "０１２３４５６７８９ＳＬＤＫＲ．，", "0123456789SLDKR.,"
+)
+
+
+def zen2han(s):
+    """Convierte caracteres de ancho completo (０１２ＳＬＤＫ) a normales."""
+    return s.translate(_ZEN) if s else s
+
 
 def _clean_num(s):
     """Extrae el primer número de un texto (tolera espacios dentro: '401. 38')."""
@@ -200,7 +210,7 @@ def parse_price_yen(text):
     """
     if not text:
         return None
-    t = text.replace(",", "").replace("　", " ")
+    t = zen2han(text).replace(",", "").replace("　", " ")
     m = re.search(r"(\d+(?:\.\d+)?)\s*万", t)
     if m:
         return int(round(float(m.group(1)) * 10000))
@@ -216,7 +226,7 @@ def parse_area_m2(text):
     if not text:
         return None
     # nos quedamos con la parte antes de '㎡' o 'm' si existe
-    t = text.split("㎡")[0].split("m")[0]
+    t = zen2han(text).split("㎡")[0].split("m")[0]
     return _clean_num(t)
 
 

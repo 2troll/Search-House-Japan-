@@ -3,3 +3,4 @@ beautifulsoup4>=4.11
 lxml>=4.9
 # Opcional, solo para fuentes que cargan con JavaScript (no requerido por las fuentes actuales):
 # playwright>=1.40
+pypdfium2>=4
