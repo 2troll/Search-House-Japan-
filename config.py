@@ -43,6 +43,10 @@ TARGET_AREAS = [
     {"key": "sumoto",       "ja": "洲本市",   "es": "Sumoto",        "pref": "兵庫県",   "pref_code": "28", "center": [34.3429, 134.8954]},
     {"key": "awaji_shi",    "ja": "淡路市",   "es": "Awaji",         "pref": "兵庫県",   "pref_code": "28", "center": [34.4439, 134.9150]},
 
+    # --- Kobe / Hyogo (resto de 兵庫県, p. ej. apartamentos UR) ---
+    {"key": "hyogo", "es": "Kobe / Hyogo", "pref": "兵庫県", "pref_code": "28",
+     "match": ["兵庫県"], "center": [34.6900, 135.1950]},
+
     # --- Nara (奈良県) — TODA la prefectura (zonas rurales) ---
     {"key": "nara", "es": "Nara (toda)", "pref": "奈良県", "pref_code": "29",
      "match": ["奈良県"], "center": [34.4880, 135.8048]},

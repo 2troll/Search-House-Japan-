@@ -336,7 +336,7 @@ const cluster=L.markerClusterGroup({maxClusterRadius:38,disableClusteringAtZoom:
 map.on('click movestart',()=>{const f=document.getElementById('filters');if(f)f.classList.remove('open');});
 
 // ====== Zonas (sincronizar con TARGET_AREAS) ======
-const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県",hiroshima:"Hiroshima 広島県",shimane:"Shimane 島根県",kagawa:"Kagawa 香川県",tokushima:"Tokushima 徳島県",ehime:"Ehime 愛媛県"};
+const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",hyogo:"Kobe / Hyogo 兵庫県",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県",hiroshima:"Hiroshima 広島県",shimane:"Shimane 島根県",kagawa:"Kagawa 香川県",tokushima:"Tokushima 徳島県",ehime:"Ehime 愛媛県"};
 
 // ====== Traducción japonés → español (glosario) ======
 // Valores exactos de campos estructurados:
