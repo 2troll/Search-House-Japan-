@@ -44,6 +44,9 @@ button{font-family:inherit}
 #map{flex:1}
 #body.mapfull #filters,#body.mapfull #listcol{display:none}
 #mapFull{position:absolute;top:10px;left:10px;z-index:1001;background:#fff;border:1px solid var(--line2);border-radius:8px;padding:7px 11px;font-size:12px;font-weight:600;cursor:pointer;box-shadow:var(--shadow)}
+#legend{position:absolute;bottom:16px;left:10px;z-index:1001;background:rgba(255,255,255,.95);border:1px solid var(--line);border-radius:10px;padding:9px 11px;font-size:11px;box-shadow:var(--shadow);line-height:1.7;color:#334155}
+#legend b{font-size:11px;display:block;margin-bottom:3px;color:var(--ink)}
+#legend .sw{display:inline-block;width:22px;height:14px;border-radius:7px;vertical-align:middle;margin-right:5px;border:1.5px solid #fff;box-shadow:0 0 0 1px #cbd5e1}
 
 .fg{margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
 .fg:last-child{border:none}
@@ -133,6 +136,7 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
   #listcol{width:100%;display:none}#listcol.show{display:flex}
   #map{display:none}#map.show{display:block}
   #drawer{width:100%}
+  #legend{display:none}
   .mobtabs{display:flex;background:#fff;border-top:1px solid var(--line)}
   .mobtabs button{flex:1;padding:11px;background:none;border:none;font-size:13px;font-weight:600;color:var(--muted)}
   .mobtabs button.on{color:var(--accent);box-shadow:inset 0 -2px 0 var(--accent)}
@@ -196,6 +200,12 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
 
     <div id="map"></div>
     <button id="mapFull" title="Ver solo el mapa / volver">🗺️ Solo mapa</button>
+    <div id="legend">
+      <b>Leyenda</b>
+      <span class="sw" style="background:hsl(120,70%,42%)"></span>barato &nbsp;<span class="sw" style="background:hsl(0,70%,42%)"></span>caro<br>
+      <span class="sw" style="background:#64748b;border-style:dashed;border-width:2px"></span>alquiler &nbsp;<span class="sw" style="background:#64748b;border-radius:3px"></span>terreno<br>
+      <span style="display:inline-block;width:20px;height:20px;border-radius:50%;background:#6366f1;color:#fff;text-align:center;line-height:20px;font-weight:700;margin-right:5px">8</span>varias casas (acerca el zoom)
+    </div>
 
     <!-- Ficha lateral -->
     <aside id="drawer">

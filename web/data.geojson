@@ -41,12 +41,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38096.jpg"
+     "img/athome/38096_0.jpg",
+     "img/athome/38096_1.jpg",
+     "img/athome/38096_2.jpg",
+     "img/athome/38096_3.jpg",
+     "img/athome/38096_4.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "小浜線 小浜駅 / 車9分",
-     "fotos_total": "1"
+     "fotos_total": "1",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "【問い合わせ先】 アーキホームライフ舞鶴店 京都府舞鶴市字倉谷1557番地 TEL:0120-70-5538",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "小浜線 小浜駅 / 車9分",
     "status_note": "",
@@ -94,12 +101,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38082.jpg"
+     "img/athome/38082_0.jpg",
+     "img/athome/38082_1.jpg",
+     "img/athome/38082_2.jpg",
+     "img/athome/38082_3.jpg",
+     "img/athome/38082_4.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "小浜線 東小浜駅 / 車7分",
-     "fotos_total": "3"
+     "fotos_total": "3",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "備考": "現況引き渡し 【問い合わせ先】 アーキホームライフ舞鶴店 京都府舞鶴市字倉谷1557番地 TEL:0120-70-5538",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "小浜線 東小浜駅 / 車7分",
     "status_note": "",
@@ -147,12 +161,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/38078.jpg"
+     "img/athome/38078_0.jpg",
+     "img/athome/38078_1.jpg",
+     "img/athome/38078_2.jpg",
+     "img/athome/38078_3.jpg",
+     "img/athome/38078_4.jpg"
     ],
     "features": {
      "物件種目": "",
      "交通": "小浜線 東小浜駅 / 車3分",
-     "fotos_total": "3"
+     "fotos_total": "3",
+     "条件": "所有権 更地 建築条件無 即引渡可 角地 上水道 下水道 都市ガス 電気 側溝",
+     "設備": "上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道",
+     "備考": "上下水道有り 【問い合わせ先】 アーキホームライフ舞鶴店 京都府舞鶴市字倉谷1557番地 TEL:0120-70-5538",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "小浜線 東小浜駅 / 車3分",
     "status_note": "",
@@ -200,12 +222,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31121.jpg"
+     "img/athome/31121_0.jpg",
+     "img/athome/31121_1.jpg",
+     "img/athome/31121_2.jpg",
+     "img/athome/31121_3.jpg",
+     "img/athome/31121_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄りバス停より0.6km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "トイレ（汲み取り式） 水道（山水） 小学校8.7km　中学校8.6km　郵便局2.6km 100万円以下",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄りバス停より0.6km",
     "status_note": "",
@@ -253,12 +282,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31105.jpg"
+     "img/athome/31105_0.jpg",
+     "img/athome/31105_1.jpg",
+     "img/athome/31105_2.jpg",
+     "img/athome/31105_3.jpg",
+     "img/athome/31105_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄バス停より500m",
-     "fotos_total": "7"
+     "fotos_total": "7",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "町役場10.5km　病院7.1km　消防署2.8km　警察署2.8km　保育園・幼稚園9km　小学校9km　中学校9km　頭巾山旅行村、道の駅0.5km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄バス停より500m",
     "status_note": "",
@@ -306,12 +342,19 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/31104.jpg"
+     "img/athome/31104_0.jpg",
+     "img/athome/31104_1.jpg",
+     "img/athome/31104_2.jpg",
+     "img/athome/31104_3.jpg",
+     "img/athome/31104_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "最寄駅より10.9km",
-     "fotos_total": "3"
+     "fotos_total": "3",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "町役場10.6km　病院4.1km　消防署1km　警察署0.6km　保育園1.5km　小学校2km　中学校2km",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "最寄駅より10.9km",
     "status_note": "",
@@ -359,12 +402,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/22901.jpg"
+     "img/athome/22901_0.jpg",
+     "img/athome/22901_1.jpg",
+     "img/athome/22901_2.jpg",
+     "img/athome/22901_3.jpg",
+     "img/athome/22901_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "小浜線 東小浜駅 / 車2km",
-     "fotos_total": "2"
+     "fotos_total": "2",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "システムキッチン\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・ユニットバス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・汲取",
+     "備考": "※配水管の大規模な修繕が必要 【問い合わせ先】 有限会社河南宅建 小浜市千種一丁目12-1 TEL：0770-53-0733",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "小浜線 東小浜駅 / 車2km",
     "status_note": "",
@@ -412,12 +463,20 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/22034.jpg"
+     "img/athome/22034_0.jpg",
+     "img/athome/22034_1.jpg",
+     "img/athome/22034_2.jpg",
+     "img/athome/22034_3.jpg",
+     "img/athome/22034_4.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "小浜線 新平野駅 / 車3.1km",
-     "fotos_total": "7"
+     "fotos_total": "7",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "太陽光発電システム\n\t\t\t\t\t\t\t\t\t\t\t・システムキッチン\n\t\t\t\t\t\t\t\t\t\t\t・オープンキッチン\n\t\t\t\t\t\t\t\t\t\t\t・B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・ユニットバス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・その他水道\n\t\t\t\t\t\t\t\t\t\t\t・その他排水\n\t\t\t\t\t\t\t\t\t\t\t・オール電化\n\t\t\t\t\t\t\t\t\t\t\t・LDK18畳以上\n\t\t\t\t\t\t\t\t\t\t\t・クローゼット\n\t\t\t\t\t\t\t\t\t\t\t・クローゼット3箇所\n\t\t\t\t\t\t\t\t\t\t\t・バルコニー\n\t\t\t\t\t\t\t\t\t\t\t・吹抜",
+     "備考": "【問い合わせ先】 おうちパーク株式会社 敦賀市新松島町1番1号 TEL：0770-47-6460",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "小浜線 新平野駅 / 車3.1km",
     "status_note": "",
@@ -465,12 +524,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/19507.jpg"
+     "img/athome/19507_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "小浜線 美浜駅 / 徒歩12分",
-     "fotos_total": "6"
+     "fotos_total": "6",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "離れあり 上下水道あり 風呂：灯油 キッチン：プロパンガス 電気契約あり 電話・CATV停止中",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "小浜線 美浜駅 / 徒歩12分",
     "status_note": "",
@@ -518,12 +580,15 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/17453.jpg"
+     "img/athome/17453_0.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "小浜線 東美浜駅 / 車6分",
-     "fotos_total": "3"
+     "fotos_total": "3",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "備考": "・上下水道あり ・電気、ガス、電話等は停止中",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "小浜線 東美浜駅 / 車6分",
     "status_note": "",
@@ -23266,12 +23331,22 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/21741.jpg"
+     "img/athome/21741_0.jpg",
+     "img/athome/21741_1.jpg",
+     "img/athome/21741_2.jpg",
+     "img/athome/21741_3.jpg",
+     "img/athome/21741_4.jpg",
+     "img/athome/21741_5.jpg",
+     "img/athome/21741_6.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "JR姫新線播磨新宮駅",
-     "fotos_total": "12"
+     "fotos_total": "12",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・トイレ\n\t\t\t\t\t\t\t\t\t\t\t・バス\n\t\t\t\t\t\t\t\t\t\t\t・電気\n\t\t\t\t\t\t\t\t\t\t\t・上水道\n\t\t\t\t\t\t\t\t\t\t\t・下水道\n\t\t\t\t\t\t\t\t\t\t\t・プロパンガス\n\t\t\t\t\t\t\t\t\t\t\t・井戸\n\t\t\t\t\t\t\t\t\t\t\t・室内洗濯機置場",
+     "備考": "https://youtu.be/-XIffjeFa3Y から内覧動画をご視聴いただけます！！",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "JR姫新線播磨新宮駅",
     "status_note": "",
@@ -23669,12 +23744,21 @@
     "pet_ok": "unknown",
     "renovated": 0,
     "photos": [
-     "img/athome/474.jpg"
+     "img/athome/474_0.jpg",
+     "img/athome/474_1.jpg",
+     "img/athome/474_2.jpg",
+     "img/athome/474_3.jpg",
+     "img/athome/474_4.jpg",
+     "img/athome/474_5.jpg",
+     "img/athome/474_6.jpg"
     ],
     "features": {
      "物件種目": "売戸建",
      "交通": "ＪＲ姫新線 播磨新宮駅",
-     "fotos_total": "3"
+     "fotos_total": "3",
+     "条件": "駐車場2台以上 南向 閑静な住宅街 都市ガス システムキッチン トイレ2箇所 追焚機能 二世帯向 角地 モニタ付インターホン",
+     "設備": "B/T(バストイレ)別室\n\t\t\t\t\t\t\t\t\t\t\t・浴室に窓\n\t\t\t\t\t\t\t\t\t\t\t・縁側\n\t\t\t\t\t\t\t\t\t\t\t・収納スペース\n\t\t\t\t\t\t\t\t\t\t\t・屋根裏収納",
+     "敷金保証金": "-\n\t\t\t\t/\n\t\t\t\t-"
     },
     "description_raw": "ＪＲ姫新線 播磨新宮駅",
     "status_note": "",
