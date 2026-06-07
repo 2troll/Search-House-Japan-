@@ -273,20 +273,27 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
 </div></div>
 
 <!-- Modal AGENTE IA -->
-<div class="modal-bg" id="agentModal"><div class="modal" style="max-width:560px;display:flex;flex-direction:column;height:80vh">
-  <header><h2>🤖 Tu agente inmobiliario IA</h2><button class="x" data-close>×</button></header>
-  <div class="mb" id="agentSetup" style="display:none">
-    <p style="font-size:13px;color:var(--muted);margin-top:0">El agente usa la IA de Claude. Necesita <b>tu</b> clave de API (se guarda solo en tu navegador, no se envía a ningún sitio salvo a Anthropic). Consíguela en <a href="https://console.anthropic.com/" target="_blank">console.anthropic.com</a>.</p>
-    <input type="text" id="apiKey" placeholder="sk-ant-..." style="width:100%;padding:9px;border:1px solid var(--line2);border-radius:8px;font-size:13px">
-    <button class="tb-btn" id="saveKey" style="background:var(--accent);color:#fff;margin-top:8px;border:none">Guardar y empezar</button>
-  </div>
-  <div id="chatArea" style="flex:1;overflow:auto;padding:14px;display:none;background:var(--soft2)"></div>
-  <div id="chatInputBar" style="display:none;padding:10px;border-top:1px solid var(--line);gap:6px">
-    <textarea id="chatInput" rows="2" placeholder="Pregúntale: ¿cuál es la más barata con parking en Nara para 4 meses?" style="width:100%;padding:8px;border:1px solid var(--line2);border-radius:8px;font-size:13px;resize:none"></textarea>
-    <div style="display:flex;gap:6px;margin-top:6px">
-      <button class="tb-btn" id="chatSend" style="flex:1;background:var(--accent);color:#fff;border:none">Enviar</button>
-      <button class="tb-btn" id="chatClearKey" title="Cambiar clave">🔑</button>
+<div class="modal-bg" id="agentModal"><div class="modal" style="max-width:560px;display:flex;flex-direction:column;height:82vh">
+  <header>
+    <h2>🤖 Tu agente inmobiliario IA</h2>
+    <div style="display:flex;gap:8px;align-items:center">
+      <span id="aiModeBadge" style="font-size:11px;background:var(--soft);padding:3px 8px;border-radius:10px;color:var(--muted)">Gratis</span>
+      <button class="tb-btn" id="openPro" title="Usar tu clave (mejor calidad)" style="padding:4px 8px">⚡ Pro</button>
+      <button class="x" data-close>×</button>
     </div>
+  </header>
+  <div class="mb" id="agentSetup" style="display:none;border-bottom:1px solid var(--line)">
+    <p style="font-size:13px;color:var(--muted);margin-top:0">Modo <b>Pro</b>: usa tu clave de Claude (mejores respuestas, sin esperas). Se guarda solo en tu navegador. La consigues en <a href="https://console.anthropic.com/" target="_blank">console.anthropic.com</a>. Sin clave funciona igual en modo <b>Gratis</b> (IA Llama/GPT-OSS).</p>
+    <input type="text" id="apiKey" placeholder="sk-ant-..." style="width:100%;padding:9px;border:1px solid var(--line2);border-radius:8px;font-size:13px">
+    <div style="display:flex;gap:6px;margin-top:8px">
+      <button class="tb-btn" id="saveKey" style="background:var(--accent);color:#fff;border:none">Guardar clave (Pro)</button>
+      <button class="tb-btn" id="chatClearKey">Quitar clave (volver a Gratis)</button>
+    </div>
+  </div>
+  <div id="chatArea" style="flex:1;overflow:auto;padding:14px;background:var(--soft2)"></div>
+  <div id="chatInputBar" style="padding:10px;border-top:1px solid var(--line)">
+    <textarea id="chatInput" rows="2" placeholder="Ej: las 3 casas más baratas con parking en Awaji para 5 meses" style="width:100%;padding:8px;border:1px solid var(--line2);border-radius:8px;font-size:13px;resize:none"></textarea>
+    <button class="tb-btn" id="chatSend" style="width:100%;background:var(--accent);color:#fff;border:none;margin-top:6px">Enviar</button>
   </div>
 </div></div>
 
@@ -297,7 +304,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribu
 const cluster=L.markerClusterGroup({maxClusterRadius:45});map.addLayer(cluster);
 
 // ====== Zonas (sincronizar con TARGET_AREAS) ======
-const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県"};
+const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県",hiroshima:"Hiroshima 広島県",shimane:"Shimane 島根県",kagawa:"Kagawa 香川県",tokushima:"Tokushima 徳島県",ehime:"Ehime 愛媛県"};
 
 // ====== Traducción japonés → español (glosario) ======
 // Valores exactos de campos estructurados:
@@ -570,22 +577,21 @@ window.setCmpMonths=function(id,v){CMP_MONTHS[id]=Math.max(1,+v||1);renderCompar
 // ====== Guía ======
 $('openGuide').onclick=()=>$('guideModal').classList.add('show');
 
-// ====== Agente IA (API de Claude, clave del usuario) ======
+// ====== Agente IA — GRATIS por defecto (Llama/GPT-OSS, sin clave) + Pro (Claude) ======
 let CHAT=[]; // historial [{role,content}]
-$('openAgent').onclick=()=>{$('agentModal').classList.add('show');refreshAgentUI();};
 function getKey(){return localStorage.getItem('anthropic_key')||'';}
+function aiMode(){return getKey()?'pro':'free';}
+$('openAgent').onclick=()=>{$('agentModal').classList.add('show');refreshAgentUI();};
 function refreshAgentUI(){
-  const has=!!getKey();
-  $('agentSetup').style.display=has?'none':'block';
-  $('chatArea').style.display=has?'block':'none';
-  $('chatInputBar').style.display=has?'block':'none';
-  if(has&&!$('chatArea').dataset.init){
+  $('aiModeBadge').textContent=aiMode()==='pro'?'Pro (Claude)':'Gratis (Llama)';
+  if(!$('chatArea').dataset.init){
     $('chatArea').dataset.init='1';
-    addChat('agent','¡Hola! Soy tu agente inmobiliario. Veo las casas que tienes filtradas ahora mismo. Pregúntame lo que quieras: la más barata con parking, comparar zonas para X meses, qué casa me conviene, los pasos para alquilar/comprar...');
+    addChat('agent','¡Hola! Soy tu agente inmobiliario. Veo las casas que tienes filtradas ahora mismo. Pregúntame lo que quieras: las más baratas con parking en Awaji, comparar zonas para X meses, qué casa me conviene, los pasos para alquilar o comprar...\n\n(Funciono gratis. Para respuestas mejores y sin esperas, pulsa ⚡ Pro y añade tu clave de Claude.)');
   }
 }
-$('saveKey').onclick=()=>{const k=$('apiKey').value.trim();if(k){localStorage.setItem('anthropic_key',k);refreshAgentUI();}};
-$('chatClearKey').onclick=()=>{localStorage.removeItem('anthropic_key');delete $('chatArea').dataset.init;$('chatArea').innerHTML='';CHAT=[];refreshAgentUI();};
+$('openPro').onclick=()=>{const s=$('agentSetup');s.style.display=s.style.display==='none'?'block':'none';};
+$('saveKey').onclick=()=>{const k=$('apiKey').value.trim();if(k){localStorage.setItem('anthropic_key',k);$('agentSetup').style.display='none';refreshAgentUI();addChat('agent','✅ Modo Pro activado (Claude). Pregúntame lo que quieras.');}};
+$('chatClearKey').onclick=()=>{localStorage.removeItem('anthropic_key');$('agentSetup').style.display='none';refreshAgentUI();addChat('agent','Vuelto al modo Gratis (Llama/GPT-OSS).');};
 function addChat(who,text){
   const d=document.createElement('div');
   d.style.cssText='margin-bottom:10px;padding:9px 11px;border-radius:10px;font-size:13px;line-height:1.5;white-space:pre-wrap;max-width:90%;'+(who==='user'?'background:var(--accent);color:#fff;margin-left:auto':'background:#fff;border:1px solid var(--line)');
@@ -593,30 +599,45 @@ function addChat(who,text){
 }
 function listingsContext(){
   const months=+$('months').value;
-  const shown=FEATURES.filter(matches).sort(sortFn(months)).slice(0,40);
+  const shown=FEATURES.filter(matches).sort(sortFn(months)).slice(0,35);
+  const tp={house:'casa',apartment:'apartamento',land:'terreno'};
   const lines=shown.map(f=>{
     const sc=stayCost(f,months);
     const price=f.listing_type==='rent'?(f.rent_yen?f.rent_yen+'¥/mes':'a consultar'):(f.sale_price_yen?f.sale_price_yen+'¥':'a consultar');
-    return `- ${f.title} | ${f.listing_type==='rent'?'alquiler':'venta'} ${propType(f)==='apartment'?'apartamento':'casa'} | zona:${AREA_LABELS[f.area_key]||f.city} | precio:${price} | ${f.layout||'?'} | ${f.building_area_m2||'?'}m2 | año:${f.year_built||'?'} | parking:${f.parking} | extranjero:${f.foreigner_ok}${f.features&&f.features['交通']?' | acceso:'+f.features['交通']:''}${sc?' | coste '+months+'meses≈'+Math.round(sc.total)+'¥ ('+Math.round(sc.perMonth)+'¥/mes efectivo)':''}`;
+    return `- ${f.title} | ${f.listing_type==='rent'?'alquiler':'venta'} ${tp[propType(f)]||'casa'} | zona:${AREA_LABELS[f.area_key]||f.city} | precio:${price} | ${f.layout||'?'} | ${f.building_area_m2||'?'}m2 | año:${f.year_built||'?'} | parking:${f.parking}${f.features&&f.features['交通']?' | acceso:'+f.features['交通']:''}${f.features&&f.features['contacto_tel']?' | tel:'+f.features['contacto_tel']:''}${sc?' | coste '+months+'m≈'+Math.round(sc.total)+'¥ ('+Math.round(sc.perMonth)+'¥/mes)':''}`;
   });
   return shown.length?`Casas filtradas ahora (${shown.length}, moneda base ¥, estancia ${months} meses):\n`+lines.join('\n'):'No hay casas en el filtro actual.';
+}
+const SYS_AGENT=()=>`Eres un agente inmobiliario personal experto en Japón; hablas español claro y directo. Ayudas al usuario (tiene residencia en Japón) a elegir entre las casas/apartamentos/terrenos que tiene filtrados. Usa SOLO los datos que te paso; si falta un dato di que se consulte el anuncio o el contacto. Recomienda opciones concretas por su título, compara coste total de estancia, parking, acceso a tren, antigüedad y zona. Explica pasos de alquiler/compra si lo piden. Sé conciso y útil.\n\n${listingsContext()}`;
+
+async function callClaude(sys){
+  const r=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',
+    headers:{'content-type':'application/json','x-api-key':getKey(),'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+    body:JSON.stringify({model:'claude-opus-4-8',max_tokens:1024,system:sys,messages:CHAT})});
+  if(!r.ok){throw new Error(r.status===401?'Clave de Claude inválida (⚡ Pro para cambiarla).':'Claude error '+r.status);}
+  const d=await r.json();
+  return (d.content||[]).filter(b=>b.type==='text').map(b=>b.text).join('\n')||'(sin respuesta)';
+}
+async function callFree(sys){
+  // Pollinations: IA gratis y sin clave (Llama/GPT-OSS). 1 petición a la vez por IP.
+  const msgs=[{role:'system',content:sys},...CHAT];
+  const r=await fetch('https://text.pollinations.ai/openai',{method:'POST',
+    headers:{'content-type':'application/json'},
+    body:JSON.stringify({model:'openai-fast',messages:msgs,private:true,referrer:'casas-japan'})});
+  if(r.status===429)throw new Error('La IA gratis está ocupada ahora mismo (mucha gente). Reintenta en unos segundos, o pulsa ⚡ Pro para usar tu clave sin esperas.');
+  if(!r.ok)throw new Error('IA gratis error '+r.status+'. Reintenta o usa ⚡ Pro.');
+  const d=await r.json();
+  return (d.choices&&d.choices[0]&&d.choices[0].message&&d.choices[0].message.content)||'(sin respuesta)';
 }
 async function sendChat(){
   const input=$('chatInput');const q=input.value.trim();if(!q)return;
   input.value='';addChat('user',q);CHAT.push({role:'user',content:q});
   const thinking=addChat('agent','…');
-  const sys=`Eres un agente inmobiliario personal experto en Japón, hablas español claro y directo. Ayudas al usuario (tiene residencia en Japón, busca casa/apartamento en alquiler o venta) a elegir entre las casas que tiene filtradas en su buscador. Usa SOLO los datos que te paso; si falta un dato di que se consulte el anuncio. Recomienda casas concretas por su título, compara coste total de estancia, parking, acceso a tren, antigüedad y zona. Explica también pasos de alquiler/compra si lo piden. Sé conciso y útil.\n\n${listingsContext()}`;
+  const sys=SYS_AGENT();
   try{
-    const r=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'content-type':'application/json','x-api-key':getKey(),'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
-      body:JSON.stringify({model:'claude-opus-4-8',max_tokens:1024,system:sys,messages:CHAT})
-    });
-    if(!r.ok){const e=await r.text();thinking.textContent='⚠️ Error '+r.status+'. '+(r.status===401?'Clave de API inválida (pulsa 🔑 para cambiarla).':e.slice(0,200));return;}
-    const data=await r.json();
-    const txt=(data.content||[]).filter(b=>b.type==='text').map(b=>b.text).join('\n')||'(sin respuesta)';
+    const txt=aiMode()==='pro'?await callClaude(sys):await callFree(sys);
     thinking.textContent=txt;CHAT.push({role:'assistant',content:txt});
-  }catch(err){thinking.textContent='⚠️ No se pudo conectar: '+err.message;}
+  }catch(err){thinking.textContent='⚠️ '+err.message;}
 }
 $('chatSend').onclick=sendChat;
 $('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat();}});

@@ -69,6 +69,18 @@ TARGET_AREAS = [
      "match": ["岡山県"], "center": [34.9000, 133.8000]},
     {"key": "tottori",  "es": "Tottori",           "pref": "鳥取県", "pref_code": "31",
      "match": ["鳥取県"], "center": [35.3600, 134.2000]},
+
+    # --- Chugoku / Shikoku (más campo) ---
+    {"key": "hiroshima", "es": "Hiroshima (rural)", "pref": "広島県", "pref_code": "34",
+     "match": ["広島県"], "center": [34.5000, 132.8000]},
+    {"key": "shimane",   "es": "Shimane",           "pref": "島根県", "pref_code": "32",
+     "match": ["島根県"], "center": [35.2000, 132.7000]},
+    {"key": "kagawa",    "es": "Kagawa (Shikoku)",  "pref": "香川県", "pref_code": "37",
+     "match": ["香川県"], "center": [34.2000, 133.9000]},
+    {"key": "tokushima", "es": "Tokushima (Shikoku)","pref": "徳島県", "pref_code": "36",
+     "match": ["徳島県"], "center": [33.9000, 134.3000]},
+    {"key": "ehime",     "es": "Ehime (Shikoku)",   "pref": "愛媛県", "pref_code": "38",
+     "match": ["愛媛県"], "center": [33.7500, 132.9000]},
 ]
 
 # Mapa rápido  nombre japonés -> bloque de zona (lo usan los adaptadores).
