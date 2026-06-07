@@ -12,6 +12,7 @@ CREATE TABLE IF NOT EXISTS listings (
     active             INTEGER DEFAULT 1,  -- 1 si sigue apareciendo, 0 si desapareció
 
     listing_type       TEXT,        -- "rent" | "sale"
+    prop_type          TEXT,        -- "house" | "apartment" | "land" | ""
     title              TEXT,
 
     prefecture         TEXT,

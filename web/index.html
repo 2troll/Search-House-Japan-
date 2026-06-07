@@ -145,12 +145,20 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
     <div class="tb"><label>Moneda</label><div class="seg" id="curSeg"><button data-c="EUR" class="on">€</button><button data-c="USD">$</button><button data-c="ILS">₪</button><button data-c="JPY">¥</button></div></div>
     <div class="tb"><label>Orden</label><select id="sortBy"><option value="cost">Coste estancia ↑</option><option value="permonth">Coste/mes ↑</option><option value="price">Precio ↑</option><option value="age">Más nuevas</option><option value="area">Más grandes</option></select></div>
     <div class="spacer"></div>
+    <button class="tb-btn" id="openGuide">📖 Guía</button>
     <button class="tb-btn" id="openAssume">⚙️ Gastos</button>
     <button class="tb-btn" id="openCompare">⭐ Comparar <span class="n" id="favN">0</span></button>
+    <button class="tb-btn" id="openAgent" style="background:#4f46e5;border-color:#6366f1">🤖 Agente IA</button>
   </div>
 
   <div id="body">
     <aside id="filters">
+      <div class="fg"><h4>Tipo de inmueble</h4>
+        <div class="row" id="ptypeRow">
+          <span class="chip on" data-pt="all">Todos</span>
+          <span class="chip" data-pt="house">🏠 Casa</span>
+          <span class="chip" data-pt="apartment">🏢 Apartamento</span>
+        </div></div>
       <div class="fg"><h4>Alquiler máx: <span class="v" id="rentVal"></span>/mes</h4><input type="range" id="maxRent" min="0" max="100000" step="5000" value="40000"></div>
       <div class="fg"><h4>Parking 駐車場</h4>
         <label class="toggle"><input type="checkbox" id="parkingOnly"> Solo con parking</label>
@@ -211,6 +219,70 @@ table.cmp input.mo{width:50px;padding:4px;border:1px solid var(--line2);border-r
   <div class="mb" id="compareBody"></div>
 </div></div>
 
+<!-- Modal GUÍA -->
+<div class="modal-bg" id="guideModal"><div class="modal">
+  <header><h2>📖 Guía: cómo alquilar o comprar en Japón</h2><button class="x" data-close>×</button></header>
+  <div class="mb" style="font-size:14px;line-height:1.6">
+    <p style="color:var(--muted);margin-top:0">Esto es lo que las agencias no te explican claro. Tú ya tienes residencia en Japón, así que los ayuntamientos te aceptan sin problema (buscan 移住者).</p>
+
+    <h3 style="margin:14px 0 6px">🔑 ALQUILAR (賃貸) — pasos</h3>
+    <ol style="padding-left:18px;margin:0">
+      <li><b>Encuentra la casa</b> y contacta al ayuntamiento (空き家バンク) o a la inmobiliaria del anuncio.</li>
+      <li><b>Visita</b> (内見). Comprueba: humedad/moho, orientación, parking real, cobertura móvil, distancia a estación/tienda.</li>
+      <li><b>Solicitud</b> (入居申込). Piden: 住民票 (empadronamiento), documento de ingresos, identificación y a veces un <b>garante</b> (保証人) o una <b>empresa avaladora</b> (保証会社, ~50-100% de un mes).</li>
+      <li><b>Coste de entrada</b> (初期費用), normalmente 4-6 meses en total:
+        <ul style="margin:4px 0">
+          <li>礼金 (key money): regalo al casero, <b>no se devuelve</b> (0-2 meses).</li>
+          <li>敷金 (fianza): reembolsable menos limpieza/daños (0-2 meses).</li>
+          <li>仲介手数料 (comisión): ~1 mes + IVA.</li>
+          <li>保証会社 (aval), 火災保険 (seguro incendios ~¥15-20k/2 años), 鍵交換 (cambio cerradura ~¥15k).</li>
+        </ul>
+      </li>
+      <li><b>Contrato</b> (契約): suele ser de <b>2 años</b>. Si te vas antes, puede haber <b>penalización</b> (短期解約違約金, 1-2 meses) + limpieza de salida. ➜ Usa la calculadora ⚙️ de esta app para ver el coste real de tu estancia.</li>
+      <li><b>Mudanza</b>: cambia tu 住民票 al nuevo ayuntamiento, da de alta luz/agua/gas (a veces hay 浄化槽/fosa séptica), internet.</li>
+    </ol>
+
+    <h3 style="margin:16px 0 6px">🏡 COMPRAR (売買) — pasos</h3>
+    <ol style="padding-left:18px;margin:0">
+      <li><b>Elige</b> y visita. En 空き家バンク muchas están casi regaladas pero pueden necesitar reforma — pide presupuesto de obra.</li>
+      <li><b>Oferta y negociación</b> (買付). El precio suele ser negociable.</li>
+      <li><b>Explicación importante</b> (重要事項説明) por un agente colegiado (宅建士): zonificación, servidumbres, fosa séptica, riesgos (inundación/deslizamiento).</li>
+      <li><b>Contrato</b> (売買契約) + señal (手付金, ~5-10%).</li>
+      <li><b>Costes añadidos</b> (~6-9% del precio): impuesto de transmisión (不動産取得税), registro (登記) + gastos de notario judicial (司法書士), 印紙税, comisión agencia (~3% + ¥60k + IVA), y luego el <b>impuesto anual</b> 固定資産税.</li>
+      <li><b>Cierre</b> (決済) y registro a tu nombre. ¡Ya es tuya!</li>
+      <li><b>Ayudas</b>: muchos pueblos dan subvenciones a 移住者 para reforma (リフォーム補助金). Pregunta en el ayuntamiento.</li>
+    </ol>
+
+    <h3 style="margin:16px 0 6px">✅ Checklist antes de decidir</h3>
+    <ul style="padding-left:18px;margin:0">
+      <li>Parking para tu coche (駐車場) — ¿en parcela o alquilado aparte?</li>
+      <li>Acceso: estación/bus, tienda, hospital, colegio.</li>
+      <li>Estado: año (築年), estructura (木造…), ¿reformada? ¿fosa séptica o alcantarillado?</li>
+      <li>Extranjeros: si el anuncio no lo dice, pregunta — con residencia rara vez es problema.</li>
+      <li>Coste TOTAL de tu estancia (no solo el alquiler) — míralo en la ficha de cada casa.</li>
+    </ul>
+    <p style="color:var(--muted);font-size:12px;margin-top:14px">Orientativo, de uso personal. Las cifras varían por zona y propiedad; confirma siempre con el ayuntamiento o el agente.</p>
+  </div>
+</div></div>
+
+<!-- Modal AGENTE IA -->
+<div class="modal-bg" id="agentModal"><div class="modal" style="max-width:560px;display:flex;flex-direction:column;height:80vh">
+  <header><h2>🤖 Tu agente inmobiliario IA</h2><button class="x" data-close>×</button></header>
+  <div class="mb" id="agentSetup" style="display:none">
+    <p style="font-size:13px;color:var(--muted);margin-top:0">El agente usa la IA de Claude. Necesita <b>tu</b> clave de API (se guarda solo en tu navegador, no se envía a ningún sitio salvo a Anthropic). Consíguela en <a href="https://console.anthropic.com/" target="_blank">console.anthropic.com</a>.</p>
+    <input type="text" id="apiKey" placeholder="sk-ant-..." style="width:100%;padding:9px;border:1px solid var(--line2);border-radius:8px;font-size:13px">
+    <button class="tb-btn" id="saveKey" style="background:var(--accent);color:#fff;margin-top:8px;border:none">Guardar y empezar</button>
+  </div>
+  <div id="chatArea" style="flex:1;overflow:auto;padding:14px;display:none;background:var(--soft2)"></div>
+  <div id="chatInputBar" style="display:none;padding:10px;border-top:1px solid var(--line);gap:6px">
+    <textarea id="chatInput" rows="2" placeholder="Pregúntale: ¿cuál es la más barata con parking en Nara para 4 meses?" style="width:100%;padding:8px;border:1px solid var(--line2);border-radius:8px;font-size:13px;resize:none"></textarea>
+    <div style="display:flex;gap:6px;margin-top:6px">
+      <button class="tb-btn" id="chatSend" style="flex:1;background:var(--accent);color:#fff;border:none">Enviar</button>
+      <button class="tb-btn" id="chatClearKey" title="Cambiar clave">🔑</button>
+    </div>
+  </div>
+</div></div>
+
 <script>
 // ====== Mapa ======
 const map=L.map('map',{zoomControl:true}).setView([34.6,135.6],8);
@@ -249,8 +321,15 @@ const $=id=>document.getElementById(id);
 function priceColor(f){let t;if(f.listing_type==='rent'){t=Math.min(1,(f.rent_yen||0)/80000);}else{t=Math.min(1,(f.sale_price_yen||0)/30000000);}return`hsl(${(1-t)*120},70%,42%)`;}
 
 let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZONES=new Set();
-let OP='rent',SORT='cost',CURRENT=null;
+let OP='rent',SORT='cost',CURRENT=null,PTYPE='all';
 let FAVS=new Set(JSON.parse(localStorage.getItem('favs')||'[]'));
+// tipo de inmueble: usa prop_type o lo deriva de los campos japoneses
+function propType(f){
+  if(f.prop_type) return f.prop_type;
+  const k=(f.features&&(f.features['物件種目']||f.features['物件区分']))||'';
+  if(/マンション|アパート/.test(k)) return 'apartment';
+  return 'house';
+}
 const CMP_MONTHS={};
 
 // ====== Supuestos de gastos ======
@@ -295,6 +374,7 @@ $('maxAge').oninput=e=>{const v=+e.target.value;$('ageVal').textContent=v>=80?'C
 ['parkingOnly','parkingNearby','renovatedOnly','newOnly'].forEach(id=>$(id).onchange=apply);
 $('search').oninput=apply;
 document.querySelectorAll('#opSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#opSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');OP=b.dataset.op;apply();});
+document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#ptypeRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');PTYPE=c.dataset.pt;apply();});
 document.querySelectorAll('#curSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#curSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');CUR=b.dataset.c;updateRentLabel();apply();renderCompare();if(CURRENT)openDetail(CURRENT);});
 $('openAssume').onclick=()=>$('assumeModal').classList.add('show');
 $('openCompare').onclick=()=>{renderCompare();$('compareModal').classList.add('show');};
@@ -309,6 +389,7 @@ function setMob(w){$('listcol').classList.toggle('show',w==='list');$('map').cla
 
 function matches(f){
   if(OP!=='both'&&f.listing_type!==OP)return false;
+  if(PTYPE!=='all'&&propType(f)!==PTYPE)return false;
   if(f.listing_type==='rent'){const mr=+$('maxRent').value;if(mr<100000&&(f.rent_yen||1e9)>mr)return false;}
   if($('parkingOnly').checked){const ok=f.parking==='yes'||(f.parking==='nearby'&&$('parkingNearby').checked);if(!ok)return false;}
   if(LAYOUTS.size){const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];if(!m||!LAYOUTS.has(m.toUpperCase()))return false;}
@@ -361,7 +442,9 @@ function renderList(shown,months){
         ${sc?`<span class="cost">${months}m: ${money(sc.total)}</span><span class="cost pm">${money(sc.perMonth)}/mes</span>`:''}
         <div class="title">${f.title||''}</div>
         <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${f.layout||'—'} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+tr(f.year_built):''}</div>
+        ${(f.features&&f.features['交通'])?`<div class="meta" style="margin-top:2px">🚉 ${tr(f.features['交通']).slice(0,46)}</div>`:''}
         <div class="badges">
+          <span class="badge">${propType(f)==='apartment'?'🏢 Apto':'🏠 Casa'}</span>
           ${f.is_new?'<span class="badge new">Novedad</span>':''}
           ${f.parking==='yes'?'<span class="badge park">🚗 parking</span>':(f.parking==='nearby'?'<span class="badge park">🚗 cerca</span>':'')}
           ${f.renovated?'<span class="badge reno">✨ reformada</span>':''}
@@ -462,6 +545,60 @@ function renderCompare(){
   body.innerHTML=html;
 }
 window.setCmpMonths=function(id,v){CMP_MONTHS[id]=Math.max(1,+v||1);renderCompare();};
+// ====== Guía ======
+$('openGuide').onclick=()=>$('guideModal').classList.add('show');
+
+// ====== Agente IA (API de Claude, clave del usuario) ======
+let CHAT=[]; // historial [{role,content}]
+$('openAgent').onclick=()=>{$('agentModal').classList.add('show');refreshAgentUI();};
+function getKey(){return localStorage.getItem('anthropic_key')||'';}
+function refreshAgentUI(){
+  const has=!!getKey();
+  $('agentSetup').style.display=has?'none':'block';
+  $('chatArea').style.display=has?'block':'none';
+  $('chatInputBar').style.display=has?'block':'none';
+  if(has&&!$('chatArea').dataset.init){
+    $('chatArea').dataset.init='1';
+    addChat('agent','¡Hola! Soy tu agente inmobiliario. Veo las casas que tienes filtradas ahora mismo. Pregúntame lo que quieras: la más barata con parking, comparar zonas para X meses, qué casa me conviene, los pasos para alquilar/comprar...');
+  }
+}
+$('saveKey').onclick=()=>{const k=$('apiKey').value.trim();if(k){localStorage.setItem('anthropic_key',k);refreshAgentUI();}};
+$('chatClearKey').onclick=()=>{localStorage.removeItem('anthropic_key');delete $('chatArea').dataset.init;$('chatArea').innerHTML='';CHAT=[];refreshAgentUI();};
+function addChat(who,text){
+  const d=document.createElement('div');
+  d.style.cssText='margin-bottom:10px;padding:9px 11px;border-radius:10px;font-size:13px;line-height:1.5;white-space:pre-wrap;max-width:90%;'+(who==='user'?'background:var(--accent);color:#fff;margin-left:auto':'background:#fff;border:1px solid var(--line)');
+  d.textContent=text;$('chatArea').appendChild(d);$('chatArea').scrollTop=$('chatArea').scrollHeight;return d;
+}
+function listingsContext(){
+  const months=+$('months').value;
+  const shown=FEATURES.filter(matches).sort(sortFn(months)).slice(0,40);
+  const lines=shown.map(f=>{
+    const sc=stayCost(f,months);
+    const price=f.listing_type==='rent'?(f.rent_yen?f.rent_yen+'¥/mes':'a consultar'):(f.sale_price_yen?f.sale_price_yen+'¥':'a consultar');
+    return `- ${f.title} | ${f.listing_type==='rent'?'alquiler':'venta'} ${propType(f)==='apartment'?'apartamento':'casa'} | zona:${AREA_LABELS[f.area_key]||f.city} | precio:${price} | ${f.layout||'?'} | ${f.building_area_m2||'?'}m2 | año:${f.year_built||'?'} | parking:${f.parking} | extranjero:${f.foreigner_ok}${f.features&&f.features['交通']?' | acceso:'+f.features['交通']:''}${sc?' | coste '+months+'meses≈'+Math.round(sc.total)+'¥ ('+Math.round(sc.perMonth)+'¥/mes efectivo)':''}`;
+  });
+  return shown.length?`Casas filtradas ahora (${shown.length}, moneda base ¥, estancia ${months} meses):\n`+lines.join('\n'):'No hay casas en el filtro actual.';
+}
+async function sendChat(){
+  const input=$('chatInput');const q=input.value.trim();if(!q)return;
+  input.value='';addChat('user',q);CHAT.push({role:'user',content:q});
+  const thinking=addChat('agent','…');
+  const sys=`Eres un agente inmobiliario personal experto en Japón, hablas español claro y directo. Ayudas al usuario (tiene residencia en Japón, busca casa/apartamento en alquiler o venta) a elegir entre las casas que tiene filtradas en su buscador. Usa SOLO los datos que te paso; si falta un dato di que se consulte el anuncio. Recomienda casas concretas por su título, compara coste total de estancia, parking, acceso a tren, antigüedad y zona. Explica también pasos de alquiler/compra si lo piden. Sé conciso y útil.\n\n${listingsContext()}`;
+  try{
+    const r=await fetch('https://api.anthropic.com/v1/messages',{
+      method:'POST',
+      headers:{'content-type':'application/json','x-api-key':getKey(),'anthropic-version':'2023-06-01','anthropic-dangerous-direct-browser-access':'true'},
+      body:JSON.stringify({model:'claude-opus-4-8',max_tokens:1024,system:sys,messages:CHAT})
+    });
+    if(!r.ok){const e=await r.text();thinking.textContent='⚠️ Error '+r.status+'. '+(r.status===401?'Clave de API inválida (pulsa 🔑 para cambiarla).':e.slice(0,200));return;}
+    const data=await r.json();
+    const txt=(data.content||[]).filter(b=>b.type==='text').map(b=>b.text).join('\n')||'(sin respuesta)';
+    thinking.textContent=txt;CHAT.push({role:'assistant',content:txt});
+  }catch(err){thinking.textContent='⚠️ No se pudo conectar: '+err.message;}
+}
+$('chatSend').onclick=sendChat;
+$('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat();}});
+
 if(window.innerWidth<=920)setMob('list');
 window.addEventListener('resize',()=>map.invalidateSize());
 </script>

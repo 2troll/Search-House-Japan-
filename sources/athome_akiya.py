@@ -58,10 +58,14 @@ def _parse_card(node, listing_type):
     elif rent_m:
         price_yen = parse_price_yen(rent_m.group(0))
 
-    # tipo de inmueble: solo戸建て
+    # tipo de inmueble: casa, apartamento o terreno (descartamos solo terreno)
     kind = _field(text, "物件種目", "築年月|所在地|交通|間取|$")
-    if kind and ("マンション" in kind or "土地" in kind or "アパート" in kind):
+    if "土地" in kind:
         return None
+    if "マンション" in kind or "アパート" in kind:
+        prop_type = "apartment"
+    else:
+        prop_type = "house"
 
     layout = ""
     lm = re.search(r"間取\s*([1-9０-９]+\s*[SLDKR]+(?:以上)?)", text)
@@ -85,7 +89,7 @@ def _parse_card(node, listing_type):
 
     lst = Listing(
         source=SLUG, source_name=NAME, source_url=url,
-        listing_type=listing_type,
+        listing_type=listing_type, prop_type=prop_type,
         title=(address or kind or NAME),
         address_raw=address,
         rent_yen=rent_yen, sale_price_yen=sale_yen,

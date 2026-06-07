@@ -133,4 +133,4 @@ CACHE_TTL_SECONDS = 24 * 3600
 
 # Máximo de páginas a recorrer por prefectura en at-home (60 anuncios/página).
 # Súbelo para más cobertura (más lento). 25 páginas ≈ 1.500 casas por prefectura.
-ATHOME_MAX_PAGES = 12
+ATHOME_MAX_PAGES = 20

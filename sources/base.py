@@ -39,6 +39,7 @@ class Listing:
     source_name: str
     source_url: str
     listing_type: str = "sale"      # "rent" | "sale"
+    prop_type: str = "house"        # "house" | "apartment" | "land"
     title: str = ""
 
     prefecture: str = ""

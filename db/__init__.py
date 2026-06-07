@@ -21,7 +21,7 @@ SCHEMA_PATH = os.path.join(os.path.dirname(__file__), "schema.sql")
 # Columnas que acepta upsert_listing (deben existir en la tabla listings).
 LISTING_COLUMNS = [
     "source", "source_name", "source_url", "scraped_at", "first_seen", "last_seen",
-    "active", "listing_type", "title", "prefecture", "city", "area_key", "address_raw",
+    "active", "listing_type", "prop_type", "title", "prefecture", "city", "area_key", "address_raw",
     "lat", "lng", "geocode_source", "geocode_exact", "rent_yen", "management_fee_yen",
     "deposit", "key_money", "sale_price_yen", "layout", "building_area_m2", "land_area_m2",
     "year_built", "age_years", "structure", "floors", "parking", "parking_detail",
@@ -132,6 +132,10 @@ def export_geojson(path=None):
         if r.get("lat") is None or r.get("lng") is None:
             continue  # sin coordenadas no se puede pintar en el mapa
         photos = json.loads(r["photos"]) if r.get("photos") else []
+        try:
+            features = json.loads(r["features"]) if r.get("features") else {}
+        except (ValueError, TypeError):
+            features = {}
         features.append({
             "type": "Feature",
             "geometry": {"type": "Point", "coordinates": [r["lng"], r["lat"]]},
@@ -141,6 +145,7 @@ def export_geojson(path=None):
                 "source_name": r["source_name"],
                 "source_url": r["source_url"],
                 "listing_type": r["listing_type"],
+                "prop_type": r["prop_type"],
                 "title": r["title"],
                 "prefecture": r["prefecture"],
                 "city": r["city"],
@@ -165,6 +170,7 @@ def export_geojson(path=None):
                 "pet_ok": r["pet_ok"],
                 "renovated": r["renovated"],
                 "photos": photos,
+                "features": features,
                 "description_raw": r["description_raw"],
                 "status_note": r["status_note"],
                 "is_new": _is_new(r["first_seen"]),
