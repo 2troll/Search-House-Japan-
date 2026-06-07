@@ -89,14 +89,19 @@ def _parse_card(node, listing_type):
     elif rent_m:
         price_yen = parse_price_yen(rent_m.group(0))
 
-    # tipo de inmueble: casa, apartamento o terreno (incluimos todo)
+    # tipo de inmueble: el tipo real es el PRIMER token de la card
+    # (売戸建 / 中古戸建 / 売地 / 売マンション / 賃貸マンション ...).
     kind = _field(text, "物件種目", "築年月|所在地|交通|間取|$")
-    if "マンション" in kind or "アパート" in kind:
+    head = text[:12]
+    if "マンション" in head or "アパート" in head:
         prop_type = "apartment"
-    elif "土地" in kind:
+    elif ("土地" in head) or ("売地" in head) or ("貸地" in head):
         prop_type = "land"
     else:
         prop_type = "house"
+    if not kind:  # guarda el token de tipo para la ficha si no había 物件種目
+        km = re.match(r"\s*(売戸建|中古戸建|売地|貸地|売マンション|賃貸マンション|売アパート|戸建|マンション|土地)", text)
+        kind = km.group(1) if km else ""
 
     layout = ""
     lm = re.search(r"間取\s*([1-9０-９]+\s*[SLDKR]+(?:以上)?)", text)
