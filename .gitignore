@@ -13,3 +13,4 @@ imports/*.csv
 # Entornos virtuales
 .venv/
 venv/
+web/img/
