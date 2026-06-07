@@ -24,7 +24,8 @@ from bs4 import BeautifulSoup
 
 import config
 import db
-from sources.base import HttpClient
+from sources.base import (HttpClient, detect_foreigner_ok, parse_price_yen,
+                          parse_area_m2, parse_year_built)
 from sources.athome_akiya import IMG_DIR, _img_session
 
 AWAJI = ["minamiawaji", "sumoto", "awaji_shi"]
@@ -123,10 +124,42 @@ def enrich_listing(client, conn, row):
         if v and v not in ("-", "/"):
             feats[k] = v
 
+    # ¿acepta extranjeros? (a menudo oculto) — buscar 外国人 en todo el texto.
+    fulltext = " ".join([cond, equip, remarks] + [str(v) for v in info.values()])
+    fr = detect_foreigner_ok(fulltext)
+
     sets, params = [], []
     if photos:
         sets.append("photos = ?"); params.append(json.dumps(photos, ensure_ascii=False))
     sets.append("features = ?"); params.append(json.dumps(feats, ensure_ascii=False))
+    # solo subimos foreigner_ok si encontramos algo (no pisar con 'unknown')
+    if fr != "unknown":
+        sets.append("foreigner_ok = ?"); params.append(fr)
+    # rellenar campos que estaban en blanco ("?") usando la ficha de detalle
+    if row["listing_type"] == "sale" and not row["sale_price_yen"] and info.get("価格"):
+        p = parse_price_yen(info["価格"])
+        if p:
+            sets.append("sale_price_yen = ?"); params.append(p)
+    if row["listing_type"] == "rent" and not row["rent_yen"] and (info.get("賃料") or info.get("価格")):
+        p = parse_price_yen(info.get("賃料") or info.get("価格"))
+        if p:
+            sets.append("rent_yen = ?"); params.append(p)
+    if not row["year_built"] and info.get("築年月"):
+        yr, age = parse_year_built(info["築年月"])
+        if yr:
+            sets.append("year_built = ?"); params.append(yr)
+            if age is not None:
+                sets.append("age_years = ?"); params.append(age)
+    if not row["layout"] and info.get("間取り"):
+        sets.append("layout = ?"); params.append(info["間取り"])
+    if not row["building_area_m2"] and info.get("建物面積"):
+        a = parse_area_m2(info["建物面積"])
+        if a:
+            sets.append("building_area_m2 = ?"); params.append(a)
+    if not row["land_area_m2"] and info.get("土地面積"):
+        a = parse_area_m2(info["土地面積"])
+        if a:
+            sets.append("land_area_m2 = ?"); params.append(a)
     params.append(url)
     conn.execute(f"UPDATE listings SET {', '.join(sets)} WHERE source_url = ?", params)
     return bool(photos)
