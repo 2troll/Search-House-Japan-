@@ -70,14 +70,29 @@ def enrich_listing(client, conn, row):
     for t in soup(["script", "style"]):
         t.extract()
 
-    # fotos
+    # fotos: están en un JSON embebido ("image_url_fullsize":"//img...."), con las
+    # barras escapadas (\/). El carrusel trae TODAS las fotos del anuncio.
     remote = []
-    for m in re.findall(r"(//img\.akiya-athome\.jp/[^\"'\s]+)", str(soup)):
-        u = "https:" + m
+    for u in re.findall(r'"image_url_fullsize":"([^"]+)"', html):
+        u = u.replace("\\/", "/")
+        if u.startswith("//"):
+            u = "https:" + u
         if u not in remote:
             remote.append(u)
+    if not remote:  # respaldo: miniaturas o src directos
+        for u in re.findall(r'"image_url_thumbnail":"([^"]+)"', html):
+            u = u.replace("\\/", "/")
+            if u.startswith("//"):
+                u = "https:" + u
+            if u not in remote:
+                remote.append(u)
+    if not remote:
+        for m in re.findall(r"(//img\.akiya-athome\.jp/[^\"'\s]+)", html):
+            u = "https:" + m
+            if u not in remote:
+                remote.append(u)
     photos = []
-    for i, u in enumerate(remote[:12]):  # hasta 12 fotos por casa
+    for i, u in enumerate(remote[:10]):  # hasta 10 fotos por casa
         local = _download(u, bid, i)
         if local:
             photos.append(local)
