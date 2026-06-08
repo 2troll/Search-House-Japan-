@@ -484,6 +484,9 @@ const I18N={
   firstm:'Primer mes (entrada)',aftermo:'Después, cada mes',cardentry:'entrada',then:'luego',
   firstnote:'Lo que pagas al ENTRAR: 礼金 (regalo) + fianza + comisión + aval + 1.er mes. La fianza suele ser reembolsable al salir.',
   monthsnext:'Meses 2, 3, 4…',
+  buycost:'Coste real de comprar (estimado)',cardbuy:'compra real',
+  buyprice:'Precio',buycomm:'Comisión agencia (~3%+6万)',buytax:'Impuestos/registro/notaría (~5%)',
+  buynote:'Estimado: en bancos de akiya municipales suele NO haber comisión (resta esa línea). Confirma siempre con el ayuntamiento/agente.',
   b_new:'Novedad',b_park:'parking',b_near:'cerca',b_reno:'reformada',b_fr:'extranjeros',
   d_op:'Operación',d_type:'Tipo',d_bldg:'Sup. edificio',d_land:'Sup. terreno',d_built:'Construcción',
   d_struct:'Estructura',d_park:'Parking',d_fr:'Extranjeros',d_pet:'Mascotas',d_reno:'Reformada',d_zone:'Zona',
@@ -517,6 +520,9 @@ const I18N={
   firstm:'First month (move-in)',aftermo:'Then, each month',cardentry:'move-in',then:'then',
   firstnote:'What you pay to MOVE IN: 礼金 (key money) + deposit + agency + guarantor + 1st month. The deposit is usually refundable when you leave.',
   monthsnext:'Months 2, 3, 4…',
+  buycost:'Real cost to buy (estimate)',cardbuy:'real cost',
+  buyprice:'Price',buycomm:'Agency fee (~3%+¥60k)',buytax:'Taxes/registration (~5%)',
+  buynote:'Estimate: municipal akiya banks usually have NO agency fee (drop that line). Always confirm with the town hall/agent.',
   b_new:'New',b_park:'parking',b_near:'nearby',b_reno:'renovated',b_fr:'foreigners OK',
   d_op:'Type',d_type:'Kind',d_bldg:'Building area',d_land:'Land area',d_built:'Built',
   d_struct:'Structure',d_park:'Parking',d_fr:'Foreigners',d_pet:'Pets',d_reno:'Renovated',d_zone:'Area',
@@ -581,6 +587,15 @@ function stayCost(f,months){
   const recurring=rent+mgmt;                               // mes 2, 3, 4...
   const firstMonth=key+agency+guarantor+deposit+recurring; // entrada (incluye fianza, parte reembolsable)
   return{total,perMonth:total/months,rent,mgmt,key,agency,guarantor,deposit,monthly,cleaning,penalty,depCounted:!a.depRefund,recurring,firstMonth};
+}
+// El "golpe" al COMPRAR: precio + comisión (~3%+6万+IVA) + impuestos/registro/notaría (~5%).
+// Los bancos de akiya municipales suelen NO cobrar comisión, así que lo separamos.
+function buyCost(f){
+  if(f.listing_type!=='sale'||!f.sale_price_yen)return null;
+  const p=f.sale_price_yen,a=A();
+  const commission=(p*0.03+60000)*(1+a.tax/100); // comisión de agencia típica
+  const taxesFees=p*0.05;                          // 不動産取得税+登記+司法書士+印紙税 (aprox.)
+  return{price:p,commission,taxesFees,total:p+commission+taxesFees};
 }
 
 // ====== Carga ======
@@ -727,6 +742,7 @@ function renderList(shown,months){
         <span class="ttype ${f.listing_type}">${f.listing_type==='rent'?'賃貸 '+t('rent'):'売買 '+t('sale')}</span>
         <div class="price" style="color:${priceColor(f)}">${price}</div>
         ${sc?`<span class="cost entry">🔑 ${money(sc.firstMonth)} ${t('cardentry')}</span><span class="cost pm">${t('then')} ${money(sc.recurring)}${t('permonth')}</span>`:''}
+        ${(()=>{const bc=buyCost(f);return bc?`<span class="cost entry">🏯 ${money(bc.total)} ${t('cardbuy')}</span>`:'';})()}
         <div class="title">${f.title||''}</div>
         <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${layoutLabel(f)} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+tr(f.year_built):''}</div>
         ${(f.features&&f.features['交通'])?`<div class="meta" style="margin-top:2px">🚉 ${tr(f.features['交通']).slice(0,46)}</div>`:''}
@@ -769,6 +785,16 @@ function openDetail(f){
       <tr><td>${LANG==='en'?'Agency + guarantor':'Comisión + aval'}</td><td>${money(sc.agency+sc.guarantor)}</td></tr>
       <tr class="totalrow"><td>= ${t('firstm')}</td><td>${money(sc.firstMonth)}</td></tr>
       <tr><td>${t('monthsnext')}</td><td>${money(sc.recurring)}${t('permonth')}</td></tr>
+    </table></div>`;}
+  const bc=buyCost(f);
+  if(bc){cost=`<div class="costcard">
+    <div class="firstm">🏯 ${t('buycost')}<span class="big">${money(bc.total)}</span></div>
+    <div class="firstnote">${t('buynote')}</div>
+    <table>
+      <tr><td>${t('buyprice')}</td><td>${money(bc.price)}</td></tr>
+      <tr><td>${t('buycomm')}</td><td>${money(bc.commission)}</td></tr>
+      <tr><td>${t('buytax')}</td><td>${money(bc.taxesFees)}</td></tr>
+      <tr class="totalrow"><td>= ${t('buycost')}</td><td>${money(bc.total)}</td></tr>
     </table></div>`;}
   const kind=f.features&&f.features['物件区分']?f.features['物件区分']:(f.features&&f.features['物件種目']?f.features['物件種目']:'');
   const access=f.features&&f.features['交通']?f.features['交通']:'';
