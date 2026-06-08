@@ -91,6 +91,7 @@ input:focus,select:focus,.numin:focus{outline:none;border-color:var(--accent);bo
 .card .price{font-weight:800;font-size:19px;margin:7px 0 2px;letter-spacing:-.02em}
 .card .cost{font-size:11px;color:#fff;background:var(--accent);display:inline-block;padding:3px 8px;border-radius:7px;font-weight:600;margin:2px 4px 2px 0}
 .card .cost.pm{background:var(--ok)}
+.card .cost.entry{background:var(--gold);color:#3a2a00}
 .card .title{font-size:13px;font-weight:600;margin:5px 0 2px;line-height:1.3}
 .card .meta{font-size:12px;color:var(--muted)}
 .card .badges{margin-top:7px;display:flex;gap:5px;flex-wrap:wrap}
@@ -118,11 +119,17 @@ input:focus,select:focus,.numin:focus{outline:none;border-color:var(--accent);bo
 .dsec{padding:16px}
 .dprice{font-size:26px;font-weight:800;letter-spacing:-.02em}
 .dprice small{font-size:13px;color:var(--muted);font-weight:500}
-.costcard{background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:14px;padding:13px;margin-top:13px}
+.costcard{background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:13px}
+.costcard .firstm{display:flex;flex-direction:column;gap:2px;font-size:12px;color:var(--muted);font-weight:600}
+.costcard .firstm .big{font-size:28px;font-weight:800;color:var(--gold);letter-spacing:-.02em;line-height:1.1}
+.costcard .aftm{margin-top:6px;font-size:14px;color:var(--ink)}.costcard .aftm b{color:var(--ok);font-size:16px}
+.costcard .firstnote{font-size:11px;color:var(--muted);margin-top:8px;line-height:1.4;border-top:1px solid var(--line);padding-top:8px}
 .costcard .big{font-size:22px;font-weight:800;color:var(--accent)}
 .costcard .pm{color:var(--ok);font-weight:700}
-.costcard table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12px}
-.costcard td{padding:3px 0;color:var(--muted)}.costcard td:last-child{text-align:right;color:var(--ink);font-weight:600}
+.costcard table{width:100%;border-collapse:collapse;margin-top:10px;font-size:12px}
+.costcard td{padding:4px 0;color:var(--muted)}.costcard td:last-child{text-align:right;color:var(--ink);font-weight:600}
+.costcard tr.totalrow td{border-top:1px solid var(--line2);padding-top:6px;color:var(--ink);font-weight:800}
+.costcard tr.totalrow td:last-child{color:var(--gold)}
 .specs{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}
 .specs td{padding:8px 4px;border-top:1px solid var(--line);vertical-align:top}
 .specs td:first-child{color:var(--muted);white-space:nowrap;width:38%}
@@ -195,7 +202,7 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
           <span class="chip" data-deal="free" data-i18n="free">🆓 Casi gratis ≤10万</span>
         </div></div>
       <div class="fg"><h4><span data-i18n="rentmax">Alquiler máx</span></h4>
-        <div class="rangerow"><input type="range" id="maxRent" min="0" max="100000" step="1000" value="40000"><input type="number" id="maxRentN" class="numin" min="0" max="100000" step="1000" value="40000"></div>
+        <div class="rangerow"><input type="range" id="maxRent" min="0" max="100000" step="1000" value="70000"><input type="number" id="maxRentN" class="numin" min="0" max="100000" step="1000" value="70000"></div>
         <div class="hint"><span class="v" id="rentVal"></span> /mes · <span data-i18n="editable">escribe o desliza</span></div></div>
       <div class="fg"><h4><span data-i18n="salemax">Precio compra máx</span></h4>
         <div class="rangerow"><input type="range" id="maxSale" min="0" max="30000000" step="100000" value="30000000"><input type="number" id="maxSaleN" class="numin" min="0" max="30000000" step="100000" value="30000000"></div>
@@ -474,6 +481,9 @@ const I18N={
   toconsult:'A consultar',permonth:'/mes',various:'Varios tipos',
   rangenote:'💡 Rango real publicado. El coste de abajo se calcula sobre el alquiler más bajo del rango.',
   editable:'escribe o desliza',
+  firstm:'Primer mes (entrada)',aftermo:'Después, cada mes',cardentry:'entrada',then:'luego',
+  firstnote:'Lo que pagas al ENTRAR: 礼金 (regalo) + fianza + comisión + aval + 1.er mes. La fianza suele ser reembolsable al salir.',
+  monthsnext:'Meses 2, 3, 4…',
   b_new:'Novedad',b_park:'parking',b_near:'cerca',b_reno:'reformada',b_fr:'extranjeros',
   d_op:'Operación',d_type:'Tipo',d_bldg:'Sup. edificio',d_land:'Sup. terreno',d_built:'Construcción',
   d_struct:'Estructura',d_park:'Parking',d_fr:'Extranjeros',d_pet:'Mascotas',d_reno:'Reformada',d_zone:'Zona',
@@ -504,6 +514,9 @@ const I18N={
   toconsult:'On request',permonth:'/mo',various:'Various types',
   rangenote:'💡 Real published range. The cost below is calculated on the lowest rent in the range.',
   editable:'type or slide',
+  firstm:'First month (move-in)',aftermo:'Then, each month',cardentry:'move-in',then:'then',
+  firstnote:'What you pay to MOVE IN: 礼金 (key money) + deposit + agency + guarantor + 1st month. The deposit is usually refundable when you leave.',
+  monthsnext:'Months 2, 3, 4…',
   b_new:'New',b_park:'parking',b_near:'nearby',b_reno:'renovated',b_fr:'foreigners OK',
   d_op:'Type',d_type:'Kind',d_bldg:'Building area',d_land:'Land area',d_built:'Built',
   d_struct:'Structure',d_park:'Parking',d_fr:'Foreigners',d_pet:'Pets',d_reno:'Renovated',d_zone:'Area',
@@ -563,7 +576,11 @@ function stayCost(f,months){
   const deposit=moneyField(f.deposit,a.deposit,rent),monthly=(rent+mgmt)*months,cleaning=a.cleaning;
   const penalty=(months<a.contract)?a.penalty*rent:0;
   let total=key+agency+guarantor+monthly+cleaning+penalty; if(!a.depRefund)total+=deposit;
-  return{total,perMonth:total/months,rent,mgmt,key,agency,guarantor,deposit,monthly,cleaning,penalty,depCounted:!a.depRefund};
+  // Lo más importante para la gente: el golpe del PRIMER mes (entrada) y la
+  // mensualidad normal a partir del 2º mes.
+  const recurring=rent+mgmt;                               // mes 2, 3, 4...
+  const firstMonth=key+agency+guarantor+deposit+recurring; // entrada (incluye fianza, parte reembolsable)
+  return{total,perMonth:total/months,rent,mgmt,key,agency,guarantor,deposit,monthly,cleaning,penalty,depCounted:!a.depRefund,recurring,firstMonth};
 }
 
 // ====== Carga ======
@@ -709,7 +726,7 @@ function renderList(shown,months){
       <div class="cc">
         <span class="ttype ${f.listing_type}">${f.listing_type==='rent'?'賃貸 '+t('rent'):'売買 '+t('sale')}</span>
         <div class="price" style="color:${priceColor(f)}">${price}</div>
-        ${sc?`<span class="cost">${months}m: ${money(sc.total)}</span><span class="cost pm">${money(sc.perMonth)}${t('permonth')}</span>`:''}
+        ${sc?`<span class="cost entry">🔑 ${money(sc.firstMonth)} ${t('cardentry')}</span><span class="cost pm">${t('then')} ${money(sc.recurring)}${t('permonth')}</span>`:''}
         <div class="title">${f.title||''}</div>
         <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${layoutLabel(f)} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+tr(f.year_built):''}</div>
         ${(f.features&&f.features['交通'])?`<div class="meta" style="margin-top:2px">🚉 ${tr(f.features['交通']).slice(0,46)}</div>`:''}
@@ -741,15 +758,17 @@ function openDetail(f){
   const pk=pkLabel(f.parking);
   const pet=({yes:t('yes'),no:t('no'),unknown:'?'})[f.pet_ok]||'?';
   let cost='';
-  if(sc){cost=`<div class="costcard"><div>${t('costof')} <b>${months} ${t('months')}</b>: <span class="big">${money(sc.total)}</span></div>
-    <div class="pm">≈ ${money(sc.perMonth)}${t('monthseff')}</div>
+  if(sc){cost=`<div class="costcard">
+    <div class="firstm">🔑 ${t('firstm')}<span class="big">${money(sc.firstMonth)}</span></div>
+    <div class="aftm">${t('aftermo')}: <b>${money(sc.recurring)}</b>${t('permonth')}</div>
+    <div class="firstnote">${t('firstnote')}</div>
     <table>
-      <tr><td>${t('rent')} × ${months}</td><td>${money(sc.monthly)}</td></tr>
-      <tr><td>礼金 Key money</td><td>${money(sc.key)}</td></tr>
-      <tr><td>${LANG==='en'?'Agency + guarantor':'Comisión + aval'}</td><td>${money(sc.agency+sc.guarantor)}</td></tr>
-      <tr><td>${LANG==='en'?'Move-out cleaning':'Limpieza salida'}</td><td>${money(sc.cleaning)}</td></tr>
-      ${sc.penalty?`<tr><td>⚠️ ${LANG==='en'?'Early-exit penalty':'Penalización'}</td><td>${money(sc.penalty)}</td></tr>`:''}
+      <tr><td>${t('rent')} (1)${sc.mgmt?' + 管理費':''}</td><td>${money(sc.recurring)}</td></tr>
+      <tr><td>礼金 ${LANG==='en'?'Key money':'Llave (regalo)'}</td><td>${money(sc.key)}</td></tr>
       <tr><td>敷金 ${LANG==='en'?'Deposit':'Fianza'} ${sc.depCounted?'':'↩︎'}</td><td>${money(sc.deposit)}</td></tr>
+      <tr><td>${LANG==='en'?'Agency + guarantor':'Comisión + aval'}</td><td>${money(sc.agency+sc.guarantor)}</td></tr>
+      <tr class="totalrow"><td>= ${t('firstm')}</td><td>${money(sc.firstMonth)}</td></tr>
+      <tr><td>${t('monthsnext')}</td><td>${money(sc.recurring)}${t('permonth')}</td></tr>
     </table></div>`;}
   const kind=f.features&&f.features['物件区分']?f.features['物件区分']:(f.features&&f.features['物件種目']?f.features['物件種目']:'');
   const access=f.features&&f.features['交通']?f.features['交通']:'';
