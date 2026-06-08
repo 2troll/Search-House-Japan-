@@ -204,9 +204,13 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
           <span class="chip" data-deal="cheap" data-i18n="cheap">💸 Gangas ≤100万</span>
           <span class="chip" data-deal="free" data-i18n="free">🆓 Casi gratis ≤10万</span>
         </div></div>
-      <div class="fg"><h4><span data-i18n="rentmax">Alquiler máx</span></h4>
-        <div class="rangerow"><input type="range" id="maxRent" min="0" max="100000" step="1000" value="70000"><input type="number" id="maxRentN" class="numin" min="0" max="100000" step="1000" value="70000"></div>
-        <div class="hint"><span class="v" id="rentVal"></span> /mes · <span data-i18n="editable">escribe o desliza</span></div></div>
+      <div class="fg"><h4><span data-i18n="rentmax">Alquiler máx</span> <span class="hint" style="font-weight:400">/mes</span></h4>
+        <div class="row" id="rentRow">
+          <span class="chip" data-rent="50000"></span>
+          <span class="chip" data-rent="70000"></span>
+          <span class="chip" data-rent="100000"></span>
+          <span class="chip on" data-rent="0" data-i18n="nolimit">Sin límite</span>
+        </div></div>
       <div class="fg"><h4><span data-i18n="salemax">Precio compra máx</span></h4>
         <div class="rangerow"><input type="range" id="maxSale" min="0" max="30000000" step="100000" value="30000000"><input type="number" id="maxSaleN" class="numin" min="0" max="30000000" step="100000" value="30000000"></div>
         <div class="hint"><span class="v" id="saleVal"></span> · <span data-i18n="editable">escribe o desliza</span></div></div>
@@ -568,7 +572,7 @@ function applyLang(){
 function priceColor(f){let t;if(f.listing_type==='rent'){t=Math.min(1,(f.rent_yen||0)/80000);}else{t=Math.min(1,(f.sale_price_yen||0)/30000000);}return`hsl(${(1-t)*120},70%,42%)`;}
 
 let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZONES=new Set();
-let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='';
+let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='',RENTMAX=0;
 let FAVS=new Set(JSON.parse(localStorage.getItem('favs')||'[]'));
 // tipo de inmueble: usa prop_type o lo deriva de los campos japoneses
 function propType(f){
@@ -694,7 +698,8 @@ function buildZones(){
   const present=[...new Set(FEATURES.map(f=>f.area_key).filter(Boolean))];const row=$('zoneRow');row.innerHTML='';
   present.forEach(z=>{ZONES.add(z);const c=document.createElement('span');c.className='chip on';c.textContent=AREA_LABELS[z]||z;c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);apply();};row.appendChild(c);});
 }
-function updateRentLabel(){const v=+$('maxRent').value;$('rentVal').textContent=(v>=100000?t('nolimit'):money(v));if($('maxRentN'))$('maxRentN').value=v;}
+// Etiqueta los botones de alquiler máx con el importe en la moneda actual.
+function updateRentLabel(){document.querySelectorAll('#rentRow .chip').forEach(c=>{const v=+c.dataset.rent;c.textContent=(v?'≤ '+money(v):t('nolimit'));c.classList.toggle('on',v===RENTMAX);});}
 function updateSaleLabel(){const v=+$('maxSale').value;$('saleVal').textContent=(v>=30000000?t('nolimit'):money(v));if($('maxSaleN'))$('maxSaleN').value=v;}
 function updateAgeLabel(){const v=+$('maxAge').value;$('ageVal').textContent=v>=80?t('anyage'):v+' '+t('years');if($('maxAgeN'))$('maxAgeN').value=v;}
 // Sincroniza una caja numérica editable con su slider (clamp al rango) y refiltra.
@@ -707,10 +712,9 @@ function bindNum(rangeId,numId,upd){
 // Controles
 $('months').oninput=()=>{apply();renderCompare();if(CURRENT)openDetail(CURRENT);};
 $('sortBy').onchange=e=>{SORT=e.target.value;apply();};
-$('maxRent').oninput=()=>{updateRentLabel();apply();};
 $('maxSale').oninput=()=>{updateSaleLabel();apply();};
 $('maxAge').oninput=()=>{updateAgeLabel();apply();};
-bindNum('maxRent','maxRentN',updateRentLabel);
+document.querySelectorAll('#rentRow .chip').forEach(c=>c.onclick=()=>{RENTMAX=+c.dataset.rent;updateRentLabel();apply();});
 bindNum('maxSale','maxSaleN',updateSaleLabel);
 bindNum('maxAge','maxAgeN',updateAgeLabel);
 $('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFull').textContent=b?t('showlist'):t('onlymap');setTimeout(()=>map.invalidateSize(),60);};
@@ -740,7 +744,7 @@ function matches(f){
   if(isSold(f))return false; // nunca mostrar vendidas / en negociación
   if(OP!=='both'&&f.listing_type!==OP)return false;
   if(PTYPE!=='all'&&propType(f)!==PTYPE)return false;
-  if(f.listing_type==='rent'){const mr=+$('maxRent').value;if(mr<100000&&(f.rent_yen||1e9)>mr)return false;}
+  if(f.listing_type==='rent'&&RENTMAX>0&&(f.rent_yen||1e9)>RENTMAX)return false;
   if(f.listing_type==='sale'){const ms=+$('maxSale').value;if(ms<30000000&&f.sale_price_yen&&f.sale_price_yen>ms)return false;}
   if(DEAL==='cheap'||DEAL==='free'){const p=f.sale_price_yen;const lim=DEAL==='free'?100000:1000000;if(!(p&&p<=lim))return false;}
   if(DEAL==='value'&&!isGoodPrice(f))return false;
@@ -760,7 +764,7 @@ function matches(f){
 function makeIcon(f){
   const months=+$('months').value,sc=stayCost(f,months);
   const pt=propType(f);
-  let val=f.listing_type==='rent'?(sc?moneyShort(sc.total):(f.rent_yen?moneyShort(f.rent_yen):'¥?')):(f.sale_price_yen?moneyShort(f.sale_price_yen):'¥?');
+  let val=f.listing_type==='rent'?(sc?moneyShort(sc.firstMonth):(f.rent_yen?moneyShort(f.rent_yen):'¥?')):(f.sale_price_yen?moneyShort(f.sale_price_yen):'¥?');
   const cls=[(f.listing_type==='rent'?'pin-rent':''),(pt==='land'?'land':''),(FAVS.has(f.id)?'fav':'')].join(' ');
   return L.divIcon({className:'',html:`<span class="price-pin pin ${cls}" style="background:${priceColor(f)}">${val}</span>`,iconSize:null,iconAnchor:[22,11]});
 }
