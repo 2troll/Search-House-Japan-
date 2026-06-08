@@ -101,6 +101,7 @@ input:focus,select:focus,.numin:focus{outline:none;border-color:var(--accent);bo
 .badge.stigma{background:#1e1b4b;color:#c7d2fe}.badge.value{background:#fef3c7;color:#b45309}
 .stigmabox{background:#1e1b4b;color:#e0e7ff;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12.5px;line-height:1.5;border:1px solid #4338ca}
 .fire-pin{font-size:17px;line-height:17px;cursor:pointer;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))}
+.inc-cluster{display:inline-block;text-align:center;border-radius:50%;background:rgba(220,38,38,.88);color:#fff;font-weight:700;font-size:11px;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.4);cursor:pointer}
 
 .price-pin{display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;height:23px;padding:0 9px;white-space:nowrap;border-radius:12px;border:1.5px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.32);letter-spacing:-.01em;line-height:1}
 .pin-rent{border-style:dashed;border-width:2px}
@@ -488,8 +489,9 @@ const I18N={
   haunt:'👻 事故物件 (embrujadas)',hauntonly:'Solo con incidente (más baratas)',
   haunthint:'Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.',
   oshima:'🔥 Mapa de incidentes 大島てる',
-  oshimahint:'Marca dónde ocurrió una muerte/incidente (base pública 大島てる). NO son casas en venta. Acerca el zoom para verlos; pulsa un punto para leer qué pasó.',
+  oshimahint:'Marca dónde ocurrió una muerte/incidente (base pública 大島てる). NO son casas en venta. Lejos verás racimos con el nº de incidentes; al acercarte, cada 🔥 con su historia.',
   oshimazoom:'🔍 Acerca más el zoom para ver los incidentes 大島てる',
+  oshimacluster:'🔴 Cada círculo = nº de incidentes en esa zona. Pulsa para acercarte; al máximo zoom verás cada 🔥 con su historia.',
   oshimaloading:'Cargando incidentes…',oshimawhat:'Qué pasó',oshimawhen:'Fecha',oshimaddr:'Dirección',oshimasrc:'Fuente: 大島てる ↗',
   b_stigma:'incidente',
   rentmax:'Alquiler máx',salemax:'Precio compra máx',nolimit:'Sin límite',
@@ -532,8 +534,9 @@ const I18N={
   haunt:'👻 事故物件 (stigmatized)',hauntonly:'Only incident homes (cheaper)',
   haunthint:'Homes where the law requires disclosing a death or incident (告知事項). Usually discounted in price.',
   oshima:'🔥 Incident map 大島てる',
-  oshimahint:'Marks where a death/incident occurred (public 大島てる database). These are NOT homes for sale. Zoom in to see them; click a dot to read what happened.',
+  oshimahint:'Marks where a death/incident occurred (public 大島てる database). These are NOT homes for sale. Zoomed out you see clusters with the incident count; zoom in for each 🔥 with its story.',
   oshimazoom:'🔍 Zoom in further to see 大島てる incidents',
+  oshimacluster:'🔴 Each circle = number of incidents in that area. Click to zoom in; at max zoom you see each 🔥 with its story.',
   oshimaloading:'Loading incidents…',oshimawhat:'What happened',oshimawhen:'Date',oshimaddr:'Address',oshimasrc:'Source: 大島てる ↗',
   b_stigma:'incident',
   rentmax:'Max rent',salemax:'Max buy price',nolimit:'No limit',
@@ -753,14 +756,12 @@ function isSold(f){
 }
 
 // ====== Capa 大島てる: mapa de incidentes (consulta EN VIVO su API pública) ======
-// No guardamos ni redistribuimos nada: pedimos al API de 大島てる los puntos del
-// área visible, igual que hace su propia web, con atribución. Detalle al hacer clic.
+// No guardamos ni redistribuimos nada: pedimos al API de 大島てる lo del área
+// visible, igual que hace su propia web, con atribución. Lejos = racimos con el
+// número de incidentes; muy cerca = puntos 🔥 con el detalle al hacer clic.
 const oshimaGroup=L.layerGroup();
 const OSHIMA_API='https://api.oshimaland.co.jp/map';
-const OSHIMA_Z=16;          // los marcadores se indexan en zoom 16
-const OSHIMA_MINZOOM=15;    // por debajo de esto pedir todas las tiles sería excesivo
-let oshimaSeen=new Set();   // quadkeys ya solicitadas
-let oshimaMarks=new Map();  // key del incidente -> marker (dedupe)
+const oshimaCache=new Map();   // quadkey -> {markers:[], clusters:[]}
 let oshimaTimer=null;
 function quadkey(tx,ty,z){let qk='';for(let i=z;i>0;i--){let d=0,m=1<<(i-1);if(tx&m)d+=1;if(ty&m)d+=2;qk+=d;}return qk;}
 function latLngToTile(lat,lng,z){
@@ -768,34 +769,47 @@ function latLngToTile(lat,lng,z){
   return[Math.min(n-1,Math.max(0,Math.floor(x*n))),Math.min(n-1,Math.max(0,Math.floor(y*n)))];
 }
 function oshimaIcon(){return L.divIcon({className:'',html:'<span class="fire-pin">🔥</span>',iconSize:[18,18],iconAnchor:[9,9]});}
-async function oshimaRefresh(){
-  if(!$('oshimaLayer').checked)return;
-  const hint=$('oshimaHint');
-  if(map.getZoom()<OSHIMA_MINZOOM){if(hint)hint.textContent=t('oshimazoom');return;}
-  if(hint)hint.textContent=t('oshimahint');
-  const b=map.getBounds();
-  const [xw,yn]=latLngToTile(b.getNorth(),b.getWest());
-  const [xe,ys]=latLngToTile(b.getSouth(),b.getEast());
-  const keys=[];
-  for(let x=Math.min(xw,xe);x<=Math.max(xw,xe);x++)
-    for(let y=Math.min(yn,ys);y<=Math.max(yn,ys);y++){
-      const qk=quadkey(x,y,OSHIMA_Z);
-      if(!oshimaSeen.has(qk)){oshimaSeen.add(qk);keys.push(qk);}
-    }
-  if(!keys.length)return;
-  for(let i=0;i<keys.length&&i<600;i+=200){
-    const batch=keys.slice(i,i+200);
+function clusterIcon(n){const s=n>=1000?40:n>=100?34:28;const txt=n>=1000?(Math.round(n/100)/10)+'k':n;
+  return L.divIcon({className:'',html:`<span class="inc-cluster" style="width:${s}px;height:${s}px;line-height:${s}px">${txt}</span>`,iconSize:[s,s],iconAnchor:[s/2,s/2]});}
+async function oshimaFetch(keys){
+  const need=keys.filter(k=>!oshimaCache.has(k));
+  for(let i=0;i<need.length;i+=200){
+    const batch=need.slice(i,i+200);
     try{
       const r=await fetch(OSHIMA_API,{method:'POST',headers:{'content-type':'text/plain;charset=UTF-8'},body:JSON.stringify({keys:batch})});
-      const d=await r.json(),mk=d.markers||{};
-      Object.values(mk).forEach(arr=>arr.forEach(pt=>{
-        if(oshimaMarks.has(pt.key))return;
-        const m=L.marker([pt.latitude,pt.longitude],{icon:oshimaIcon()});
-        m.on('click',()=>oshimaPopup(m,pt.key));
-        oshimaMarks.set(pt.key,m);oshimaGroup.addLayer(m);
-      }));
-    }catch(e){/* red/red: silencioso */}
+      const d=await r.json(),mk=d.markers||{},cl=d.clusters||{};
+      batch.forEach(k=>oshimaCache.set(k,{markers:mk[k]||[],clusters:cl[k]||[]}));
+    }catch(e){batch.forEach(k=>oshimaCache.set(k,{markers:[],clusters:[]}));}
   }
+}
+async function oshimaRefresh(){
+  if(!$('oshimaLayer').checked)return;
+  const z=Math.min(map.getZoom(),16);       // longitud de la quadkey = zoom (≤16)
+  const b=map.getBounds().pad(0.15);
+  const [xw,yn]=latLngToTile(b.getNorth(),b.getWest(),z);
+  const [xe,ys]=latLngToTile(b.getSouth(),b.getEast(),z);
+  const keys=[];
+  for(let x=Math.min(xw,xe);x<=Math.max(xw,xe)&&keys.length<200;x++)
+    for(let y=Math.min(yn,ys);y<=Math.max(yn,ys)&&keys.length<200;y++)
+      keys.push(quadkey(x,y,z));
+  await oshimaFetch(keys);
+  if(!$('oshimaLayer').checked)return;
+  oshimaGroup.clearLayers();
+  const seen=new Set();
+  keys.forEach(k=>{
+    const e=oshimaCache.get(k); if(!e)return;
+    if(z>=16){
+      e.markers.forEach(pt=>{ if(seen.has(pt.key))return;seen.add(pt.key);
+        const m=L.marker([pt.latitude,pt.longitude],{icon:oshimaIcon()});
+        m.on('click',()=>oshimaPopup(m,pt.key)); oshimaGroup.addLayer(m); });
+    }else{
+      e.clusters.forEach(c=>{
+        const m=L.marker([c.latitude,c.longitude],{icon:clusterIcon(c.count)});
+        m.on('click',()=>map.flyTo([c.latitude,c.longitude],Math.min(map.getZoom()+3,17)));
+        oshimaGroup.addLayer(m); });
+    }
+  });
+  const hint=$('oshimaHint'); if(hint)hint.textContent=(z>=16?t('oshimahint'):t('oshimacluster'));
 }
 async function oshimaPopup(m,key){
   m.bindPopup(t('oshimaloading')).openPopup();
@@ -814,7 +828,7 @@ $('oshimaLayer').onchange=()=>{
   if($('oshimaLayer').checked){map.addLayer(oshimaGroup);oshimaRefresh();}
   else map.removeLayer(oshimaGroup);
 };
-map.on('moveend',()=>{if($('oshimaLayer').checked){clearTimeout(oshimaTimer);oshimaTimer=setTimeout(oshimaRefresh,350);}});
+map.on('moveend',()=>{if($('oshimaLayer').checked){clearTimeout(oshimaTimer);oshimaTimer=setTimeout(oshimaRefresh,300);}});
 function matches(f){
   if(isSold(f))return false; // nunca mostrar vendidas / en negociación
   const stigON=$('stigmaOnly').checked;
