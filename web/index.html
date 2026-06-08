@@ -98,6 +98,8 @@ input:focus,select:focus,.numin:focus{outline:none;border-color:var(--accent);bo
 .badge{font-size:10px;padding:3px 8px;border-radius:8px;background:var(--soft);color:#475569;font-weight:600}
 .badge.park{background:#dcfce7;color:#166534}.badge.reno{background:#ede9fe;color:#6d28d9}
 .badge.new{background:var(--gold);color:#fff}.badge.fr{background:#cffafe;color:#0e7490}
+.badge.stigma{background:#1e1b4b;color:#c7d2fe}.badge.value{background:#fef3c7;color:#b45309}
+.stigmabox{background:#1e1b4b;color:#e0e7ff;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12.5px;line-height:1.5;border:1px solid #4338ca}
 
 .price-pin{display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;height:23px;padding:0 9px;white-space:nowrap;border-radius:12px;border:1.5px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.32);letter-spacing:-.01em;line-height:1}
 .pin-rent{border-style:dashed;border-width:2px}
@@ -198,6 +200,7 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
         </div></div>
       <div class="fg"><h4 data-i18n="deals">Ofertas</h4>
         <div class="row" id="dealRow">
+          <span class="chip" data-deal="value" data-i18n="value">💎 Buen precio</span>
           <span class="chip" data-deal="cheap" data-i18n="cheap">💸 Gangas ≤100万</span>
           <span class="chip" data-deal="free" data-i18n="free">🆓 Casi gratis ≤10万</span>
         </div></div>
@@ -215,8 +218,12 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
         <div class="rangerow"><input type="range" id="maxAge" min="0" max="80" step="1" value="80"><input type="number" id="maxAgeN" class="numin" min="0" max="80" step="1" value="80"></div>
         <div class="hint"><span class="v" id="ageVal"></span></div></div>
       <div class="fg"><h4 data-i18n="other">Otros</h4>
+        <label class="toggle"><input type="checkbox" id="goodCondition"> <span data-i18n="goodcond">✨ Buen estado (reformada/nueva)</span></label>
         <label class="toggle"><input type="checkbox" id="renovatedOnly"> <span data-i18n="reno">Solo reformadas</span></label>
         <label class="toggle"><input type="checkbox" id="newOnly"> <span data-i18n="newonly">Solo novedades</span></label></div>
+      <div class="fg"><h4 data-i18n="haunt">👻 事故物件</h4>
+        <label class="toggle"><input type="checkbox" id="stigmaOnly"> <span data-i18n="hauntonly">Solo con incidente (más baratas)</span></label>
+        <div class="hint" data-i18n="haunthint">Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.</div></div>
       <div class="fg"><h4 data-i18n="zone">Zona</h4><div class="row" id="zoneRow"></div></div>
       <div class="fg"><h4 data-i18n="search">Buscar</h4><input type="text" id="search" data-i18n-ph="searchph" placeholder="海, 平屋, 福良, 沼島..."></div>
     </aside>
@@ -469,7 +476,11 @@ document.body.dataset.lang=LANG;document.documentElement.lang=LANG;
 const I18N={
  es:{rent:'Alquiler',sale:'Venta',both:'Ambos',guide:'Guía',costs:'Gastos',compare:'Comparar',agent:'Agente IA',
   ptype:'Tipo de inmueble',all:'Todos',house:'Casa',apt:'Apartamento',land:'Terreno',
-  deals:'Ofertas',cheap:'💸 Gangas ≤100万',free:'🆓 Casi gratis ≤10万',
+  deals:'Ofertas',cheap:'💸 Gangas ≤100万',free:'🆓 Casi gratis ≤10万',value:'💎 Buen precio',
+  goodcond:'✨ Buen estado (reformada o reciente)',
+  haunt:'👻 事故物件 (embrujadas)',hauntonly:'Solo con incidente (más baratas)',
+  haunthint:'Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.',
+  b_stigma:'incidente',
   rentmax:'Alquiler máx',salemax:'Precio compra máx',nolimit:'Sin límite',
   parking:'Parking 駐車場',parkonly:'Solo con parking',parknear:'Aceptar cercano',
   layout:'Distribución 間取り',agemax:'Antigüedad máx',anyage:'Cualquiera',years:'años',
@@ -505,7 +516,11 @@ const I18N={
   agent_hi:'¡Hola! Soy tu agente inmobiliario. Veo las casas filtradas ahora. Pregúntame: las más baratas con parking, comparar zonas, qué casa me conviene, pasos para alquilar/comprar...'},
  en:{rent:'Rent',sale:'Buy',both:'Both',guide:'Guide',costs:'Fees',compare:'Compare',agent:'AI Agent',
   ptype:'Property type',all:'All',house:'House',apt:'Apartment',land:'Land',
-  deals:'Deals',cheap:'💸 Bargains ≤100万',free:'🆓 Almost free ≤10万',
+  deals:'Deals',cheap:'💸 Bargains ≤100万',free:'🆓 Almost free ≤10万',value:'💎 Good price',
+  goodcond:'✨ Good condition (renovated/recent)',
+  haunt:'👻 事故物件 (stigmatized)',hauntonly:'Only incident homes (cheaper)',
+  haunthint:'Homes where the law requires disclosing a death or incident (告知事項). Usually discounted in price.',
+  b_stigma:'incident',
   rentmax:'Max rent',salemax:'Max buy price',nolimit:'No limit',
   parking:'Parking 駐車場',parkonly:'Parking only',parknear:'Allow nearby',
   layout:'Layout 間取り',agemax:'Max age',anyage:'Any',years:'yrs',
@@ -609,9 +624,45 @@ function cleanPhotos(arr){
   });
   return out;
 }
+// ====== 事故物件: detección de propiedades con incidente/fallecimiento ======
+// Escanea el texto del anuncio en busca de los avisos legales japoneses
+// (告知事項, 事故物件, 心理的瑕疵...) que indican que murió o pasó algo en la casa.
+// Estas propiedades suelen venderse/alquilarse más baratas.
+const STIGMA_KW=[
+  {k:'事故物件',  es:'Catalogada 事故物件 (propiedad con incidente)',          en:'Listed as 事故物件 (incident property)'},
+  {k:'告知事項',  es:'告知事項あり: el vendedor DEBE informar de un hecho (fallecimiento/incidente)', en:'告知事項あり: seller must disclose an event (death/incident)'},
+  {k:'心理的瑕疵',es:'心理的瑕疵: defecto psicológico (suele implicar un fallecimiento)', en:'心理的瑕疵: psychological defect (usually a death occurred)'},
+  {k:'孤独死',    es:'Mención de 孤独死 (muerte en soledad)',                     en:'Mentions 孤独死 (lonely death)'},
+  {k:'自殺',      es:'Mención de 自殺 (suicidio)',                               en:'Mentions 自殺 (suicide)'},
+  {k:'殺人',      es:'Mención de 殺人 (homicidio)',                              en:'Mentions 殺人 (homicide)'},
+  {k:'曰く付',    es:'曰く付き (con historia)',                                  en:'曰く付き (with a backstory)'},
+  {k:'いわく',    es:'いわく付き (con historia)',                                en:'いわく付き (with a backstory)'},
+  {k:'訳あり',    es:'訳あり (“con motivo / problema”)',                         en:'訳あり (“with a reason / issue”)'},
+];
+function computeStigma(f){
+  let blob=(f.title||'')+' '+(f.description_raw||'')+' '+(f.status_note||'');
+  if(f.features){try{blob+=' '+Object.values(f.features).join(' ');}catch(e){}}
+  for(const it of STIGMA_KW){ if(blob.indexOf(it.k)>=0){ f._stigma=true; f._stigmaReason={es:it.es,en:it.en}; return; } }
+  f._stigma=false;
+}
+// "Buen precio": barato para su tipo (alquiler ≤55.000¥/mes o compra ≤500万¥). Descarta las caras.
+function isGoodPrice(f){
+  if(f.listing_type==='rent') return f.rent_yen!=null && f.rent_yen>0 && f.rent_yen<=55000;
+  if(f.sale_price_yen!=null && f.sale_price_yen>0) return f.sale_price_yen<=5000000;
+  return false;
+}
+// "Buen estado": reformada o (cuando el anuncio lo indica) ≤25 años.
+// Nota: NO usamos is_new (es un flag de "visto recientemente", no de estado real).
+// Muchos anuncios de akiya no publican la antigüedad, así que este filtro es estricto.
+function isGoodCondition(f){
+  if(f.renovated) return true;
+  if(f.age_years!=null && f.age_years<=25) return true;
+  return false;
+}
+
 fetch('data.geojson').then(r=>r.json()).then(geo=>{
   FEATURES=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
-  FEATURES.forEach(f=>{f.photos=cleanPhotos(f.photos);});
+  FEATURES.forEach(f=>{f.photos=cleanPhotos(f.photos);computeStigma(f);});
   spreadOverlaps();
   buildLayouts();buildZones();loadAssume();applyLang();
 }).catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data.geojson. Ejecuta refresh.py y abre con un servidor.</div>';});
@@ -665,7 +716,7 @@ bindNum('maxAge','maxAgeN',updateAgeLabel);
 $('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFull').textContent=b?t('showlist'):t('onlymap');setTimeout(()=>map.invalidateSize(),60);};
 document.querySelectorAll('#dealRow .chip').forEach(c=>c.onclick=()=>{const d=c.dataset.deal;if(DEAL===d){DEAL='';c.classList.remove('on');}else{DEAL=d;document.querySelectorAll('#dealRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');}apply();});
 document.querySelectorAll('#langSeg button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;localStorage.setItem('lang',LANG);applyLang();});
-['parkingOnly','parkingNearby','renovatedOnly','newOnly'].forEach(id=>$(id).onchange=apply);
+['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly'].forEach(id=>$(id).onchange=apply);
 $('search').oninput=apply;
 document.querySelectorAll('#opSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#opSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');OP=b.dataset.op;apply();});
 document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#ptypeRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');PTYPE=c.dataset.pt;apply();});
@@ -691,7 +742,10 @@ function matches(f){
   if(PTYPE!=='all'&&propType(f)!==PTYPE)return false;
   if(f.listing_type==='rent'){const mr=+$('maxRent').value;if(mr<100000&&(f.rent_yen||1e9)>mr)return false;}
   if(f.listing_type==='sale'){const ms=+$('maxSale').value;if(ms<30000000&&f.sale_price_yen&&f.sale_price_yen>ms)return false;}
-  if(DEAL){const p=f.sale_price_yen;const lim=DEAL==='free'?100000:1000000;if(!(p&&p<=lim))return false;}
+  if(DEAL==='cheap'||DEAL==='free'){const p=f.sale_price_yen;const lim=DEAL==='free'?100000:1000000;if(!(p&&p<=lim))return false;}
+  if(DEAL==='value'&&!isGoodPrice(f))return false;
+  if($('goodCondition').checked&&!isGoodCondition(f))return false;
+  if($('stigmaOnly').checked&&!f._stigma)return false;
   if($('parkingOnly').checked){const ok=f.parking==='yes'||(f.parking==='nearby'&&$('parkingNearby').checked);if(!ok)return false;}
   if(LAYOUTS.size){const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];if(!m||!LAYOUTS.has(m.toUpperCase()))return false;}
   const ma=+$('maxAge').value;if(ma<80&&f.age_years!=null&&f.age_years>ma)return false;
@@ -752,6 +806,7 @@ function renderList(shown,months){
           ${f.parking==='yes'?'<span class="badge park">🚗 '+t('b_park')+'</span>':(f.parking==='nearby'?'<span class="badge park">🚗 '+t('b_near')+'</span>':'')}
           ${f.renovated?'<span class="badge reno">✨ '+t('b_reno')+'</span>':''}
           ${(f.foreigner_ok==='yes'||f.foreigner_ok==='negotiable')?'<span class="badge fr">🌐 '+t('b_fr')+'</span>':''}
+          ${f._stigma?'<span class="badge stigma">👻 '+t('b_stigma')+'</span>':''}
         </div>
       </div>`;
     div.onmouseover=()=>hl(f.id,true);div.onmouseout=()=>hl(f.id,false);
@@ -819,6 +874,7 @@ function openDetail(f){
     <div class="gallery" id="gal"></div>
     <div class="dsec">
       <div class="dprice" style="color:${priceColor(f)}">${price}</div>${approx}
+      ${f._stigma?'<div class="stigmabox">👻 '+(f._stigmaReason?(f._stigmaReason[LANG]||f._stigmaReason.es):'')+'</div>':''}
       ${priceRange(f)?'<div class="approxnote">'+t('rangenote')+'</div>':''}
       ${cost}
       <table class="specs">
