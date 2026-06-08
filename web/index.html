@@ -100,6 +100,7 @@ input:focus,select:focus,.numin:focus{outline:none;border-color:var(--accent);bo
 .badge.new{background:var(--gold);color:#fff}.badge.fr{background:#cffafe;color:#0e7490}
 .badge.stigma{background:#1e1b4b;color:#c7d2fe}.badge.value{background:#fef3c7;color:#b45309}
 .stigmabox{background:#1e1b4b;color:#e0e7ff;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12.5px;line-height:1.5;border:1px solid #4338ca}
+.fire-pin{font-size:17px;line-height:17px;cursor:pointer;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))}
 
 .price-pin{display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;height:23px;padding:0 9px;white-space:nowrap;border-radius:12px;border:1.5px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.32);letter-spacing:-.01em;line-height:1}
 .pin-rent{border-style:dashed;border-width:2px}
@@ -227,7 +228,9 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
         <label class="toggle"><input type="checkbox" id="newOnly"> <span data-i18n="newonly">Solo novedades</span></label></div>
       <div class="fg"><h4 data-i18n="haunt">👻 事故物件</h4>
         <label class="toggle"><input type="checkbox" id="stigmaOnly"> <span data-i18n="hauntonly">Solo con incidente (más baratas)</span></label>
-        <div class="hint" data-i18n="haunthint">Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.</div></div>
+        <div class="hint" data-i18n="haunthint">Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.</div>
+        <label class="toggle" style="margin-top:8px"><input type="checkbox" id="oshimaLayer"> <span data-i18n="oshima">🔥 Mapa de incidentes 大島てる</span></label>
+        <div class="hint" id="oshimaHint" data-i18n="oshimahint">Marca dónde ocurrió una muerte/incidente (base pública 大島てる). NO son casas en venta. Acerca el zoom para verlos; pulsa un punto para leer qué pasó.</div></div>
       <div class="fg"><h4 data-i18n="zone">Zona</h4><div class="row" id="zoneRow"></div></div>
       <div class="fg"><h4 data-i18n="search">Buscar</h4><input type="text" id="search" data-i18n-ph="searchph" placeholder="海, 平屋, 福良, 沼島..."></div>
     </aside>
@@ -484,6 +487,10 @@ const I18N={
   goodcond:'✨ Buen estado (reformada o reciente)',
   haunt:'👻 事故物件 (embrujadas)',hauntonly:'Solo con incidente (más baratas)',
   haunthint:'Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.',
+  oshima:'🔥 Mapa de incidentes 大島てる',
+  oshimahint:'Marca dónde ocurrió una muerte/incidente (base pública 大島てる). NO son casas en venta. Acerca el zoom para verlos; pulsa un punto para leer qué pasó.',
+  oshimazoom:'🔍 Acerca más el zoom para ver los incidentes 大島てる',
+  oshimaloading:'Cargando incidentes…',oshimawhat:'Qué pasó',oshimawhen:'Fecha',oshimaddr:'Dirección',oshimasrc:'Fuente: 大島てる ↗',
   b_stigma:'incidente',
   rentmax:'Alquiler máx',salemax:'Precio compra máx',nolimit:'Sin límite',
   parking:'Parking 駐車場',parkonly:'Solo con parking',parknear:'Aceptar cercano',
@@ -524,6 +531,10 @@ const I18N={
   goodcond:'✨ Good condition (renovated/recent)',
   haunt:'👻 事故物件 (stigmatized)',hauntonly:'Only incident homes (cheaper)',
   haunthint:'Homes where the law requires disclosing a death or incident (告知事項). Usually discounted in price.',
+  oshima:'🔥 Incident map 大島てる',
+  oshimahint:'Marks where a death/incident occurred (public 大島てる database). These are NOT homes for sale. Zoom in to see them; click a dot to read what happened.',
+  oshimazoom:'🔍 Zoom in further to see 大島てる incidents',
+  oshimaloading:'Loading incidents…',oshimawhat:'What happened',oshimawhen:'Date',oshimaddr:'Address',oshimasrc:'Source: 大島てる ↗',
   b_stigma:'incident',
   rentmax:'Max rent',salemax:'Max buy price',nolimit:'No limit',
   parking:'Parking 駐車場',parkonly:'Parking only',parknear:'Allow nearby',
@@ -740,6 +751,70 @@ function isSold(f){
   const s=(f.status_note||'')+' '+(f.description_raw||'')+' '+JSON.stringify(f.features||{});
   return /成約|商談中|売約|契約済|申込済|お申込|終了|掲載終了/.test(s);
 }
+
+// ====== Capa 大島てる: mapa de incidentes (consulta EN VIVO su API pública) ======
+// No guardamos ni redistribuimos nada: pedimos al API de 大島てる los puntos del
+// área visible, igual que hace su propia web, con atribución. Detalle al hacer clic.
+const oshimaGroup=L.layerGroup();
+const OSHIMA_API='https://api.oshimaland.co.jp/map';
+const OSHIMA_Z=16;          // los marcadores se indexan en zoom 16
+const OSHIMA_MINZOOM=15;    // por debajo de esto pedir todas las tiles sería excesivo
+let oshimaSeen=new Set();   // quadkeys ya solicitadas
+let oshimaMarks=new Map();  // key del incidente -> marker (dedupe)
+let oshimaTimer=null;
+function quadkey(tx,ty,z){let qk='';for(let i=z;i>0;i--){let d=0,m=1<<(i-1);if(tx&m)d+=1;if(ty&m)d+=2;qk+=d;}return qk;}
+function latLngToTile(lat,lng,z){
+  const s=Math.sin(lat*Math.PI/180),x=(lng+180)/360,y=0.5-Math.log((1+s)/(1-s))/(4*Math.PI),n=2**z;
+  return[Math.min(n-1,Math.max(0,Math.floor(x*n))),Math.min(n-1,Math.max(0,Math.floor(y*n)))];
+}
+function oshimaIcon(){return L.divIcon({className:'',html:'<span class="fire-pin">🔥</span>',iconSize:[18,18],iconAnchor:[9,9]});}
+async function oshimaRefresh(){
+  if(!$('oshimaLayer').checked)return;
+  const hint=$('oshimaHint');
+  if(map.getZoom()<OSHIMA_MINZOOM){if(hint)hint.textContent=t('oshimazoom');return;}
+  if(hint)hint.textContent=t('oshimahint');
+  const b=map.getBounds();
+  const [xw,yn]=latLngToTile(b.getNorth(),b.getWest());
+  const [xe,ys]=latLngToTile(b.getSouth(),b.getEast());
+  const keys=[];
+  for(let x=Math.min(xw,xe);x<=Math.max(xw,xe);x++)
+    for(let y=Math.min(yn,ys);y<=Math.max(yn,ys);y++){
+      const qk=quadkey(x,y,OSHIMA_Z);
+      if(!oshimaSeen.has(qk)){oshimaSeen.add(qk);keys.push(qk);}
+    }
+  if(!keys.length)return;
+  for(let i=0;i<keys.length&&i<600;i+=200){
+    const batch=keys.slice(i,i+200);
+    try{
+      const r=await fetch(OSHIMA_API,{method:'POST',headers:{'content-type':'text/plain;charset=UTF-8'},body:JSON.stringify({keys:batch})});
+      const d=await r.json(),mk=d.markers||{};
+      Object.values(mk).forEach(arr=>arr.forEach(pt=>{
+        if(oshimaMarks.has(pt.key))return;
+        const m=L.marker([pt.latitude,pt.longitude],{icon:oshimaIcon()});
+        m.on('click',()=>oshimaPopup(m,pt.key));
+        oshimaMarks.set(pt.key,m);oshimaGroup.addLayer(m);
+      }));
+    }catch(e){/* red/red: silencioso */}
+  }
+}
+async function oshimaPopup(m,key){
+  m.bindPopup(t('oshimaloading')).openPopup();
+  try{
+    const d=await(await fetch(`https://www.oshimaland.co.jp/d/${key}.json`)).json();
+    const esc=s=>(s||'').replace(/[<>&]/g,c=>({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]));
+    m.setPopupContent(`<div style="max-width:240px;font-size:12.5px;line-height:1.5">
+      <div style="font-weight:700;margin-bottom:4px">🔥 ${t('oshimawhat')}</div>
+      <div>${esc(d.info)||'—'}</div>
+      ${d.dt?`<div style="margin-top:5px"><b>${t('oshimawhen')}:</b> ${esc(d.dt)}</div>`:''}
+      ${d.ad?`<div><b>${t('oshimaddr')}:</b> ${esc(d.ad)}</div>`:''}
+      <a href="https://www.oshimaland.co.jp/" target="_blank" rel="noopener" style="color:var(--accent);display:inline-block;margin-top:6px">${t('oshimasrc')}</a></div>`);
+  }catch(e){m.setPopupContent('—');}
+}
+$('oshimaLayer').onchange=()=>{
+  if($('oshimaLayer').checked){map.addLayer(oshimaGroup);oshimaRefresh();}
+  else map.removeLayer(oshimaGroup);
+};
+map.on('moveend',()=>{if($('oshimaLayer').checked){clearTimeout(oshimaTimer);oshimaTimer=setTimeout(oshimaRefresh,350);}});
 function matches(f){
   if(isSold(f))return false; // nunca mostrar vendidas / en negociación
   const stigON=$('stigmaOnly').checked;
