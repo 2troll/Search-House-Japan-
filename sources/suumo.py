@@ -89,8 +89,9 @@ def _parse_page(html, pref):
             if isinstance(photo, list):
                 photo = photo[0]
 
-        # habitación más barata del edificio
+        # recorre todas las habitaciones: guarda la más barata y el RANGO real
         best = None
+        rents = []
         for tr in c.select("table.cassetteitem_other tbody tr, tbody.js-cassette_link tr"):
             rent_el = tr.find(class_=re.compile("cassetteitem_other-emphasis|cassetteitem_price--rent"))
             if not rent_el:
@@ -105,10 +106,16 @@ def _parse_page(html, pref):
                 "area": men.get_text(strip=True) if men else "",
                 "url": urljoin(BASE, link["href"]) if link and link.get("href") else "",
             }
+            if rent:
+                rents.append(rent)
             if rent and (best is None or rent < best["rent"]):
                 best = room
         if not best:
             continue
+        # rango honesto: si el edificio tiene habitaciones a precios distintos
+        feats = {"交通": stations, "contacto": "Ver anuncio en SUUMO (inmobiliaria)"}
+        if rents and max(rents) > min(rents):
+            feats["rent_range"] = f"{min(rents):,}円～{max(rents):,}円"
 
         from sources.base import parse_area_m2
         lst = Listing(
@@ -122,7 +129,7 @@ def _parse_page(html, pref):
             building_area_m2=parse_area_m2(best["area"]),
             photos=[photo] if photo and photo.startswith("http") else [],
             description_raw=f"SUUMO · {kind}",
-            features={"交通": stations, "contacto": "Ver anuncio en SUUMO (inmobiliaria)"},
+            features=feats,
         )
         assign_area(lst)
         out.append(lst)

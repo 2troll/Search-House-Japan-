@@ -569,7 +569,14 @@ function stayCost(f,months){
 // ====== Carga ======
 // Filtra imágenes que NO son de la casa (placeholders, logos, banners, publicidad)
 const JUNK_IMG=/noimage|no_image|nophoto|no_photo|now_printing|nowprinting|comingsoon|準備中|\blogo\b|banner|bnr|\/common\/|spacer|dummy|front_kaisha|_kaisha|_tgk|chukai|\/ad\/|\/ads\/|sample|icon_|\/btn|_btn|campaign|cp_|kyanp/i;
-function cleanPhotos(arr){return (arr||[]).filter(p=>p && !JUNK_IMG.test(p));}
+function cleanPhotos(arr){
+  const out=[],seen=new Set();
+  (arr||[]).forEach(p=>{ if(!p||JUNK_IMG.test(p))return;
+    const base=(''+p).replace(/[ot]\.jpg$/,'.jpg'); // colapsa tamaños de SUUMO
+    if(seen.has(base))return; seen.add(base); out.push(p);
+  });
+  return out;
+}
 fetch('data.geojson').then(r=>r.json()).then(geo=>{
   FEATURES=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
   FEATURES.forEach(f=>{f.photos=cleanPhotos(f.photos);});
