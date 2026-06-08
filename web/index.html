@@ -742,7 +742,9 @@ function isSold(f){
 }
 function matches(f){
   if(isSold(f))return false; // nunca mostrar vendidas / en negociación
-  if(OP!=='both'&&f.listing_type!==OP)return false;
+  const stigON=$('stigmaOnly').checked;
+  // En modo "casas embrujadas" mostramos alquiler Y venta (suelen ser ventas).
+  if(OP!=='both'&&!stigON&&f.listing_type!==OP)return false;
   if(PTYPE!=='all'&&propType(f)!==PTYPE)return false;
   if(f.listing_type==='rent'&&RENTMAX>0&&(f.rent_yen||1e9)>RENTMAX)return false;
   if(f.listing_type==='sale'){const ms=+$('maxSale').value;if(ms<30000000&&f.sale_price_yen&&f.sale_price_yen>ms)return false;}
