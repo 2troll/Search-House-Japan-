@@ -211,6 +211,18 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
           <span class="chip" data-rent="100000"></span>
           <span class="chip on" data-rent="0" data-i18n="nolimit">Sin límite</span>
         </div></div>
+      <div class="fg"><h4>🔑 <span data-i18n="entrymax">Entrada / primer mes</span></h4>
+        <div class="row" id="entryRow">
+          <span class="chip" data-entry="100000">≤10万</span>
+          <span class="chip" data-entry="150000">≤15万</span>
+          <span class="chip" data-entry="200000">≤20万</span>
+          <span class="chip on" data-entry="0" data-i18n="nolimit">Sin límite</span>
+        </div>
+        <div class="rangerow" style="margin-top:6px">
+          <input type="number" id="entryManN" class="numin" min="0" step="1" placeholder="万" style="flex:1;text-align:left">
+          <span class="hint" style="white-space:nowrap">万 (×10.000¥)</span>
+        </div>
+        <div class="hint" data-i18n="entryhint">Lo que pagas al ENTRAR (礼金+fianza+comisión+1er mes). Escribe tu cifra en 万.</div></div>
       <div class="fg"><h4><span data-i18n="salemax">Precio compra máx</span></h4>
         <div class="rangerow"><input type="range" id="maxSale" min="0" max="30000000" step="100000" value="30000000"><input type="number" id="maxSaleN" class="numin" min="0" max="30000000" step="100000" value="30000000"></div>
         <div class="hint"><span class="v" id="saleVal"></span> · <span data-i18n="editable">escribe o desliza</span></div></div>
@@ -487,6 +499,7 @@ const I18N={
   haunthint:'Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.',
   b_stigma:'incidente',
   rentmax:'Alquiler máx',salemax:'Precio compra máx',nolimit:'Sin límite',
+  entrymax:'Entrada / primer mes',entryhint:'Lo que pagas al ENTRAR (礼金+fianza+comisión+1.er mes). Escribe tu cifra en 万.',
   parking:'Parking 駐車場',parkonly:'Solo con parking',parknear:'Aceptar cercano',
   layout:'Distribución 間取り',agemax:'Antigüedad máx',anyage:'Cualquiera',years:'años',
   other:'Otros',reno:'Solo reformadas',newonly:'Solo novedades',zone:'Zona',search:'Buscar',
@@ -527,6 +540,7 @@ const I18N={
   haunthint:'Homes where the law requires disclosing a death or incident (告知事項). Usually discounted in price.',
   b_stigma:'incident',
   rentmax:'Max rent',salemax:'Max buy price',nolimit:'No limit',
+  entrymax:'Move-in / first month',entryhint:'What you pay to MOVE IN (key money+deposit+agency+1st month). Type your amount in 万.',
   parking:'Parking 駐車場',parkonly:'Parking only',parknear:'Allow nearby',
   layout:'Layout 間取り',agemax:'Max age',anyage:'Any',years:'yrs',
   other:'Other',reno:'Renovated only',newonly:'New only',zone:'Area',search:'Search',
@@ -566,14 +580,14 @@ function applyLang(){
   document.querySelectorAll('[data-i18n]').forEach(e=>{e.textContent=t(e.dataset.i18n);});
   document.querySelectorAll('[data-i18n-ph]').forEach(e=>{e.placeholder=t(e.dataset.i18nPh);});
   document.querySelectorAll('#langSeg button').forEach(b=>b.classList.toggle('on',b.dataset.l===LANG));
-  updateRentLabel();updateSaleLabel();if(typeof updateAgeLabel==='function')updateAgeLabel();
+  updateRentLabel();updateSaleLabel();if(typeof updateEntryLabel==='function')updateEntryLabel();if(typeof updateAgeLabel==='function')updateAgeLabel();
   if(typeof apply==='function')apply();
   if(typeof CURRENT!=='undefined'&&CURRENT)openDetail(CURRENT);
 }
 function priceColor(f){let t;if(f.listing_type==='rent'){t=Math.min(1,(f.rent_yen||0)/80000);}else{t=Math.min(1,(f.sale_price_yen||0)/30000000);}return`hsl(${(1-t)*120},70%,42%)`;}
 
 let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZONES=new Set();
-let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='',RENTMAX=0;
+let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='',RENTMAX=0,ENTRYMAX=0;
 let FAVS=new Set(JSON.parse(localStorage.getItem('favs')||'[]'));
 // tipo de inmueble: usa prop_type o lo deriva de los campos japoneses
 function propType(f){
@@ -701,6 +715,10 @@ function buildZones(){
 }
 // Etiqueta los botones de alquiler máx con el importe en la moneda actual.
 function updateRentLabel(){document.querySelectorAll('#rentRow .chip').forEach(c=>{const v=+c.dataset.rent;c.textContent=(v?'≤ '+money(v):t('nolimit'));c.classList.toggle('on',v===RENTMAX);});}
+// Coste de ENTRADA (primer mes 🔑) — el mismo número que se ve en el mapa.
+function entryCost(f){const sc=stayCost(f,12);return sc?sc.firstMonth:null;}
+function updateEntryLabel(){document.querySelectorAll('#entryRow .chip').forEach(c=>c.classList.toggle('on',+c.dataset.entry===ENTRYMAX));
+  const n=$('entryManN');if(n)n.value=ENTRYMAX>0?Math.round(ENTRYMAX/10000):'';}
 function updateSaleLabel(){const v=+$('maxSale').value;$('saleVal').textContent=(v>=30000000?t('nolimit'):money(v));if($('maxSaleN'))$('maxSaleN').value=v;}
 function updateAgeLabel(){const v=+$('maxAge').value;$('ageVal').textContent=v>=80?t('anyage'):v+' '+t('years');if($('maxAgeN'))$('maxAgeN').value=v;}
 // Sincroniza una caja numérica editable con su slider (clamp al rango) y refiltra.
@@ -716,6 +734,8 @@ $('sortBy').onchange=e=>{SORT=e.target.value;apply();};
 $('maxSale').oninput=()=>{updateSaleLabel();apply();};
 $('maxAge').oninput=()=>{updateAgeLabel();apply();};
 document.querySelectorAll('#rentRow .chip').forEach(c=>c.onclick=()=>{RENTMAX=+c.dataset.rent;updateRentLabel();apply();});
+document.querySelectorAll('#entryRow .chip').forEach(c=>c.onclick=()=>{ENTRYMAX=+c.dataset.entry;updateEntryLabel();apply();});
+$('entryManN').oninput=()=>{const v=+$('entryManN').value;ENTRYMAX=(v>0?v*10000:0);document.querySelectorAll('#entryRow .chip').forEach(c=>c.classList.toggle('on',+c.dataset.entry===ENTRYMAX));apply();};
 bindNum('maxSale','maxSaleN',updateSaleLabel);
 bindNum('maxAge','maxAgeN',updateAgeLabel);
 $('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFull').textContent=b?t('showlist'):t('onlymap');setTimeout(()=>map.invalidateSize(),60);};
@@ -779,6 +799,7 @@ function matches(f){
   if(OP!=='both'&&!stigON&&f.listing_type!==OP)return false;
   if(PTYPE!=='all'&&propType(f)!==PTYPE)return false;
   if(f.listing_type==='rent'&&RENTMAX>0&&(f.rent_yen||1e9)>RENTMAX)return false;
+  if(f.listing_type==='rent'&&ENTRYMAX>0){const fm=entryCost(f);if(fm==null||fm>ENTRYMAX)return false;}
   if(f.listing_type==='sale'){const ms=+$('maxSale').value;if(ms<30000000&&f.sale_price_yen&&f.sale_price_yen>ms)return false;}
   if(DEAL==='cheap'||DEAL==='free'){const p=f.sale_price_yen;const lim=DEAL==='free'?100000:1000000;if(!(p&&p<=lim))return false;}
   if(DEAL==='value'&&!isGoodPrice(f))return false;
