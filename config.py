@@ -85,6 +85,13 @@ TARGET_AREAS = [
      "match": ["徳島県"], "center": [33.9000, 134.3000]},
     {"key": "ehime",     "es": "Ehime (Shikoku)",   "pref": "愛媛県", "pref_code": "38",
      "match": ["愛媛県"], "center": [33.7500, 132.9000]},
+
+    # --- Catch-all de prefectura entera (van al FINAL: las zonas-ciudad de arriba
+    # tienen prioridad; lo que no encaje en ellas cae aquí). ---
+    {"key": "wakayama", "es": "Wakayama (toda)", "pref": "和歌山県", "pref_code": "30",
+     "match": ["和歌山県"], "center": [34.2306, 135.1708]},
+    {"key": "fukui",    "es": "Fukui (toda)",    "pref": "福井県",   "pref_code": "18",
+     "match": ["福井県"], "center": [36.0644, 136.2196]},
 ]
 
 # Mapa rápido  nombre japonés -> bloque de zona (lo usan los adaptadores).

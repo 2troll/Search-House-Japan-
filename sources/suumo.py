@@ -26,8 +26,8 @@ NAME = "SUUMO 賃貸"
 BASE = "https://suumo.jp"
 
 # Prefecturas objetivo (slug de SUUMO). Edita esta lista para añadir/quitar.
-SUUMO_PREFS = ["osaka", "hyogo", "kyoto", "nara", "shiga"]
-MAX_PAGES = 2          # páginas por ciudad (20 edificios/página)
+SUUMO_PREFS = ["osaka", "hyogo", "kyoto", "nara", "shiga", "wakayama", "fukui"]
+MAX_PAGES = 3          # páginas por ciudad (20 edificios/página)
 DELAY = 2.5            # pausa entre peticiones (educado)
 
 _sess = requests.Session()

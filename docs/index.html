@@ -516,6 +516,8 @@ const I18N={
   buycost:'Coste real de comprar (estimado)',cardbuy:'compra real',
   buyprice:'Precio',buycomm:'Comisión agencia (~3%+6万)',buytax:'Impuestos/registro/notaría (~5%)',
   buynote:'Estimado: en bancos de akiya municipales suele NO haber comisión (resta esa línea). Confirma siempre con el ayuntamiento/agente.',
+  contract:'Contrato',c_len:'Duración',c_typical:'típico',c_break:'Si te vas antes',c_breaknote:'(penalización ≈)',c_lost:'(no se devuelve)',c_back:'(se devuelve)',
+  c_note:'En Japón el contrato suele ser de 2 años. Si te vas antes, lo normal es pagar ~1 mes de penalización (違約金) y pierdes el 礼金; la fianza (敷金) se devuelve menos limpieza. Ajusta estos valores en ⚙️ Gastos.',
   b_new:'Novedad',b_park:'parking',b_near:'cerca',b_reno:'reformada',b_fr:'extranjeros',
   d_op:'Operación',d_type:'Tipo',d_bldg:'Sup. edificio',d_land:'Sup. terreno',d_built:'Construcción',
   d_struct:'Estructura',d_park:'Parking',d_fr:'Extranjeros',d_pet:'Mascotas',d_reno:'Reformada',d_zone:'Zona',
@@ -557,6 +559,8 @@ const I18N={
   buycost:'Real cost to buy (estimate)',cardbuy:'real cost',
   buyprice:'Price',buycomm:'Agency fee (~3%+¥60k)',buytax:'Taxes/registration (~5%)',
   buynote:'Estimate: municipal akiya banks usually have NO agency fee (drop that line). Always confirm with the town hall/agent.',
+  contract:'Contract',c_len:'Length',c_typical:'typical',c_break:'If you leave early',c_breaknote:'(penalty ≈)',c_lost:'(non-refundable)',c_back:'(refundable)',
+  c_note:'In Japan contracts are usually 2 years. Leaving early typically costs ~1 month penalty (違約金) and you lose the 礼金 key money; the deposit (敷金) is returned minus cleaning. Adjust these in ⚙️ Fees.',
   b_new:'New',b_park:'parking',b_near:'nearby',b_reno:'renovated',b_fr:'foreigners OK',
   d_op:'Type',d_type:'Kind',d_bldg:'Building area',d_land:'Land area',d_built:'Built',
   d_struct:'Structure',d_park:'Parking',d_fr:'Foreigners',d_pet:'Pets',d_reno:'Renovated',d_zone:'Area',
@@ -900,6 +904,24 @@ function openDetail(f){
       <tr class="totalrow"><td>= ${t('firstm')}</td><td>${money(sc.firstMonth)}</td></tr>
       <tr><td>${t('monthsnext')}</td><td>${money(sc.recurring)}${t('permonth')}</td></tr>
     </table></div>`;}
+  // 📑 Contrato: duración y coste de romperlo (real si el anuncio lo trae, si no, el estándar japonés)
+  let contractCard='';
+  if(sc){
+    const a=A(),ft2=f.features||{};
+    const realDur=ft2['契約期間']||ft2['契約']||'';
+    const realPen=ft2['違約金']||ft2['解約']||'';
+    const yrs=Math.round((a.contract||24)/12);
+    const breakPen=Math.round((a.penalty||0)*f.rent_yen);
+    contractCard=`<div class="costcard">
+      <div class="firstm">📑 ${t('contract')}</div>
+      <table>
+        <tr><td>${t('c_len')}</td><td>${realDur?tr(realDur):'~'+yrs+' '+t('years')+' · '+t('c_typical')}</td></tr>
+        <tr><td>${t('c_break')}</td><td>${realPen?tr(realPen):money(breakPen)+' '+t('c_breaknote')}</td></tr>
+        <tr><td>礼金 ${LANG==='en'?'Key money':'Llave'} ${t('c_lost')}</td><td>${money(sc.key)}</td></tr>
+        <tr><td>敷金 ${LANG==='en'?'Deposit':'Fianza'} ${t('c_back')}</td><td>${money(sc.deposit)} ↩︎</td></tr>
+      </table>
+      <div class="firstnote">${t('c_note')}</div></div>`;
+  }
   const bc=buyCost(f);
   if(bc){cost=`<div class="costcard">
     <div class="firstm">🏯 ${t('buycost')}<span class="big">${money(bc.total)}</span></div>
@@ -936,6 +958,7 @@ function openDetail(f){
       ${f._stigma?'<div class="stigmabox">👻 '+(f._stigmaReason?(f._stigmaReason[LANG]||f._stigmaReason.es):'')+'</div>':''}
       ${priceRange(f)?'<div class="approxnote">'+t('rangenote')+'</div>':''}
       ${cost}
+      ${contractCard}
       <table class="specs">
         <tr><td>${t('d_op')}</td><td>${f.listing_type==='rent'?t('rent')+' 賃貸':t('sale')+' 売買'}</td></tr>
         ${kind?`<tr><td>${t('d_type')}</td><td>${trKind(kind)} <span style="color:#94a3b8">${kind}</span></td></tr>`:''}
