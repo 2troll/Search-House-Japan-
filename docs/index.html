@@ -423,7 +423,8 @@ BASEMAPS["Mapa claro"].addTo(map);
 L.control.layers(BASEMAPS,null,{position:'topright',collapsed:true}).addTo(map);
 const cluster=L.markerClusterGroup({maxClusterRadius:38,disableClusteringAtZoom:15,spiderfyOnMaxZoom:true,showCoverageOnHover:false});map.addLayer(cluster);
 // Tocar/mover el mapa cierra el panel de filtros (no hay que estar dándole al botón)
-map.on('click movestart',()=>{const f=document.getElementById('filters');if(f)f.classList.remove('open');});
+map.on('click movestart',()=>{const f=document.getElementById('filters');
+  if(f&&f.classList.contains('open')){if(topOverlay()==='filters')closeOverlay();else f.classList.remove('open');}});
 
 // ====== Zonas (sincronizar con TARGET_AREAS) ======
 const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",hyogo:"Kobe / Hyogo 兵庫県",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県",hiroshima:"Hiroshima 広島県",shimane:"Shimane 島根県",kagawa:"Kagawa 香川県",tokushima:"Tokushima 徳島県",ehime:"Ehime 愛媛県"};
@@ -725,16 +726,46 @@ $('search').oninput=apply;
 document.querySelectorAll('#opSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#opSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');OP=b.dataset.op;apply();});
 document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#ptypeRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');PTYPE=c.dataset.pt;apply();});
 document.querySelectorAll('#curSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#curSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');CUR=b.dataset.c;updateRentLabel();updateSaleLabel();apply();renderCompare();if(CURRENT)openDetail(CURRENT);});
-$('openAssume').onclick=()=>$('assumeModal').classList.add('show');
-$('openCompare').onclick=()=>{renderCompare();$('compareModal').classList.add('show');};
-document.querySelectorAll('[data-close]').forEach(b=>b.onclick=e=>e.target.closest('.modal-bg').classList.remove('show'));
-document.querySelectorAll('.modal-bg').forEach(m=>m.onclick=e=>{if(e.target===m)m.classList.remove('show');});
+$('openAssume').onclick=()=>openModal('assumeModal');
+$('openCompare').onclick=()=>openModal('compareModal',renderCompare);
+document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>closeOverlay());
+document.querySelectorAll('.modal-bg').forEach(m=>m.onclick=e=>{if(e.target===m)closeOverlay();});
 A_IDS.forEach(id=>$(id).oninput=()=>{saveAssume();apply();renderCompare();if(CURRENT)openDetail(CURRENT);});
-$('dClose').onclick=()=>{$('drawer').classList.remove('open');CURRENT=null;};
-$('tabFilters').onclick=()=>$('filters').classList.toggle('open');
-$('tabList').onclick=()=>setMob('list');
-$('tabMap').onclick=()=>{setMob('map');setTimeout(()=>map.invalidateSize(),50);};
+$('dClose').onclick=()=>closeOverlay();
+$('tabFilters').onclick=()=>{const f=$('filters');
+  if(f.classList.contains('open'))closeOverlay();
+  else{f.classList.add('open');openOverlay('filters',()=>f.classList.remove('open'));}};
+$('tabList').onclick=()=>{if(topOverlay()==='filters')closeOverlay();setMob('list');};
+$('tabMap').onclick=()=>{if(topOverlay()==='filters')closeOverlay();setMob('map');setTimeout(()=>map.invalidateSize(),50);};
 function setMob(w){$('listcol').classList.toggle('show',w==='list');$('map').classList.toggle('show',w==='map');$('tabList').classList.toggle('on',w==='list');$('tabMap').classList.toggle('on',w==='map');$('filters').classList.remove('open');}
+
+// ====== Navegación con historial: el botón ATRÁS del móvil cierra lo que tengas
+// abierto (ficha, modal, panel de filtros) y te devuelve donde estabas, en vez de
+// salir de toda la web. Cada overlay empuja un estado; "atrás" lo cierra. ======
+var _ov=[];               // pila de overlays abiertos {name, close}
+var _suppressPop=false;   // ignora el popstate que provoca nuestro propio history.back()
+var _prevMobView=null;    // vista (lista/mapa) antes de abrir una casa, para volver a ella
+function openOverlay(name,closeFn){
+  // si el mismo overlay ya está encima (p.ej. re-render de la ficha al cambiar idioma),
+  // no empujamos otro estado: solo actualizamos su cierre.
+  if(_ov.length&&_ov[_ov.length-1].name===name){_ov[_ov.length-1].close=closeFn;return;}
+  _ov.push({name:name,close:closeFn});
+  history.pushState({ov:name},'');
+}
+function closeOverlay(){            // cierre iniciado por el usuario (X, fondo, etc.)
+  if(!_ov.length)return;
+  _ov.pop().close();
+  _suppressPop=true; history.back();
+}
+function topOverlay(){return _ov.length?_ov[_ov.length-1].name:null;}
+window.addEventListener('popstate',function(){
+  if(_suppressPop){_suppressPop=false;return;}   // fue nuestro history.back(): ya cerramos
+  if(_ov.length)_ov.pop().close();               // botón atrás del teléfono
+});
+function openModal(id,before){ if(before)before(); $(id).classList.add('show');
+  openOverlay('modal:'+id,function(){$(id).classList.remove('show');}); }
+function closeDrawer(){ $('drawer').classList.remove('open'); CURRENT=null;
+  if(_prevMobView){setMob(_prevMobView);_prevMobView=null;} }
 
 function isSold(f){
   const s=(f.status_note||'')+' '+(f.description_raw||'')+' '+JSON.stringify(f.features||{});
@@ -908,8 +939,13 @@ function openDetail(f){
     </div>
     <a class="dlink" href="${f.source_url}" target="_blank" rel="noopener">${t('vermore')} (${f.source_name||f.source}) ↗</a>`;
   renderGallery();
+  const wasOpen=$('drawer').classList.contains('open');
   $('drawer').classList.add('open');
-  if(window.innerWidth<=920){setMob('map');setTimeout(()=>map.invalidateSize(),60);}
+  if(window.innerWidth<=920){
+    if(!wasOpen&&!_prevMobView)_prevMobView=$('map').classList.contains('show')?'map':'list';
+    setMob('map');setTimeout(()=>map.invalidateSize(),60);
+  }
+  openOverlay('drawer',closeDrawer);
 }
 function renderGallery(){
   const g=$('gal');if(!g)return;
@@ -929,7 +965,7 @@ function renderCompare(){
   let html=`<table class="cmp"><thead><tr><th>${t('c_home')}</th><th>${t('zone')}</th><th>間取</th><th>m²</th><th>築年</th><th>${t('c_park')}</th><th>${t('c_months')}</th><th>${t('c_rentmo')}</th><th>${t('c_total')}</th><th>${t('permonth')}</th><th></th></tr></thead><tbody>`;
   rows.forEach(({f,mo,sc})=>{
     const win=(sc&&best!=null&&Math.abs(sc.perMonth-best)<1)?'winner':'';
-    html+=`<tr class="${win}"><td><a href="#" onclick="event.preventDefault();document.getElementById('compareModal').classList.remove('show');openDetail(FEATURES.find(x=>x.id===${f.id}))">${(f.title||'').slice(0,20)}</a></td>
+    html+=`<tr class="${win}"><td><a href="#" onclick="event.preventDefault();closeOverlay();openDetail(FEATURES.find(x=>x.id===${f.id}))">${(f.title||'').slice(0,20)}</a></td>
       <td>${(AREA_LABELS[f.area_key]||f.city||'').replace(/ .*/,'')}</td><td>${f.layout||'—'}</td><td class="num">${f.building_area_m2||'—'}</td>
       <td class="num">${f.age_years!=null?f.age_years+'a':'—'}</td><td>${pkLabel(f.parking)}</td>
       <td><input class="mo" type="number" min="1" max="36" value="${mo}" onchange="setCmpMonths(${f.id},this.value)"></td>
@@ -943,13 +979,13 @@ function renderCompare(){
 }
 window.setCmpMonths=function(id,v){CMP_MONTHS[id]=Math.max(1,+v||1);renderCompare();};
 // ====== Guía ======
-$('openGuide').onclick=()=>$('guideModal').classList.add('show');
+$('openGuide').onclick=()=>openModal('guideModal');
 
 // ====== Agente IA — GRATIS por defecto (Llama/GPT-OSS, sin clave) + Pro (Claude) ======
 let CHAT=[]; // historial [{role,content}]
 function getKey(){return localStorage.getItem('anthropic_key')||'';}
 function aiMode(){return getKey()?'pro':'free';}
-$('openAgent').onclick=()=>{$('agentModal').classList.add('show');refreshAgentUI();};
+$('openAgent').onclick=()=>openModal('agentModal',refreshAgentUI);
 function refreshAgentUI(){
   $('aiModeBadge').textContent=aiMode()==='pro'?t('ai_pro'):t('ai_free');
   if(!$('chatArea').dataset.init){
@@ -1014,12 +1050,9 @@ async function sendChat(){
 $('chatSend').onclick=sendChat;
 $('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat();}});
 
-// Cerrar con Esc cualquier ventana abierta (modales y ficha lateral)
+// Cerrar con Esc lo que tengas abierto (pasa por el gestor de historial)
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape'){
-    document.querySelectorAll('.modal-bg.show').forEach(m=>m.classList.remove('show'));
-    if($('drawer').classList.contains('open')){$('drawer').classList.remove('open');CURRENT=null;}
-  }
+  if(e.key==='Escape'&&_ov.length)closeOverlay();
 });
 
 if(window.innerWidth<=920)setMob('list');
