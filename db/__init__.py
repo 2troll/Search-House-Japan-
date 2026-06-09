@@ -181,5 +181,6 @@ def export_geojson(path=None):
     fc = {"type": "FeatureCollection", "features": features}
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(fc, f, ensure_ascii=False, indent=1)
+        # Sin indentación: el móvil descarga (gzip) y, sobre todo, PARSEA mucho menos.
+        json.dump(fc, f, ensure_ascii=False, separators=(",", ":"))
     return len(features)
