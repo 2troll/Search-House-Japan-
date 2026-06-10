@@ -62,11 +62,29 @@ def _city_slugs(pref):
 
 
 def _rent_yen(text):
+    # En SUUMO el ALQUILER siempre se muestra en 万円 (p.ej. "7.5万円"); el 管理費
+    # va en 円 sueltos ("7,500円"). Solo aceptamos 万円 para no confundir el
+    # 管理費 con la renta (bug que dejaba rentas tipo 7.500¥).
     m = re.search(r"([\d.]+)\s*万円", text or "")
     if m:
         return int(round(float(m.group(1)) * 10000))
+    return None
+
+
+def _adm_yen(text):
+    """管理費/共益費: '7,110円' -> 7110 · '-' -> 0."""
     m = re.search(r"([\d,]+)\s*円", text or "")
-    return int(m.group(1).replace(",", "")) if m else None
+    return int(m.group(1).replace(",", "")) if m else 0
+
+
+def _km(text):
+    """Normaliza 敷金/礼金 para el front (moneyField entiende '8万円'/'なし'/'Xヶ月').
+    SUUMO usa '-' para 'nada' -> lo pasamos a 'なし' (si no, moneyField usaría el
+    valor por defecto en vez de 0)."""
+    t = (text or "").strip()
+    if not t or t in ("-", "ー", "−") or "なし" in t:
+        return "なし"
+    return t
 
 
 def _parse_page(html, pref):
@@ -89,6 +107,19 @@ def _parse_page(html, pref):
             if isinstance(photo, list):
                 photo = photo[0]
 
+        # 築年 y 階建 (en la columna 3 del detalle del edificio: "築2年 | 15階建")
+        col3 = c.find(class_="cassetteitem_detail-col3")
+        built_txt = col3.get_text(" ", strip=True) if col3 else ""
+        age_years = None
+        year_built = ""
+        mb = re.search(r"築\s*(\d+)\s*年", built_txt)
+        if mb:
+            age_years = int(mb.group(1)); year_built = f"築{age_years}年"
+        elif "新築" in built_txt:
+            age_years = 0; year_built = "新築"
+        mf = re.search(r"(\d+)\s*階建", built_txt)
+        floors = mf.group(0) if mf else ""
+
         # recorre todas las habitaciones: guarda la más barata y el RANGO real
         best = None
         rents = []
@@ -100,11 +131,17 @@ def _parse_page(html, pref):
             mad = tr.find(class_="cassetteitem_madori")
             men = tr.find(class_="cassetteitem_menseki")
             link = tr.find("a", href=re.compile("/chintai/"))
+            adm = tr.find(class_=re.compile("cassetteitem_price--adm"))
+            dep = tr.find(class_=re.compile("cassetteitem_price--dep"))
+            gra = tr.find(class_=re.compile("cassetteitem_price--gra"))
             room = {
                 "rent": rent,
                 "layout": mad.get_text(strip=True) if mad else "",
                 "area": men.get_text(strip=True) if men else "",
                 "url": urljoin(BASE, link["href"]) if link and link.get("href") else "",
+                "mgmt": _adm_yen(adm.get_text()) if adm else 0,
+                "deposit": _km(dep.get_text()) if dep else "",   # 敷金
+                "key": _km(gra.get_text()) if gra else "",       # 礼金
             }
             if rent:
                 rents.append(rent)
@@ -116,6 +153,8 @@ def _parse_page(html, pref):
         feats = {"交通": stations, "contacto": "Ver anuncio en SUUMO (inmobiliaria)"}
         if rents and max(rents) > min(rents):
             feats["rent_range"] = f"{min(rents):,}円～{max(rents):,}円"
+        if built_txt:
+            feats["築年月"] = year_built or built_txt
 
         from sources.base import parse_area_m2
         lst = Listing(
@@ -125,8 +164,11 @@ def _parse_page(html, pref):
             title=f"{name}（{address.split('区')[0][:10]}）" if name else name,
             address_raw=address,
             rent_yen=best["rent"],
+            management_fee_yen=best["mgmt"],
+            deposit=best["deposit"], key_money=best["key"],
             layout=best["layout"],
             building_area_m2=parse_area_m2(best["area"]),
+            year_built=year_built, age_years=age_years, floors=floors,
             photos=[photo] if photo and photo.startswith("http") else [],
             description_raw=f"SUUMO · {kind}",
             features=feats,
