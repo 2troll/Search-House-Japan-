@@ -30,15 +30,18 @@ NAME = "アットホーム 賃貸"
 BASE = "https://www.athome.co.jp"
 
 # (ruta de listado, prefijo de prefectura para geocodificar/clasificar)
+# ORDEN: primero las zonas prioritarias (Fukui, Awaji); Wakayama al final. at-home
+# limita las peticiones ACUMULADAS, así que conviene gastar el "presupuesto" primero
+# en lo importante por si nos corta antes de acabar.
 TARGETS = [
-    ("/chintai/wakayama/list/", "和歌山県"),
     ("/chintai/fukui/list/", "福井県"),
     ("/chintai/hyogo/sumoto-city/list/", "兵庫県"),
     ("/chintai/hyogo/minamiawaji-city/list/", "兵庫県"),
     ("/chintai/hyogo/awaji-city/list/", "兵庫県"),
+    ("/chintai/wakayama/list/", "和歌山県"),
 ]
-MAX_PAGES = 25     # páginas por destino (30 edificios/página); los destinos pequeños paran solos
-DELAY = 3.5        # pausa entre peticiones (portal grande: educado)
+MAX_PAGES = 8      # páginas por destino (30 edificios/página); los pequeños paran solos
+DELAY = 6.0        # pausa generosa: at-home corta si se le piden muchas seguidas
 
 _sess = requests.Session()
 _sess.headers.update({
