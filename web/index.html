@@ -598,7 +598,7 @@ function applyLang(){
 function priceColor(f){let t;if(f.listing_type==='rent'){t=Math.min(1,(f.rent_yen||0)/80000);}else{t=Math.min(1,(f.sale_price_yen||0)/30000000);}return`hsl(${(1-t)*120},70%,42%)`;}
 
 let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZONES=new Set();
-let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='',RENTMAX=0,ENTRYMAX=0;
+let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='',RENTMAX=0,ENTRYMAX=0,REFIT=true;
 let FAVS=new Set(JSON.parse(localStorage.getItem('favs')||'[]'));
 // tipo de inmueble: usa prop_type o lo deriva de los campos japoneses
 function propType(f){
@@ -694,7 +694,7 @@ fetch('data.geojson').then(r=>r.json()).then(geo=>{
   FEATURES=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
   FEATURES.forEach(f=>{f.photos=cleanPhotos(f.photos);computeStigma(f);});
   spreadOverlaps();
-  buildLayouts();buildZones();loadAssume();applyLang();
+  buildLayouts();buildZones();loadAssume();loadState();applyLang();
 }).catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data.geojson. Ejecuta refresh.py y abre con un servidor.</div>';});
 
 // Muchas direcciones rurales geocodifican al MISMO punto del barrio (大字).
@@ -722,7 +722,7 @@ function buildLayouts(){
 }
 function buildZones(){
   const present=[...new Set(FEATURES.map(f=>f.area_key).filter(Boolean))];const row=$('zoneRow');row.innerHTML='';
-  present.forEach(z=>{ZONES.add(z);const c=document.createElement('span');c.className='chip on';c.textContent=AREA_LABELS[z]||z;c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);apply();};row.appendChild(c);});
+  present.forEach(z=>{ZONES.add(z);const c=document.createElement('span');c.className='chip on';c.dataset.zone=z;c.textContent=AREA_LABELS[z]||z;c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);REFIT=true;apply();};row.appendChild(c);});
 }
 // Etiqueta los botones de alquiler máx con el importe en la moneda actual.
 function updateRentLabel(){document.querySelectorAll('#rentRow .chip').forEach(c=>{const v=+c.dataset.rent;c.textContent=(v?'≤ '+money(v):t('nolimit'));c.classList.toggle('on',v===RENTMAX);});}
@@ -848,9 +848,41 @@ function apply(){
   const months=+$('months').value,shown=FEATURES.filter(matches);
   cluster.clearLayers();MARKERS.clear();const bounds=[];
   shown.forEach(f=>{const m=L.marker([f.lat,f.lng],{icon:makeIcon(f)});m.on('click',()=>openDetail(f));m.on('mouseover',()=>hl(f.id,true));m.on('mouseout',()=>hl(f.id,false));cluster.addLayer(m);MARKERS.set(f.id,m);bounds.push([f.lat,f.lng]);});
-  if(bounds.length)map.fitBounds(bounds,{padding:[40,40],maxZoom:12});
+  // El mapa solo se re-encuadra en la 1.ª carga o al cambiar de zona (REFIT),
+  // no en cada toque de filtro: así deja de "saltar".
+  if(REFIT&&bounds.length){map.fitBounds(bounds,{padding:[40,40],maxZoom:12});REFIT=false;}
   renderList(shown.slice().sort(sortFn(months)),months);
   $('count').textContent=shown.length+' '+t('houses');$('favN').textContent=FAVS.size;
+  saveState();
+}
+// ====== Persistencia de filtros (vuelves donde estabas al recargar) ======
+const STATE_TOGGLES=['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly'];
+function saveState(){
+  try{localStorage.setItem('filters',JSON.stringify({
+    OP,PTYPE,DEAL,RENTMAX,ENTRYMAX,
+    maxSale:$('maxSale').value,maxAge:$('maxAge').value,
+    months:$('months').value,sort:$('sortBy').value,search:$('search').value,
+    tg:STATE_TOGGLES.filter(id=>$(id)&&$(id).checked),
+    lay:[...LAYOUTS],zon:[...ZONES],
+  }));}catch(e){}
+}
+function loadState(){
+  let s;try{s=JSON.parse(localStorage.getItem('filters')||'null');}catch(e){}
+  if(!s)return;
+  if(s.OP)OP=s.OP; if(s.PTYPE)PTYPE=s.PTYPE; DEAL=s.DEAL||''; RENTMAX=s.RENTMAX||0; ENTRYMAX=s.ENTRYMAX||0;
+  if(s.maxSale!=null)$('maxSale').value=s.maxSale;
+  if(s.maxAge!=null)$('maxAge').value=s.maxAge;
+  if(s.months!=null)$('months').value=s.months;
+  if(s.sort){$('sortBy').value=s.sort;SORT=s.sort;}
+  if(s.search!=null)$('search').value=s.search;
+  STATE_TOGGLES.forEach(id=>{if($(id))$(id).checked=(s.tg||[]).includes(id);});
+  document.querySelectorAll('#opSeg button').forEach(b=>b.classList.toggle('on',b.dataset.op===OP));
+  document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.classList.toggle('on',c.dataset.pt===PTYPE));
+  document.querySelectorAll('#dealRow .chip').forEach(c=>c.classList.toggle('on',c.dataset.deal===DEAL));
+  if(Array.isArray(s.lay)){LAYOUTS.clear();s.lay.forEach(l=>LAYOUTS.add(l));
+    document.querySelectorAll('#layoutRow .chip').forEach(c=>c.classList.toggle('on',LAYOUTS.has(c.textContent)));}
+  if(Array.isArray(s.zon)){ZONES.clear();s.zon.forEach(z=>ZONES.add(z));
+    document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.toggle('on',ZONES.has(c.dataset.zone)));}
 }
 
 function renderList(shown,months){
