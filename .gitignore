@@ -14,3 +14,10 @@ imports/*.csv
 .venv/
 venv/
 web/img/
+
+# graphify: internos con rutas absolutas del contenedor / caché.
+# Los artefactos portables (graph.json, graph.html, GRAPH_REPORT.md, cost.json) SÍ se versionan.
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/.graphify_labels.json
+graphify-out/manifest.json
