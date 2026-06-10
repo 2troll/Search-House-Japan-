@@ -261,7 +261,10 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
       <div class="fg"><h4 data-i18n="haunt">👻 事故物件</h4>
         <label class="toggle"><input type="checkbox" id="stigmaOnly"> <span data-i18n="hauntonly">Solo con incidente (más baratas)</span></label>
         <div class="hint" data-i18n="haunthint">Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.</div></div>
-      <div class="fg"><h4 data-i18n="zone">Zona</h4><div class="row" id="zoneRow"></div></div>
+      <div class="fg"><h4><span data-i18n="zone">Zona</span>
+          <span class="chip" id="zAll" data-i18n="z_all" style="font-size:10px;padding:2px 8px;margin-left:8px">Todas</span>
+          <span class="chip" id="zNone" data-i18n="z_none" style="font-size:10px;padding:2px 8px">Ninguna</span></h4>
+        <div class="row" id="zoneRow" style="max-height:150px;overflow:auto"></div></div>
       <div class="fg"><h4 data-i18n="search">Buscar</h4><input type="text" id="search" data-i18n-ph="searchph" placeholder="海, 平屋, 福良, 沼島..."></div>
     </aside>
 
@@ -271,7 +274,7 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
         <div style="display:flex;align-items:center;gap:10px">
           <label style="display:flex;align-items:center;gap:4px"><span data-i18n="stay">Estancia</span> <input type="number" id="months" min="1" max="36" value="4" style="width:44px;padding:3px;border:1px solid var(--line2);border-radius:6px;text-align:center"> m</label>
           <select id="sortBy" style="padding:4px;border:1px solid var(--line2);border-radius:6px;font-size:12px">
-            <option value="cost" data-i18n="o_cost">Coste estancia ↑</option><option value="permonth" data-i18n="o_pm">Coste/mes ↑</option><option value="price" data-i18n="o_price">Precio ↑</option><option value="age" data-i18n="o_age">Más nuevas</option><option value="area" data-i18n="o_area">Más grandes</option>
+            <option value="cost" data-i18n="o_cost">Coste estancia ↑</option><option value="entry" data-i18n="o_entry">Entrada 🔑 ↑</option><option value="permonth" data-i18n="o_pm">Coste/mes ↑</option><option value="price" data-i18n="o_price">Precio ↑</option><option value="age" data-i18n="o_age">Más nuevas</option><option value="area" data-i18n="o_area">Más grandes</option>
           </select>
         </div>
       </div>
@@ -541,7 +544,7 @@ const I18N={
   layout:'Distribución 間取り',agemax:'Antigüedad máx',anyage:'Cualquiera',years:'años',
   other:'Otros',reno:'Solo reformadas',newonly:'Solo novedades',zone:'Zona',search:'Buscar',
   searchph:'海, 平屋, 福良, 沼島...',stay:'Estancia',months:'meses',order:'Ordenar',
-  o_cost:'Coste estancia ↑',o_pm:'Coste/mes ↑',o_price:'Precio ↑',o_age:'Más nuevas',o_area:'Más grandes',
+  o_cost:'Coste estancia ↑',o_entry:'Entrada 🔑 ↑',z_all:'Todas',z_none:'Ninguna',noresults:'😕 Ninguna casa cumple esos filtros.',clearf:'🧹 Quitar todos los filtros',o_pm:'Coste/mes ↑',o_price:'Precio ↑',o_age:'Más nuevas',o_area:'Más grandes',
   tabFilters:'Filtros',tabList:'Lista',tabMap:'Mapa',onlymap:'🗺️ Solo mapa',showlist:'◀ Mostrar lista',
   houses:'casas',legend:'Leyenda',cheapw:'barato',exp:'caro',rentw:'alquiler',landw:'terreno',several:'varias casas (acerca el zoom)',
   toconsult:'A consultar',permonth:'/mes',various:'Varios tipos',
@@ -584,7 +587,7 @@ const I18N={
   layout:'Layout 間取り',agemax:'Max age',anyage:'Any',years:'yrs',
   other:'Other',reno:'Renovated only',newonly:'New only',zone:'Area',search:'Search',
   searchph:'sea, 1-floor, station...',stay:'Stay',months:'months',order:'Sort',
-  o_cost:'Total stay cost ↑',o_pm:'Cost/month ↑',o_price:'Price ↑',o_age:'Newest',o_area:'Largest',
+  o_cost:'Total stay cost ↑',o_entry:'Move-in 🔑 ↑',z_all:'All',z_none:'None',noresults:'😕 No homes match those filters.',clearf:'🧹 Clear all filters',o_pm:'Cost/month ↑',o_price:'Price ↑',o_age:'Newest',o_area:'Largest',
   tabFilters:'Filters',tabList:'List',tabMap:'Map',onlymap:'🗺️ Map only',showlist:'◀ Show list',
   houses:'homes',legend:'Legend',cheapw:'cheap',exp:'pricey',rentw:'rent',landw:'land',several:'several homes (zoom in)',
   toconsult:'On request',permonth:'/mo',various:'Various types',
@@ -851,6 +854,8 @@ $('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFu
 document.querySelectorAll('#dealRow .chip').forEach(c=>c.onclick=()=>{const d=c.dataset.deal;if(DEAL===d){DEAL='';c.classList.remove('on');}else{DEAL=d;document.querySelectorAll('#dealRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');}apply();});
 document.querySelectorAll('#langSeg button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;localStorage.setItem('lang',LANG);applyLang();});
 ['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly','zeroEntry'].forEach(id=>$(id).onchange=apply);
+$('zAll').onclick=()=>{SEEN_ZONES.forEach(z=>ZONES.add(z));document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.add('on'));REFIT=true;apply();};
+$('zNone').onclick=()=>{ZONES.clear();document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.remove('on'));apply();};
 $('search').oninput=apply;
 document.querySelectorAll('#opSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#opSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');OP=b.dataset.op;apply();});
 document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#ptypeRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');PTYPE=c.dataset.pt;apply();});
@@ -943,6 +948,10 @@ function sortFn(months){return(a,b)=>{
   if(SORT==='age')return(a.age_years??999)-(b.age_years??999);
   if(SORT==='area')return(b.building_area_m2||0)-(a.building_area_m2||0);
   if(SORT==='price'){const pa=a.listing_type==='rent'?(a.rent_yen||1e9):(a.sale_price_yen||1e12);const pb=b.listing_type==='rent'?(b.rent_yen||1e9):(b.sale_price_yen||1e12);return pa-pb;}
+  if(SORT==='entry'){ // entrada 🔑 más barata primero (alquiler); ventas al final por precio
+    const ea=a.listing_type==='rent'?(entryCost(a)??1e12):(a.sale_price_yen?1e13+a.sale_price_yen:1e15);
+    const eb=b.listing_type==='rent'?(entryCost(b)??1e12):(b.sale_price_yen?1e13+b.sale_price_yen:1e15);
+    return ea-eb;}
   const sa=stayCost(a,months),sb=stayCost(b,months);
   const va=sa?(SORT==='permonth'?sa.perMonth:sa.total):(a.sale_price_yen?1e13+a.sale_price_yen:1e15);
   const vb=sb?(SORT==='permonth'?sb.perMonth:sb.total):(b.sale_price_yen?1e13+b.sale_price_yen:1e15);
@@ -992,7 +1001,23 @@ function loadState(){
 
 function renderList(shown,months){
   const list=$('list');list.innerHTML='';
-  shown.slice(0,600).forEach(f=>{
+  // Sin resultados: mensaje claro + botón de limpiar filtros
+  if(!shown.length){
+    list.innerHTML=`<div class="cmp-empty">${t('noresults')}<br><br><span class="chip on" style="cursor:pointer" onclick="clearFilters()">${t('clearf')}</span></div>`;
+    return;
+  }
+  // Render PROGRESIVO: 80 tarjetas al instante; el resto entra al hacer scroll
+  // (móvil fluido aunque haya decenas de miles de resultados).
+  LIST_DATA={shown,months,idx:0};
+  appendCards(80);
+}
+let LIST_DATA=null;
+function appendCards(n){
+  if(!LIST_DATA)return;
+  const{shown,months}=LIST_DATA,list=$('list');
+  const end=Math.min(LIST_DATA.idx+n,shown.length,3000);
+  for(let i=LIST_DATA.idx;i<end;i++){
+    const f=shown[i];
     const sc=stayCost(f,months);
     const price=priceText(f,false);
     const photo=(f.photos&&f.photos[0])?`<img class="thumb" src="${f.photos[0]}" loading="lazy" onerror="this.style.display='none'">`:'';
@@ -1020,8 +1045,28 @@ function renderList(shown,months){
     div.onmouseover=()=>hl(f.id,true);div.onmouseout=()=>hl(f.id,false);
     div.onclick=()=>openDetail(f);
     list.appendChild(div);
-  });
+  }
+  LIST_DATA.idx=end;
 }
+// Al acercarse al final de la lista, añade más tarjetas
+$('list').addEventListener('scroll',()=>{
+  const l=$('list');
+  if(LIST_DATA&&LIST_DATA.idx<LIST_DATA.shown.length&&l.scrollTop+l.clientHeight>l.scrollHeight-900)appendCards(80);
+});
+// Limpia todos los filtros (lo usa el estado "sin resultados")
+window.clearFilters=function(){
+  DEAL='';RENTMAX=0;ENTRYMAX=0;PTYPE='all';
+  $('maxSale').value=30000000;$('maxAge').value=80;$('search').value='';
+  STATE_TOGGLES.forEach(id=>{if($(id))$(id).checked=false;});
+  $('parkingNearby').checked=true;
+  LAYOUTS.clear();SEEN_ZONES.forEach(z=>ZONES.add(z));
+  document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.classList.toggle('on',c.dataset.pt==='all'));
+  document.querySelectorAll('#dealRow .chip').forEach(c=>c.classList.remove('on'));
+  document.querySelectorAll('#layoutRow .chip,#zoneRow .chip').forEach(c=>c.classList.add('on'));
+  document.querySelectorAll('#layoutRow .chip').forEach(c=>c.classList.remove('on'));
+  updateRentLabel();updateEntryLabel();updateSaleLabel();if(typeof updateAgeLabel==='function')updateAgeLabel();
+  REFIT=true;apply();
+};
 function hl(id,on){document.querySelectorAll('.card').forEach(c=>{if(+c.dataset.id===id)c.classList.toggle('hl',on);});}
 
 // ====== Ficha lateral con galería ======
