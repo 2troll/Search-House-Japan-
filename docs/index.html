@@ -98,7 +98,7 @@ input:focus,select:focus,.numin:focus{outline:none;border-color:var(--accent);bo
 .badge{font-size:10px;padding:3px 8px;border-radius:8px;background:var(--soft);color:#475569;font-weight:600}
 .badge.park{background:#dcfce7;color:#166534}.badge.reno{background:#ede9fe;color:#6d28d9}
 .badge.new{background:var(--gold);color:#fff}.badge.fr{background:#cffafe;color:#0e7490}
-.badge.stigma{background:#1e1b4b;color:#c7d2fe}.badge.value{background:#fef3c7;color:#b45309}
+.badge.stigma{background:#1e1b4b;color:#c7d2fe}.badge.value{background:#fef3c7;color:#b45309}.badge.zero{background:#dcfce7;color:#15803d}
 .stigmabox{background:#1e1b4b;color:#e0e7ff;border-radius:10px;padding:10px 12px;margin:10px 0;font-size:12.5px;line-height:1.5;border:1px solid #4338ca}
 
 .price-pin{display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;height:23px;padding:0 9px;white-space:nowrap;border-radius:12px;border:1.5px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.32);letter-spacing:-.01em;line-height:1}
@@ -241,6 +241,7 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
         <div class="rangerow"><input type="range" id="maxAge" min="0" max="80" step="1" value="80"><input type="number" id="maxAgeN" class="numin" min="0" max="80" step="1" value="80"></div>
         <div class="hint"><span class="v" id="ageVal"></span></div></div>
       <div class="fg"><h4 data-i18n="other">Otros</h4>
+        <label class="toggle"><input type="checkbox" id="zeroEntry"> <span data-i18n="zeroonly">🟢 Cero entrada (sin 礼金/敷金)</span></label>
         <label class="toggle"><input type="checkbox" id="goodCondition"> <span data-i18n="goodcond">✨ Buen estado (reformada/nueva)</span></label>
         <label class="toggle"><input type="checkbox" id="renovatedOnly"> <span data-i18n="reno">Solo reformadas</span></label>
         <label class="toggle"><input type="checkbox" id="newOnly"> <span data-i18n="newonly">Solo novedades</span></label></div>
@@ -504,7 +505,7 @@ const I18N={
   goodcond:'✨ Buen estado (reformada o reciente)',
   haunt:'👻 事故物件 (embrujadas)',hauntonly:'Solo con incidente (más baratas)',
   haunthint:'Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.',
-  b_stigma:'incidente',
+  b_stigma:'incidente',b_zero:'cero entrada',zeroonly:'🟢 Cero entrada (sin 礼金/敷金)',
   rentmax:'Alquiler máx',salemax:'Precio compra máx',nolimit:'Sin límite',
   entrymax:'Entrada / primer mes',entryhint:'Lo que pagas al ENTRAR (礼金+fianza+comisión+1.er mes). Escribe tu cifra en 万.',
   parking:'Parking 駐車場',parkonly:'Solo con parking',parknear:'Aceptar cercano',
@@ -517,7 +518,7 @@ const I18N={
   toconsult:'A consultar',permonth:'/mes',various:'Varios tipos',
   rangenote:'💡 Rango real publicado. El coste de abajo se calcula sobre el alquiler más bajo del rango.',
   editable:'escribe o desliza',
-  firstm:'Primer mes (entrada)',aftermo:'Después, cada mes',cardentry:'entrada',then:'luego',
+  firstm:'Primer mes (entrada)',realentry:'✅ Entrada REAL (del anuncio)',estentry:'🔑 Entrada estimada',aftermo:'Después, cada mes',cardentry:'entrada',then:'luego',
   firstnote:'⚠️ ESTIMADO. Suma 礼金 + fianza + comisión + aval + 1.er mes. El 礼金/敷金/管理費 son los REALES del anuncio; la comisión y el aval son estándar y pueden variar. Comprueba el total exacto (初期費用) en el anuncio original ↓.',
   monthsnext:'Meses 2, 3, 4…',
   buycost:'Coste real de comprar (estimado)',cardbuy:'compra real',
@@ -547,7 +548,7 @@ const I18N={
   goodcond:'✨ Good condition (renovated/recent)',
   haunt:'👻 事故物件 (stigmatized)',hauntonly:'Only incident homes (cheaper)',
   haunthint:'Homes where the law requires disclosing a death or incident (告知事項). Usually discounted in price.',
-  b_stigma:'incident',
+  b_stigma:'incident',b_zero:'zero move-in',zeroonly:'🟢 Zero move-in (no 礼金/敷金)',
   rentmax:'Max rent',salemax:'Max buy price',nolimit:'No limit',
   entrymax:'Move-in / first month',entryhint:'What you pay to MOVE IN (key money+deposit+agency+1st month). Type your amount in 万.',
   parking:'Parking 駐車場',parkonly:'Parking only',parknear:'Allow nearby',
@@ -560,7 +561,7 @@ const I18N={
   toconsult:'On request',permonth:'/mo',various:'Various types',
   rangenote:'💡 Real published range. The cost below is calculated on the lowest rent in the range.',
   editable:'type or slide',
-  firstm:'First month (move-in)',aftermo:'Then, each month',cardentry:'move-in',then:'then',
+  firstm:'First month (move-in)',realentry:'✅ REAL move-in (from listing)',estentry:'🔑 Estimated move-in',aftermo:'Then, each month',cardentry:'move-in',then:'then',
   firstnote:'⚠️ ESTIMATE. Adds 礼金 + deposit + agency + guarantor + 1st month. 礼金/敷金/管理費 are the REAL values from the listing; agency and guarantor are standard and may vary. Check the exact total (初期費用) on the original listing ↓.',
   monthsnext:'Months 2, 3, 4…',
   buycost:'Real cost to buy (estimate)',cardbuy:'real cost',
@@ -689,6 +690,17 @@ function isGoodCondition(f){
   if(f.age_years!=null && f.age_years<=25) return true;
   return false;
 }
+// Cero entrada (ゼロゼロ物件): 礼金 なし Y 敷金 なし → solo pagas mes + seguro/limpieza.
+function feeZero(v){
+  if(v==null||v==='') return false;          // vacío = desconocido, NO cero
+  const t=(''+v).replace(/,/g,'');
+  if(/なし|無し|無料|不要/.test(t)) return true;
+  const m=t.match(/([\d.]+)/);
+  return m ? parseFloat(m[1])===0 : false;
+}
+function isZeroEntry(f){
+  return f.listing_type==='rent' && f.rent_yen && feeZero(f.key_money) && feeZero(f.deposit);
+}
 
 fetch('data.geojson').then(r=>r.json()).then(geo=>{
   FEATURES=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
@@ -752,7 +764,7 @@ bindNum('maxAge','maxAgeN',updateAgeLabel);
 $('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFull').textContent=b?t('showlist'):t('onlymap');setTimeout(()=>map.invalidateSize(),60);};
 document.querySelectorAll('#dealRow .chip').forEach(c=>c.onclick=()=>{const d=c.dataset.deal;if(DEAL===d){DEAL='';c.classList.remove('on');}else{DEAL=d;document.querySelectorAll('#dealRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');}apply();});
 document.querySelectorAll('#langSeg button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;localStorage.setItem('lang',LANG);applyLang();});
-['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly'].forEach(id=>$(id).onchange=apply);
+['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly','zeroEntry'].forEach(id=>$(id).onchange=apply);
 $('search').oninput=apply;
 document.querySelectorAll('#opSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#opSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');OP=b.dataset.op;apply();});
 document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#ptypeRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');PTYPE=c.dataset.pt;apply();});
@@ -816,6 +828,7 @@ function matches(f){
   if(DEAL==='value'&&!isGoodPrice(f))return false;
   if($('goodCondition').checked&&!isGoodCondition(f))return false;
   if($('stigmaOnly').checked&&!f._stigma)return false;
+  if($('zeroEntry').checked&&!isZeroEntry(f))return false;
   if($('parkingOnly').checked){const ok=f.parking==='yes'||(f.parking==='nearby'&&$('parkingNearby').checked);if(!ok)return false;}
   if(LAYOUTS.size){const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];if(!m||!LAYOUTS.has(m.toUpperCase()))return false;}
   const ma=+$('maxAge').value;if(ma<80&&f.age_years!=null&&f.age_years>ma)return false;
@@ -833,8 +846,11 @@ function makeIcon(f){
   let val=f.listing_type==='rent'?(sc?moneyShort(sc.firstMonth):(f.rent_yen?moneyShort(f.rent_yen):'¥?')):(f.sale_price_yen?moneyShort(f.sale_price_yen):'¥?');
   // Rango de precios: el número es el MÍNIMO ("desde"). Marcamos con 〜 para no engañar.
   const _r=priceRange(f); if(_r&&_r[1]>_r[0]) val+='〜';
-  const cls=[(f.listing_type==='rent'?'pin-rent':''),(pt==='land'?'land':''),(FAVS.has(f.id)?'fav':'')].join(' ');
-  return L.divIcon({className:'',html:`<span class="price-pin pin ${cls}" style="background:${priceColor(f)}">${val}</span>`,iconSize:null,iconAnchor:[22,11]});
+  const zero=isZeroEntry(f);
+  const cls=[(f.listing_type==='rent'?'pin-rent':''),(pt==='land'?'land':''),(FAVS.has(f.id)?'fav':''),(zero?'zero':'')].join(' ');
+  // Cero entrada → chincheta verde distinta (con 🟢) para que destaquen.
+  const bg=zero?'#16a34a':priceColor(f);
+  return L.divIcon({className:'',html:`<span class="price-pin pin ${cls}" style="background:${bg}">${zero?'🟢':''}${val}</span>`,iconSize:null,iconAnchor:[22,11]});
 }
 
 function sortFn(months){return(a,b)=>{
@@ -858,7 +874,7 @@ function apply(){
   saveState();
 }
 // ====== Persistencia de filtros (vuelves donde estabas al recargar) ======
-const STATE_TOGGLES=['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly'];
+const STATE_TOGGLES=['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly','zeroEntry'];
 function saveState(){
   try{localStorage.setItem('filters',JSON.stringify({
     OP,PTYPE,DEAL,RENTMAX,ENTRYMAX,
@@ -911,6 +927,7 @@ function renderList(shown,months){
           ${f.renovated?'<span class="badge reno">✨ '+t('b_reno')+'</span>':''}
           ${(f.foreigner_ok==='yes'||f.foreigner_ok==='negotiable')?'<span class="badge fr">🌐 '+t('b_fr')+'</span>':''}
           ${f._stigma?'<span class="badge stigma">👻 '+t('b_stigma')+'</span>':''}
+          ${isZeroEntry(f)?'<span class="badge zero">🟢 '+t('b_zero')+'</span>':''}
         </div>
       </div>`;
     div.onmouseover=()=>hl(f.id,true);div.onmouseout=()=>hl(f.id,false);
@@ -933,8 +950,10 @@ function openDetail(f){
   const pk=pkLabel(f.parking);
   const pet=({yes:t('yes'),no:t('no'),unknown:'?'})[f.pet_ok]||'?';
   let cost='';
+  const realIC=(f.features&&f.features['初期費用'])?(parseInt((''+f.features['初期費用']).replace(/[^\d]/g,''),10)||0):0;
   if(sc){cost=`<div class="costcard">
-    <div class="firstm">🔑 ${t('firstm')}<span class="big">${money(sc.firstMonth)}</span></div>
+    ${realIC?`<div class="firstm" style="color:var(--ok)">✅ ${t('realentry')}<span class="big" style="color:var(--ok)">${money(realIC)}</span></div>`:''}
+    <div class="firstm">🔑 ${realIC?t('estentry'):t('firstm')}<span class="big">${money(sc.firstMonth)}</span></div>
     <div class="aftm">${t('aftermo')}: <b>${money(sc.recurring)}</b>${t('permonth')}</div>
     <div class="firstnote">${t('firstnote')}</div>
     <table>
