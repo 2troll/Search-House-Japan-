@@ -60,7 +60,11 @@ def run(selected=None, use_all=False, do_geocode=True):
             seen_urls.append(data["source_url"])
 
         # Marca como inactivos los que ya no aparecen en esta fuente.
-        db.mark_inactive(conn, slug, seen_urls)
+        # KEEP_MISSING=1 lo desactiva: imprescindible al raspar POR PARTES
+        # (p.ej. una prefectura por ciclo), para no jubilar el resto.
+        import os
+        if os.environ.get("KEEP_MISSING") != "1":
+            db.mark_inactive(conn, slug, seen_urls)
         conn.commit()
         print(f"  Guardados: {len(seen_urls)} (nuevos+actualizados).")
 

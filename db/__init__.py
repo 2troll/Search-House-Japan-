@@ -184,3 +184,70 @@ def export_geojson(path=None):
         # Sin indentación: el móvil descarga (gzip) y, sobre todo, PARSEA mucho menos.
         json.dump(fc, f, ensure_ascii=False, separators=(",", ":"))
     return len(features)
+
+
+def export_shards(out_dir=None):
+    """Exporta los datos PARTIDOS por prefectura: web/data/p{code}.geojson + index.json.
+
+    El frontend carga solo las prefecturas que se ven en el mapa (o las elegidas),
+    así la app escala a TODO Japón sin que el móvil tenga que tragarse un archivo
+    gigante. index.json trae, por shard: archivo, código, nombre, nº de casas y bbox.
+    """
+    import config as _cfg
+    out_dir = out_dir or os.path.join(_cfg.BASE_DIR, "web", "data")
+    os.makedirs(out_dir, exist_ok=True)
+
+    # nombre ja de prefectura -> código JIS (de TARGET_AREAS)
+    pref_code = {}
+    for a in _cfg.TARGET_AREAS:
+        if a.get("pref") and a.get("pref_code"):
+            pref_code.setdefault(a["pref"], a["pref_code"])
+
+    # Reutiliza el constructor de features del export monolítico
+    conn = get_conn()
+    rows = conn.execute("SELECT * FROM listings WHERE active = 1").fetchall()
+    conn.close()
+
+    groups = {}  # code -> {"pref": ja, "features": []}
+    import json as _json
+    for r in rows:
+        r = dict(r)
+        if r.get("lat") is None or r.get("lng") is None:
+            continue
+        code = pref_code.get(r.get("prefecture") or "", "00")
+        g = groups.setdefault(code, {"pref": r.get("prefecture") or "?", "features": []})
+        photos = _json.loads(r["photos"]) if r.get("photos") else []
+        try:
+            feats = _json.loads(r["features"]) if r.get("features") else {}
+        except (ValueError, TypeError):
+            feats = {}
+        g["features"].append({
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [r["lng"], r["lat"]]},
+            "properties": {k: r.get(k) for k in (
+                "id", "source", "source_name", "source_url", "listing_type", "prop_type",
+                "title", "prefecture", "city", "area_key", "address_raw", "geocode_exact",
+                "rent_yen", "management_fee_yen", "deposit", "key_money", "sale_price_yen",
+                "layout", "building_area_m2", "land_area_m2", "year_built", "age_years",
+                "structure", "floors", "parking", "parking_detail", "foreigner_ok",
+                "pet_ok", "renovated", "description_raw", "status_note", "first_seen",
+            )} | {"photos": photos, "features": feats, "is_new": _is_new(r["first_seen"])},
+        })
+
+    index = []
+    total = 0
+    for code, g in sorted(groups.items()):
+        feats = g["features"]
+        lats = [f["geometry"]["coordinates"][1] for f in feats]
+        lngs = [f["geometry"]["coordinates"][0] for f in feats]
+        fname = f"p{code}.geojson"
+        with open(os.path.join(out_dir, fname), "w", encoding="utf-8") as f:
+            _json.dump({"type": "FeatureCollection", "features": feats}, f,
+                       ensure_ascii=False, separators=(",", ":"))
+        index.append({"file": fname, "code": code, "pref": g["pref"], "count": len(feats),
+                      "bbox": [min(lngs), min(lats), max(lngs), max(lats)]})
+        total += len(feats)
+
+    with open(os.path.join(out_dir, "index.json"), "w", encoding="utf-8") as f:
+        _json.dump({"shards": index, "total": total}, f, ensure_ascii=False, separators=(",", ":"))
+    return total

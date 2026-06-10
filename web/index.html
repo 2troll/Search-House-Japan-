@@ -476,7 +476,7 @@ map.on('click movestart',()=>{const f=document.getElementById('filters');
   if(f&&f.classList.contains('open')){if(topOverlay()==='filters')closeOverlay();else f.classList.remove('open');}});
 
 // ====== Zonas (sincronizar con TARGET_AREAS) ======
-const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",hyogo:"Kobe / Hyogo 兵庫県",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",fukui:"Fukui 福井県",wakayama:"Wakayama 和歌山県",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県",hiroshima:"Hiroshima 広島県",shimane:"Shimane 島根県",kagawa:"Kagawa 香川県",tokushima:"Tokushima 徳島県",ehime:"Ehime 愛媛県"};
+const AREA_LABELS={shirahama:"Shirahama 白浜町",kushimoto:"Kushimoto 串本町",nachikatsuura:"Nachikatsuura 那智勝浦町",tanabe:"Tanabe 田辺市",wakayama_shi:"Wakayama 和歌山市",minamiawaji:"Minami-Awaji 南あわじ市",sumoto:"Sumoto 洲本市",awaji_shi:"Awaji 淡路市",hyogo:"Kobe / Hyogo 兵庫県",nara:"Nara 奈良県",kyoto_north:"Kyoto 京都府",osaka_rural:"Osaka 大阪府",fukui_obama:"Obama/Wakasa 福井若狭",fukui:"Fukui 福井県",wakayama:"Wakayama 和歌山県",shiga:"Shiga 滋賀県",mie:"Mie 三重県",okayama:"Okayama 岡山県",tottori:"Tottori 鳥取県",hiroshima:"Hiroshima 広島県",shimane:"Shimane 島根県",kagawa:"Kagawa 香川県",tokushima:"Tokushima 徳島県",ehime:"Ehime 愛媛県",tokyo:"Tokio 東京都",kanagawa:"Kanagawa 神奈川県",saitama:"Saitama 埼玉県",chiba:"Chiba 千葉県",ibaraki:"Ibaraki 茨城県",tochigi:"Tochigi 栃木県",gunma:"Gunma 群馬県",aichi:"Aichi/Nagoya 愛知県",shizuoka:"Shizuoka 静岡県",gifu:"Gifu 岐阜県",nagano:"Nagano 長野県",yamanashi:"Yamanashi 山梨県",niigata:"Niigata 新潟県",toyama:"Toyama 富山県",ishikawa:"Ishikawa/Kanazawa 石川県",yamaguchi:"Yamaguchi 山口県",kochi:"Kochi 高知県",fukuoka:"Fukuoka 福岡県",saga:"Saga 佐賀県",nagasaki:"Nagasaki 長崎県",kumamoto:"Kumamoto 熊本県",oita:"Oita 大分県",miyazaki:"Miyazaki 宮崎県",kagoshima:"Kagoshima 鹿児島県",okinawa:"Okinawa 沖縄県",fukushima:"Fukushima 福島県",yamagata:"Yamagata 山形県",miyagi:"Miyagi/Sendai 宮城県",akita:"Akita 秋田県",iwate:"Iwate 岩手県",aomori:"Aomori 青森県",hokkaido:"Hokkaido 北海道"};
 
 // ====== Traducción japonés → español (glosario) ======
 // Valores exactos de campos estructurados:
@@ -737,14 +737,58 @@ function isZeroEntry(f){
   return f.listing_type==='rent' && f.rent_yen && feeZero(f.key_money) && feeZero(f.deposit);
 }
 
-fetch('data.geojson').then(r=>r.json()).then(geo=>{
-  FEATURES=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
-  FEATURES.forEach(f=>{f.photos=cleanPhotos(f.photos);computeStigma(f);});
-  spreadOverlaps();
-  buildLayouts();buildZones();loadAssume();loadState();applyLang();
-  // Bienvenida solo la primera vez (explica fees, colores y cómo instalar)
-  if(!localStorage.getItem('w1')){localStorage.setItem('w1','1');openModal('welcomeModal');}
-}).catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data.geojson. Ejecuta refresh.py y abre con un servidor.</div>';});
+// ====== Carga por SHARDS (escala a todo Japón) ======
+// data/index.json lista un archivo por prefectura con su bbox. Cargamos solo las
+// prefecturas visibles en el mapa; al mover el mapa se cargan las que falten.
+// En escritorio, tras un respiro, se van trayendo TODAS en segundo plano (búsqueda
+// y filtros completos); en móvil solo lo que miras (memoria y datos contenidos).
+let SHARDS=null,SHARD_LOADED=new Set(),SHARD_LOADING=new Set(),_booted=false;
+function ingestFeatures(geo){
+  const batch=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
+  batch.forEach(f=>{f.photos=cleanPhotos(f.photos);computeStigma(f);});
+  FEATURES=FEATURES.concat(batch);
+  spreadOverlaps();buildLayouts();buildZones();
+  if(!_booted){_booted=true;loadAssume();loadState();applyLang();
+    if(!localStorage.getItem('w1')){localStorage.setItem('w1','1');openModal('welcomeModal');}}
+  else apply();
+}
+async function loadShard(s){
+  if(SHARD_LOADED.has(s.file)||SHARD_LOADING.has(s.file))return;
+  SHARD_LOADING.add(s.file);
+  try{
+    const geo=await(await fetch('data/'+s.file)).json();
+    SHARD_LOADED.add(s.file);
+    ingestFeatures(geo);
+    $('count').title=`${SHARD_LOADED.size}/${SHARDS.length} prefecturas cargadas`;
+  }catch(e){}finally{SHARD_LOADING.delete(s.file);}
+}
+function bboxIntersects(b,bounds){ // b=[w,s,e,n]
+  return !(b[2]<bounds.getWest()||b[0]>bounds.getEast()||b[3]<bounds.getSouth()||b[1]>bounds.getNorth());
+}
+function loadVisibleShards(){
+  if(!SHARDS)return;
+  const bounds=map.getBounds().pad(0.2);
+  const vis=SHARDS.filter(s=>!SHARD_LOADED.has(s.file)&&bboxIntersects(s.bbox,bounds));
+  // móvil: limitar por pasada para no reventar memoria/datos; escritorio: sin límite
+  const cap=window.innerWidth<=920?6:99;
+  vis.slice(0,cap).forEach(loadShard);
+}
+function trickleAll(){ // escritorio: trae el resto en segundo plano, de una en una
+  if(!SHARDS||window.innerWidth<=920)return;
+  const next=SHARDS.find(s=>!SHARD_LOADED.has(s.file)&&!SHARD_LOADING.has(s.file));
+  if(!next)return;
+  loadShard(next).then(()=>setTimeout(trickleAll,400));
+}
+fetch('data/index.json').then(r=>{if(!r.ok)throw 0;return r.json();}).then(idx=>{
+  SHARDS=idx.shards;
+  loadVisibleShards();                       // lo visible primero (Kansai por defecto)
+  map.on('moveend zoomend',()=>loadVisibleShards());
+  setTimeout(trickleAll,5000);               // escritorio: completar todo Japón detrás
+}).catch(()=>{
+  // Fallback: formato antiguo de un solo archivo
+  fetch('data.geojson').then(r=>r.json()).then(ingestFeatures)
+    .catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data/. Ejecuta refresh.py y abre con un servidor.</div>';});
+});
 
 // Muchas direcciones rurales geocodifican al MISMO punto del barrio (大字).
 // Para que no se apilen en un "17", separamos las que comparten coordenada con
@@ -767,11 +811,16 @@ function buildLayouts(){
   const fams=["1R","1K","1DK","1LDK","2K","2DK","2LDK","3K","3DK","3LDK","4K","4DK","4LDK","5DK","5LDK"];const present=new Set();
   FEATURES.forEach(f=>{const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];if(m)present.add(m.toUpperCase());});
   const row=$('layoutRow');row.innerHTML='';
-  fams.filter(x=>present.has(x)).forEach(l=>{const c=document.createElement('span');c.className='chip';c.textContent=l;c.onclick=()=>{c.classList.toggle('on');LAYOUTS.has(l)?LAYOUTS.delete(l):LAYOUTS.add(l);apply();};row.appendChild(c);});
+  // conserva la selección al recargar incrementalmente (shards nuevos)
+  fams.filter(x=>present.has(x)).forEach(l=>{const c=document.createElement('span');c.className='chip'+(LAYOUTS.has(l)?' on':'');c.textContent=l;c.onclick=()=>{c.classList.toggle('on');LAYOUTS.has(l)?LAYOUTS.delete(l):LAYOUTS.add(l);apply();};row.appendChild(c);});
 }
+let SEEN_ZONES=new Set(); // zonas ya vistas: las nuevas entran activadas, las demás respetan tu selección
 function buildZones(){
   const present=[...new Set(FEATURES.map(f=>f.area_key).filter(Boolean))];const row=$('zoneRow');row.innerHTML='';
-  present.forEach(z=>{ZONES.add(z);const c=document.createElement('span');c.className='chip on';c.dataset.zone=z;c.textContent=AREA_LABELS[z]||z;c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);REFIT=true;apply();};row.appendChild(c);});
+  present.forEach(z=>{
+    if(!SEEN_ZONES.has(z)){SEEN_ZONES.add(z);ZONES.add(z);}
+    const c=document.createElement('span');c.className='chip'+(ZONES.has(z)?' on':'');c.dataset.zone=z;c.textContent=AREA_LABELS[z]||z;
+    c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);REFIT=true;apply();};row.appendChild(c);});
 }
 // Etiqueta los botones de alquiler máx con el importe en la moneda actual.
 function updateRentLabel(){document.querySelectorAll('#rentRow .chip').forEach(c=>{const v=+c.dataset.rent;c.textContent=(v?'≤ '+money(v):t('nolimit'));c.classList.toggle('on',v===RENTMAX);});}

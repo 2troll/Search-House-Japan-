@@ -8,7 +8,7 @@
  *  - iconos/manifest: caché primero (no cambian casi nunca).
  *  - Tiles del mapa y fotos: red directa (cachearlos reventaría la cuota del móvil).
  */
-const VER = 'cj-v1';
+const VER = 'cj-v2';
 const SHELL = ['./', 'index.html', 'manifest.webmanifest',
                'icons/icon-192.png', 'icons/icon-512.png'];
 
@@ -28,11 +28,11 @@ self.addEventListener('fetch', e => {
   if (url.origin !== location.origin) return;           // tiles/fotos externas: red directa
 
   // Datos del mapa: instantáneo desde caché + refresco en segundo plano
-  if (url.pathname.endsWith('data.geojson')) {
+  if (url.pathname.endsWith('data.geojson') || url.pathname.includes('/data/')) {
     e.respondWith(
       caches.open(VER).then(async c => {
         const cached = await c.match(e.request);
-        const fresh = fetch(e.request).then(r => { if (r.ok) c.put(e.request, r.clone()); return r; })
+        const fresh = fetch(e.request).then(r => { if (r.ok) c.put(e.request, r.clone()).catch(()=>{}); return r; })
                                       .catch(() => cached);
         return cached || fresh;
       })

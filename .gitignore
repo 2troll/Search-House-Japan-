@@ -21,3 +21,4 @@ graphify-out/.graphify_python
 graphify-out/.graphify_root
 graphify-out/.graphify_labels.json
 graphify-out/manifest.json
+web/data.geojson
