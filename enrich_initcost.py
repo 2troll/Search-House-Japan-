@@ -148,15 +148,19 @@ def run(source, limit, order):
             continue
         fees = parse_fees(page)
         if fees:
+            # Guardamos solo los COMPONENTES reales que sí aparecen en el HTML estático.
+            # NO calculamos un total 初期費用: la web esconde 仲介/火災/保証 en su
+            # calculadora JS, así que sumar lo poco visible da un total ENGAÑOSO (bajo).
             for k, v in fees.items():
-                ft[k] = v
-            total, used = compute_initial(fees, r["rent_yen"], r["management_fee_yen"])
-            if total:
-                ft["初期費用"] = f"{total:,}円"
+                if k != "初期費用":
+                    ft[k] = v
             # si la ficha trae 礼金/敷金 explícitos, sustituye los de la lista
+            # (normalizando '-' -> 'なし' para no romper el detector de cero entrada).
+            def _norm(x):
+                return "なし" if (x or "").strip() in ("-", "ー", "−") else x
             for src_key, col in (("礼金", "key_money"), ("敷金", "deposit")):
                 if src_key in fees:
-                    conn.execute(f"UPDATE listings SET {col}=? WHERE id=?", (fees[src_key], r["id"]))
+                    conn.execute(f"UPDATE listings SET {col}=? WHERE id=?", (_norm(fees[src_key]), r["id"]))
             ok += 1
         ft["_ic"] = 1
         conn.execute("UPDATE listings SET features=? WHERE id=?",
