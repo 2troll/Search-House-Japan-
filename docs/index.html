@@ -518,7 +518,7 @@ const I18N={
   rangenote:'💡 Rango real publicado. El coste de abajo se calcula sobre el alquiler más bajo del rango.',
   editable:'escribe o desliza',
   firstm:'Primer mes (entrada)',aftermo:'Después, cada mes',cardentry:'entrada',then:'luego',
-  firstnote:'Lo que pagas al ENTRAR: 礼金 (regalo) + fianza + comisión + aval + 1.er mes. La fianza suele ser reembolsable al salir.',
+  firstnote:'⚠️ ESTIMADO. Suma 礼金 + fianza + comisión + aval + 1.er mes. El 礼金/敷金/管理費 son los REALES del anuncio; la comisión y el aval son estándar y pueden variar. Comprueba el total exacto (初期費用) en el anuncio original ↓.',
   monthsnext:'Meses 2, 3, 4…',
   buycost:'Coste real de comprar (estimado)',cardbuy:'compra real',
   buyprice:'Precio',buycomm:'Comisión agencia (~3%+6万)',buytax:'Impuestos/registro/notaría (~5%)',
@@ -561,7 +561,7 @@ const I18N={
   rangenote:'💡 Real published range. The cost below is calculated on the lowest rent in the range.',
   editable:'type or slide',
   firstm:'First month (move-in)',aftermo:'Then, each month',cardentry:'move-in',then:'then',
-  firstnote:'What you pay to MOVE IN: 礼金 (key money) + deposit + agency + guarantor + 1st month. The deposit is usually refundable when you leave.',
+  firstnote:'⚠️ ESTIMATE. Adds 礼金 + deposit + agency + guarantor + 1st month. 礼金/敷金/管理費 are the REAL values from the listing; agency and guarantor are standard and may vary. Check the exact total (初期費用) on the original listing ↓.',
   monthsnext:'Months 2, 3, 4…',
   buycost:'Real cost to buy (estimate)',cardbuy:'real cost',
   buyprice:'Price',buycomm:'Agency fee (~3%+¥60k)',buytax:'Taxes/registration (~5%)',
@@ -831,6 +831,8 @@ function makeIcon(f){
   const months=+$('months').value,sc=stayCost(f,months);
   const pt=propType(f);
   let val=f.listing_type==='rent'?(sc?moneyShort(sc.firstMonth):(f.rent_yen?moneyShort(f.rent_yen):'¥?')):(f.sale_price_yen?moneyShort(f.sale_price_yen):'¥?');
+  // Rango de precios: el número es el MÍNIMO ("desde"). Marcamos con 〜 para no engañar.
+  const _r=priceRange(f); if(_r&&_r[1]>_r[0]) val+='〜';
   const cls=[(f.listing_type==='rent'?'pin-rent':''),(pt==='land'?'land':''),(FAVS.has(f.id)?'fav':'')].join(' ');
   return L.divIcon({className:'',html:`<span class="price-pin pin ${cls}" style="background:${priceColor(f)}">${val}</span>`,iconSize:null,iconAnchor:[22,11]});
 }
