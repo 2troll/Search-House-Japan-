@@ -54,7 +54,9 @@ def _get(url):
             r = _sess.get(url, timeout=config.HTTP_TIMEOUT)
             time.sleep(DELAY)
             if r.status_code == 200:
-                return r.text
+                # at-home no declara bien el charset -> requests asume Latin-1 y sale
+                # mojibake. Forzamos UTF-8 para que 礼金/敷金/direcciones se lean bien.
+                return r.content.decode("utf-8", errors="replace")
         except requests.RequestException:
             time.sleep(DELAY)
     return None
@@ -183,6 +185,7 @@ def _parse_block(blk, pref_prefix):
 def fetch(client):
     results, seen = [], set()
     for path, pref in TARGETS:
+        got = 0
         for page in range(1, MAX_PAGES + 1):
             # at-home pagina por RUTA (/list/page2/), no por ?page=. La página 1 es /list/.
             url = f"{BASE}{path}" if page == 1 else f"{BASE}{path}page{page}/"
@@ -203,6 +206,8 @@ def fetch(client):
                     seen.add(lst.source_url)
                     results.append(lst)
                     added += 1
+                    got += 1
             if added == 0 and page > 1:
                 break
+        print(f"  [athome_rent] {path} -> {got} alquileres")
     return results
