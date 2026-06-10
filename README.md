@@ -293,3 +293,17 @@ Respeta `robots.txt` y los términos de cada sitio; limita la velocidad;
 identifica el User-Agent; cachea; prioriza los bancos municipales (públicos) y
 usa la importación manual para los portales comerciales que prohíben el scraping.
 Es una herramienta de **uso personal**, sin redistribución de datos.
+
+## Arquitectura de datos (todo Japón)
+
+Desde la fase "todo Japón" los datos van **partidos por prefectura**:
+
+- `web/data/pXX.geojson` — un shard por prefectura (código JIS).
+- `web/data/index.json` — índice: archivo, prefectura, nº de casas y bbox.
+- El frontend carga **solo las prefecturas visibles** en el mapa (y en escritorio
+  completa el resto en segundo plano). Escala a cientos de miles de casas.
+- `bash expand_japan.sh` — expansión por ciclos: raspa SUUMO prefectura a
+  prefectura (`SUUMO_PREFS=tokyo KEEP_MISSING=1 python3 refresh.py suumo`),
+  exporta shards y publica con commit+push por prefectura. Reanudable.
+- La web es una **PWA instalable** (manifest + service worker): abre al instante
+  con datos cacheados y funciona sin conexión.
