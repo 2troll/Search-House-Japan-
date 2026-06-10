@@ -299,6 +299,8 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
       <div class="af"><label>保証会社 <span class="lang lang-es">Aval</span><span class="lang lang-en">Guarantor</span></label><small><span class="lang lang-es">% de un mes</span><span class="lang lang-en">% of one month</span></small><input type="number" id="a_guarantor" step="5" value="50"></div>
       <div class="af"><label>敷金 <span class="lang lang-es">Fianza</span><span class="lang lang-en">Deposit</span></label><small><span class="lang lang-es">Meses de alquiler</span><span class="lang lang-en">Months of rent</span></small><input type="number" id="a_deposit" step="0.5" value="1"></div>
       <div class="af"><label><span class="lang lang-es">Limpieza al salir</span><span class="lang lang-en">Move-out cleaning</span></label><small><span class="lang lang-es">Importe fijo (¥)</span><span class="lang lang-en">Fixed amount (¥)</span></small><input type="number" id="a_cleaning" step="5000" value="30000"></div>
+      <div class="af"><label>火災保険 <span class="lang lang-es">Seguro de incendio</span><span class="lang lang-en">Fire insurance</span></label><small><span class="lang lang-es">Entrada, fijo (¥)</span><span class="lang lang-en">Move-in, fixed (¥)</span></small><input type="number" id="a_insurance" step="1000" value="20000"></div>
+      <div class="af"><label>鍵交換 <span class="lang lang-es">Cambio de cerradura</span><span class="lang lang-en">Key exchange</span></label><small><span class="lang lang-es">Entrada, fijo (¥)</span><span class="lang lang-en">Move-in, fixed (¥)</span></small><input type="number" id="a_keyexchange" step="1000" value="22000"></div>
       <div class="af"><label><span class="lang lang-es">Penalización salida anticipada</span><span class="lang lang-en">Early move-out penalty</span></label><small><span class="lang lang-es">Meses (si te vas antes)</span><span class="lang lang-en">Months (if you leave early)</span></small><input type="number" id="a_penalty" step="0.5" value="1"></div>
       <div class="af"><label><span class="lang lang-es">Duración contrato</span><span class="lang lang-en">Contract length</span></label><small><span class="lang lang-es">Meses</span><span class="lang lang-en">Months</span></small><input type="number" id="a_contract" step="1" value="24"></div>
       <div class="af"><label><span class="lang lang-es">IVA comisiones</span><span class="lang lang-en">Tax on fees</span></label><small>%</small><input type="number" id="a_tax" step="1" value="10"></div>
@@ -519,7 +521,7 @@ const I18N={
   rangenote:'💡 Rango real publicado. El coste de abajo se calcula sobre el alquiler más bajo del rango.',
   editable:'escribe o desliza',
   firstm:'Primer mes (entrada)',realentry:'✅ Entrada REAL (del anuncio)',estentry:'🔑 Entrada estimada',aftermo:'Después, cada mes',cardentry:'entrada',then:'luego',
-  firstnote:'⚠️ ESTIMADO. Suma 礼金 + fianza + comisión + aval + 1.er mes. El 礼金/敷金/管理費 son los REALES del anuncio; la comisión y el aval son estándar y pueden variar. Comprueba el total exacto (初期費用) en el anuncio original ↓.',
+  firstnote:'⚠️ ESTIMADO completo: 礼金 + 敷金 + comisión + aval + 火災保険 + 鍵交換 + 1.er mes. El 礼金/敷金/管理費 son REALES del anuncio; comisión, aval, seguro y cerradura son los estándar que usa la propia calculadora de SUUMO (los portales NO publican esas cifras: las pone el agente). Ajústalos en ⚙️ Gastos. ✅ = dato real del anuncio.',
   monthsnext:'Meses 2, 3, 4…',
   buycost:'Coste real de comprar (estimado)',cardbuy:'compra real',
   buyprice:'Precio',buycomm:'Comisión agencia (~3%+6万)',buytax:'Impuestos/registro/notaría (~5%)',
@@ -562,7 +564,7 @@ const I18N={
   rangenote:'💡 Real published range. The cost below is calculated on the lowest rent in the range.',
   editable:'type or slide',
   firstm:'First month (move-in)',realentry:'✅ REAL move-in (from listing)',estentry:'🔑 Estimated move-in',aftermo:'Then, each month',cardentry:'move-in',then:'then',
-  firstnote:'⚠️ ESTIMATE. Adds 礼金 + deposit + agency + guarantor + 1st month. 礼金/敷金/管理費 are the REAL values from the listing; agency and guarantor are standard and may vary. Check the exact total (初期費用) on the original listing ↓.',
+  firstnote:'⚠️ Full ESTIMATE: 礼金 + deposit + agency + guarantor + fire insurance + key exchange + 1st month. 礼金/敷金/管理費 are REAL from the listing; agency, guarantor, insurance and key-exchange are the standard values SUUMO\'s own calculator uses (portals do NOT publish those — the agent sets them). Tune them in ⚙️ Fees. ✅ = real value from listing.',
   monthsnext:'Months 2, 3, 4…',
   buycost:'Real cost to buy (estimate)',cardbuy:'real cost',
   buyprice:'Price',buycomm:'Agency fee (~3%+¥60k)',buytax:'Taxes/registration (~5%)',
@@ -616,10 +618,10 @@ function pkLabel(v){return ({yes:t('yes'),nearby:t('nearby'),no:t('no'),unknown:
 const CMP_MONTHS={};
 
 // ====== Supuestos de gastos ======
-const A_IDS=['a_key','a_agency','a_guarantor','a_deposit','a_cleaning','a_penalty','a_contract','a_tax','a_deprefund'];
+const A_IDS=['a_key','a_agency','a_guarantor','a_deposit','a_cleaning','a_penalty','a_contract','a_tax','a_deprefund','a_insurance','a_keyexchange'];
 function loadAssume(){const s=JSON.parse(localStorage.getItem('assume')||'{}');A_IDS.forEach(id=>{if(s[id]!=null)$(id).value=s[id];});}
 function saveAssume(){const s={};A_IDS.forEach(id=>s[id]=$(id).value);localStorage.setItem('assume',JSON.stringify(s));}
-function A(){return{key:+$('a_key').value,agency:+$('a_agency').value,guarantor:+$('a_guarantor').value,deposit:+$('a_deposit').value,cleaning:+$('a_cleaning').value,penalty:+$('a_penalty').value,contract:+$('a_contract').value,tax:+$('a_tax').value,depRefund:$('a_deprefund').value==='1'};}
+function A(){return{key:+$('a_key').value,agency:+$('a_agency').value,guarantor:+$('a_guarantor').value,deposit:+$('a_deposit').value,cleaning:+$('a_cleaning').value,penalty:+$('a_penalty').value,contract:+$('a_contract').value,tax:+$('a_tax').value,depRefund:$('a_deprefund').value==='1',insurance:+($('a_insurance')||{}).value||0,keyexchange:+($('a_keyexchange')||{}).value||0};}
 function moneyField(field,fb,rent){if(field){const t=(''+field).replace(/,/g,'');let m=t.match(/([\d.]+)\s*[ヶか]?月/);if(m)return parseFloat(m[1])*rent;m=t.match(/([\d.]+)\s*万/);if(m)return parseFloat(m[1])*10000;m=t.match(/([\d.]+)\s*円/);if(m)return parseFloat(m[1]);if(/なし|無|^0$|不要/.test(t))return 0;}return fb*rent;}
 function stayCost(f,months){
   if(f.listing_type!=='rent'||!f.rent_yen)return null;
@@ -627,12 +629,18 @@ function stayCost(f,months){
   const key=moneyField(f.key_money,a.key,rent),agency=a.agency*rent*(1+a.tax/100),guarantor=a.guarantor/100*rent;
   const deposit=moneyField(f.deposit,a.deposit,rent),monthly=(rent+mgmt)*months,cleaning=a.cleaning;
   const penalty=(months<a.contract)?a.penalty*rent:0;
-  let total=key+agency+guarantor+monthly+cleaning+penalty; if(!a.depRefund)total+=deposit;
+  // 火災保険 y 鍵交換: gastos de entrada que el portal NO publica (el agente los cobra).
+  // Usamos el valor REAL del anuncio si el extractor lo encontró; si no, el estándar.
+  const ft=f.features||{};
+  const insurance=ft['火災保険']?moneyField(ft['火災保険'],0,rent):a.insurance;
+  const keyEx=ft['鍵交換']?moneyField(ft['鍵交換'],0,rent):a.keyexchange;
+  const onetime=insurance+keyEx;
+  let total=key+agency+guarantor+monthly+cleaning+penalty+onetime; if(!a.depRefund)total+=deposit;
   // Lo más importante para la gente: el golpe del PRIMER mes (entrada) y la
   // mensualidad normal a partir del 2º mes.
   const recurring=rent+mgmt;                               // mes 2, 3, 4...
-  const firstMonth=key+agency+guarantor+deposit+recurring; // entrada (incluye fianza, parte reembolsable)
-  return{total,perMonth:total/months,rent,mgmt,key,agency,guarantor,deposit,monthly,cleaning,penalty,depCounted:!a.depRefund,recurring,firstMonth};
+  const firstMonth=key+agency+guarantor+deposit+recurring+onetime; // entrada completa
+  return{total,perMonth:total/months,rent,mgmt,key,agency,guarantor,deposit,monthly,cleaning,penalty,insurance,keyEx,depCounted:!a.depRefund,recurring,firstMonth};
 }
 // El "golpe" al COMPRAR: precio + comisión (~3%+6万+IVA) + impuestos/registro/notaría (~5%).
 // Los bancos de akiya municipales suelen NO cobrar comisión, así que lo separamos.
@@ -961,6 +969,7 @@ function openDetail(f){
       <tr><td>礼金 ${LANG==='en'?'Key money':'Llave (regalo)'}</td><td>${money(sc.key)}</td></tr>
       <tr><td>敷金 ${LANG==='en'?'Deposit':'Fianza'} ${sc.depCounted?'':'↩︎'}</td><td>${money(sc.deposit)}</td></tr>
       <tr><td>${LANG==='en'?'Agency + guarantor':'Comisión + aval'}</td><td>${money(sc.agency+sc.guarantor)}</td></tr>
+      <tr><td>火災保険 + 鍵交換 ${(f.features&&(f.features['火災保険']||f.features['鍵交換']))?'✅':''}</td><td>${money(sc.insurance+sc.keyEx)}</td></tr>
       <tr class="totalrow"><td>= ${t('firstm')}</td><td>${money(sc.firstMonth)}</td></tr>
       <tr><td>${t('monthsnext')}</td><td>${money(sc.recurring)}${t('permonth')}</td></tr>
     </table></div>`;}
