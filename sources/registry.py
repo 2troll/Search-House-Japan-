@@ -12,7 +12,7 @@ Cada valor es un módulo con una función  fetch(client) -> list[Listing].
 
 from sources import (suminiko, sumonavi, csv_import, awaji_city,
                      homes_akiyabank, wakayama_portal, athome_akiya, ur_chintai, suumo,
-                     gaijinpot)
+                     gaijinpot, athome_chintai)
 
 # Fuentes que se extraen por defecto.
 ENABLED_SOURCES = {
@@ -23,6 +23,7 @@ ENABLED_SOURCES = {
     suminiko.SLUG:        suminiko,        # 南あわじ市 (público) — Fase 1, verificado
     sumonavi.SLUG:        sumonavi,        # 洲本市 (público) — Fase 2
     wakayama_portal.SLUG: wakayama_portal, # toda Wakayama (白浜/串本/那智勝浦/田辺/和歌山市)
+    athome_chintai.SLUG:  athome_chintai,  # at-home 賃貸: ALQUILERES Wakayama, Fukui y Awaji (otras agencias)
     csv_import.SLUG:      csv_import,       # importación manual (SUUMO/HOME'S 賃貸/at-home...)
 }
 
