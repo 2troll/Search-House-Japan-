@@ -157,6 +157,13 @@ table.cmp td.num{text-align:right}.cmp .winner{background:rgba(22,163,74,.1)}.cm
 table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-radius:8px;text-align:center}
 .cmp .rm{background:none;border:none;color:var(--bad);cursor:pointer;font-size:15px}
 .cmp-empty{color:var(--muted);text-align:center;padding:30px}
+/* Favoritas en formato tarjeta (como la lista normal) */
+.card.winner{border-color:var(--ok);box-shadow:0 0 0 2px rgba(22,163,74,.35),var(--shadow)}
+.cmp-win{position:absolute;top:8px;left:8px;background:var(--ok);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:8px;z-index:2}
+.cmp-ctrl{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:9px;padding-top:9px;border-top:1px solid var(--line)}
+.cmp-ctrl .mo{width:56px;padding:6px;border:1px solid var(--line2);border-radius:8px;text-align:center}
+.cmp-ctrl label{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.cmp-ctrl .cmp-cost{font-size:12.5px;color:var(--muted);margin-left:auto}.cmp-ctrl .cmp-cost b{color:var(--accent);font-size:15px}
 
 .mobtabs{display:none}
 @media (max-width:920px){
@@ -1006,17 +1013,35 @@ function renderCompare(){
   if(!favs.length){body.innerHTML='<div class="cmp-empty">'+t('cmp_empty')+'</div>';return;}
   const rows=favs.map(f=>{const mo=CMP_MONTHS[f.id]||months;return{f,mo,sc:stayCost(f,mo)};});
   const rentRows=rows.filter(r=>r.sc);const best=rentRows.length?Math.min(...rentRows.map(r=>r.sc.perMonth)):null;
-  let html=`<table class="cmp"><thead><tr><th>${t('c_home')}</th><th>${t('zone')}</th><th>間取</th><th>m²</th><th>築年</th><th>${t('c_park')}</th><th>${t('c_months')}</th><th>${t('c_rentmo')}</th><th>${t('c_total')}</th><th>${t('permonth')}</th><th></th></tr></thead><tbody>`;
+  let html='';
   rows.forEach(({f,mo,sc})=>{
-    const win=(sc&&best!=null&&Math.abs(sc.perMonth-best)<1)?'winner':'';
-    html+=`<tr class="${win}"><td><a href="#" onclick="event.preventDefault();closeOverlay();openDetail(FEATURES.find(x=>x.id===${f.id}))">${(f.title||'').slice(0,20)}</a></td>
-      <td>${(AREA_LABELS[f.area_key]||f.city||'').replace(/ .*/,'')}</td><td>${f.layout||'—'}</td><td class="num">${f.building_area_m2||'—'}</td>
-      <td class="num">${f.age_years!=null?f.age_years+'a':'—'}</td><td>${pkLabel(f.parking)}</td>
-      <td><input class="mo" type="number" min="1" max="36" value="${mo}" onchange="setCmpMonths(${f.id},this.value)"></td>
-      <td class="num">${f.rent_yen?money(f.rent_yen):'—'}</td><td class="num total">${sc?money(sc.total):t('sale')+' '+money(f.sale_price_yen)}</td>
-      <td class="num">${sc?money(sc.perMonth):'—'}</td><td><button class="rm" onclick="toggleFav(${f.id})">✕</button></td></tr>`;
+    const win=(sc&&best!=null&&rentRows.length>1&&Math.abs(sc.perMonth-best)<1)?'winner':'';
+    const price=priceText(f,false);
+    const photo=(f.photos&&f.photos[0])?`<img class="thumb" src="${f.photos[0]}" loading="lazy" onerror="this.style.display='none'">`:'';
+    const bc=buyCost(f);
+    html+=`<div class="card ${win}" onclick="closeOverlay();openDetail(FEATURES.find(x=>x.id===${f.id}))">
+      ${photo}
+      <button class="fav on" onclick="event.stopPropagation();toggleFav(${f.id});renderCompare()">★</button>
+      ${win?'<span class="cmp-win">🏆 '+t('cmp_best')+'</span>':''}
+      <div class="cc">
+        <span class="ttype ${f.listing_type}">${f.listing_type==='rent'?'賃貸 '+t('rent'):'売買 '+t('sale')}</span>
+        <div class="price" style="color:${priceColor(f)}">${price}</div>
+        ${sc?`<span class="cost entry">🔑 ${money(sc.firstMonth)} ${t('cardentry')}</span><span class="cost pm">${t('then')} ${money(sc.recurring)}${t('permonth')}</span>`:''}
+        ${bc?`<span class="cost entry">🏯 ${money(bc.total)} ${t('cardbuy')}</span>`:''}
+        <div class="title">${f.title||''}</div>
+        <div class="meta">${AREA_LABELS[f.area_key]||f.city||''} · ${layoutLabel(f)} · ${f.building_area_m2?f.building_area_m2+'㎡':''} ${f.year_built?'· '+tr(f.year_built):''}</div>
+        <div class="badges">
+          ${f.parking==='yes'?'<span class="badge park">🚗 '+t('b_park')+'</span>':(f.parking==='nearby'?'<span class="badge park">🚗 '+t('b_near')+'</span>':'')}
+          ${f.renovated?'<span class="badge reno">✨ '+t('b_reno')+'</span>':''}
+          ${f._stigma?'<span class="badge stigma">👻 '+t('b_stigma')+'</span>':''}
+        </div>
+        <div class="cmp-ctrl" onclick="event.stopPropagation()">
+          <label>${t('c_months')} <input class="mo" type="number" min="1" max="36" value="${mo}" onchange="setCmpMonths(${f.id},this.value)"></label>
+          ${sc?`<span class="cmp-cost">${money(sc.total)} ${t('c_total')} · <b>${money(sc.perMonth)}${t('permonth')}</b></span>`:''}
+        </div>
+      </div>
+    </div>`;
   });
-  html+='</tbody></table>';
   if(rentRows.length>1){const o=rentRows.slice().sort((a,b)=>a.sc.perMonth-b.sc.perMonth);const w=o[0],l=o[o.length-1];
     html+=`<div class="note">${t('cmp_best')}: <b>${(AREA_LABELS[w.f.area_key]||'').replace(/ .*/,'')}</b> ${money(w.sc.perMonth)}${t('permonth')} (${w.mo} ${t('months')}), ${money(l.sc.perMonth-w.sc.perMonth)}${t('permonth')} ${t('cmp_cheaper')}</div>`;}
   body.innerHTML=html;
