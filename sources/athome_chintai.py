@@ -37,7 +37,7 @@ TARGETS = [
     ("/chintai/hyogo/minamiawaji-city/list/", "兵庫県"),
     ("/chintai/hyogo/awaji-city/list/", "兵庫県"),
 ]
-MAX_PAGES = 12     # páginas por destino (30 edificios/página)
+MAX_PAGES = 25     # páginas por destino (30 edificios/página); los destinos pequeños paran solos
 DELAY = 3.5        # pausa entre peticiones (portal grande: educado)
 
 _sess = requests.Session()
@@ -184,7 +184,9 @@ def fetch(client):
     results, seen = [], set()
     for path, pref in TARGETS:
         for page in range(1, MAX_PAGES + 1):
-            html = _get(f"{BASE}{path}?page={page}")
+            # at-home pagina por RUTA (/list/page2/), no por ?page=. La página 1 es /list/.
+            url = f"{BASE}{path}" if page == 1 else f"{BASE}{path}page{page}/"
+            html = _get(url)
             if not html:
                 break
             soup = BeautifulSoup(html, "lxml")
