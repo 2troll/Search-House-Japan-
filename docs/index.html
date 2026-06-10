@@ -4,6 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 <title>Casas Japón — buscador con coste real y fichas en español</title>
+<meta name="description" content="Busca casas baratas en Japón (akiya, alquiler y compra) con el coste REAL de entrada y mes a mes explicado en español e inglés: 礼金, 敷金, comisiones, seguro… sin sorpresas.">
+<meta name="theme-color" content="#0a62d6">
+<meta property="og:title" content="Casas Japón — buscador con coste real">
+<meta property="og:description" content="Akiya y alquileres por todo Japón con todos los fees explicados (礼金/敷金/comisión/seguro). En español e inglés.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="icons/icon-512.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Casas Japón">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
@@ -194,6 +206,7 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
     <button class="tb-btn" id="openAssume">⚙️ <span data-i18n="costs">Gastos</span></button>
     <button class="tb-btn" id="openCompare">⭐ <span class="n" id="favN">0</span></button>
     <button class="tb-btn" id="openAgent" style="background:#4f46e5;border-color:#6366f1">🤖 <span data-i18n="agent">Agente IA</span></button>
+    <button class="tb-btn" id="installBtn" style="display:none;background:var(--ok);border-color:var(--ok);color:#fff">📲 <span data-i18n="install">Instalar app</span></button>
   </div>
 
   <div id="body">
@@ -287,6 +300,18 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
     <button id="tabMap" data-i18n="tabMap">Mapa</button>
   </div>
 </div>
+
+<!-- Modal bienvenida (solo primera visita) -->
+<div class="modal-bg" id="welcomeModal"><div class="modal" style="max-width:480px">
+  <header><h2 data-i18n="w_title">👋 Bienvenido a Casas Japón</h2><button class="x" data-close>×</button></header>
+  <div class="mb">
+    <p data-i18n="w_p1" style="line-height:1.55"></p>
+    <p data-i18n="w_p2" style="line-height:1.55"></p>
+    <p data-i18n="w_p3" style="line-height:1.55"></p>
+    <p data-i18n="w_p4" style="line-height:1.55;color:var(--muted);font-size:13px"></p>
+    <button id="wGo" data-i18n="w_go" style="width:100%;padding:13px;border:none;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;font-size:15px;cursor:pointer">¡Empezar a buscar!</button>
+  </div>
+</div></div>
 
 <!-- Modal gastos -->
 <div class="modal-bg" id="assumeModal"><div class="modal">
@@ -443,7 +468,9 @@ const BASEMAPS={
 };
 BASEMAPS["Mapa claro"].addTo(map);
 L.control.layers(BASEMAPS,null,{position:'topright',collapsed:true}).addTo(map);
-const cluster=L.markerClusterGroup({maxClusterRadius:38,disableClusteringAtZoom:15,spiderfyOnMaxZoom:true,showCoverageOnHover:false});map.addLayer(cluster);
+// chunkedLoading: añade los ~14.000 marcadores por tandas para que el móvil no se
+// congele al filtrar (la UI respira entre tandas).
+const cluster=L.markerClusterGroup({maxClusterRadius:38,disableClusteringAtZoom:15,spiderfyOnMaxZoom:true,showCoverageOnHover:false,chunkedLoading:true,chunkInterval:80,chunkDelay:20});map.addLayer(cluster);
 // Tocar/mover el mapa cierra el panel de filtros (no hay que estar dándole al botón)
 map.on('click movestart',()=>{const f=document.getElementById('filters');
   if(f&&f.classList.contains('open')){if(topOverlay()==='filters')closeOverlay();else f.classList.remove('open');}});
@@ -507,7 +534,7 @@ const I18N={
   goodcond:'✨ Buen estado (reformada o reciente)',
   haunt:'👻 事故物件 (embrujadas)',hauntonly:'Solo con incidente (más baratas)',
   haunthint:'Casas donde la ley obliga a informar de un fallecimiento o incidente (告知事項). Suelen tener el precio rebajado.',
-  b_stigma:'incidente',b_zero:'cero entrada',zeroonly:'🟢 Cero entrada (sin 礼金/敷金)',
+  b_stigma:'incidente',b_zero:'cero entrada',install:'Instalar app',w_title:'👋 Bienvenido a Casas Japón',w_p1:'🏠 Miles de casas y pisos por todo el oeste de Japón: akiya baratas, alquileres y compra.',w_p2:'💴 Lo que nadie te cuenta: TODOS los gastos japoneses explicados — 礼金 (regalo), 敷金 (fianza), comisión, seguro, cerradura… El precio que ves incluye la ENTRADA real estimada.',w_p3:'🟢 Verde = cero entrada (sin 礼金/敷金). 👻 = casas con historia, más baratas. ⭐ = guarda y compara.',w_p4:'📲 Puedes instalarla como app: botón "Instalar app" arriba (o menú del navegador → Añadir a pantalla de inicio).',w_go:'¡Empezar a buscar!',zeroonly:'🟢 Cero entrada (sin 礼金/敷金)',
   rentmax:'Alquiler máx',salemax:'Precio compra máx',nolimit:'Sin límite',
   entrymax:'Entrada / primer mes',entryhint:'Lo que pagas al ENTRAR (礼金+fianza+comisión+1.er mes). Escribe tu cifra en 万.',
   parking:'Parking 駐車場',parkonly:'Solo con parking',parknear:'Aceptar cercano',
@@ -550,7 +577,7 @@ const I18N={
   goodcond:'✨ Good condition (renovated/recent)',
   haunt:'👻 事故物件 (stigmatized)',hauntonly:'Only incident homes (cheaper)',
   haunthint:'Homes where the law requires disclosing a death or incident (告知事項). Usually discounted in price.',
-  b_stigma:'incident',b_zero:'zero move-in',zeroonly:'🟢 Zero move-in (no 礼金/敷金)',
+  b_stigma:'incident',b_zero:'zero move-in',install:'Install app',w_title:'👋 Welcome to Casas Japón',w_p1:'🏠 Thousands of homes across western Japan: cheap akiya, rentals and homes for sale.',w_p2:'💴 What nobody tells you: ALL Japanese fees explained — 礼金 (key money), 敷金 (deposit), agency, insurance, key exchange… Prices include the realistic MOVE-IN estimate.',w_p3:'🟢 Green = zero move-in (no 礼金/敷金). 👻 = stigmatized homes, cheaper. ⭐ = save & compare.',w_p4:'📲 Install it as an app: "Install app" button above (or browser menu → Add to Home Screen).',w_go:'Start searching!',zeroonly:'🟢 Zero move-in (no 礼金/敷金)',
   rentmax:'Max rent',salemax:'Max buy price',nolimit:'No limit',
   entrymax:'Move-in / first month',entryhint:'What you pay to MOVE IN (key money+deposit+agency+1st month). Type your amount in 万.',
   parking:'Parking 駐車場',parkonly:'Parking only',parknear:'Allow nearby',
@@ -715,6 +742,8 @@ fetch('data.geojson').then(r=>r.json()).then(geo=>{
   FEATURES.forEach(f=>{f.photos=cleanPhotos(f.photos);computeStigma(f);});
   spreadOverlaps();
   buildLayouts();buildZones();loadAssume();loadState();applyLang();
+  // Bienvenida solo la primera vez (explica fees, colores y cómo instalar)
+  if(!localStorage.getItem('w1')){localStorage.setItem('w1','1');openModal('welcomeModal');}
 }).catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data.geojson. Ejecuta refresh.py y abre con un servidor.</div>';});
 
 // Muchas direcciones rurales geocodifican al MISMO punto del barrio (大字).
@@ -872,8 +901,9 @@ function sortFn(months){return(a,b)=>{
 
 function apply(){
   const months=+$('months').value,shown=FEATURES.filter(matches);
-  cluster.clearLayers();MARKERS.clear();const bounds=[];
-  shown.forEach(f=>{const m=L.marker([f.lat,f.lng],{icon:makeIcon(f)});m.on('click',()=>openDetail(f));m.on('mouseover',()=>hl(f.id,true));m.on('mouseout',()=>hl(f.id,false));cluster.addLayer(m);MARKERS.set(f.id,m);bounds.push([f.lat,f.lng]);});
+  cluster.clearLayers();MARKERS.clear();const bounds=[],layers=[];
+  shown.forEach(f=>{const m=L.marker([f.lat,f.lng],{icon:makeIcon(f)});m.on('click',()=>openDetail(f));m.on('mouseover',()=>hl(f.id,true));m.on('mouseout',()=>hl(f.id,false));layers.push(m);MARKERS.set(f.id,m);bounds.push([f.lat,f.lng]);});
+  cluster.addLayers(layers); // en bloque -> chunkedLoading reparte el trabajo y no congela
   // El mapa solo se re-encuadra en la 1.ª carga o al cambiar de zona (REFIT),
   // no en cada toque de filtro: así deja de "saltar".
   if(REFIT&&bounds.length){map.fitBounds(bounds,{padding:[40,40],maxZoom:12});REFIT=false;}
@@ -1188,6 +1218,22 @@ document.addEventListener('keydown',e=>{
 
 if(window.innerWidth<=920)setMob('list');
 window.addEventListener('resize',()=>map.invalidateSize());
+
+// ====== PWA: instalable en el teléfono + carga instantánea (Service Worker) ======
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js').catch(()=>{});}
+let _deferredInstall=null;
+window.addEventListener('beforeinstallprompt',e=>{
+  e.preventDefault();_deferredInstall=e;
+  const b=$('installBtn');if(b)b.style.display='';
+});
+$('wGo').onclick=()=>closeOverlay();
+$('installBtn').onclick=async()=>{
+  if(!_deferredInstall)return;
+  _deferredInstall.prompt();
+  await _deferredInstall.userChoice;
+  _deferredInstall=null;$('installBtn').style.display='none';
+};
+window.addEventListener('appinstalled',()=>{$('installBtn').style.display='none';});
 </script>
 </body>
 </html>
