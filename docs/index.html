@@ -866,7 +866,9 @@ document.querySelectorAll('#langSeg button').forEach(b=>b.onclick=()=>{LANG=b.da
 ['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly','zeroEntry'].forEach(id=>$(id).onchange=apply);
 $('zAll').onclick=()=>{SEEN_ZONES.forEach(z=>ZONES.add(z));document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.add('on'));REFIT=true;apply();};
 $('zNone').onclick=()=>{ZONES.clear();document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.remove('on'));apply();};
-$('search').oninput=apply;
+// Debounce del buscador: con 59k+ casas, filtrar en cada tecla iría a tirones.
+let _searchT=null;
+$('search').oninput=()=>{clearTimeout(_searchT);_searchT=setTimeout(apply,220);};
 document.querySelectorAll('#opSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#opSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');OP=b.dataset.op;apply();});
 document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.onclick=()=>{document.querySelectorAll('#ptypeRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');PTYPE=c.dataset.pt;apply();});
 document.querySelectorAll('#curSeg button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#curSeg button').forEach(x=>x.classList.remove('on'));b.classList.add('on');CUR=b.dataset.c;updateRentLabel();updateSaleLabel();apply();renderCompare();if(CURRENT)openDetail(CURRENT);});
