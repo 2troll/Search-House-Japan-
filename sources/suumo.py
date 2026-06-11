@@ -32,6 +32,9 @@ import os as _os
 SUUMO_PREFS = ["osaka", "hyogo", "kyoto", "nara", "shiga", "wakayama", "fukui"]
 if _os.environ.get("SUUMO_PREFS"):
     SUUMO_PREFS = [p.strip() for p in _os.environ["SUUMO_PREFS"].split(",") if p.strip()]
+# Algunas prefecturas usan un slug distinto en SUUMO (romanización antigua / sufijo).
+_SLUG_MAP = {"hokkaido": "hokkaido_", "gunma": "gumma"}
+SUUMO_PREFS = [_SLUG_MAP.get(p, p) for p in SUUMO_PREFS]
 MAX_PAGES = 3          # páginas por ciudad (20 edificios/página)
 DELAY = 2.5            # pausa entre peticiones (educado)
 
