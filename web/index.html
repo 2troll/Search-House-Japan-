@@ -751,10 +751,14 @@ function ingestFeatures(geo){
   const batch=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
   batch.forEach(f=>{f.photos=cleanPhotos(f.photos);computeStigma(f);});
   FEATURES=FEATURES.concat(batch);
-  spreadOverlaps();buildLayouts();buildZones();
-  if(!_booted){_booted=true;loadAssume();loadState();applyLang();
+  if(!_booted){_booted=true;spreadOverlaps();buildLayouts();buildZones();loadAssume();loadState();applyLang();
     if(!localStorage.getItem('w1')){localStorage.setItem('w1','1');openModal('welcomeModal');}}
-  else apply();
+  else scheduleRebuild();   // varios shards seguidos -> un solo re-render (debounce)
+}
+let _rebuildT=null;
+function scheduleRebuild(){
+  clearTimeout(_rebuildT);
+  _rebuildT=setTimeout(()=>{spreadOverlaps();buildLayouts();buildZones();apply();},250);
 }
 async function loadShard(s){
   if(SHARD_LOADED.has(s.file)||SHARD_LOADING.has(s.file))return;
@@ -799,14 +803,19 @@ fetch('data/index.json').then(r=>{if(!r.ok)throw 0;return r.json();}).then(idx=>
 // una pequeña espiral (quedan dentro del mismo barrio) y las marcamos como
 // ubicación aproximada (la exacta hay que confirmarla en el anuncio/contacto).
 function spreadOverlaps(){
+  // Idempotente: jitter SIEMPRE desde la coordenada original (_olat/_olng), nunca
+  // sobre una ya movida. Así re-ejecutar al cargar cada shard no acumula deriva.
   const groups={};
-  FEATURES.forEach(f=>{const k=f.lat.toFixed(5)+','+f.lng.toFixed(5);(groups[k]=groups[k]||[]).push(f);});
+  FEATURES.forEach(f=>{
+    if(f._olat==null){f._olat=f.lat;f._olng=f.lng;}
+    const k=f._olat.toFixed(5)+','+f._olng.toFixed(5);(groups[k]=groups[k]||[]).push(f);
+  });
   Object.values(groups).forEach(g=>{
-    if(g.length<2)return;
+    if(g.length<2){const f=g[0];f.lat=f._olat;f.lng=f._olng;return;}
     g.forEach((f,i)=>{
       const ang=i*2.399963, rad=0.0009*Math.sqrt(i+0.4);
-      f.lat+=rad*Math.cos(ang);
-      f.lng+=rad*Math.sin(ang)/Math.max(0.2,Math.cos(f.lat*Math.PI/180));
+      f.lat=f._olat+rad*Math.cos(ang);
+      f.lng=f._olng+rad*Math.sin(ang)/Math.max(0.2,Math.cos(f._olat*Math.PI/180));
       f.approxLoc=true;
     });
   });
