@@ -35,7 +35,7 @@ if _os.environ.get("SUUMO_PREFS"):
 # Algunas prefecturas usan un slug distinto en SUUMO (romanización antigua / sufijo).
 _SLUG_MAP = {"hokkaido": "hokkaido_", "gunma": "gumma"}
 SUUMO_PREFS = [_SLUG_MAP.get(p, p) for p in SUUMO_PREFS]
-MAX_PAGES = 3          # páginas por ciudad (20 edificios/página)
+MAX_PAGES = int(_os.environ.get("SUUMO_MAX_PAGES", "3"))   # páginas por ciudad (20 edificios/pág)
 DELAY = 2.5            # pausa entre peticiones (educado)
 
 _sess = requests.Session()
@@ -189,10 +189,14 @@ def _parse_page(html, pref):
 def fetch(client):
     results = []
     seen = set()
+    # SUUMO_FILTER: segmento de ruta de こだわり条件. p.ej. "nj_114" = 敷金・礼金なし
+    # (zero-zero). Permite raspar SOLO las casas de poca/cero entrada.
+    flt = _os.environ.get("SUUMO_FILTER", "").strip("/")
+    seg = (flt + "/") if flt else ""
     for pref in SUUMO_PREFS:
         for slug in _city_slugs(pref):
             for page in range(1, MAX_PAGES + 1):
-                html = _get(f"{BASE}/chintai/{pref}/{slug}/?page={page}")
+                html = _get(f"{BASE}/chintai/{pref}/{slug}/{seg}?page={page}")
                 if not html:
                     break
                 page_items = _parse_page(html, pref)
