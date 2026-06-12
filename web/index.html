@@ -265,6 +265,10 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
           <span class="chip" id="zAll" data-i18n="z_all" style="font-size:10px;padding:2px 8px;margin-left:8px">Todas</span>
           <span class="chip" id="zNone" data-i18n="z_none" style="font-size:10px;padding:2px 8px">Ninguna</span></h4>
         <div class="row" id="zoneRow" style="max-height:150px;overflow:auto"></div></div>
+      <div class="fg"><h4>🏢 <span data-i18n="company">Compañía / Agencia</span>
+          <span class="chip" id="cAll" data-i18n="z_all" style="font-size:10px;padding:2px 8px;margin-left:8px">Todas</span>
+          <span class="chip" id="cFr" data-i18n="c_fr" style="font-size:10px;padding:2px 8px">🌏 Extranjeros</span></h4>
+        <div class="row" id="companyRow"></div></div>
       <div class="fg"><h4 data-i18n="search">Buscar</h4><input type="text" id="search" data-i18n-ph="searchph" placeholder="海, 平屋, 福良, 沼島..."></div>
     </aside>
 
@@ -545,7 +549,7 @@ const I18N={
   layout:'Distribución 間取り',agemax:'Antigüedad máx',anyage:'Cualquiera',years:'años',
   other:'Otros',reno:'Solo reformadas',newonly:'Solo novedades',zone:'Zona',search:'Buscar',
   searchph:'海, 平屋, 福良, 沼島...',stay:'Estancia',months:'meses',order:'Ordenar',
-  o_cost:'Coste estancia ↑',o_entry:'Entrada 🔑 ↑',z_all:'Todas',z_none:'Ninguna',noresults:'😕 Ninguna casa cumple esos filtros.',clearf:'🧹 Quitar todos los filtros',o_pm:'Coste/mes ↑',o_price:'Precio ↑',o_age:'Más nuevas',o_area:'Más grandes',
+  o_cost:'Coste estancia ↑',o_entry:'Entrada 🔑 ↑',z_all:'Todas',z_none:'Ninguna',company:'Compañía / Agencia',c_fr:'🌏 Extranjeros',noresults:'😕 Ninguna casa cumple esos filtros.',clearf:'🧹 Quitar todos los filtros',o_pm:'Coste/mes ↑',o_price:'Precio ↑',o_age:'Más nuevas',o_area:'Más grandes',
   tabFilters:'Filtros',tabList:'Lista',tabMap:'Mapa',onlymap:'🗺️ Solo mapa',showlist:'◀ Mostrar lista',
   houses:'casas',legend:'Leyenda',cheapw:'barato',exp:'caro',rentw:'alquiler',landw:'terreno',zerow:'🟢 cero entrada (sin 礼金/敷金)',several:'varias casas (acerca el zoom)',
   toconsult:'A consultar',permonth:'/mes',various:'Varios tipos',
@@ -588,7 +592,7 @@ const I18N={
   layout:'Layout 間取り',agemax:'Max age',anyage:'Any',years:'yrs',
   other:'Other',reno:'Renovated only',newonly:'New only',zone:'Area',search:'Search',
   searchph:'sea, 1-floor, station...',stay:'Stay',months:'months',order:'Sort',
-  o_cost:'Total stay cost ↑',o_entry:'Move-in 🔑 ↑',z_all:'All',z_none:'None',noresults:'😕 No homes match those filters.',clearf:'🧹 Clear all filters',o_pm:'Cost/month ↑',o_price:'Price ↑',o_age:'Newest',o_area:'Largest',
+  o_cost:'Total stay cost ↑',o_entry:'Move-in 🔑 ↑',z_all:'All',z_none:'None',company:'Company / Agency',c_fr:'🌏 Foreigner-OK',noresults:'😕 No homes match those filters.',clearf:'🧹 Clear all filters',o_pm:'Cost/month ↑',o_price:'Price ↑',o_age:'Newest',o_area:'Largest',
   tabFilters:'Filters',tabList:'List',tabMap:'Map',onlymap:'🗺️ Map only',showlist:'◀ Show list',
   houses:'homes',legend:'Legend',cheapw:'cheap',exp:'pricey',rentw:'rent',landw:'land',zerow:'🟢 zero move-in (no 礼金/敷金)',several:'several homes (zoom in)',
   toconsult:'On request',permonth:'/mo',various:'Various types',
@@ -631,7 +635,12 @@ function applyLang(){
 }
 function priceColor(f){let t;if(f.listing_type==='rent'){t=Math.min(1,(f.rent_yen||0)/80000);}else{t=Math.min(1,(f.sale_price_yen||0)/30000000);}return`hsl(${(1-t)*120},70%,42%)`;}
 
-let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZOFF=new Set();
+let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZOFF=new Set(),COFF=new Set();
+// Nombre amable de cada fuente + 🌏 = admite extranjeros / sin comisión.
+const SOURCE_LABELS={suumo:'SUUMO 賃貸',athome:'at-home 空き家',athome_rent:'at-home 賃貸',
+  ur:'🌏 UR (sin comisión/aval)',gaijinpot:'🌏 GaijinPot (inglés)',
+  suminiko:'南あわじ市',sumonavi:'洲本市',wakayama_portal:'Wakayama 物件',csv:'Manual'};
+const FOREIGNER_SOURCES=new Set(['ur','gaijinpot']);
 let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='',RENTMAX=0,ENTRYMAX=0,REFIT=true;
 let FAVS=new Set(JSON.parse(localStorage.getItem('favs')||'[]'));
 // tipo de inmueble: usa prop_type o lo deriva de los campos japoneses
@@ -751,14 +760,14 @@ function ingestFeatures(geo){
   const batch=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
   batch.forEach(f=>{f.photos=cleanPhotos(f.photos);computeStigma(f);});
   FEATURES=FEATURES.concat(batch);
-  if(!_booted){_booted=true;spreadOverlaps();buildLayouts();buildZones();loadAssume();loadState();applyLang();
+  if(!_booted){_booted=true;spreadOverlaps();buildLayouts();buildZones();buildCompanies();loadAssume();loadState();applyLang();
     if(!localStorage.getItem('w1')){localStorage.setItem('w1','1');openModal('welcomeModal');}}
   else scheduleRebuild();   // varios shards seguidos -> un solo re-render (debounce)
 }
 let _rebuildT=null;
 function scheduleRebuild(){
   clearTimeout(_rebuildT);
-  _rebuildT=setTimeout(()=>{spreadOverlaps();buildLayouts();buildZones();apply();},250);
+  _rebuildT=setTimeout(()=>{spreadOverlaps();buildLayouts();buildZones();buildCompanies();apply();},250);
 }
 async function loadShard(s){
   if(SHARD_LOADED.has(s.file)||SHARD_LOADING.has(s.file))return;
@@ -837,6 +846,15 @@ function buildZones(){
     const c=document.createElement('span');c.className='chip'+(ZOFF.has(z)?'':' on');c.dataset.zone=z;c.textContent=AREA_LABELS[z]||z;
     c.onclick=()=>{const off=c.classList.toggle('on')===false;off?ZOFF.add(z):ZOFF.delete(z);REFIT=true;apply();};row.appendChild(c);});
 }
+// COFF = compañías/fuentes DESACTIVADAS (mismo patrón robusto que las zonas).
+function buildCompanies(){
+  const present=[...new Set(FEATURES.map(f=>f.source).filter(Boolean))].sort();
+  const row=$('companyRow');if(!row)return;row.innerHTML='';
+  present.forEach(s=>{
+    const c=document.createElement('span');c.className='chip'+(COFF.has(s)?'':' on');c.dataset.src=s;
+    c.textContent=SOURCE_LABELS[s]||s;
+    c.onclick=()=>{const off=c.classList.toggle('on')===false;off?COFF.add(s):COFF.delete(s);apply();};row.appendChild(c);});
+}
 // Etiqueta los botones de alquiler máx con el importe en la moneda actual.
 function updateRentLabel(){document.querySelectorAll('#rentRow .chip').forEach(c=>{const v=+c.dataset.rent;c.textContent=(v?'≤ '+money(v):t('nolimit'));c.classList.toggle('on',v===RENTMAX);});}
 // Coste de ENTRADA (primer mes 🔑) — el mismo número que se ve en el mapa.
@@ -867,6 +885,8 @@ document.querySelectorAll('#dealRow .chip').forEach(c=>c.onclick=()=>{const d=c.
 document.querySelectorAll('#langSeg button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;localStorage.setItem('lang',LANG);applyLang();});
 ['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly','zeroEntry'].forEach(id=>$(id).onchange=apply);
 $('zAll').onclick=()=>{ZOFF.clear();document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.add('on'));REFIT=true;apply();};
+$('cAll').onclick=()=>{COFF.clear();document.querySelectorAll('#companyRow .chip').forEach(c=>c.classList.add('on'));apply();};
+$('cFr').onclick=()=>{COFF.clear();document.querySelectorAll('#companyRow .chip').forEach(c=>{const fr=FOREIGNER_SOURCES.has(c.dataset.src);c.classList.toggle('on',fr);if(!fr)COFF.add(c.dataset.src);});REFIT=true;apply();};
 $('zNone').onclick=()=>{document.querySelectorAll('#zoneRow .chip').forEach(c=>{ZOFF.add(c.dataset.zone);c.classList.remove('on');});apply();};
 // Debounce del buscador: con 59k+ casas, filtrar en cada tecla iría a tirones.
 let _searchT=null;
@@ -940,6 +960,7 @@ function matches(f){
   if($('renovatedOnly').checked&&!f.renovated)return false;
   if($('newOnly').checked&&!f.is_new)return false;
   if(ZOFF.size&&f.area_key&&ZOFF.has(f.area_key))return false;
+  if(COFF.size&&COFF.has(f.source))return false;
   const q=$('search').value.trim().toLowerCase();
   if(q){const hay=(f.title+' '+f.address_raw+' '+f.description_raw+' '+f.layout+' '+f.structure).toLowerCase();if(!hay.includes(q))return false;}
   return true;
@@ -991,7 +1012,7 @@ function saveState(){
     maxSale:$('maxSale').value,maxAge:$('maxAge').value,
     months:$('months').value,sort:$('sortBy').value,search:$('search').value,
     tg:STATE_TOGGLES.filter(id=>$(id)&&$(id).checked),
-    lay:[...LAYOUTS],zoff:[...ZOFF],
+    lay:[...LAYOUTS],zoff:[...ZOFF],coff:[...COFF],
   }));}catch(e){}
 }
 function loadState(){
@@ -1011,6 +1032,8 @@ function loadState(){
     document.querySelectorAll('#layoutRow .chip').forEach(c=>c.classList.toggle('on',LAYOUTS.has(c.textContent)));}
   if(Array.isArray(s.zoff)){ZOFF=new Set(s.zoff);   // restaura solo las que apagaste
     document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.toggle('on',!ZOFF.has(c.dataset.zone)));}
+  if(Array.isArray(s.coff)){COFF=new Set(s.coff);
+    document.querySelectorAll('#companyRow .chip').forEach(c=>c.classList.toggle('on',!COFF.has(c.dataset.src)));}
 }
 
 function renderList(shown,months){
@@ -1073,7 +1096,7 @@ window.clearFilters=function(){
   $('maxSale').value=30000000;$('maxAge').value=80;$('search').value='';
   STATE_TOGGLES.forEach(id=>{if($(id))$(id).checked=false;});
   $('parkingNearby').checked=true;
-  LAYOUTS.clear();ZOFF.clear();
+  LAYOUTS.clear();ZOFF.clear();COFF.clear();
   document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.classList.toggle('on',c.dataset.pt==='all'));
   document.querySelectorAll('#dealRow .chip').forEach(c=>c.classList.remove('on'));
   document.querySelectorAll('#layoutRow .chip,#zoneRow .chip').forEach(c=>c.classList.add('on'));
