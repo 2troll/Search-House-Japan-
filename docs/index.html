@@ -631,7 +631,7 @@ function applyLang(){
 }
 function priceColor(f){let t;if(f.listing_type==='rent'){t=Math.min(1,(f.rent_yen||0)/80000);}else{t=Math.min(1,(f.sale_price_yen||0)/30000000);}return`hsl(${(1-t)*120},70%,42%)`;}
 
-let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZONES=new Set();
+let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZOFF=new Set();
 let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='',RENTMAX=0,ENTRYMAX=0,REFIT=true;
 let FAVS=new Set(JSON.parse(localStorage.getItem('favs')||'[]'));
 // tipo de inmueble: usa prop_type o lo deriva de los campos japoneses
@@ -827,13 +827,15 @@ function buildLayouts(){
   // conserva la selección al recargar incrementalmente (shards nuevos)
   fams.filter(x=>present.has(x)).forEach(l=>{const c=document.createElement('span');c.className='chip'+(LAYOUTS.has(l)?' on':'');c.textContent=l;c.onclick=()=>{c.classList.toggle('on');LAYOUTS.has(l)?LAYOUTS.delete(l):LAYOUTS.add(l);apply();};row.appendChild(c);});
 }
-let SEEN_ZONES=new Set(); // zonas ya vistas: las nuevas entran activadas, las demás respetan tu selección
+// ZOFF = zonas DESACTIVADas por el usuario. Cualquier zona no apagada está activa,
+// así una prefectura que se carga después (Awaji, etc.) entra siempre visible.
 function buildZones(){
-  const present=[...new Set(FEATURES.map(f=>f.area_key).filter(Boolean))];const row=$('zoneRow');row.innerHTML='';
+  const present=[...new Set(FEATURES.map(f=>f.area_key).filter(Boolean))].sort(
+    (a,b)=>(AREA_LABELS[a]||a).localeCompare(AREA_LABELS[b]||b));
+  const row=$('zoneRow');row.innerHTML='';
   present.forEach(z=>{
-    if(!SEEN_ZONES.has(z)){SEEN_ZONES.add(z);ZONES.add(z);}
-    const c=document.createElement('span');c.className='chip'+(ZONES.has(z)?' on':'');c.dataset.zone=z;c.textContent=AREA_LABELS[z]||z;
-    c.onclick=()=>{c.classList.toggle('on');ZONES.has(z)?ZONES.delete(z):ZONES.add(z);REFIT=true;apply();};row.appendChild(c);});
+    const c=document.createElement('span');c.className='chip'+(ZOFF.has(z)?'':' on');c.dataset.zone=z;c.textContent=AREA_LABELS[z]||z;
+    c.onclick=()=>{const off=c.classList.toggle('on')===false;off?ZOFF.add(z):ZOFF.delete(z);REFIT=true;apply();};row.appendChild(c);});
 }
 // Etiqueta los botones de alquiler máx con el importe en la moneda actual.
 function updateRentLabel(){document.querySelectorAll('#rentRow .chip').forEach(c=>{const v=+c.dataset.rent;c.textContent=(v?'≤ '+money(v):t('nolimit'));c.classList.toggle('on',v===RENTMAX);});}
@@ -864,8 +866,8 @@ $('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFu
 document.querySelectorAll('#dealRow .chip').forEach(c=>c.onclick=()=>{const d=c.dataset.deal;if(DEAL===d){DEAL='';c.classList.remove('on');}else{DEAL=d;document.querySelectorAll('#dealRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');}apply();});
 document.querySelectorAll('#langSeg button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;localStorage.setItem('lang',LANG);applyLang();});
 ['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly','zeroEntry'].forEach(id=>$(id).onchange=apply);
-$('zAll').onclick=()=>{SEEN_ZONES.forEach(z=>ZONES.add(z));document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.add('on'));REFIT=true;apply();};
-$('zNone').onclick=()=>{ZONES.clear();document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.remove('on'));apply();};
+$('zAll').onclick=()=>{ZOFF.clear();document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.add('on'));REFIT=true;apply();};
+$('zNone').onclick=()=>{document.querySelectorAll('#zoneRow .chip').forEach(c=>{ZOFF.add(c.dataset.zone);c.classList.remove('on');});apply();};
 // Debounce del buscador: con 59k+ casas, filtrar en cada tecla iría a tirones.
 let _searchT=null;
 $('search').oninput=()=>{clearTimeout(_searchT);_searchT=setTimeout(apply,220);};
@@ -937,7 +939,7 @@ function matches(f){
   const ma=+$('maxAge').value;if(ma<80&&f.age_years!=null&&f.age_years>ma)return false;
   if($('renovatedOnly').checked&&!f.renovated)return false;
   if($('newOnly').checked&&!f.is_new)return false;
-  if(ZONES.size&&f.area_key&&!ZONES.has(f.area_key))return false;
+  if(ZOFF.size&&f.area_key&&ZOFF.has(f.area_key))return false;
   const q=$('search').value.trim().toLowerCase();
   if(q){const hay=(f.title+' '+f.address_raw+' '+f.description_raw+' '+f.layout+' '+f.structure).toLowerCase();if(!hay.includes(q))return false;}
   return true;
@@ -989,7 +991,7 @@ function saveState(){
     maxSale:$('maxSale').value,maxAge:$('maxAge').value,
     months:$('months').value,sort:$('sortBy').value,search:$('search').value,
     tg:STATE_TOGGLES.filter(id=>$(id)&&$(id).checked),
-    lay:[...LAYOUTS],zon:[...ZONES],
+    lay:[...LAYOUTS],zoff:[...ZOFF],
   }));}catch(e){}
 }
 function loadState(){
@@ -1007,8 +1009,8 @@ function loadState(){
   document.querySelectorAll('#dealRow .chip').forEach(c=>c.classList.toggle('on',c.dataset.deal===DEAL));
   if(Array.isArray(s.lay)){LAYOUTS.clear();s.lay.forEach(l=>LAYOUTS.add(l));
     document.querySelectorAll('#layoutRow .chip').forEach(c=>c.classList.toggle('on',LAYOUTS.has(c.textContent)));}
-  if(Array.isArray(s.zon)){ZONES.clear();s.zon.forEach(z=>ZONES.add(z));
-    document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.toggle('on',ZONES.has(c.dataset.zone)));}
+  if(Array.isArray(s.zoff)){ZOFF=new Set(s.zoff);   // restaura solo las que apagaste
+    document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.toggle('on',!ZOFF.has(c.dataset.zone)));}
 }
 
 function renderList(shown,months){
@@ -1071,7 +1073,7 @@ window.clearFilters=function(){
   $('maxSale').value=30000000;$('maxAge').value=80;$('search').value='';
   STATE_TOGGLES.forEach(id=>{if($(id))$(id).checked=false;});
   $('parkingNearby').checked=true;
-  LAYOUTS.clear();SEEN_ZONES.forEach(z=>ZONES.add(z));
+  LAYOUTS.clear();ZOFF.clear();
   document.querySelectorAll('#ptypeRow .chip').forEach(c=>c.classList.toggle('on',c.dataset.pt==='all'));
   document.querySelectorAll('#dealRow .chip').forEach(c=>c.classList.remove('on'));
   document.querySelectorAll('#layoutRow .chip,#zoneRow .chip').forEach(c=>c.classList.add('on'));
