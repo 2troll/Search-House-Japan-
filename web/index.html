@@ -639,8 +639,8 @@ let FEATURES=[],MARKERS=new Map(),LAYOUTS=new Set(),ZOFF=new Set(),COFF=new Set(
 // Nombre amable de cada fuente + 🌏 = admite extranjeros / sin comisión.
 const SOURCE_LABELS={suumo:'SUUMO 賃貸',athome:'at-home 空き家',athome_rent:'at-home 賃貸',
   ur:'🌏 UR (sin comisión/aval)',gaijinpot:'🌏 GaijinPot (inglés)',
-  suminiko:'南あわじ市',sumonavi:'洲本市',wakayama_portal:'Wakayama 物件',csv:'Manual'};
-const FOREIGNER_SOURCES=new Set(['ur','gaijinpot']);
+  villagehouse:'🌏 Village House',leopalace:'🌏 Leopalace21',suminiko:'南あわじ市',sumonavi:'洲本市',wakayama_portal:'Wakayama 物件',csv:'Manual'};
+const FOREIGNER_SOURCES=new Set(['ur','gaijinpot','villagehouse','leopalace']);
 let OP='rent',SORT='cost',CURRENT=null,PTYPE='all',DEAL='',RENTMAX=0,ENTRYMAX=0,REFIT=true;
 let FAVS=new Set(JSON.parse(localStorage.getItem('favs')||'[]'));
 // tipo de inmueble: usa prop_type o lo deriva de los campos japoneses
