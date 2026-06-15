@@ -254,6 +254,7 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
         <div class="rangerow"><input type="range" id="maxAge" min="0" max="80" step="1" value="80"><input type="number" id="maxAgeN" class="numin" min="0" max="80" step="1" value="80"></div>
         <div class="hint"><span class="v" id="ageVal"></span></div></div>
       <div class="fg"><h4 data-i18n="other">Otros</h4>
+        <label class="toggle"><input type="checkbox" id="withPrice" checked> <span data-i18n="withprice">💴 Solo con precio</span></label>
         <label class="toggle"><input type="checkbox" id="zeroEntry"> <span data-i18n="zeroonly">🟢 Cero entrada (sin 礼金/敷金)</span></label>
         <label class="toggle"><input type="checkbox" id="goodCondition"> <span data-i18n="goodcond">✨ Buen estado (reformada/nueva)</span></label>
         <label class="toggle"><input type="checkbox" id="renovatedOnly"> <span data-i18n="reno">Solo reformadas</span></label>
@@ -549,7 +550,7 @@ const I18N={
   layout:'Distribución 間取り',agemax:'Antigüedad máx',anyage:'Cualquiera',years:'años',
   other:'Otros',reno:'Solo reformadas',newonly:'Solo novedades',zone:'Zona',search:'Buscar',
   searchph:'海, 平屋, 福良, 沼島...',stay:'Estancia',months:'meses',order:'Ordenar',
-  o_cost:'Coste estancia ↑',o_entry:'Entrada 🔑 ↑',z_all:'Todas',z_none:'Ninguna',company:'Compañía / Agencia',c_fr:'🌏 Extranjeros',noresults:'😕 Ninguna casa cumple esos filtros.',clearf:'🧹 Quitar todos los filtros',o_pm:'Coste/mes ↑',o_price:'Precio ↑',o_age:'Más nuevas',o_area:'Más grandes',
+  o_cost:'Coste estancia ↑',o_entry:'Entrada 🔑 ↑',z_all:'Todas',z_none:'Ninguna',company:'Compañía / Agencia',c_fr:'🌏 Extranjeros',withprice:'💴 Solo con precio',noresults:'😕 Ninguna casa cumple esos filtros.',clearf:'🧹 Quitar todos los filtros',o_pm:'Coste/mes ↑',o_price:'Precio ↑',o_age:'Más nuevas',o_area:'Más grandes',
   tabFilters:'Filtros',tabList:'Lista',tabMap:'Mapa',onlymap:'🗺️ Solo mapa',showlist:'◀ Mostrar lista',
   houses:'casas',legend:'Leyenda',cheapw:'barato',exp:'caro',rentw:'alquiler',landw:'terreno',zerow:'🟢 cero entrada (sin 礼金/敷金)',several:'varias casas (acerca el zoom)',
   toconsult:'A consultar',permonth:'/mes',various:'Varios tipos',
@@ -592,7 +593,7 @@ const I18N={
   layout:'Layout 間取り',agemax:'Max age',anyage:'Any',years:'yrs',
   other:'Other',reno:'Renovated only',newonly:'New only',zone:'Area',search:'Search',
   searchph:'sea, 1-floor, station...',stay:'Stay',months:'months',order:'Sort',
-  o_cost:'Total stay cost ↑',o_entry:'Move-in 🔑 ↑',z_all:'All',z_none:'None',company:'Company / Agency',c_fr:'🌏 Foreigner-OK',noresults:'😕 No homes match those filters.',clearf:'🧹 Clear all filters',o_pm:'Cost/month ↑',o_price:'Price ↑',o_age:'Newest',o_area:'Largest',
+  o_cost:'Total stay cost ↑',o_entry:'Move-in 🔑 ↑',z_all:'All',z_none:'None',company:'Company / Agency',c_fr:'🌏 Foreigner-OK',withprice:'💴 With price only',noresults:'😕 No homes match those filters.',clearf:'🧹 Clear all filters',o_pm:'Cost/month ↑',o_price:'Price ↑',o_age:'Newest',o_area:'Largest',
   tabFilters:'Filters',tabList:'List',tabMap:'Map',onlymap:'🗺️ Map only',showlist:'◀ Show list',
   houses:'homes',legend:'Legend',cheapw:'cheap',exp:'pricey',rentw:'rent',landw:'land',zerow:'🟢 zero move-in (no 礼金/敷金)',several:'several homes (zoom in)',
   toconsult:'On request',permonth:'/mo',various:'Various types',
@@ -799,7 +800,7 @@ function trickleAll(){ // escritorio: trae el resto en segundo plano, de una en 
 fetch('data/index.json').then(r=>{if(!r.ok)throw 0;return r.json();}).then(idx=>{
   SHARDS=idx.shards;
   loadVisibleShards();                       // lo visible primero (Kansai por defecto)
-  map.on('moveend zoomend',()=>loadVisibleShards());
+  map.on('moveend zoomend',()=>{loadVisibleShards();clearTimeout(_markersTimer);_markersTimer=setTimeout(()=>{if(SHOWN.length)renderMarkers();},120);});
   setTimeout(trickleAll,5000);               // escritorio: completar todo Japón detrás
 }).catch(()=>{
   // Fallback: formato antiguo de un solo archivo
@@ -883,7 +884,7 @@ bindNum('maxAge','maxAgeN',updateAgeLabel);
 $('mapFull').onclick=()=>{const b=$('body').classList.toggle('mapfull');$('mapFull').textContent=b?t('showlist'):t('onlymap');setTimeout(()=>map.invalidateSize(),60);};
 document.querySelectorAll('#dealRow .chip').forEach(c=>c.onclick=()=>{const d=c.dataset.deal;if(DEAL===d){DEAL='';c.classList.remove('on');}else{DEAL=d;document.querySelectorAll('#dealRow .chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');}apply();});
 document.querySelectorAll('#langSeg button').forEach(b=>b.onclick=()=>{LANG=b.dataset.l;localStorage.setItem('lang',LANG);applyLang();});
-['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly','zeroEntry'].forEach(id=>$(id).onchange=apply);
+['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly','zeroEntry','withPrice'].forEach(id=>$(id).onchange=apply);
 $('zAll').onclick=()=>{ZOFF.clear();document.querySelectorAll('#zoneRow .chip').forEach(c=>c.classList.add('on'));REFIT=true;apply();};
 $('cAll').onclick=()=>{COFF.clear();document.querySelectorAll('#companyRow .chip').forEach(c=>c.classList.add('on'));apply();};
 $('cFr').onclick=()=>{COFF.clear();document.querySelectorAll('#companyRow .chip').forEach(c=>{const fr=FOREIGNER_SOURCES.has(c.dataset.src);c.classList.toggle('on',fr);if(!fr)COFF.add(c.dataset.src);});REFIT=true;apply();};
@@ -953,6 +954,7 @@ function matches(f){
   if(DEAL==='value'&&!isGoodPrice(f))return false;
   if($('goodCondition').checked&&!isGoodCondition(f))return false;
   if($('stigmaOnly').checked&&!f._stigma)return false;
+  if($('withPrice').checked&&!(f.rent_yen||f.sale_price_yen))return false;
   if($('zeroEntry').checked&&!isZeroEntry(f))return false;
   if($('parkingOnly').checked){const ok=f.parking==='yes'||(f.parking==='nearby'&&$('parkingNearby').checked);if(!ok)return false;}
   if(LAYOUTS.size){const m=(String(f.layout).match(/\d+[SLDKR]+/i)||[])[0];if(!m||!LAYOUTS.has(m.toUpperCase()))return false;}
@@ -992,17 +994,31 @@ function sortFn(months){return(a,b)=>{
   const vb=sb?(SORT==='permonth'?sb.perMonth:sb.total):(b.sale_price_yen?1e13+b.sale_price_yen:1e15);
   return va-vb;};}
 
+let SHOWN=[];        // conjunto filtrado actual (para lista + marcadores por viewport)
 function apply(){
-  const months=+$('months').value,shown=FEATURES.filter(matches);
-  cluster.clearLayers();MARKERS.clear();const bounds=[],layers=[];
-  shown.forEach(f=>{const m=L.marker([f.lat,f.lng],{icon:makeIcon(f)});m.on('click',()=>openDetail(f));m.on('mouseover',()=>hl(f.id,true));m.on('mouseout',()=>hl(f.id,false));layers.push(m);MARKERS.set(f.id,m);bounds.push([f.lat,f.lng]);});
-  cluster.addLayers(layers); // en bloque -> chunkedLoading reparte el trabajo y no congela
-  // El mapa solo se re-encuadra en la 1.ª carga o al cambiar de zona (REFIT),
-  // no en cada toque de filtro: así deja de "saltar".
-  if(REFIT&&bounds.length){map.fitBounds(bounds,{padding:[40,40],maxZoom:12});REFIT=false;}
-  renderList(shown.slice().sort(sortFn(months)),months);
-  $('count').textContent=shown.length+' '+t('houses');$('favN').textContent=FAVS.size;
+  const months=+$('months').value;
+  SHOWN=FEATURES.filter(matches);
+  if(REFIT&&SHOWN.length){const b=SHOWN.map(f=>[f.lat,f.lng]);map.fitBounds(b,{padding:[40,40],maxZoom:12});REFIT=false;}
+  renderMarkers();
+  renderList(SHOWN.slice().sort(sortFn(months)),months);
+  $('count').textContent=SHOWN.length.toLocaleString('es-ES')+' '+t('houses');$('favN').textContent=FAVS.size;
   saveState();
+}
+// Solo pinta los marcadores DENTRO de la vista (+margen). Con 117k casas, crear
+// todos los marcadores en cada filtro saturaba el navegador; así van cientos, no miles.
+let _markersTimer=null;
+function renderMarkers(){
+  const b=map.getBounds().pad(0.25);
+  const vis=[];
+  for(let i=0;i<SHOWN.length;i++){const f=SHOWN[i];
+    if(f.lat>=b.getSouth()&&f.lat<=b.getNorth()&&f.lng>=b.getWest()&&f.lng<=b.getEast()){
+      vis.push(f); if(vis.length>=4000)break; }  // tope de seguridad
+  }
+  cluster.clearLayers();MARKERS.clear();
+  const layers=vis.map(f=>{const m=L.marker([f.lat,f.lng],{icon:makeIcon(f)});
+    m.on('click',()=>openDetail(f));m.on('mouseover',()=>hl(f.id,true));m.on('mouseout',()=>hl(f.id,false));
+    MARKERS.set(f.id,m);return m;});
+  cluster.addLayers(layers);
 }
 // ====== Persistencia de filtros (vuelves donde estabas al recargar) ======
 const STATE_TOGGLES=['parkingOnly','parkingNearby','renovatedOnly','newOnly','goodCondition','stigmaOnly','zeroEntry'];
