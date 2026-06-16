@@ -37,6 +37,10 @@ _SLUG_MAP = {"hokkaido": "hokkaido_", "gunma": "gumma"}
 SUUMO_PREFS = [_SLUG_MAP.get(p, p) for p in SUUMO_PREFS]
 MAX_PAGES = int(_os.environ.get("SUUMO_MAX_PAGES", "3"))   # páginas por ciudad (20 edificios/pág)
 DELAY = 2.5            # pausa entre peticiones (educado)
+# SUUMO_PARKING=1: marca todo lo raspado como parking="yes". Úsalo SOLO junto al
+# filtro SUUMO_FILTER=nj_109 (ガレージ付き・駐車場あり), que ya devuelve únicamente
+# casas CON parking; así etiquetamos en bloque sin abrir 100k fichas de detalle.
+PARKING_ONLY = _os.environ.get("SUUMO_PARKING") == "1"
 
 _sess = requests.Session()
 _sess.headers.update({
@@ -181,6 +185,9 @@ def _parse_page(html, pref):
             description_raw=f"SUUMO · {kind}",
             features=feats,
         )
+        if PARKING_ONLY:                       # filtro nj_109 -> garantizado con parking
+            lst.parking = "yes"
+            lst.parking_detail = "駐車場あり（SUUMO）"
         assign_area(lst)
         out.append(lst)
     return out
