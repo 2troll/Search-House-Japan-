@@ -211,6 +211,11 @@ table.cmp input.mo{width:54px;padding:6px;border:1px solid var(--line2);border-r
 
   <div id="body">
     <aside id="filters">
+      <div class="fg" style="background:#eef5ff;border:1px solid #cfe0ff;border-radius:10px;padding:10px">
+        <h4>📍 <span data-i18n="prefecture">Prefectura</span></h4>
+        <select id="prefSelect" style="width:100%;padding:9px;border:1px solid var(--line2);border-radius:8px;font-size:14px"></select>
+        <div class="hint" data-i18n="prefhint" style="margin-top:5px">Elige una prefectura: solo carga esa (rápido). Para buscar dentro, usa los filtros.</div>
+      </div>
       <div class="fg"><h4 data-i18n="ptype">Tipo de inmueble</h4>
         <div class="row" id="ptypeRow">
           <span class="chip on" data-pt="all" data-i18n="all">Todos</span>
@@ -550,7 +555,7 @@ const I18N={
   layout:'Distribución 間取り',agemax:'Antigüedad máx',anyage:'Cualquiera',years:'años',
   other:'Otros',reno:'Solo reformadas',newonly:'Solo novedades',zone:'Zona',search:'Buscar',
   searchph:'海, 平屋, 福良, 沼島...',stay:'Estancia',months:'meses',order:'Ordenar',
-  o_cost:'Coste estancia ↑',o_entry:'Entrada 🔑 ↑',z_all:'Todas',z_none:'Ninguna',company:'Compañía / Agencia',c_fr:'🌏 Extranjeros',withprice:'💴 Solo con precio',noresults:'😕 Ninguna casa cumple esos filtros.',clearf:'🧹 Quitar todos los filtros',o_pm:'Coste/mes ↑',o_price:'Precio ↑',o_age:'Más nuevas',o_area:'Más grandes',
+  o_cost:'Coste estancia ↑',o_entry:'Entrada 🔑 ↑',z_all:'Todas',z_none:'Ninguna',company:'Compañía / Agencia',c_fr:'🌏 Extranjeros',withprice:'💴 Solo con precio',prefecture:'Prefectura',prefhint:'Elige una prefectura: solo carga esa (rápido). Busca dentro con los filtros.',noresults:'😕 Ninguna casa cumple esos filtros.',clearf:'🧹 Quitar todos los filtros',o_pm:'Coste/mes ↑',o_price:'Precio ↑',o_age:'Más nuevas',o_area:'Más grandes',
   tabFilters:'Filtros',tabList:'Lista',tabMap:'Mapa',onlymap:'🗺️ Solo mapa',showlist:'◀ Mostrar lista',
   houses:'casas',legend:'Leyenda',cheapw:'barato',exp:'caro',rentw:'alquiler',landw:'terreno',zerow:'🟢 cero entrada (sin 礼金/敷金)',several:'varias casas (acerca el zoom)',
   toconsult:'A consultar',permonth:'/mes',various:'Varios tipos',
@@ -593,7 +598,7 @@ const I18N={
   layout:'Layout 間取り',agemax:'Max age',anyage:'Any',years:'yrs',
   other:'Other',reno:'Renovated only',newonly:'New only',zone:'Area',search:'Search',
   searchph:'sea, 1-floor, station...',stay:'Stay',months:'months',order:'Sort',
-  o_cost:'Total stay cost ↑',o_entry:'Move-in 🔑 ↑',z_all:'All',z_none:'None',company:'Company / Agency',c_fr:'🌏 Foreigner-OK',withprice:'💴 With price only',noresults:'😕 No homes match those filters.',clearf:'🧹 Clear all filters',o_pm:'Cost/month ↑',o_price:'Price ↑',o_age:'Newest',o_area:'Largest',
+  o_cost:'Total stay cost ↑',o_entry:'Move-in 🔑 ↑',z_all:'All',z_none:'None',company:'Company / Agency',c_fr:'🌏 Foreigner-OK',withprice:'💴 With price only',prefecture:'Prefecture',prefhint:'Pick one prefecture: only that loads (fast). Search within it using the filters.',noresults:'😕 No homes match those filters.',clearf:'🧹 Clear all filters',o_pm:'Cost/month ↑',o_price:'Price ↑',o_age:'Newest',o_area:'Largest',
   tabFilters:'Filters',tabList:'List',tabMap:'Map',onlymap:'🗺️ Map only',showlist:'◀ Show list',
   houses:'homes',legend:'Legend',cheapw:'cheap',exp:'pricey',rentw:'rent',landw:'land',zerow:'🟢 zero move-in (no 礼金/敷金)',several:'several homes (zoom in)',
   toconsult:'On request',permonth:'/mo',various:'Various types',
@@ -751,59 +756,48 @@ function isZeroEntry(f){
   return f.listing_type==='rent' && f.rent_yen && feeZero(f.key_money) && feeZero(f.deposit);
 }
 
-// ====== Carga por SHARDS (escala a todo Japón) ======
-// data/index.json lista un archivo por prefectura con su bbox. Cargamos solo las
-// prefecturas visibles en el mapa; al mover el mapa se cargan las que falten.
-// En escritorio, tras un respiro, se van trayendo TODAS en segundo plano (búsqueda
-// y filtros completos); en móvil solo lo que miras (memoria y datos contenidos).
-let SHARDS=null,SHARD_LOADED=new Set(),SHARD_LOADING=new Set(),_booted=false;
+// ====== Carga POR PREFECTURA (una a la vez = sin lag) ======
+// data/index.json lista un archivo por prefectura. Cargamos SOLO la prefectura
+// elegida en el selector; el mapa nunca tiene 116k casas a la vez, así no se atasca.
+let SHARDS=null,_booted=false,ACTIVE_PREF=null;
 function ingestFeatures(geo){
   const batch=geo.features.map(f=>({...f.properties,lat:f.geometry.coordinates[1],lng:f.geometry.coordinates[0]}));
   batch.forEach(f=>{f.photos=cleanPhotos(f.photos);computeStigma(f);});
-  FEATURES=FEATURES.concat(batch);
-  if(!_booted){_booted=true;spreadOverlaps();buildLayouts();buildZones();buildCompanies();loadAssume();loadState();applyLang();
+  FEATURES=batch;                      // REEMPLAZA (no acumula) -> memoria contenida
+  spreadOverlaps();buildLayouts();buildZones();buildCompanies();
+  if(!_booted){_booted=true;loadAssume();loadState();applyLang();
     if(!localStorage.getItem('w1')){localStorage.setItem('w1','1');openModal('welcomeModal');}}
-  else scheduleRebuild();   // varios shards seguidos -> un solo re-render (debounce)
+  else apply();
 }
-let _rebuildT=null;
-function scheduleRebuild(){
-  clearTimeout(_rebuildT);
-  _rebuildT=setTimeout(()=>{spreadOverlaps();buildLayouts();buildZones();buildCompanies();apply();},250);
-}
-async function loadShard(s){
-  if(SHARD_LOADED.has(s.file)||SHARD_LOADING.has(s.file))return;
-  SHARD_LOADING.add(s.file);
+async function selectPref(code){
+  if(!SHARDS)return;
+  const s=SHARDS.find(x=>x.code===code);
+  if(!s)return;
+  ACTIVE_PREF=code;
+  try{localStorage.setItem('pref',code);}catch(e){}
+  $('count').textContent='…';
   try{
     const geo=await(await fetch('data/'+s.file)).json();
-    SHARD_LOADED.add(s.file);
+    REFIT=true;                        // re-encuadra a la prefectura nueva
     ingestFeatures(geo);
-    $('count').title=`${SHARD_LOADED.size}/${SHARDS.length} prefecturas cargadas`;
-  }catch(e){}finally{SHARD_LOADING.delete(s.file);}
-}
-function bboxIntersects(b,bounds){ // b=[w,s,e,n]
-  return !(b[2]<bounds.getWest()||b[0]>bounds.getEast()||b[3]<bounds.getSouth()||b[1]>bounds.getNorth());
-}
-function loadVisibleShards(){
-  if(!SHARDS)return;
-  const bounds=map.getBounds().pad(0.2);
-  const vis=SHARDS.filter(s=>!SHARD_LOADED.has(s.file)&&bboxIntersects(s.bbox,bounds));
-  // móvil: limitar por pasada para no reventar memoria/datos; escritorio: sin límite
-  const cap=window.innerWidth<=920?6:99;
-  vis.slice(0,cap).forEach(loadShard);
-}
-function trickleAll(){ // escritorio: trae el resto en segundo plano, de una en una
-  if(!SHARDS||window.innerWidth<=920)return;
-  const next=SHARDS.find(s=>!SHARD_LOADED.has(s.file)&&!SHARD_LOADING.has(s.file));
-  if(!next)return;
-  loadShard(next).then(()=>setTimeout(trickleAll,400));
+  }catch(e){$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar la prefectura.</div>';}
 }
 fetch('data/index.json').then(r=>{if(!r.ok)throw 0;return r.json();}).then(idx=>{
-  SHARDS=idx.shards;
-  loadVisibleShards();                       // lo visible primero (Kansai por defecto)
-  map.on('moveend zoomend',()=>{loadVisibleShards();clearTimeout(_markersTimer);_markersTimer=setTimeout(()=>{if(SHOWN.length)renderMarkers();},120);});
-  setTimeout(trickleAll,5000);               // escritorio: completar todo Japón detrás
+  SHARDS=idx.shards.slice().sort((a,b)=>(a.code||'').localeCompare(b.code||''));
+  // poblar el selector con nombre + nº de casas
+  const sel=$('prefSelect');sel.innerHTML='';
+  SHARDS.forEach(s=>{const o=document.createElement('option');o.value=s.code;
+    o.textContent=`${AREA_LABELS[ (s.pref||'').replace(/[都道府県]$/,'') ]||s.pref} (${s.count.toLocaleString('es-ES')})`;
+    sel.appendChild(o);});
+  sel.onchange=()=>selectPref(sel.value);
+  // prefectura inicial: la guardada o la que más casas tenga
+  let start=null;try{start=localStorage.getItem('pref');}catch(e){}
+  if(!start||!SHARDS.some(s=>s.code===start)) start=SHARDS.slice().sort((a,b)=>b.count-a.count)[0].code;
+  sel.value=start;
+  // al mover el mapa: solo re-pinta los marcadores visibles (NO carga más prefecturas)
+  map.on('moveend zoomend',()=>{clearTimeout(_markersTimer);_markersTimer=setTimeout(()=>{if(SHOWN.length)renderMarkers();},120);});
+  selectPref(start);
 }).catch(()=>{
-  // Fallback: formato antiguo de un solo archivo
   fetch('data.geojson').then(r=>r.json()).then(ingestFeatures)
     .catch(()=>{$('list').innerHTML='<div style="padding:16px;color:#dc2626">No se pudo cargar data/. Ejecuta refresh.py y abre con un servidor.</div>';});
 });
